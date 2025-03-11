@@ -1,0 +1,259 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('@/assets/fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia Sans';
+    src: url('@/assets/fonts/SofiaSans-VariableFont_wght.ttf')  format('truetype');
+    font-weight: 100 1000;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia Sans Italic';
+    src: url('@/assets/fonts/SofiaSans-Italic-VariableFont_wght.ttf')  format('truetype');
+    font-weight: 100 1000;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('@/assets/fonts/Panton-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('@/assets/fonts/Panton-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('@/assets/fonts/Panton-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('@/assets/fonts/Panton-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('@/assets/fonts/Panton-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('@/assets/fonts/Panton-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('@/assets/fonts/Panton-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('@/assets/fonts/Panton-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('@/assets/fonts/Panton-Fat.ttf') format('truetype');
+    font-weight: 950;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('@/assets/fonts/Panton-RegularItalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('@/assets/fonts/Panton-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('@/assets/fonts/Panton-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('@/assets/fonts/Panton-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('@/assets/fonts/Panton-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('@/assets/fonts/Panton-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('@/assets/fonts/Panton-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('@/assets/fonts/Panton-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('@/assets/fonts/Panton-FatItalic.ttf') format('truetype');
+    font-weight: 950;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Panton Narrow';
+    src: url('@/assets/fonts/PantonNarrow-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton Narrow';
+    src: url('@/assets/fonts/PantonNarrow-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton Narrow';
+    src: url('@/assets/fonts/PantonNarrow-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton Narrow';
+    src: url('@/assets/fonts/PantonNarrow-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton Narrow';
+    src: url('@/assets/fonts/PantonNarrow-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton Narrow';
+    src: url('@/assets/fonts/PantonNarrow-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton Narrow';
+    src: url('@/assets/fonts/PantonNarrow-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton Narrow';
+    src: url('@/assets/fonts/PantonNarrow-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton Narrow';
+    src: url('@/assets/fonts/PantonNarrow-RegularItalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Panton Narrow';
+    src: url('@/assets/fonts/PantonNarrow-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Panton Narrow';
+    src: url('@/assets/fonts/PantonNarrow-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Panton Narrow';
+    src: url('@/assets/fonts/PantonNarrow-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Panton Narrow';
+    src: url('@/assets/fonts/PantonNarrow-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Panton Narrow';
+    src: url('@/assets/fonts/PantonNarrow-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Panton Narrow';
+    src: url('@/assets/fonts/PantonNarrow-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Panton Narrow';
+    src: url('@/assets/fonts/PantonNarrow-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+

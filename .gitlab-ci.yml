@@ -1,0 +1,51 @@
+stages:
+  - build
+  - push
+  - deploy
+
+include:
+  - template: Jobs/Build.gitlab-ci.yml
+
+variables:
+  # default from template would be $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG
+  CI_APPLICATION_REPOSITORY: $CI_REGISTRY_IMAGE
+
+.rules:
+  deploy-branch:
+    - if: '$CI_COMMIT_TAG || $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH || $MANUAL_BUILD_BRANCH'
+    - if: $BUILD_DISABLED
+      when: never
+
+build:
+  # exposes
+  # artifacts:
+  #    reports:
+  #      dotenv: gl-auto-build-variables.env
+  # gl_write_auto_build_variables_file() {
+  #  echo "CI_APPLICATION_REPOSITORY=${CI_APPLICATION_REPOSITORY}" > gl-auto-build-variables.env
+  #  echo "CI_APPLICATION_TAG=${CI_APPLICATION_TAG}@$(docker buildx imagetools inspect "$image_tagged" | grep ^Digest: | awk '{print $2}')" >> gl-auto-build-variables.env
+  # }
+  rules:
+    - !reference [.rules, deploy-branch]
+
+deploy to staging:
+  stage: deploy
+  variables:
+    TF_IMAGES: vars/images.tfvars
+    TF_PROJECT: gitlab.com/dksr2/twin-by-data/infra.git
+    TF_VAR_NAME_DIGEST: piveau_hub_ui_digest
+  dependencies:
+    - build
+  image: alpine/git-tag
+  rules:
+    - !reference [.rules, deploy-branch]
+  before_script:
+    - git config --global user.name "$GITLAB_USER_NAME"
+    - git config --global user.email "$GITLAB_USER_EMAIL"
+    - git remote set-url origin "https://gitlab-token:$GITLAB_DEPLOY_TOKEN@$TF_PROJECT"
+    - git fetch origin develop && git reset --hard FETCH_HEAD
+  script:
+    - sed -i -e "s/^$TF_VAR_NAME_DIGEST = .*/$TF_VAR_NAME_DIGEST = \"$CI_APPLICATION_TAG\"/g" $TF_IMAGES
+    - git add $TF_IMAGES
+    - git commit -m "CI Update \"$CI_PROJECT_NAME\" image to ${CI_APPLICATION_TAG:0:13}"
+    - git push origin HEAD:develop

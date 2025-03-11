@@ -1,0 +1,3 @@
+[submodule "pv-sdk"]
+	path = pv-sdk
+	url = https://gitlab.fokus.fraunhofer.de/minh.vo/pv-sdk.git

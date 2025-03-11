@@ -1,0 +1,2159 @@
+{
+  "authentication": {
+    "logged_out": "You have been logged out."
+  },
+  "navigation": {
+    "home": "Home",
+    "digital-twin": "Digital Twin",
+    "dashboards": "Dashboards",
+    "data-catalog": "Datacatalog",
+    "organisation-sites": "Organisation sites",
+    "log-in": "Login",
+    "register-text": "No account yet? Register now!",
+    "impressum": "Legal Notice",
+    "user-profile": "Profile",
+    "dksr-apps": "DKSR Apps",
+    "go-back": "Back",
+    "dashboards-context": "My dashboards",
+    "apps-context": "DKSR Analytics Tools"
+  },
+  "tooltips": {
+    "home": "Home",
+    "digital-twin": "Digital Twin",
+    "dashboards": "Dashboards",
+    "data-catalog": "Datakatalog",
+    "organisation-sites": "Organization Sites"
+  },
+  "dashboard": {
+    "title": "Your City at a Glance",
+    "subtitle": "Here you can find your city's dashboards",
+    "new_dashboard": "New Dashboard",
+    "widget": {
+      "source": "Publisher",
+      "theme": "Themes",
+      "to_dashboard": "To the Dashboard"
+    }
+  },
+  "dashboards": {
+    "title": "Your City at a Glance",
+    "subtitle": "Here you can find the dashboards of your city. The dashboards present thematically related datasets visually and in context. They enable decision-making and understanding."
+  },
+  "home": {
+    "organisation_data": "Organisation data"
+  },
+  "HomepageQuickLinks": {
+    "addDashboard": {
+      "title": "Add Dashboard",
+      "subtitle": "Here you can create new dashboards"
+    },
+    "findData": {
+      "title": "Find Data",
+      "subtitle": "Here you can find all datasets available on the platform"
+    },
+    "analyzeData": {
+      "title": "Analyze Data",
+      "subtitle": "Here you can analyze your datasets"
+    }
+  },
+  "city-os": {
+    "layout": {
+      "app-header": {
+        "login": "Login",
+        "user-profile": "User Profile",
+        "warning": "Warning",
+        "toggle-sidebar": "Toggle Sidebar"
+      },
+      "app-header-dropdown": {
+        "user-menu": "User Menu",
+        "user-profile": "My Profile",
+        "personal-settings": "Personal Settings",
+        "my-work": "My Work",
+        "data-exchange": "Data Exchange",
+        "user-management": "User Management",
+        "legal-notices": "Legal Notices",
+        "logout": "Logout"
+      }
+    }
+  },
+  "user-profile": {
+    "up-content": {
+      "title-about": "About You",
+      "label-name": "Name",
+      "label-email": "Email Address",
+      "label-telephone": "Telephone",
+      "label-department": "Department",
+      "label-organization": "Organization",
+      "title-login": "Login Information",
+      "label-username": "Username",
+      "button-logout": "Logout"
+    }
+  },
+  "landing-page": {
+    "hof": {
+      "hof-lp-header": {
+        "title": "Innovation Space Hofer Land",
+        "second-title": "Your Access to Interactive Information",
+        "subtitle": "Utilize the Digital Twin, innovative dashboards, and the data catalog for comprehensive analysis and insights into the data landscape of the Hofer Land."
+      },
+      "hof-lp-features": {
+        "digital-twin": {
+          "title": "Digital Twin",
+          "description": "A digital twin is a virtual copy of the city for planning and management.",
+          "button": "Go to Digital Twin"
+        },
+        "dashboards": {
+          "title": "Dashboards",
+          "description": "Dashboards are interactive overviews of key data and metrics.",
+          "button": "Go to Dashboards"
+        },
+        "data-catalog": {
+          "title": "Open Data Catalog",
+          "description": "A data catalog is a publicly accessible, searchable collection of all data.",
+          "button": "Go to Data Catalog"
+        }
+      },
+      "hof-lp-digital-twin": {
+        "tile-title": "Digital Twin",
+        "title": "The Digital Twin for Intelligent Urban Planning",
+        "description": "The digital twin of a city provides a virtual representation of its entire ecosystem, including infrastructure and citizens. This technology allows urban development to be planned, analyzed, and optimized.",
+        "button-digital-twin": "Go to Digital Twins",
+        "button-tutorial": "Watch Tutorial"
+      },
+      "hof-lp-dashboards": {
+        "tile-title": "Dashboards",
+        "title": "Use Dashboards to Capture Data Insights",
+        "description": "The dashboards on our platform provide clear insights into data, enabling informed decisions for city development.",
+        "button-dashboards": "Go to Dashboards"
+      },
+      "hof-lp-datacatalog": {
+        "tile-title": "Data Catalog",
+        "title": "Work with Open Data and Data from Participating Organizations",
+        "description": "The data catalog provides access to a variety of open data as well as data provided by participating organizations, supporting comprehensive data analysis and usage.",
+        "button-data-catalog": "Find Data"
+      }
+    },
+    "test": "test",
+    "header": {
+      "about-kdw": "About KDW",
+      "registration": "Register",
+      "login": "Login",
+      "findAll": "Find All",
+      "about": "About",
+      "findTwins": "Find Twins",
+      "firstSteps": "First Steps"
+    },
+    "hero": {
+      "welcome": "TwinByData from Bavaria",
+      "search-placeholder": "Search Datasets",
+      "search": "Search",
+      "feature-one": "Secure Data Sharing",
+      "feature-two": "Access to Real-time Data",
+      "feature-three": "Dynamic Data"
+    },
+    "partners": {
+      "description1": "An mFUND-funded research project of the BMDV",
+      "description2": "implemented by the project partners DKSR and Fraunhofer FOKUS",
+      "description3": "for Mainzer Stadtwerke AG."
+    },
+    "discover-data": {
+      "title": "Discover the Municipal DataWorks",
+      "box-one-text": "View Open Data of your city as a citizen",
+      "box-one-button-text": "Explore Data",
+      "box-two-text": "View reliable and restrictive data as a data provider",
+      "box-two-button-text": "Login"
+    },
+    "open-data": {
+      "title": "Open Data and restrictive data from participant organizations",
+      "chip-one": "Open Data",
+      "chip-two": "Restrictive Data",
+      "chip-three": "Live Data",
+      "chip-four": "Municipal Data",
+      "description": "The data catalog enables access to a wide range of Open Data as well as data provided by participating organizations, supporting comprehensive data analysis and usage.",
+      "box-one-title": "Municipal Data-sharing Platform",
+      "box-one-text": "Digital public services through a secure platform for the exchange of diverse data.",
+      "box-two-title": "Legal and Technical Security",
+      "box-two-text": "Legal and technical security through the development of access rights",
+      "box-three-title": "Timeliness and Reliability",
+      "box-three-text": "High data quality and reliability through regular maintenance of the data catalog",
+      "box-four-title": "Open Data Access for Citizens",
+      "box-four-text": "Open Data access for interested and engaged citizens who want to be involved in city development"
+    },
+    "discover-data-detailed": {
+      "main-title": "Discover Data",
+      "main-description": "This platform integrates data from more than eight different categories, enabling a comprehensive understanding of topics such as economic and social developments, climate changes and adaptations, as well as concrete urban and regional development. The goal is to support a socio-ecological market economy through clear data visualization and processing.",
+      "source-one-name": "Available Datasets",
+      "source-two-name": "Distributions",
+      "source-three-name": "Data Providers",
+      "secondary-title": "Data to Get Started",
+      "get-started-one-button": "To the Dataset",
+      "get-started-one-title": "Companies in the Renewable Energy Sector",
+      "get-started-two-button": "To the Dataset",
+      "get-started-two-title": "Traffic Monitoring Data from TREMOD",
+      "get-started-three-button": "To the Dataset",
+      "get-started-three-title": "Evaluation of 5G Mobile Coverage"
+    },
+    "get-in-touch": {
+      "title": "Get in Touch",
+      "text": "Send us your application or schedule a meeting with us so that we can show you the platform.",
+      "button-text": "Get in touch"
+    },
+    "footer": {
+      "sitemap": {
+        "data-catalog": "Data Catalog",
+        "apply": "Apply",
+        "login": "Login",
+        "home": "Home",
+        "discover": "Discover the Municipal DataWorks",
+        "open-data": "Open Data und restriktive Daten von Teilnehmerorganisationen",
+        "discover-data": "Discover Data",
+        "how-to": "How Do You Get Your KDW?",
+        "contact": "Get in Touch",
+        "legal": "Legal",
+        "impressum": "Legal Notice",
+        "privacy-policy": "Privacy Policy",
+        "accessibility": "Accessibility",
+        "terms": "Terms of Use",
+        "feedback": "Feedback"
+      },
+      "funding-partners": "Funding Partners"
+    }
+  },
+  "dpi": {
+    "back-to-datacatalog": "Back to datacatalog"
+  },
+  "components": {
+    "organization-data": {
+      "OrganizationData": {
+        "published": "Published Datasets",
+        "dataset-drafts": "Dataset Drafts"
+      }
+    },
+    "data-exchange": {
+      "DataExchange": {
+        "req-datasets-by-me": "Datasets requested by me",
+        "req-datasets-from-me": "Datasets requested from me"
+      },
+      "DataExchangeReqByMe": {
+        "title": "Your Dataset Requests",
+        "new-datasets": "New Datasets",
+        "search-requests": "Search requests",
+        "search": "Enter dataset name",
+        "status": "Status",
+        "datasetName": "Dataset Name",
+        "contactPerson": "Contact Person",
+        "requestPeriod": "Request Period",
+        "actions": "Actions",
+        "requests": "Requests"
+      },
+      "DataExchangeReqFromMe": {
+        "title": "Requests for your datasets",
+        "new-datasets": "New Requests",
+        "search-requests": "Search requests",
+        "search": "Enter dataset name",
+        "status": "Status",
+        "datasetName": "Dataset Name",
+        "contactPerson": "Contact Person",
+        "requestPeriod": "Request Period",
+        "actions": "Actions",
+        "requests": "Requests"
+      },
+      "DataExchangeHeader": {
+        "title": "Data Exchange",
+        "button-header": "CTA tbd"
+      },
+      "DataExchangeHeaderReqInfo": {
+        "first-line": "The datasets you have requested from other organizations",
+        "second-line": "Here you will find datasets that your organization has requested from other organizations.",
+        "link-text": "Learn more about how you can request datasets"
+      }
+    }
+  },
+  "kdw": {
+    "components": {
+      "sort-split-button": {
+        "SortSplitButton": {
+          "sortOptions": {
+            "modified": "Last Updated",
+            "relevance": "Relevance",
+            "title": "Name",
+            "issued": "Last Created"
+          },
+          "toggleButton": {
+            "ascending": "Ascending",
+            "descending": "Descending"
+          }
+        }
+      },
+      "headline": {
+        "KHeadline": {
+          "datacatalog": "Data catalog",
+          "datacatalog-text": "Explore, analyze, and share important data. Learn more about data types and collaboration on the platform.",
+          "newData": "New Data",
+          "organizationData": "Organization Data"
+        }
+      },
+      "facet-sidebar": {
+        "FacetSidebar": {
+          "search-catalog": "Browse catalog",
+          "live-data": "Live Data",
+          "high-value-data": "High Value Data"
+        }
+      }
+    },
+    "views": {
+      "DatasetSearchView": {
+        "datasets": "Datasets found",
+        "searchDataCatalog": "Search for twins",
+        "search": "Search"
+      }
+    }
+  },
+  "views": {
+    "public": {
+      "PublicDataNoticesView": {
+        "legal": {
+          "header": {
+            "title": "Legal Information and Data Protection",
+            "description": "Welcome to our section for legal information and data protection. Here you will find all the essential details about our imprint, legal notices, and our privacy policy. These pages are designed to provide transparency about the operation of our website and to explain how we handle your personal data."
+          },
+          "impressum": {
+            "notice": {
+              "heading": "Legal Notice",
+              "paragraph1": "All rights reserved. Texts, images, graphics, sound, animations, and videos, as well as their arrangement on this website, are subject to copyright and other protection laws. The content of this website may not be copied, distributed, modified, or made accessible to third parties for commercial purposes.",
+              "paragraph2": "Our website may contain links to other providers' websites. Despite careful and regular checks, we do not assume any liability for the content of external links. We have no influence on the design and content of the sites we link to. If you want to visit such websites, you should observe the respective applicable notices. We are not responsible for the privacy standards and practices of other providers. If you become aware of illegal content or practices of external links, we kindly ask you to inform us immediately.",
+              "paragraph3": "Furthermore, we use Google Analytics, a web analysis service from Google. Google Analytics uses cookies (small text files) that are stored on your computer and enable an analysis of your use of the website. The information generated by the cookie about your use of this website (including your IP address) will be transmitted to and stored by a Google server in the USA. Google will use this information to evaluate your use of the website, compile reports on website activity for website operators, and provide other services relating to website and internet usage. Google may also transfer this information to third parties if required by law or if third parties process this data on behalf of Google. Under no circumstances will Google associate your IP address with other data held by Google. You can prevent the installation of cookies by adjusting your browser software settings; however, we must inform you that in this case, you may not be able to use all the functionalities of this website. By using our website, you consent to the processing of data collected about you by Google in the manner and for the purposes described above."
+            }
+          },
+          "tabs": {
+            "impressum": "Imprint",
+            "datenschutz": "Data Protection",
+            "nutzungsbedingungen": "Terms of Use",
+            "statements": "Statements"
+          }
+        }
+      }
+    },
+    "app": {
+      "digital-twin-view": {
+        "digital-twin-title": "Digital Twin",
+        "digital-twin-subtitle": "The city's digital twin offers a virtual representation of the city and, for example, digitally displays data on buildings, infrastructure and nature. {break}This technology allows planning, analysis, and optimization of urban development.",
+        "tutorial-button": "Watch Tutorial"
+      },
+      "DKSRAppsView": {
+        "title": "DKSR Analysis Tools",
+        "subtitle": "Here you can find use case-specific data analysis tools",
+        "apps": {
+          "heatwaves": {
+            "title": "Understanding Heatwaves",
+            "content": "Heatwaves are dangerously hot periods that increase health risks. Understanding their severity factors helps planners and citizens improve urban heat resilience and reduce casualties."
+          },
+          "bikePlanner": {
+            "title": "Bike Lane Planner",
+            "content": "This experimental tool could help city planners quickly test various strategies for placing new bike lanes."
+          },
+          "heatActions": {
+            "title": "Planning Heatwave Actions",
+            "content": "Cities face the risk of heatwaves and must invest in new infrastructure. Our tool organizes data to simplify decision-making and explore solutions."
+          },
+          "heatRisk": {
+            "title": "Heatwave Risk Areas",
+            "content": "Cities face the risk of heatwaves and must invest in new infrastructure. Our tool organizes data to simplify decision-making and explore solutions."
+          }
+        },
+        "categories": {
+          "traffic": "Traffic",
+          "environment": "Environment",
+          "energy": "Energy",
+          "citizens": "Citizens"
+        }
+      }
+    }
+  },
+  "datasetFacets": {
+    "facets": {
+      "datascopeField": {
+        "countryData": "National Data",
+        "io": "International Data",
+        "eu": "European Union Data"
+      },
+      "datascope": "Data scope",
+      "dataServices": {
+        "dataServicesOnly": "Data services"
+      },
+      "country": "Provenance",
+      "format": "Formats",
+      "scoring": {
+        "badScoring": "Any",
+        "sufficientScoring": "Sufficient",
+        "goodScoring": "Good",
+        "excellentScoring": "Excellent"
+      },
+      "publisher": "Publisher",
+      "license": "Licences",
+      "keywords": "Keywords",
+      "categories": "Categories",
+      "catalog": "Catalogues",
+      "countrydata": "Country data",
+      "tags": "Tags"
+    },
+    "title": "Filters",
+    "and": "AND",
+    "settings": "Filter setting",
+    "scoring": "Scoring",
+    "or": "OR",
+    "europeanCatalogs": "European Catalogues",
+    "operator": "Operator",
+    "moreFilters": "More filters",
+    "lessFilters": "Less filters"
+  },
+  "homepage": {
+    "title": "Good Morning",
+    "subtitle": "What’s new on your platform?"
+  },
+  "datasetDetails": {
+    "previewFailedToLoad": "Something went wrong. Please reload the page or try again later."
+  },
+  "message": {
+    "dataupload": {
+      "newDistribution": "Add Distribution",
+      "info": {
+        "defaultdescription": "Click information-icon to display detailed explanation of field.",
+        "information": "Information",
+        "advised": "Advised",
+        "mandatory": "Mandatory",
+        "recommended": "Recommended",
+        "overview": "Overview",
+        "distributions": "Distributions",
+        "add": "add another one",
+        "repeatable": "This is a repeatable property. You can {add} or {remove}.",
+        "remove": "remove this property",
+        "selectDisplayLanguage": "Select display language",
+        "expand": "Expand all",
+        "hide": "Hide all",
+        "suggestions": "suggestions",
+        "suggestionText": "You can generate suggestions based on the description you provided",
+        "tryIt": "Try it",
+        "searchVocabulary": "Type in anything for a live search of the vocabulary",
+        "matchesNothingFound": "Nothing found",
+        "preferredInput": "Choose preferred input method",
+        "newDistribution": "Add Distribution",
+        "deleteDistribution": "Delete all Distributions"
+      },
+      "steps": {
+        "Mandatory": "Mandatory fields",
+        "Advised": "Advised fields",
+        "Recommended": "Recommended fields",
+        "Distribution": "Distribution fields",
+        "Overview": "Overview fields",
+        "MandatoryStep": "Mandatory",
+        "AdvisedStep": "Advised",
+        "RecommendedStep": "Recommended",
+        "DistributionsStep": "Distribution(s)",
+        "OverviewStep": "Overview",
+        "nextDisStep": "Next distribution step",
+        "previousDisStep": "Previous distribution step",
+        "DataServiceStep": "Data service"
+      },
+      "datasets": {
+        "licenseAttributionByText": {
+          "help": "This property stores the mandatory naming text for licence details.",
+          "info": "This property stores the mandatory naming text for licence details.",
+          "label": "License attribution by text",
+          "add-label": "Add more"
+        },
+        "licenseAttributionByTextTitle": {
+          "placeholder": "please provide a title",
+          "help": "Title of License attribution by text",
+          "info": "Title of License attribution by text",
+          "label": "Title"
+        },
+        "availabilityDisDE": {
+          "help": "Availability of the distribution of a dataset, as a selection from a fixed list of values via DCAT-AP URIs.",
+          "info": "Availability of the distribution of a dataset, as a selection from a fixed list of values via DCAT-AP URIs.",
+          "label": "Availability"
+        },
+        "accessServiceTitle": {
+          "label": "Data Service Title",
+          "add-label": "Add Data Service Title in another language",
+          "help": "The title of the data access service.",
+          "info": "The title of the data access service."
+        },
+        "accessService": {
+          "label": "Data Service",
+          "add-label": "Add another Data Service",
+          "info": "This property refers to a data service that gives access to the distribution of the dataset.",
+          "help": "A data service that gives access to the distribution of the dataset"
+        },
+        "accessServiceDescription": {
+          "label": "Data Service Description",
+          "add-label": "Add Data Service Description in another language",
+          "help": "A description of the data access service.",
+          "info": "This property contains a free-text account of the Distribution. This property can be repeated for parallel language versions of the description."
+        },
+        "licenceVocabulary": {
+          "label": "License",
+          "help": "",
+          "info": ""
+        },
+        "licenceDetails": {
+          "label": "Licence",
+          "help": ""
+        },
+        "licence": {
+          "info": "This property refers to the license under which the Distribution is made available.",
+          "placeholder": "Distribution License placeholder text",
+          "label": "License",
+          "help": "The license under which the Distribution is made available."
+        },
+        "licenceURL": {
+          "label": "Licence URL",
+          "placeholder": "Provide a Url",
+          "help": "A link to the licence."
+        },
+        "licenceTitle": {
+          "label": "Licence Title",
+          "placeholder": "Catalogue Licence Title placeholder text",
+          "help": "The licence's name."
+        },
+        "licenceDescription": {
+          "placeholder": "Catalogue Licence Description placeholder text",
+          "label": "Licence Description",
+          "help": "A licence description"
+        },
+        "format": {
+          "label": "Format",
+          "info": "This property refers to the file format of the Distribution.",
+          "help": "The file format of the Distribution.",
+          "placeholder": "Distribution Format placeholder text"
+        },
+        "downloadUrl": {
+          "label": "Download Url",
+          "info": "This property contains a URL that is a direct link to a downloadable file in a given format.",
+          "help": "Direct link to a downloadable file in a given format.",
+          "placeholder": "Provide a Url",
+          "add-label": "Add more download URL's "
+        },
+        "accessUrl": {
+          "add-label": "Add Access Url",
+          "placeholder": "Provide a Url",
+          "label": "Access Url",
+          "info": "This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset.",
+          "help": "This property contains a URL that gives access to a Distribution of the Dataset."
+        },
+        "accessUrlLink": {
+          "label": "URL",
+          "help": "",
+          "placeholder": "Access Url link",
+          "info": ""
+        },
+        "accessUrlFile": {
+          "label": "File",
+          "help": ""
+        },
+        "status": {
+          "placeholder": "Distribution Status placeholder text",
+          "label": "Status",
+          "info": "The status of the distribution in the context of maturity lifecycle. It MUST take one of the values Completed, Deprecated, Under Development, Withdrawn.",
+          "help": "The status of the distribution in the context of maturity lifecycle."
+        },
+        "packageFormat": {
+          "label": "Package Format",
+          "info": "This property refers to the format of the file in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together. It SHOULD be expressed using a media type as defined in the official register of media types managed by IANA.",
+          "help": "The format of the file in which one or more data files are grouped together.",
+          "placeholder": "Distribution Package Format placeholder text"
+        },
+        "compressFormat": {
+          "label": "Compress Format",
+          "info": "This property refers to the format of the file in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file. It SHOULD be expressed using a media type as defined in the official register of media types managed by IANA.",
+          "help": "The format of the file in which the data is contained in a compressed form.",
+          "placeholder": "Distribution Compress Format placeholder text"
+        },
+        "checksum": {
+          "label": "Checksum",
+          "placeholder": "Distribution Checksum placeholder text",
+          "info": "This property provides a mechanism that can be used to verify that the contents of a distribution have not changed. The checksum is related to the downloadURL.",
+          "help": "The checksum is related to the downloadURL."
+        },
+        "checksumAlgorithm": {
+          "label": "Checksum Algorithm",
+          "help": "Algorithm used for checksum.",
+          "info": "Algorithm used for checksum.",
+          "placeholder": "Distribution Checksum Algorithm placeholder text"
+        },
+        "mediaType": {
+          "label": "Media Type",
+          "info": "This property refers to the format of the file in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file. It SHOULD be expressed using a media type as defined in the official",
+          "help": "The format of the file in which the data is contained in a compressed form.",
+          "placeholder": "Distribution Media Type placeholder text"
+        },
+        "availability": {
+          "label": "Availability",
+          "placeholder": "Distribution Availability placeholder text",
+          "info": "How long it is planned to keep the Distribution of the Dataset available.",
+          "help": "How long it is planned to keep the Distribution of the Dataset available."
+        },
+        "byteSize": {
+          "label": "Byte Size",
+          "info": "This property contains the size of a Distribution in bytes.",
+          "help": "The size of a Distribution in bytes.",
+          "placeholder": "Distribution Byte Size placeholder text"
+        },
+        "accessServiceEndpointURL": {
+          "label": "Data Service Endpoint URL",
+          "placeholder": "Provide a Url",
+          "help": "The link to the data service's webpage.",
+          "info": "The link to the data service's webpage."
+        },
+        "rights": {
+          "info": "This property refers to a statement that specifies rights associated with the Distribution.",
+          "help": "This property refers to a statement that specifies rights associated with the Distribution.",
+          "placeholder": "Distribution Rights placeholder text",
+          "label": "Rights"
+        },
+        "rightsUrl": {
+          "label": "Rights Url",
+          "placeholder": "Rights Url placeholder",
+          "help": "A link to the rights definition",
+          "info": "A link to the rights definition"
+        },
+        "rightsString": {
+          "label": "Rights Statement",
+          "placeholder": "RightsStatement placeholder",
+          "help": "A statement describing the rights associated with the distribuion"
+        },
+        "hasPolicy": {
+          "label": "Has Policy",
+          "info": "This property refers to the policy expressing the rights associated with the distribution if using the ODRL vocabulary",
+          "help": "The policy expressing the rights.",
+          "add-label": "Add Has Policy"
+        },
+        "hasPolicyUrl": {
+          "placeholder": "Provide a Url",
+          "label": "Url",
+          "help": "The policy expressing the rights",
+          "info": "This property refers to the policy expressing the rights associated with the distribution if using the ODRL vocabulary"
+        },
+        "disTitle": {
+          "help": "Title of the distribution.",
+          "placeholder": "Language"
+        },
+        "conditional": {
+          "text": "Please provide a text",
+          "URL": "Please provide a URL",
+          "vocabulary": "Search the vocabulary",
+          "manually": "Please provide the informations manually",
+          "Text": "Please provide a text",
+          "fileupload": "Provide a file"
+        },
+        "individual": {
+          "foaf:mbox": "Please provide a valid E-Mail adress",
+          "foaf:name": "Please Provide a name",
+          "foaf:homepage": "Please provide a valid homepage",
+          "text": "Please provide a text",
+          "dct:title": "Please provide a title",
+          "skos:prefLabel": "Please provide a description",
+          "skos:exactMatch": "Please provide a URL"
+        },
+        "titleLabel": {
+          "label": "Title Text",
+          "help": "Please provide a title.",
+          "info": "Please provide a title.",
+          "placeholder": "Add a title"
+        },
+        "datasetDescription": {
+          "label": "Description of the Dataset",
+          "help": "The description of the Dataset",
+          "info": "The main description of the dataset. It is often displayed with the package title. In particular, it should start with a short sentence that describes the data set succinctly, because the first few words alone may be used in some views of the data sets.",
+          "add-label": "Add more descriptions"
+        },
+        "keywordHeader": {
+          "label": "Keywords to describe the dataset",
+          "help": "Choose descriptive keywords",
+          "info": "Terms that may link this dataset to similar ones. Keywords must be lowercase alphanumeric characters or symbols: -_. Words in phrases should be connected with a hyphen. e.g. pollution, rivers, water-quality",
+          "add-label": "Add more keywords"
+        },
+        "isReferencedBy": {
+          "add-label": "Add Is Referenced By",
+          "placeholder": "This dataset Is Referenced By",
+          "help": "This property is about a related resource.",
+          "info": "This property is about a related resource, such as a publication, that references, cites, or otherwise points to the dataset.",
+          "label": "Is Referenced By"
+        },
+        "contactPointAddressCity": {
+          "placeholder": "City of the contact point",
+          "label": "Address City",
+          "help": "The city of the contact point's address",
+          "info": "The city of the contact point's address"
+        },
+        "source": {
+          "label": "Source",
+          "help": "Dataset from which the described Dataset is derived.",
+          "info": "This property refers to a related Dataset from which the described Dataset is derived.",
+          "placeholder": "Add a Source",
+          "add-label": "Add Source"
+        },
+        "type": {
+          "label": "Type",
+          "help": "This property refers to the type of the Dataset.",
+          "info": "This property refers to the type of the Dataset.",
+          "placeholder": "Add a type"
+        },
+        "pageUrl": {
+          "label": "Url",
+          "placeholder": "Provide a page Url",
+          "help": "The link to the webpage of the page.",
+          "info": "The link to the webpage of the page."
+        },
+        "admsIdentifierSkosNotation": {
+          "help": "The adms:identifiers scheme",
+          "label": "Scheme",
+          "info": "The adms:identifiers scheme"
+        },
+        "spatialPlace": {
+          "placeholder": "Please choose",
+          "label": "Place",
+          "help": ""
+        },
+        "subject": {
+          "label": "Subject",
+          "help": "A category of the Dataset.",
+          "info": "This property refers to a category of the Dataset. A Dataset may be associated with multiple themes.",
+          "placeholder": "Dataset Subject placeholder text"
+        },
+        "qualifiedRelationUrl": {
+          "placeholder": "Provide a qualified relation Url",
+          "label": "Url",
+          "help": "The link to the propertie's webpage.",
+          "info": "The link to the relation's webpage."
+        },
+        "accrualPeriodicity": {
+          "info": "This property refers to the frequency at which the Dataset is updated.",
+          "label": "Accrual Periodicity",
+          "placeholder": "Dataset Accrual Periodicity placeholder text",
+          "help": "This property refers to the frequency at which the Dataset is updated."
+        },
+        "isReferencedByUrl": {
+          "label": "Url",
+          "placeholder": "Provide a Url",
+          "help": "The link to the propertie's webpage.",
+          "info": "The link to the propertie's webpage."
+        },
+        "versionNotes": {
+          "placeholder": "Please provide version notes.",
+          "label": "Version Notes",
+          "help": "Description of changes between this version and the previous version of the dataset.",
+          "info": "This property contains a description of the differences between this version and a previous version of the Dataset. This property can be repeated for parallel language versions of the version notes.",
+          "add-label": "Add Version Notes in another language"
+        },
+        "contactPointAddressStreet": {
+          "label": "Address Street",
+          "placeholder": "Name of the street",
+          "help": "The street of the contact point's address",
+          "info": "The street of the contact point's address"
+        },
+        "relationUrl": {
+          "label": "Url",
+          "placeholder": "Provide a Url",
+          "help": "The link to the relation's webpage.",
+          "info": "The link to the relation's webpage."
+        },
+        "isVersionOfUrl": {
+          "placeholder": "Provide a Url",
+          "label": "Url",
+          "help": "The link to the propertie's webpage.",
+          "info": "The link to the propertie's webpage."
+        },
+        "conformsTo": {
+          "label": "Conforms To",
+          "help": "This property refers to an implementing rule or other specification.",
+          "info": "This property refers to an implementing rule or other specification.",
+          "placeholder": "Dataset Conforms To placeholder text",
+          "add-label": "Add Conforms To"
+        },
+        "pageFormat": {
+          "placeholder": "The page format",
+          "label": "Format",
+          "help": "The format of the page.",
+          "info": "The format of the page."
+        },
+        "qualifiedAttributionUrl": {
+          "placeholder": "Provide a Url",
+          "label": "Url",
+          "help": "The link to the propertie's webpage.",
+          "info": "The link to the propertie's webpage."
+        },
+        "isVersionOf": {
+          "add-label": "Add Is Version Of",
+          "help": "Dataset is a version, edition, or adaptation.",
+          "label": "Is Version Of",
+          "info": "This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation.",
+          "placeholder": "Dataset Is Version Of placeholder text"
+        },
+        "relation": {
+          "placeholder": "Dataset Relation placeholder text",
+          "add-label": "Add Relation",
+          "help": "This property refers to a related resource.",
+          "info": "This property refers to a related resource.",
+          "label": "Relation"
+        },
+        "provenance": {
+          "label": "Provenance Text",
+          "help": "This property contains a statement about the lineage of a Dataset.",
+          "add-label": "Add Provenance",
+          "info": "This property contains a statement about the lineage of a Dataset.",
+          "placeholder": "please provide a provenance"
+        },
+        "provenanceGroup": {
+          "label": "Provenance",
+          "help": "This property contains a statement about the lineage of a Dataset.",
+          "add-label": "Add Provenance",
+          "info": "This property contains a statement about the lineage of a Dataset.",
+          "placeholder": "Dataset Provenance placeholder text"
+        },
+        "language": {
+          "help": "Select the language of the stated property",
+          "info": "Select the language of the stated property",
+          "placeholder": "Choose the language",
+          "label": "Language"
+        },
+        "spatialContinent": {
+          "placeholder": "Dataset Spatial Continent placeholder text",
+          "label": "Continent",
+          "help": "",
+          "info": ""
+        },
+        "spatialResolutionInMeters": {
+          "help": "This property refers to the minimum spatial separation resolvable in a dataset, measured in meters.",
+          "info": "This property refers to the minimum spatial separation resolvable in a dataset, measured in meters.",
+          "label": "Spatial Resolution in Meters",
+          "placeholder": "Dataset Spatial Resolution In Meters placeholder text"
+        },
+        "qualifiedAttribution": {
+          "add-label": "Add Qualified Attribution",
+          "help": "Link to an Agent having some form of responsibility for the resource",
+          "info": "This property refers to a link to an Agent having some form of responsibility for the resource",
+          "label": "Qualified Attribution",
+          "placeholder": "Dataset Qualified Attribution placeholder text"
+        },
+        "temporal": {
+          "help": "This property refers to a temporal period that the Dataset covers.",
+          "info": "This property refers to a temporal period that the Dataset covers.",
+          "add-label": "Add Temporal",
+          "label": "Temporal",
+          "placeholder": "Dataset Temporal placeholder text"
+        },
+        "temporalResolutionYear": {
+          "placeholder": "please provide a year",
+          "label": "Year",
+          "help": "Year of the temporal resolution.",
+          "info": "The number of years."
+        },
+        "admsIdentifier": {
+          "add-label": "Add another adms:Identifier",
+          "label": "Other Identifier",
+          "help": "An identifier in a particular context, consisting of the string that is the identifier.",
+          "info": "An identifier in a particular context, consisting of the string that is the identifier; an optional identifier for the identifier scheme; an optional identifier for the version of the identifier scheme; an optional identifier for the agency that manages the identifier scheme"
+        },
+        "accessRights": {
+          "help": "Dataset Access Rights.",
+          "info": "This property refers to information that indicates whether the Dataset is open data, has access restrictions or is not public.",
+          "label": "Access Rights",
+          "placeholder": "Dataset Access Rights placeholder text"
+        },
+        "pageDescription": {
+          "label": "Page description",
+          "placeholder": "Please provide a page description",
+          "help": "Please describe the page as accurately as possible",
+          "info": "A description of the page.",
+          "add-label": "Add more"
+        },
+        "identifier": {
+          "add-label": "Add Identifier",
+          "placeholder": "Main identifier of the dataset",
+          "label": "Identifier",
+          "help": "This property contains the main identifier for the Dataset.",
+          "info": "This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue."
+        },
+        "creatorName": {
+          "placeholder": "Name of the creator",
+          "label": "Name",
+          "help": "This property refers to the name of the creator.",
+          "info": "This property refers to the name of the creator."
+        },
+        "hasVersionUrl": {
+          "label": "Url",
+          "placeholder": "Provide a Url",
+          "help": "The link to the propertie's webpage.",
+          "info": "The link to the propertie's webpage."
+        },
+        "versionInfo": {
+          "label": "Version Info",
+          "placeholder": "Dataset Version Info placeholder text",
+          "help": "Version number of the Dataset.",
+          "info": "This property contains a version number or other version designation of the Dataset."
+        },
+        "theme": {
+          "label": "Theme",
+          "placeholder": "Dataset Theme placeholder text",
+          "help": "The EuroVoc Domains for this dataset.",
+          "info": "The values to be used for this property are the URIs of the concepts in the vocabulary."
+        },
+        "hasVersion": {
+          "placeholder": "Dataset Has Version placeholder text",
+          "help": "That is a version, edition, or adaptation of the described Dataset.",
+          "info": "This property refers to a related Dataset that is a version, edition, or adaptation of the described Dataset.",
+          "add-label": "Add Has Version",
+          "label": "Has Version"
+        },
+        "temporalResolution": {
+          "add-label": "Add Temporal Resolution",
+          "label": "Temporal Resolution",
+          "help": "The minimum time period resolvable in the dataset.",
+          "info": "This property refers to the minimum time period resolvable in the dataset.",
+          "placeholder": "Dataset Temporal Resolution placeholder text"
+        },
+        "wasGeneratedBy": {
+          "label": "Was Generated By",
+          "add-label": "Add Was Generated By",
+          "placeholder": "Dataset Was Generated By placeholder text",
+          "help": "This property refers to an activity that generated.",
+          "info": "This property refers to an activity that generated, or provides the business context for, the creation of the dataset."
+        },
+        "temporalResolutionHour": {
+          "placeholder": "Dataset Temporal Resolution Hour placeholder text",
+          "label": "Hour",
+          "help": "Hour of the temporal resolution.",
+          "info": "Hour of the temporal resolution."
+        },
+        "qualifiedRelation": {
+          "help": "This property provides a link to a description of a relationship with another resource",
+          "info": "This property provides a link to a description of a relationship with another resource",
+          "label": "Qualified Relation",
+          "add-label": "Add Qualified Relation",
+          "placeholder": "Dataset Qualified Relation placeholder text"
+        },
+        "pageTitle": {
+          "placeholder": "Title of the page",
+          "label": "Page title",
+          "help": "A descriptive title for the page",
+          "info": "A descriptive title for the page",
+          "add": "Add another page title",
+          "add-label": "Add more"
+        },
+        "pageTitleSub": {
+          "placeholder": "Please provide a descriptive title",
+          "label": "Title text",
+          "help": "Text for the page title.",
+          "info": "Text for the page title."
+        },
+        "landingPageUrl": {
+          "label": "Url",
+          "placeholder": "The Url to the landing page",
+          "help": "This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information. ",
+          "info": "This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information."
+        },
+        "conformsToTitle": {
+          "placeholder": "Provide a title the dataset conforms to",
+          "label": "Title",
+          "help": "The propertie's title.",
+          "info": "The propertie's title."
+        },
+        "conformsToUrl": {
+          "placeholder": "Provide a Url",
+          "label": "Url",
+          "help": "The propertie's link.",
+          "info": "The propertie's link."
+        },
+        "landingPage": {
+          "help": "This property refers to a web page that provides access to the Dataset.",
+          "info": "This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information. It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator.",
+          "label": "Landing Page",
+          "placeholder": "Dataset Landing Page placeholder text",
+          "add-label": "Add Landing Page"
+        },
+        "creatorType": {
+          "label": "Type",
+          "placeholder": "Person or organization?",
+          "help": "This property refers to the type of the creator.",
+          "info": "This property refers to the type of the creator."
+        },
+        "contactPointAddressPostcode": {
+          "label": "Address Postcode",
+          "placeholder": "Postcode",
+          "help": "The postcode of the contact point's address",
+          "info": "The postcode of the contact point's address"
+        },
+        "contactPointTelephone": {
+          "label": "Telephone",
+          "placeholder": "Telephone number",
+          "help": "The telephone number of the contact point",
+          "info": "The telephone number of the contact point"
+        },
+        "spatial": {
+          "placeholder": "Please choose",
+          "help": "A geographic region that is covered by the Dataset.",
+          "info": "This property refers to a geographic region that is covered by the Dataset.",
+          "label": "Spatial",
+          "add-label": "Add Spatial"
+        },
+        "page": {
+          "label": "Page",
+          "help": "Page or document about this Dataset.",
+          "placeholder": "Dataset Page placeholder text",
+          "info": "This property refers to a page or document about this Dataset.",
+          "add-label": "Add Page"
+        },
+        "temporalResolutionMonth": {
+          "placeholder": "Dataset Temporal Resolution Month placeholder text",
+          "label": "Month",
+          "help": "Month of the temporal resolution.",
+          "info": "The number of months."
+        },
+        "temporalResolutionSecond": {
+          "placeholder": "Dataset Temporal Resolution Second placeholder text",
+          "label": "Second",
+          "help": "The number of seconds.",
+          "info": "The number of seconds."
+        },
+        "identifierText": {
+          "placeholder": "Dataset Identifier Text placeholder text",
+          "label": "Text"
+        },
+        "contactPointAddressCountry": {
+          "label": "Address Country",
+          "placeholder": "The name of the Country",
+          "help": "The country of the contact point's address",
+          "info": "The country of the contact point's address"
+        },
+        "contactPointName": {
+          "placeholder": "Name of the contact point",
+          "label": "Name",
+          "help": "The name of the contact point",
+          "info": "The name of the contact point"
+        },
+        "isUsedBy": {
+          "help": "This property refers to an application or other work that uses the Dataset in any form.",
+          "label": "Is Used By",
+          "info": "This property refers to an application or other work that uses the Dataset in any form.",
+          "placeholder": "Dataset is used by?",
+          "add-label": "Add more"
+        },
+        "contactPointType": {
+          "label": "Type",
+          "placeholder": "Person or organisation?",
+          "help": "The type of the contact point",
+          "info": "The type of the contact point"
+        },
+        "temporalResolutionMinute": {
+          "placeholder": "Dataset Temporal Resolution Minute placeholder text",
+          "label": "Minute",
+          "help": "Minutes of the temporal resolution.",
+          "info": "The number of minutes."
+        },
+        "sourceUrl": {
+          "label": "Url",
+          "placeholder": "Provide a Url",
+          "help": "The link to the propertie's webpage.",
+          "info": "The link to the propertie's webpage."
+        },
+        "spatialCountry": {
+          "label": "Country",
+          "placeholder": "Dataset Spatial Country placeholder text",
+          "help": ""
+        },
+        "creatorEmail": {
+          "label": "Email",
+          "placeholder": "Email of the creator",
+          "help": "This property refers to the creator's e-mail.",
+          "info": "This property refers to the creator's e-mail."
+        },
+        "contactPointEmail": {
+          "label": "Email",
+          "placeholder": "Email address of the contact point",
+          "help": "The e-mail address of the contact point",
+          "info": "The e-mail address of the contact point"
+        },
+        "contactPointAddress": {
+          "label": "Contact Point Address",
+          "help": "The full address of the contact point",
+          "info": "The full address of the contact point"
+        },
+        "admsIdentifierUrl": {
+          "label": "Url",
+          "placeholder": "The Url to the adms:Identifier",
+          "help": "The link to the admsIdentifier's webpage.",
+          "info": "The link to the admsIdentifier's webpage."
+        },
+        "temporalStart": {
+          "label": "Start",
+          "help": "This property refers to the start of a temporal period that the Dataset covers.",
+          "info": "This property refers to the start of a temporal period that the Dataset covers."
+        },
+        "contactPointOrganisationName": {
+          "placeholder": "Organisation Name",
+          "label": "Organisation Name",
+          "help": "The organization name contact point.",
+          "info": "The oranization name contact point."
+        },
+        "creator": {
+          "help": "This property refers to the entity responsible for producing the dataset.",
+          "add-label": "Add Creator",
+          "info": "This property refers to the entity responsible for producing the dataset.",
+          "label": "Creator"
+        },
+        "contactPoint": {
+          "label": "Contact Point",
+          "placeholder": "Dataset Contact Point placeholder text",
+          "add-label": "Add Contact Point",
+          "help": "This property contains contact information.",
+          "info": "This property contains contact information that can be used for sending comments about the Dataset."
+        },
+        "admsIdentifierValue": {
+          "placeholder": "Please provide a descripition for the identifier",
+          "label": "Identifier",
+          "help": "The identifier String of the admsIdentifier.",
+          "info": "The identifier String of the admsIdentifier."
+        },
+        "temporalEnd": {
+          "label": "End",
+          "help": "This property refers to the end of a temporal period that the Dataset covers.",
+          "info": "This property refers to the end of a temporal period that the Dataset covers."
+        },
+        "contactPointUrl": {
+          "label": "Url",
+          "placeholder": "Please provide a URL",
+          "help": "The web page of the contact point.",
+          "info": "The web page of the contact point"
+        },
+        "temporalResolutionDay": {
+          "label": "Day",
+          "placeholder": "Dataset Temporal Resolution Day placeholder text",
+          "help": "Day of the temporal resolution.",
+          "info": "The number of days."
+        },
+        "creatorHomepage": {
+          "placeholder": "Dataset Creator Homepage placeholder text",
+          "label": "Homepage",
+          "help": "This property refers to the homepage of the creator.",
+          "info": "This property refers to the homepage of the creator."
+        },
+        "admsIdentifierType": {
+          "label": "Type",
+          "help": "The admsIdentifier's type.",
+          "info": "The admsIdentifier's type.",
+          "placeholder": "Dataset admsIdentifier placeholder text"
+        },
+        "admsIdentifierCheckbox": {
+          "label": "adms:Identifier Checkbox"
+        },
+        "wasGeneratedByUrl": {
+          "label": "Url",
+          "placeholder": "Provide a Url",
+          "help": "The link to the propertie's webpage.",
+          "info": "The link to the propertie's webpage."
+        },
+        "provenanceText": {
+          "label": "Text",
+          "placeholder": "Dataset Provenance Text placeholder text"
+        },
+        "schemeIdentifier": {
+          "label": "Scheme Identifier"
+        },
+        "description": {
+          "label": "Description text",
+          "add-label": "Add Description in another language",
+          "placeholder": "Dataset Description placeholder text",
+          "help": "Please select a language and provide a description of the dataset.",
+          "info": "Please select a language and provide a description of the dataset."
+        },
+        "publisherType": {
+          "label": "Type",
+          "placeholder": "Dataset Publisher Type placeholder text"
+        },
+        "title": {
+          "add-label": "Add Title in another language",
+          "placeholder": "Dataset Title placeholder text",
+          "help": "A short descriptive title for the data set.",
+          "info": "A short descriptive title for the data set. It should not be a description though - save that for the Description field. Do not give a trailing full stop. Do not use allcaps.",
+          "label": "Title of the Dataset"
+        },
+        "datasetID": {
+          "help": "This property contains the main identifier for the Dataset.",
+          "info": "This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue. KEEP IN MIND: if you change the ID by hand, the generation of the ID, via your typed in title, wont happen anymore.",
+          "label": "Dataset ID",
+          "invalidFormat": "Die Datensatz-ID darf nur Kleinbuchstaben, Zahlen und einzelne Bindestriche (-) enthalten. Bitte wählen Sie eine andere ID.",
+          "duplicate": "Diese ID wird bereits verwendet, bitte wählen Sie eine andere.",
+          "required": "Dieses Feld ist erforderlich."
+        },
+        "publisherName": {
+          "placeholder": "Dataset Publisher Name placeholder text",
+          "label": "Name"
+        },
+        "keyword": {
+          "add-label": "Add Keyword",
+          "help": "Terms that may link this dataset to similar ones.",
+          "placeholder": "Provide descriptive Keywords",
+          "info": "Terms that may link this dataset to similar ones.",
+          "label": "Keyword Text"
+        },
+        "modified": {
+          "label": "Modified",
+          "help": "Most recent date on which the dataset was changed, updated or modified.",
+          "info": "Most recent date on which the dataset was changed, updated or modified.",
+          "placeholder": "Dataset Modified placeholder text"
+        },
+        "publisher": {
+          "help": "An entity, such as a person, organisation, or service, that is responsible for making the dataset available.",
+          "add-label": "Add Publisher in another language",
+          "info": "An entity, such as a person, organisation, or service, that is responsible for making the dataset available.",
+          "placeholder": "Dataset Publisher placeholder text",
+          "label": "Publisher"
+        },
+        "datetime": {
+          "label": "Datetime",
+          "help": "Acceptable date formats: YYYY-MM-DD:HH:MM.",
+          "info": ""
+        },
+        "catalog": {
+          "placeholder": "Choose a catalog",
+          "help": "The catalog of the dataset.",
+          "label": "Catalog",
+          "info": "The catalog of the dataset."
+        },
+        "issued": {
+          "placeholder": "Dataset Issued placeholder text",
+          "label": "Issued",
+          "help": "Date of formal issuance (e.g., publication) of the dataset. Acceptable date formats: YYYY-MM-DD, YYYY-MM, YYYY.",
+          "info": "This property contains the date of formal issuance (e.g., publication) of the Dataset."
+        },
+        "publisherEmail": {
+          "placeholder": "Email address of the publisher",
+          "label": "Email"
+        },
+        "publisherHomepage": {
+          "label": "Homepage",
+          "placeholder": "Dataset Publisher Homepage placeholder text"
+        },
+        "date": {
+          "label": "Date",
+          "help": "Acceptable date formats: YYYY-MM-DD.",
+          "info": ""
+        },
+        "stepper": {
+          "step4": {
+            "name": "@:message.metadata.dataServices"
+          },
+          "step3": {
+            "children": {
+              "distribution3": {
+                "name": "Additional Information"
+              },
+              "distribution4": {
+                "name": "Additional Information"
+              },
+              "distribution1": {
+                "name": "General Information"
+              },
+              "distribution2": {
+                "name": "Additional Information"
+              }
+            },
+            "name": "@:message.dataupload.datasets.stepper.additional.name"
+          },
+          "overview": "Dataset Overview",
+          "distoverview": {
+            "name": "Distribution Overview"
+          },
+          "essential": {
+            "name": "Essential Properties"
+          },
+          "additional": {
+            "name": "Additional Properties"
+          },
+          "advised": {
+            "name": "Advised Properties"
+          },
+          "step2": {
+            "name": "@:message.dataupload.datasets.stepper.advised.name"
+          },
+          "step1": {
+            "name": "@:message.dataupload.datasets.stepper.essential.name"
+          }
+        },
+        "spatialUrl": {
+          "label": "SpatialUrl",
+          "placeholder": "Spatial Url",
+          "help": "Spatial Url help text",
+          "info": "Spatial Url help text"
+        },
+        "spatialVocabulary": {
+          "label": "Spatial",
+          "placeholder": "Choose a vocabulary",
+          "help": "Either a continent, a country or a place.",
+          "info": "Either a continent, a country or a place."
+        },
+        "qualifiedRelationHadRole": {
+          "placeholder": "Had Role placeholder",
+          "info": "Had Role info text",
+          "help": "Had Role help text",
+          "label": "Had Role"
+        },
+        "politicalGeocodingLevelURI": {
+          "help": "For the coded indication of the respective principle management level from which the data structure was collected and set.",
+          "info": "For the coded indication of the respective principle management level from which the data structure was collected and set.",
+          "label": "Political geocoding level URI",
+          "placeholder": "Search the vocabulary"
+        },
+        "politicalGeocodingURI": {
+          "help": "This property links a dataset to the administrative area of the Federal Republic of Germany that it covers, such as a specific federal state, municipality or district represented by a URI.",
+          "info": "This property links a dataset to the administrative area of the Federal Republic of Germany that it covers, such as a specific federal state, municipality or district represented by a URI.",
+          "label": "Political geocoding URI",
+          "placeholder": "Choose or provide URL to vocabulary",
+          "add-label": "Add more"
+        },
+        "politicalGeocodingURIVocabulary": {
+          "help": "This property links a dataset to the administrative area of the Federal Republic of Germany that it covers, such as a specific federal state, municipality or district represented by a URI.",
+          "info": "This property links a dataset to the administrative area of the Federal Republic of Germany that it covers, such as a specific federal state, municipality or district represented by a URI.",
+          "label": "Choose vocabulary",
+          "placeholder": "Search the vocabulary"
+        },
+        "politicalGeocodingURIMunicipalityKey": {
+          "help": "This property links a dataset to the administrative area of the Federal Republic of Germany that it covers, such as a specific federal state, municipality or district represented by a URI.",
+          "info": "This property links a dataset to the administrative area of the Federal Republic of Germany that it covers, such as a specific federal state, municipality or district represented by a URI.",
+          "label": "Municipality Key"
+        },
+        "availabilityDE": {
+          "help": "Scheduled availability of the dataset as a selection from a fixed list of values via DCAT-AP URIs.",
+          "info": "Scheduled availability of the dataset as a selection from a fixed list of values via DCAT-AP URIs.",
+          "label": "Availability",
+          "placeholder": "Search the vocabulary"
+        },
+        "contributorID": {
+          "help": "This property transmits the ID of the provider of the data from the portal's own access and identity management (if available). Its exact use is only defined for delivery to GovData and is described in more detail in the conventions manual.",
+          "info": "This property transmits the ID of the provider of the data from the portal's own access and identity management (if available). Its exact use is only defined for delivery to GovData and is described in more detail in the conventions manual.",
+          "label": "Contributor ID",
+          "placeholder": "Search the vocabulary"
+        },
+        "geocodingDescription": {
+          "help": "This property contains the geographical coverage of a dataset, represented by the name of an administrative area or a subject reference as free text.",
+          "info": "This property contains the geographical coverage of a dataset, represented by the name of an administrative area or a subject reference as free text.",
+          "label": "Geocoding Description",
+          "add-label": "Add more",
+          "placeholder": "Geocoding Description"
+        },
+        "legalBasis": {
+          "help": "This field optionally documents as free text the legal basis for access to the information (the access opening), i.e. the original legal basis for access to data of the administration.",
+          "info": "This field optionally documents as free text the legal basis for access to the information (the access opening), i.e. the original legal basis for access to data of the administration.",
+          "label": "Legal Basis",
+          "add-label": "Add more",
+          "placeholder": "Legal basis"
+        },
+        "qualityProcessURI": {
+          "help": "A URI that points to the process for quality assurance of the dataset. This is ideally the URL of a web page.",
+          "info": "A URI that points to the process for quality assurance of the dataset. This is ideally the URL of a web page.",
+          "label": "Quality Process URI",
+          "placeholder": "Add an URL"
+        },
+        "contributor": {
+          "help": "This property refers to bodies or persons who have edited the data (e.g. by formatting it). Its use is described in more detail in the Manual of Conventions.",
+          "info": "This property transmits the ID of the provider of the data from the portal's own access and identity management (if available). Its exact use is only defined for delivery to GovData.",
+          "label": "Contributor",
+          "add-label": "Add more"
+        },
+        "contributorType": {
+          "help": "Type of the contributor",
+          "info": "Type of the contributor",
+          "label": "Contributor type",
+          "placeholder": "Please provide a type"
+        },
+        "contributorEmail": {
+          "help": "Email adress of the contributor",
+          "info": "Email adress of the contributor",
+          "label": "Contributor email adress",
+          "placeholder": "Please provide an Email"
+        },
+        "contributorName": {
+          "help": "Name of the contributor",
+          "info": "Name of the contributor",
+          "label": "Contributor name",
+          "placeholder": "Please provide a name"
+        },
+        "contributorHomepage": {
+          "help": "Homepage of the contributor",
+          "info": "Homepage of the contributor",
+          "label": "Contributor Homepage",
+          "placeholder": "Please provide a Homepage"
+        },
+        "originator": {
+          "help": "This property refers to the persons who have copyright in the data set. According to copyright law, a work is protected if it is the personal intellectual creation of its author.",
+          "info": "This property refers to the persons who have copyright in the data set. According to copyright law, a work is protected if it is the personal intellectual creation of its author.",
+          "label": "Originator",
+          "add-label": "Add more"
+        },
+        "originatorType": {
+          "help": "Type of the originator",
+          "info": "Type of the originator",
+          "label": "Originator type",
+          "placeholder": "Please provide a type"
+        },
+        "originatorEmail": {
+          "help": "Email adress of the originator",
+          "info": "Email adress of the originator",
+          "label": "Originator email adress",
+          "placeholder": "Please provide an Email"
+        },
+        "originatorName": {
+          "help": "Name of the originator",
+          "info": "Name of the originator",
+          "label": "Originator name",
+          "placeholder": "Please provide a name"
+        },
+        "originatorHomepage": {
+          "help": "Homepage of the originator",
+          "info": "Homepage of the originator",
+          "label": "Originator Homepage",
+          "placeholder": "Please provide a Homepage"
+        },
+        "maintainer": {
+          "help": "This property refers to the bodies or individuals who take responsibility and accountability for the data and its appropriate maintenance.",
+          "info": "This property refers to the bodies or individuals who take responsibility and accountability for the data and its appropriate maintenance.",
+          "label": "Maintainer",
+          "add-label": "Add more"
+        },
+        "maintainerType": {
+          "help": "Type of the maintainer",
+          "info": "Type of the maintainer",
+          "label": "Maintainer type",
+          "placeholder": "Please provide a type"
+        },
+        "maintainerEmail": {
+          "help": "Email adress of the maintainer",
+          "info": "Email adress of the maintainer",
+          "label": "Maintainer email adress",
+          "placeholder": "Please provide an Email"
+        },
+        "maintainerName": {
+          "help": "Name of the maintainer",
+          "info": "Name of the maintainer",
+          "label": "Maintainer name",
+          "placeholder": "Please provide a name"
+        },
+        "maintainerHomepage": {
+          "help": "Homepage of the maintainer",
+          "info": "Homepage of the maintainer",
+          "label": "Maintainer Homepage",
+          "placeholder": "Please provide a Homepage"
+        },
+        "references": {
+          "help": "This property can be used to refer to reference datasets such as a High Value Dataset (HVD) or a sample dataset of the sample data catalogue.",
+          "info": "This property can be used to refer to reference datasets such as a High Value Dataset (HVD) or a sample dataset of the sample data catalogue.",
+          "label": "References",
+          "placeholder": "Add an URL"
+        },
+        "descriptionLanguage": {
+          "info": "Select the language of the stated description",
+          "placeholder": "Choose the language",
+          "label": "Language",
+          "help": "Select the language of the stated description"
+        },
+        "dctTitle": {
+          "placeholder": "Select language",
+          "help": "Please provide a title in your chosen language"
+        },
+        "pageTitlelang": {
+          "placeholder": "Select language",
+          "help": "Please provide a title to the page in your selected language"
+        },
+        "page-desc": {
+          "placeholder": "Select language"
+        },
+        "pageDesc": {
+          "help": "Choose a language and describe the page properly",
+          "placeholder": "Provide a description for the page"
+        },
+        "keywordsLanguage": {
+          "placeholder": "Select language",
+          "help": "Select a language an provide descriptive keywords for the dataset"
+        },
+        "temporalRange": {
+          "help": "Start and end date of temporal.",
+          "info": "Defines the range of temporal",
+          "label": "Time period of temporal"
+        }
+      },
+      "catalogues": {
+        "datasetID": {
+          "help": "This property contains the main identifier for the Catalog.",
+          "info": "This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue.",
+          "label": "Catalog ID"
+        },
+        "rights": {
+          "placeholder": "Catalogue Rights placeholder text",
+          "help": "A statement that specifies rights associated with the Catalogue.",
+          "label": "Rights",
+          "info": "This property refers to a statement that specifies rights associated with the Catalogue."
+        },
+        "rightsUrl": {
+          "label": "Rights Url",
+          "help": "A link to the rights definition",
+          "placeholder": "Rights Url placeholder",
+          "info": "A link to the rights definition"
+        },
+        "rightsString": {
+          "label": "Rights Statement",
+          "help": "A statement describing the rights associated with the distribuion",
+          "placeholder": "RightsStatement placeholder"
+        },
+        "isPartOf": {
+          "label": "Is Part Of",
+          "placeholder": "Catalogue Is Part Of placeholder text",
+          "help": "A related Catalogue in which the described Catalogue is physically or logically included.",
+          "info": "This property refers to a related Catalogue in which the described Catalogue is physically or logically included."
+        },
+        "catalog": {
+          "label": "Catalog",
+          "help": "A catalog whose contents are of interest in the context of this catalog.",
+          "info": "This property refers to a catalog whose contents are of interest in the context of this catalog.",
+          "add-label": "Add Catalog in another language",
+          "placeholder": "Catalogue Catalog placeholder text"
+        },
+        "creatorEmail": {
+          "label": "Email",
+          "placeholder": "Email address of the catalogue creator",
+          "help": ""
+        },
+        "language": {
+          "help": "A language used in the textual metadata describing titles, descriptions, etc.",
+          "info": "This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Dataset. This property can be repeated if the metadata is provided in multiple languages.",
+          "label": "Language",
+          "add-label": "Add Language in another language",
+          "placeholder": "Catalogue Language placeholder text"
+        },
+        "spatialVocabulary": {
+          "label": "Spatial",
+          "placeholder": "Choose a vocabulary",
+          "help": ""
+        },
+        "availabilityCatDE": {
+          "help": "The availability of the catalogue",
+          "info": "Stands for the availabilty of the catalogue",
+          "label": "Availability",
+          "placeholder": "Choose availability"
+        },
+        "spatialUrl": {
+          "label": "SpatialUrl",
+          "help": "Spatial Url help text",
+          "placeholder": "Spatial Url"
+        },
+        "spatialContinent": {
+          "label": "Continent",
+          "placeholder": "Catalogue Spatial Continent placeholder text",
+          "help": ""
+        },
+        "spatial": {
+          "help": "This property refers to a geographical area covered by the Catalogue.",
+          "info": "This property refers to a geographical area covered by the Catalogue.",
+          "add-label": "Add Spatial in another language",
+          "label": "Spatial",
+          "placeholder": "Please choose"
+        },
+        "creatorType": {
+          "placeholder": "Catalogue Creator Type placeholder text",
+          "label": "Type",
+          "help": ""
+        },
+        "hasPart": {
+          "add-label": "Add Has Part",
+          "label": "Has Part",
+          "help": "This property refers to a related Catalogue that is part of the described Catalogue",
+          "placeholder": "Catalogue Has Part placeholder text",
+          "info": "This property refers to a related Catalogue that is part of the described Catalogue."
+        },
+        "spatialCountry": {
+          "label": "Country",
+          "placeholder": "Catalogue Spatial Country placeholder text",
+          "help": ""
+        },
+        "creator": {
+          "help": "The entity responsible for producing the catalogue",
+          "info": "This property refers to the entity responsible for producing the catalogue",
+          "label": "Creator",
+          "add-label": "Add Creator"
+        },
+        "hasPartURL": {
+          "placeholder": "Provide a Url",
+          "label": "Has Part",
+          "help": "Link to catalog that is part of the described catalog."
+        },
+        "spatialPlace": {
+          "placeholder": "Please choose",
+          "label": "Place",
+          "help": ""
+        },
+        "creatorHomepage": {
+          "label": "Homepage",
+          "placeholder": "Catalogue Creator Homepage placeholder text",
+          "help": "This property refers to the homepage of the creator.",
+          "info": "This property refers to the homepage of the creator."
+        },
+        "creatorName": {
+          "placeholder": "Catalogue Creator Name placeholder text",
+          "label": "Name"
+        },
+        "issued": {
+          "info": "This property contains the date on which the description of the Dataset was included in the Catalogue.",
+          "add-label": "Add Issued in another language",
+          "label": "Issued",
+          "placeholder": "Catalogue Issued placeholder text",
+          "help": "This property contains the date on which the description of the Dataset was included in the Catalogue."
+        },
+        "title": {
+          "label": "Title",
+          "placeholder": "Catalogue Title placeholder text",
+          "help": "A name given to the Catalogue Record. ",
+          "info": "This property contains a name given to the Catalogue Record. This property can be repeated for parallel language versions of the name.",
+          "add-label": "Add Title in another language"
+        },
+        "description": {
+          "label": "Description",
+          "help": "This property contains a free-text account of the record.",
+          "info": "This property contains a free-text account of the record. This property can be repeated for parallel language versions of the description.",
+          "add-label": "Add Description in another language",
+          "placeholder": "Catalogue Description placeholder text"
+        },
+        "license": {
+          "help": "The license under which the Catalogue can be used or reused.",
+          "info": "This property refers to the license under which the Catalogue can be used or reused.",
+          "label": "License",
+          "placeholder": "Catalogue License placeholder text"
+        },
+        "modified": {
+          "help": "The most recent date on which the Catalogue entry was changed or modified.",
+          "info": "This property contains the most recent date on which the Catalogue entry was changed or modified.",
+          "placeholder": "Catalogue Modified placeholder text",
+          "label": "Modified",
+          "add-label": "Add Modified in another language"
+        },
+        "publisher": {
+          "label": "Publisher",
+          "placeholder": "Catalogue Publisher placeholder text",
+          "help": "This property refers to an entity (organisation) responsible for making the Dataset available.",
+          "info": "This property refers to an entity (organisation) responsible for making the Dataset available."
+        },
+        "licenceDescription": {
+          "label": "Licence Description",
+          "placeholder": "Catalogue Licence Description placeholder text",
+          "help": "A licence description"
+        },
+        "licenceURL": {
+          "placeholder": "Provide a Url",
+          "label": "Licence URL",
+          "help": "A link to the licence."
+        },
+        "homepage": {
+          "placeholder": "Catalogue Homepage placeholder text",
+          "label": "Homepage",
+          "help": "A web page that acts as the main page for the Catalogue.",
+          "info": "This property refers to a web page that acts as the main page for the Catalogue."
+        },
+        "datetime": {
+          "label": "Datetime",
+          "help": "Acceptable date formats: YYYY-MM-DD:HH:MM.",
+          "info": ""
+        },
+        "catalogURL": {
+          "label": "Catalog URL",
+          "placeholder": "Provide a Url",
+          "help": "Link to catalog that contents are interesting for this catalog."
+        },
+        "date": {
+          "label": "Date",
+          "help": "Acceptable date formats: YYYY-MM-DD.",
+          "info": ""
+        },
+        "stepper": {
+          "overview": "Catalogue Overview",
+          "step1": {
+            "name": "Step 1: Create Catalogue"
+          },
+          "step2": {
+            "name": "Step 2: Define Catalogue properties"
+          }
+        },
+        "politicalGeocodingLevelURI": {
+          "help": "For the coded indication of the respective principle management level from which the data structure was collected and set.",
+          "info": "For the coded indication of the respective principle management level from which the data structure was collected and set.",
+          "label": "Political Geocoding Level URI"
+        }
+      },
+      "clear": "Clear",
+      "deletemodal": {
+        "deleteDistribution": "Delete Distribution",
+        "areyousure": "Are you sure you want to delete this distribution?"
+      },
+      "createUniqueID": "Create a unique ID",
+      "saveasdraft": "Save as Draft",
+      "savedataset": "Save Dataset",
+      "skipDistribution": "Skip Distributions",
+      "next": "Next Step",
+      "noDistributions": "No Distributions available",
+      "savedraft": "Save Draft",
+      "searchVocabulary": "Search Vocabulary",
+      "error": {
+        "general": "An error occured. Please try again later!",
+        "invalid-message": "There are some fields missing. Please fill in all required fields!"
+      },
+      "type": "Type",
+      "preview": "Previous Step",
+      "submit": "Submit",
+      "publishdataset": "Publish Dataset",
+      "validationtitle": "Validation",
+      "publishdraft": "Publish Draft",
+      "publishcatalogue": "Publish Catalog",
+      "validationerror": "There was an error validating your form!",
+      "distributions": {
+        "licenseAttributionByText": {
+          "help": "This property stores the mandatory naming text for licence details.",
+          "info": "This property stores the mandatory naming text for licence details.",
+          "label": "License attribution by text",
+          "add-label": "Add more"
+        },
+        "licenseAttributionByTextTitle": {
+          "placeholder": "please provide a title",
+          "help": "Title of License attribution by text",
+          "info": "Title of License attribution by text",
+          "label": "Title"
+        },
+        "availabilityDisDE": {
+          "help": "Availability of the distribution of a dataset, as a selection from a fixed list of values via DCAT-AP URIs.",
+          "info": "Availability of the distribution of a dataset, as a selection from a fixed list of values via DCAT-AP URIs.",
+          "label": "Availability"
+        },
+        "accessServiceTitle": {
+          "label": "Data Service Title",
+          "add-label": "Add Data Service Title in another language",
+          "help": "The title of the data access service.",
+          "info": "The title of the data access service."
+        },
+        "accessService": {
+          "label": "Data Service",
+          "add-label": "Add another Data Service",
+          "info": "This property refers to a data service that gives access to the distribution of the dataset.",
+          "help": "A data service that gives access to the distribution of the dataset"
+        },
+        "accessServiceDescription": {
+          "label": "Data Service Description",
+          "add-label": "Add Data Service Description in another language",
+          "help": "A description of the data access service.",
+          "info": "This property contains a free-text account of the Distribution. This property can be repeated for parallel language versions of the description."
+        },
+        "licenceVocabulary": {
+          "label": "License",
+          "help": "",
+          "info": ""
+        },
+        "licenceDetails": {
+          "label": "Licence",
+          "help": ""
+        },
+        "licence": {
+          "info": "This property refers to the license under which the Distribution is made available.",
+          "placeholder": "Distribution License placeholder text",
+          "label": "License",
+          "help": "The license under which the Distribution is made available."
+        },
+        "licenceURL": {
+          "label": "Licence URL",
+          "placeholder": "Provide a Url",
+          "help": "A link to the licence."
+        },
+        "licenceTitle": {
+          "label": "Licence Title",
+          "placeholder": "Catalogue Licence Title placeholder text",
+          "help": "The licence's name."
+        },
+        "licenceDescription": {
+          "placeholder": "Catalogue Licence Description placeholder text",
+          "label": "Licence Description",
+          "help": "A licence description"
+        },
+        "modified": {
+          "info": "This property contains the most recent date on which the Distribution was changed or modified.",
+          "help": "Date on which the Distribution was changed or modified.",
+          "placeholder": "Distribution Modified placeholder text",
+          "label": "Modified"
+        },
+        "issued": {
+          "label": "Issued",
+          "info": "This property contains the date of formal issuance (e.g., publication) of the Distribution.",
+          "help": "The date of formal issuance (e.g., publication) of the Distribution.",
+          "placeholder": "Distribution Issued placeholder text"
+        },
+        "date": {
+          "label": "Date",
+          "help": "Acceptable date formats: YYYY-MM-DD.",
+          "info": ""
+        },
+        "datetime": {
+          "label": "Datetime",
+          "help": "Acceptable date formats: YYYY-MM-DD:HH:MM.",
+          "info": ""
+        },
+        "format": {
+          "label": "Format",
+          "info": "This property refers to the file format of the Distribution.",
+          "help": "The file format of the Distribution.",
+          "placeholder": "Distribution Format placeholder text"
+        },
+        "downloadUrl": {
+          "label": "Download Url",
+          "info": "This property contains a URL that is a direct link to a downloadable file in a given format.",
+          "help": "Direct link to a downloadable file in a given format.",
+          "placeholder": "Provide a Url",
+          "add-label": "Add more download URL's "
+        },
+        "description": {
+          "label": "Description",
+          "placeholder": "Distribution Description placeholder text",
+          "info": "This property contains a free-text account of the Distribution.",
+          "help": "This property contains a free-text account of the Distribution.",
+          "add-label": "Add Description in another language"
+        },
+        "title": {
+          "label": "Title",
+          "add-label": "Add Title in another language",
+          "info": "This property contains a name given to the Distribution. This property can be repeated for parallel language versions of the description.",
+          "help": "This property contains a name given to the Distribution.",
+          "placeholder": "Distribution Title placeholder text"
+        },
+        "accessUrl": {
+          "add-label": "Add Access Url",
+          "placeholder": "Provide a Url",
+          "label": "Access Url",
+          "info": "This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset.",
+          "help": "This property contains a URL that gives access to a Distribution of the Dataset."
+        },
+        "accessUrlLink": {
+          "label": "URL",
+          "help": "",
+          "placeholder": "Access Url link",
+          "info": ""
+        },
+        "accessUrlFile": {
+          "label": "File",
+          "help": ""
+        },
+        "spatialResolutionInMeters": {
+          "label": "Spatial Resolution In Meters",
+          "placeholder": "Distribution Spatial Resolution In Meters placeholder text",
+          "info": "This property refers to the minimum spatial separation resolvable in a dataset, measured in meters.",
+          "help": "Minimum spatial separation resolvable in a dataset."
+        },
+        "temporalResolutionSecond": {
+          "placeholder": "Dataset Temporal Resolution Second placeholder text",
+          "label": "Second",
+          "help": "The number of seconds.",
+          "info": "The number of seconds."
+        },
+        "temporalResolutionHour": {
+          "label": "Hour",
+          "placeholder": "Dataset Temporal Resolution Hour placeholder text",
+          "help": "The number of hours.",
+          "info": "The number of hours."
+        },
+        "temporalResolutionMinute": {
+          "placeholder": "Dataset Temporal Resolution Minute placeholder text",
+          "label": "Minute",
+          "help": "The number of minutes.",
+          "info": ""
+        },
+        "temporalResolutionMonth": {
+          "label": "Month",
+          "placeholder": "Dataset Temporal Resolution Month placeholder text",
+          "help": "The month of the temporal resolution.",
+          "info": "The number of minutes."
+        },
+        "temporalResolutionYear": {
+          "label": "Year",
+          "placeholder": "Dataset Temporal Resolution Year placeholder text",
+          "help": "Year of the temporal resolution.",
+          "info": "The number of years."
+        },
+        "temporalResolutionDay": {
+          "label": "Day",
+          "placeholder": "Dataset Temporal Resolution Day placeholder text",
+          "help": "The day of the temporal resolution",
+          "info": "The number of days."
+        },
+        "temporalResolution": {
+          "add-label": "Add Temporal Resolution",
+          "label": "Temporal Resolution",
+          "placeholder": "Distribution Temporal Resolution placeholder text",
+          "info": "This property refers to the minimum time period resolvable in the dataset distribution.",
+          "help": "The minimum time period resolvable in the dataset distribution."
+        },
+        "status": {
+          "placeholder": "Distribution Status placeholder text",
+          "label": "Status",
+          "info": "The status of the distribution in the context of maturity lifecycle. It MUST take one of the values Completed, Deprecated, Under Development, Withdrawn.",
+          "help": "The status of the distribution in the context of maturity lifecycle."
+        },
+        "language": {
+          "info": "This property refers to a language used in the Distribution. This property can be repeated if the metadata is provided in multiple languages.",
+          "help": "A language used in the Distribution.",
+          "label": "Language",
+          "placeholder": "Distribution Language placeholder text"
+        },
+        "packageFormat": {
+          "label": "Package Format",
+          "info": "This property refers to the format of the file in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together. It SHOULD be expressed using a media type as defined in the official register of media types managed by IANA.",
+          "help": "The format of the file in which one or more data files are grouped together.",
+          "placeholder": "Distribution Package Format placeholder text"
+        },
+        "compressFormat": {
+          "label": "Compress Format",
+          "info": "This property refers to the format of the file in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file. It SHOULD be expressed using a media type as defined in the official register of media types managed by IANA.",
+          "help": "The format of the file in which the data is contained in a compressed form.",
+          "placeholder": "Distribution Compress Format placeholder text"
+        },
+        "checksum": {
+          "label": "Checksum",
+          "placeholder": "Distribution Checksum placeholder text",
+          "info": "This property provides a mechanism that can be used to verify that the contents of a distribution have not changed. The checksum is related to the downloadURL.",
+          "help": "The checksum is related to the downloadURL."
+        },
+        "checksumAlgorithm": {
+          "label": "Checksum Algorithm",
+          "help": "Algorithm used for checksum.",
+          "info": "Algorithm used for checksum.",
+          "placeholder": "Distribution Checksum Algorithm placeholder text"
+        },
+        "mediaType": {
+          "label": "Media Type",
+          "info": "This property refers to the format of the file in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file. It SHOULD be expressed using a media type as defined in the official",
+          "help": "The format of the file in which the data is contained in a compressed form.",
+          "placeholder": "Distribution Media Type placeholder text"
+        },
+        "availability": {
+          "label": "Availability",
+          "placeholder": "Distribution Availability placeholder text",
+          "info": "How long it is planned to keep the Distribution of the Dataset available.",
+          "help": "How long it is planned to keep the Distribution of the Dataset available."
+        },
+        "byteSize": {
+          "label": "Byte Size",
+          "info": "This property contains the size of a Distribution in bytes.",
+          "help": "The size of a Distribution in bytes.",
+          "placeholder": "Distribution Byte Size placeholder text"
+        },
+        "type": {
+          "info": "This property refers to the media type of the Distribution as defined in the official register of media types managed by IANA.",
+          "help": "The media type of the Distribution.",
+          "label": "Type",
+          "placeholder": "Distribution Type placeholder text"
+        },
+        "accessServiceEndpointURL": {
+          "label": "Data Service Endpoint URL",
+          "placeholder": "Provide a Url",
+          "help": "The link to the data service's webpage.",
+          "info": "The link to the data service's webpage."
+        },
+        "rights": {
+          "info": "This property refers to a statement that specifies rights associated with the Distribution.",
+          "help": "This property refers to a statement that specifies rights associated with the Distribution.",
+          "placeholder": "Distribution Rights placeholder text",
+          "label": "Rights"
+        },
+        "rightsUrl": {
+          "label": "Rights Url",
+          "placeholder": "Rights Url placeholder",
+          "help": "A link to the rights definition",
+          "info": "A link to the rights definition"
+        },
+        "rightsString": {
+          "label": "Rights Statement",
+          "placeholder": "RightsStatement placeholder",
+          "help": "A statement describing the rights associated with the distribuion"
+        },
+        "conformsToUrl": {
+          "label": "Url",
+          "placeholder": "Provide a Url",
+          "help": "Link to the property.",
+          "info": "The propertie's link."
+        },
+        "conformsTo": {
+          "add-label": "Add more",
+          "label": "Conforms To",
+          "info": "This property refers to an established schema to which the described Distribution conforms.",
+          "help": "An established schema to which the described Distribution conforms.",
+          "placeholder": "Distribution Conforms To placeholder text"
+        },
+        "conformsToTitle": {
+          "label": "Title",
+          "placeholder": "Distribution Conforms To Title placeholder text",
+          "help": "Title of the property.",
+          "info": "The propertie's title."
+        },
+        "hasPolicy": {
+          "label": "Has Policy",
+          "info": "This property refers to the policy expressing the rights associated with the distribution if using the ODRL vocabulary",
+          "help": "The policy expressing the rights.",
+          "add-label": "Add Has Policy"
+        },
+        "hasPolicyUrl": {
+          "placeholder": "Provide a Url",
+          "label": "Url",
+          "help": "The policy expressing the rights",
+          "info": "This property refers to the policy expressing the rights associated with the distribution if using the ODRL vocabulary"
+        },
+        "pageFormat": {
+          "placeholder": "Distribution Page Format placeholder text",
+          "label": "Format",
+          "help": "The format of the page.",
+          "info": "The format of the page."
+        },
+        "pageUrl": {
+          "label": "Url",
+          "placeholder": "The Url to the distribution page",
+          "help": "The link to the webpage of the page.",
+          "info": "The link to the webpage of the page."
+        },
+        "pageDescription": {
+          "label": "Description",
+          "placeholder": "Distribution Page Description placeholder text",
+          "help": "The page's description.",
+          "add-label": "Add more",
+          "info": "The page's description."
+        },
+        "page": {
+          "info": "This property refers to a page or document about this Distribution.",
+          "help": "A page or document about this Distribution.",
+          "label": "Page",
+          "add-label": "Add Page",
+          "placeholder": "Distribution Page placeholder text"
+        },
+        "pageTitle": {
+          "placeholder": "Distribution Page Title placeholder text",
+          "label": "Page title",
+          "help": "A descriptive title for the page",
+          "info": "Title of the page.",
+          "add-label": "Add more"
+        },
+        "stepper": {
+          "distoverview": {
+            "name": "Distribution Overview"
+          },
+          "additional": {
+            "name": "@:message.dataupload.datasets.stepper.additional.name"
+          },
+          "advised": {
+            "name": "@:message.dataupload.datasets.stepper.advised.name"
+          },
+          "step3": {
+            "name": "@:message.dataupload.datasets.stepper.additional.name"
+          },
+          "step2": {
+            "name": "@:message.dataupload.datasets.stepper.advised.name"
+          },
+          "step1": {
+            "name": "@:message.dataupload.datasets.stepper.essential.name"
+          },
+          "step4": {
+            "name": "@:message.metadata.dataServices"
+          }
+        },
+        "disTitle": {
+          "help": "Title of the distribution.",
+          "placeholder": "Language"
+        },
+        "descriptionLanguage": {
+          "placeholder": "Choose language",
+          "label": "Language",
+          "info": "This property refers to a language used in the description of the distribution. This property can be repeated if the metadata is provided in multiple languages.",
+          "help": "The language the description of the distribution is in"
+        }
+      },
+      "createDataset": "Create Dataset",
+      "defineDatasetProperties": "Define Dataset properties",
+      "createDistributions": "Create Distributions",
+      "generalInformation": "General Information",
+      "additionalInformation": "Additional Information",
+      "menu": {
+        "registerADoi": {
+          "confirm": "Register DOI (irreversible)",
+          "message": "Are you sure you want to register a DOI? This can not be reverted."
+        },
+        "markAsDraft": {
+          "confirm": "Set to draft",
+          "message": "Are you sure you want to mark this dataset as draft?"
+        },
+        "datasetDeletion": {
+          "confirm": "Delete dataset (irreversible)",
+          "message": "Are you sure you want to delete this dataset? This can not be reverted."
+        },
+        "draftDatasets": "Draft Datasets",
+        "dpi": "Data Provider Interface",
+        "registerDoi": "Register DOI",
+        "logout": "Logout",
+        "setToDraft": "Set to draft",
+        "editCatalogue": "Edit Catalogue",
+        "editDataset": "Edit Dataset",
+        "deleteDataset": "Delete Dataset",
+        "loggedInAs": "Logged in as"
+      },
+      "createNewCatalogue": "Create a new Catalogue",
+      "createNewDataset": "Create a new Dataset"
+    }
+  },
+  "userdashboard": {
+    "widgets": {
+      "orgnews": {
+        "status": {
+          "public": "Public",
+          "draft": "Draft"
+        },
+        "overview": "Your new data sets at a glance",
+        "lastModified": "Last modified",
+        "datasetstab": "Datasets",
+        "statustab": "Status",
+        "formattab": "Format",
+        "nodata": "No data available"
+      },
+      "news": {
+        "newsfrom": "News from the Municipal Data Work",
+        "loading": "Loading...",
+        "error": "Something went wrong. Please reload the page or try again later.",
+        "view": "View",
+        "new": {
+          "dataset": "New dataset \"{title}\" was uploaded",
+          "catalog": "New catalog \"{title}\" was created",
+          "organization": "New organization \"{title}\" was created"
+        }
+      }
+    }
+  },
+  "organisation": {
+    "subtitle": "Here you will find all the organizations that help to shape the platform.",
+    "categoriesOfData": "Categories of data",
+    "datasets": {
+      "label": "Organizational datasets",
+      "noData": "No data available",
+      "search": "Search Datasets",
+      "datasetName": "Dataset name",
+      "createdOn": "Created on",
+      "license": "License",
+      "format": "Format"
+    },
+    "colleagues": {
+      "label": "Colleagues",
+      "noData": "No data available",
+      "search": "Search Colleagues",
+      "name": "Name",
+      "position": "Position",
+      "access": "Access",
+      "contact": "Contact",
+      "email": "Email",
+      "phone": "Phone"
+    }
+  }
+}

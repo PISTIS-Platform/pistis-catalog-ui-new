@@ -1,0 +1,45 @@
+{
+  "id": "PS-2025-003",
+  "activity": "Simulation",
+  "description": "This step involves simulating urban traffic flows to evaluate various traffic signal timing strategies and determine the optimal configuration for reducing congestion.",
+  "previous_step": {
+    "id": "PS-2025-002"
+  },
+  "inputs": {
+    "linked_software": [
+      {
+        "id": "SOFT-TSS-001"
+      }
+    ],
+    "linked_data": [
+      {
+        "id": "DATA-TSS-001"
+      },
+      {
+        "id": "DATA-TSS-002"
+      }
+    ]
+  },
+  "methods_used": [
+    {
+      "method": "Microscopic Traffic Simulation",
+      "description": "Simulating individual vehicle movements on a detailed road network to capture interactions and assess the impact of different signal timings."
+    },
+    {
+      "method": "Scenario Analysis",
+      "description": "Testing multiple traffic signal scenarios under varying traffic conditions and external factors (e.g., weather, incidents) to determine their effectiveness."
+    },
+    {
+      "method": "Optimization Algorithms",
+      "description": "Applying algorithms to identify the best traffic signal timing configurations that minimize congestion and improve flow efficiency."
+    }
+  ],
+  "actors_responsibility": [
+    {
+      "role": "Traffic Engineer",
+      "organization": "City Traffic Management",
+      "contact": "traffic.engineer@example.org"
+    }
+  ],
+  "documentation": "https://example.org/docs/traffic-simulation-guidelines.pdf"
+}

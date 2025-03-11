@@ -1,0 +1,33 @@
+{
+  "id": "ORG-2025-003",
+  "name": "City Government of Haar",
+  "description": "The municipal government of Haar, Germany, responsible for local administration, urban planning, transportation, and public services.",
+  "type": "Municipality",
+  "location": {
+    "region": "Bavaria"
+  },
+  "website": "https://www.haar.de",
+  "linked_projects": [
+    {
+      "id": "PROJECT-HAAR-001"
+    },
+    {
+      "id": "PROJECT-HAAR-002"
+    }
+  ],
+  "linked_software": [
+    {
+      "id": "SOFT-HAAR-001"
+    }
+  ],
+  "linked_data": [
+    {
+      "id": "DATA-HAAR-001"
+    }
+  ],
+  "linked_hardware": [
+    {
+      "id": "HW-HAAR-001"
+    }
+  ]
+}

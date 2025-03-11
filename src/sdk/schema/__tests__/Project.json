@@ -1,0 +1,31 @@
+{
+  "id": "SC-2025-001",
+  "name": "Smart City Traffic Optimization",
+  "description": "A project to improve urban traffic flow in Haar, Germany using AI and IoT sensors.",
+  "budget": {
+    "amount": "5000000",
+    "currency": "EUR"
+  },
+  "required_skills": [
+    "IoT",
+    "Data Science",
+    "Urban Planning"
+  ],
+  "timeline": {
+    "start_date": "2025-01-01",
+    "end_date": "2027-12-31"
+  },
+  "documentation": [
+    "https://example.org/documents/SC-2025-001-proposal.pdf",
+    "https://example.org/documents/SC-2025-001-final-report.pdf"
+  ],
+  "linked_organisation": {
+    "id": "ORG-HAAR-001"
+  },
+  "linked_process_steps": [
+    "PS-2025-001",
+    "PS-2025-002",
+    "PS-2025-003",
+    "PS-2025-004"
+  ]
+}

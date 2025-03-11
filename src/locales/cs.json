@@ -1,0 +1,2157 @@
+{
+  "authentication": {
+    "logged_out": "Byli jste odhlášeni."
+  },
+  "navigation": {
+    "home": "Domů",
+    "digital-twin": "Digitální dvojče",
+    "dashboards": "Dashboardy",
+    "data-catalog": "Datový katalog",
+    "organisation-sites": "Stránky organizace",
+    "log-in": "Přihlásit se",
+    "register-text": "Nemáte ještě účet? Zaregistrujte se nyní!",
+    "impressum": "Právní oznámení",
+    "user-profile": "Profil",
+    "dksr-apps": "DKSR Aplikace",
+    "go-back": "Zpět",
+    "dashboards-context": "Moje dashboardy",
+    "apps-context": "Analytické nástroje DKSR"
+  },
+  "tooltips": {
+    "home": "Domů",
+    "digital-twin": "Digitální dvojče",
+    "dashboards": "Dashboardy",
+    "data-catalog": "Datový katalog",
+    "organisation-sites": "Stránky organizace"
+  },
+  "dashboard": {
+    "title": "Vaše město na první pohled",
+    "subtitle": "Zde naleznete dashboardy svého města",
+    "new_dashboard": "Nový Dashboard",
+    "widget": {
+      "source": "Vydavatel",
+      "theme": "Témata",
+      "to_dashboard": "Na dashboard"
+    }
+  },
+  "dashboards": {
+    "title": "Vaše město na první pohled",
+    "subtitle": "Zde naleznete dashboardy svého města. Dashboardy prezentují tematicky související datové sady vizuálně a v kontextu. Umožňují rozhodování a porozumění."
+  },
+  "home": {
+    "organisation_data": "Data organizace"
+  },
+  "HomepageQuickLinks": {
+    "addDashboard": {
+      "title": "Přidat dashboard",
+      "subtitle": "Zde můžete vytvořit nové dashboardy"
+    },
+    "findData": {
+      "title": "Najít data",
+      "subtitle": "Zde naleznete všechny datové sady dostupné na platformě"
+    },
+    "analyzeData": {
+      "title": "Analyzovat data",
+      "subtitle": "Zde můžete analyzovat své datové sady"
+    }
+  },
+  "city-os": {
+    "layout": {
+      "app-header": {
+        "login": "Přihlásit se",
+        "user-profile": "Uživatelský profil",
+        "warning": "Varování",
+        "toggle-sidebar": "Přepnout postranní panel"
+      },
+      "app-header-dropdown": {
+        "user-menu": "Uživatelské menu",
+        "user-profile": "Můj profil",
+        "personal-settings": "Osobní nastavení",
+        "my-work": "Moje práce",
+        "data-exchange": "Výměna dat",
+        "user-management": "Správa uživatelů",
+        "legal-notices": "Právní oznámení",
+        "logout": "Odhlásit se"
+      }
+    }
+  },
+  "user-profile": {
+    "up-content": {
+      "title-about": "O vás",
+      "label-name": "Jméno",
+      "label-email": "Emailová adresa",
+      "label-telephone": "Telefon",
+      "label-department": "Oddělení",
+      "label-organization": "Organizace",
+      "title-login": "Přihlašovací informace",
+      "label-username": "Uživatelské jméno",
+      "button-logout": "Odhlásit se"
+    }
+  },
+  "landing-page": {
+    "hof": {
+      "hof-lp-header": {
+        "title": "Inovační prostor Hofer Land",
+        "second-title": "Váš přístup k interaktivním informacím",
+        "subtitle": "Využijte digitální dvojče, inovativní dashboardy a datový katalog pro komplexní analýzu a vhled do datové krajiny Hofer Land."
+      },
+      "hof-lp-features": {
+        "digital-twin": {
+          "title": "Digitální dvojče",
+          "description": "Digitální dvojče je virtuální kopie města pro plánování a správu.",
+          "button": "Přejít na Digitální dvojče"
+        },
+        "dashboards": {
+          "title": "Dashboardy",
+          "description": "Dashboardy jsou interaktivní přehledy klíčových dat a metrik.",
+          "button": "Přejít na Dashboardy"
+        },
+        "data-catalog": {
+          "title": "Otevřený datový katalog",
+          "description": "Datový katalog je veřejně přístupná, prohledávatelná sbírka všech dat.",
+          "button": "Přejít na Datový katalog"
+        }
+      },
+      "hof-lp-digital-twin": {
+        "tile-title": "Digitální dvojče",
+        "title": "Digitální dvojče pro inteligentní plánování měst",
+        "description": "Digitální dvojče města poskytuje virtuální reprezentaci celého ekosystému, včetně infrastruktury a obyvatel. Tato technologie umožňuje plánování, analýzu a optimalizaci rozvoje měst.",
+        "button-digital-twin": "Přejít na digitální dvojčata",
+        "button-tutorial": "Sledovat tutoriál"
+      },
+      "hof-lp-dashboards": {
+        "tile-title": "Dashboardy",
+        "title": "Použijte dashboardy k zachycení datových poznatků",
+        "description": "Dashboardy na naší platformě poskytují jasné poznatky z dat, které umožňují informované rozhodování o rozvoji měst.",
+        "button-dashboards": "Přejít na dashboardy"
+      },
+      "hof-lp-datacatalog": {
+        "tile-title": "Datový katalog",
+        "title": "Práce s otevřenými daty a daty od zúčastněných organizací",
+        "description": "Datový katalog poskytuje přístup k různým otevřeným datům i datům poskytovaným zúčastněnými organizacemi, podporujícími komplexní analýzu a využití dat.",
+        "button-data-catalog": "Najít data"
+      }
+    },
+    "test": "test",
+    "header": {
+      "home": "Domů",
+      "datawork": "Datový Katalog",
+      "about-kdw": "O KDW",
+      "legal-notice": "Právní oznámení",
+      "registration": "Registrovat",
+      "login": "Přihlásit se"
+    },
+    "hero": {
+      "welcome": "Vítejte na Municipal DataWorks",
+      "search-placeholder": "Hledat datové sady",
+      "search": "Hledat",
+      "feature-one": "Bezpečné sdílení dat",
+      "feature-two": "Přístup k datům v reálném čase",
+      "feature-three": "Dynamická data"
+    },
+    "partners": {
+      "description1": "Výzkumný projekt BMDV financovaný z prostředků mFUND",
+      "description2": "realizované partnery projektu DKSR a Fraunhofer FOKUS",
+      "description3": "pro Mainzer Stadtwerke AG."
+    },
+    "discover-data": {
+      "title": "Objevte Municipal DataWorks",
+      "box-one-text": "Prohlédněte si otevřená data vašeho města jako občan",
+      "box-one-button-text": "Prozkoumat data",
+      "box-two-text": "Prohlédněte si spolehlivá a restriktivní data jako poskytovatel dat",
+      "box-two-button-text": "Přihlásit se"
+    },
+    "open-data": {
+      "title": "Otevřená data a restriktivní data od zúčastněných organizací",
+      "chip-one": "Otevřená data",
+      "chip-two": "Restriktivní data",
+      "chip-three": "Živá data",
+      "description": "Datový katalog umožňuje přístup k široké škále otevřených dat i dat poskytovaných zúčastněnými organizacemi, podporujícími komplexní analýzu a využití dat.",
+      "box-one-title": "Platforma pro sdílení dat města",
+      "box-one-text": "Digitální veřejné služby prostřednictvím bezpečné platformy pro výměnu různých dat.",
+      "box-two-title": "Právní a technická bezpečnost",
+      "box-two-text": "Právní a technická bezpečnost prostřednictvím vývoje přístupových práv",
+      "box-three-title": "Aktualizovanost a spolehlivost",
+      "box-three-text": "Vysoká kvalita a spolehlivost dat díky pravidelné údržbě datového katalogu",
+      "box-four-title": "Přístup k otevřeným datům pro občany",
+      "box-four-text": "Přístup k otevřeným datům pro zájemce a aktivní občany, kteří se chtějí podílet na rozvoji města"
+    },
+    "discover-data-detailed": {
+      "main-title": "Objevte data",
+      "main-description": "Tato platforma integruje data z více než osmi různých kategorií, což umožňuje komplexní pochopení témat, jako jsou ekonomický a sociální rozvoj, změny klimatu a adaptace, stejně jako konkrétní městský a regionální rozvoj. Cílem je podpořit socio-ekologickou tržní ekonomiku prostřednictvím jasné vizualizace a zpracování dat.",
+      "source-one-name": "Dostupné datové sady",
+      "source-two-name": "Distribuce",
+      "source-three-name": "Poskytovatelé dat",
+      "secondary-title": "Data pro začátek",
+      "get-started-one-button": "Na datovou sadu",
+      "get-started-one-title": "Firmy v sektoru obnovitelné energie",
+      "get-started-two-button": "Na datovou sadu",
+      "get-started-two-title": "Údaje o monitorování dopravy z TREMOD",
+      "get-started-three-button": "Na datovou sadu",
+      "get-started-three-title": "Vyhodnocení pokrytí 5G mobilní sítě"
+    },
+    "get-in-touch": {
+      "title": "Kontaktujte nás",
+      "text": "Zašlete nám svou žádost nebo si domluvte schůzku, abychom vám mohli ukázat platformu.",
+      "button-text": "Kontaktovat nás"
+    },
+    "footer": {
+      "sitemap": {
+        "data-catalog": "Datový katalog",
+        "apply": "Přihlásit se",
+        "login": "Přihlásit se",
+        "home": "Domů",
+        "discover": "Objevte Municipal DataWorks",
+        "open-data": "Otevřená data a restriktivní data od zúčastněných organizací",
+        "discover-data": "Objevte data",
+        "how-to": "Jak získat svůj KDW?",
+        "contact": "Kontaktovat nás",
+        "legal": "Právní",
+        "impressum": "Právní oznámení",
+        "privacy-policy": "Zásady ochrany osobních údajů",
+        "accessibility": "Přístupnost",
+        "terms": "Podmínky použití",
+        "feedback": "Zpětná vazba"
+      },
+      "funding-partners": "Financující partneři"
+    }
+  },
+  "dpi": {
+    "back-to-datacatalog": "Zpět na datový katalog"
+  },
+  "components": {
+    "organization-data": {
+      "OrganizationData": {
+        "published": "Publikované datové sady",
+        "dataset-drafts": "Návrhy datových sad"
+      }
+    },
+    "data-exchange": {
+      "DataExchange": {
+        "req-datasets-by-me": "Datové sady požádané mnou",
+        "req-datasets-from-me": "Datové sady požádané ode mě"
+      },
+      "DataExchangeReqByMe": {
+        "title": "Vaše požadavky na datové sady",
+        "new-datasets": "Nové datové sady",
+        "search-requests": "Vyhledat žádosti",
+        "search": "Zadejte název datové sady",
+        "status": "Stav",
+        "datasetName": "Název datové sady",
+        "contactPerson": "Kontaktní osoba",
+        "requestPeriod": "Období žádosti",
+        "actions": "Akce",
+        "requests": "žádosti"
+      },
+      "DataExchangeReqFromMe": {
+        "title": "Požadavky na vaše datové sady",
+        "new-datasets": "Nové požadavky",
+        "search-requests": "Hledat požadavky",
+        "search": "Zadejte název datové sady",
+        "status": "Stav",
+        "datasetName": "Název datové sady",
+        "contactPerson": "Kontaktní osoba",
+        "requestPeriod": "Období žádosti",
+        "actions": "Akce",
+        "requests": "Požadavky"
+      },
+      "DataExchangeHeader": {
+        "title": "Výměna dat",
+        "button-header": "CTA tbd"
+      },
+      "DataExchangeHeaderReqInfo": {
+        "first-line": "Datasety, které jste požádali od jiných organizací",
+        "second-line": "Zde naleznete datasety, které vaše organizace požádala od jiných organizací.",
+        "link-text": "Zjistěte více o tom, jak můžete požádat o datasety"
+      }
+    }
+  },
+  "kdw": {
+    "components": {
+      "sort-split-button": {
+        "SortSplitButton": {
+          "sortOptions": {
+            "modified": "Poslední aktualizace",
+            "relevance": "Relevance",
+            "title": "Název",
+            "issued": "Poslední vytvoření"
+          },
+          "toggleButton": {
+            "ascending": "Vzestupně",
+            "descending": "Sestupně"
+          }
+        }
+      },
+      "headline": {
+        "KHeadline": {
+          "datacatalog": "Datový katalog",
+          "datacatalog-text": "Prozkoumejte, analyzujte a sdílejte důležitá data. Zjistěte více o typech dat a spolupráci na platformě.",
+          "newData": "Nová data",
+          "organizationData": "Data organizace"
+        }
+      },
+      "facet-sidebar": {
+        "FacetSidebar": {
+          "search-catalog": "Prohledávat katalog",
+          "live-data": "Živá data",
+          "high-value-data": "Vysoce hodnotná data"
+        }
+      }
+    },
+    "views": {
+      "DatasetSearchView": {
+        "datasets": "Datové sady",
+        "searchDataCatalog": "Hledat v datovém katalogu",
+        "search": "Search"
+      }
+    }
+  },
+  "views": {
+    "public": {
+      "PublicDataNoticesView": {
+        "legal": {
+          "header": {
+            "title": "Právní informace a ochrana osobních údajů",
+            "description": "Vítejte v naší sekci právních informací a ochrany osobních údajů. Zde najdete všechny důležité podrobnosti o našem imprintu, právních oznámeních a našich zásadách ochrany osobních údajů. Tyto stránky jsou navrženy tak, aby poskytovaly transparentnost o provozu našeho webu a vysvětlily, jak nakládáme s vašimi osobními údaji."
+          },
+          "impressum": {
+            "notice": {
+              "heading": "Právní oznámení",
+              "paragraph1": "Všechna práva vyhrazena. Texty, obrázky, grafika, zvuky, animace a videa, stejně jako jejich uspořádání na tomto webu, podléhají autorským právům a dalším ochranným zákonům. Obsah této webové stránky nesmí být kopírován, distribuován, upravován ani zpřístupňován třetím stranám pro komerční účely.",
+              "paragraph2": "Naše webové stránky mohou obsahovat odkazy na weby jiných poskytovatelů. Navzdory pečlivým a pravidelným kontrolám nepřebíráme žádnou odpovědnost za obsah externích odkazů. Nemáme žádný vliv na design a obsah stránek, na které odkazujeme. Pokud chcete navštívit takové webové stránky, měli byste dodržovat příslušná upozornění. Nejsme odpovědní za standardy a praktiky ochrany osobních údajů jiných poskytovatelů. Pokud se dozvíte o nezákonném obsahu nebo praktikách externích odkazů, prosíme, abyste nás okamžitě informovali.",
+              "paragraph3": "Kromě toho používáme Google Analytics, službu webové analýzy od společnosti Google. Google Analytics používá soubory cookie (malé textové soubory), které jsou uloženy ve vašem počítači a umožňují analýzu vašeho používání webu. Informace generované souborem cookie o vašem používání této webové stránky (včetně vaší IP adresy) budou přeneseny a uloženy na serveru společnosti Google v USA. Google tyto informace použije k vyhodnocení vašeho používání webu, k vytváření zpráv o aktivitě webu pro provozovatele webu a k poskytování dalších služeb souvisejících s používáním webu a internetu. Google může také tyto informace přenést třetím stranám, pokud to vyžaduje zákon nebo pokud třetí strany zpracovávají tato data jménem společnosti Google. V žádném případě nebude Google spojovat vaši IP adresu s jinými daty, která má k dispozici. Instalaci souborů cookie můžete zabránit změnou nastavení softwaru vašeho prohlížeče; musíme vás však informovat, že v takovém případě nemusíte být schopni plně využívat všechny funkce této webové stránky. Používáním našich webových stránek souhlasíte se zpracováním údajů, které o vás společnost Google shromáždila, způsobem a pro účely popsané výše."
+            }
+          },
+          "tabs": {
+            "impressum": "Impressum",
+            "datenschutz": "Ochrana osobních údajů",
+            "nutzungsbedingungen": "Podmínky použití",
+            "statements": "Prohlášení"
+          }
+        }
+      }
+    },
+    "app": {
+      "digital-twin-view": {
+        "digital-twin-title": "Digitální dvojče",
+        "digital-twin-subtitle": "Digitální dvojče města nabízí virtuální reprezentaci města a například digitálně hmatatelným způsobem prezentuje data o budovách, infrastruktuře a přírodě. {break}Tato technologie umožňuje plánování, analýzu a optimalizaci rozvoje měst.",
+        "tutorial-button": "Sledovat tutoriál"
+      },
+      "DKSRAppsView": {
+        "title": "DKSR analytické nástroje",
+        "subtitle": "Zde najdeš nástroje pro analýzu dat specifických pro konkrétní případy použití",
+        "apps": {
+          "heatwaves": {
+            "title": "Porozumění vlnám horka",
+            "content": "Vlny horka jsou nebezpečně horká období, která zvyšují zdravotní rizika. Pochopení jejich závažnosti pomáhá plánovačům a občanům zlepšit odolnost měst proti horku a snížit počet obětí."
+          },
+          "bikePlanner": {
+            "title": "Plánovač cyklostezek",
+            "content": "Tento experimentální nástroj může pomoci městským plánovačům rychle otestovat různé strategie pro umístění nových cyklostezek."
+          },
+          "heatActions": {
+            "title": "Plánování opatření proti vlnám horka",
+            "content": "Města čelí riziku vln horka a musí investovat do nové infrastruktury. Náš nástroj organizuje data, aby usnadnil rozhodování a zkoumal řešení."
+          },
+          "heatRisk": {
+            "title": "Rizikové oblasti vln horka",
+            "content": "Města čelí riziku vln horka a musí investovat do nové infrastruktury. Náš nástroj organizuje data, aby usnadnil rozhodování a zkoumal řešení."
+          }
+        },
+        "categories": {
+          "traffic": "Doprava",
+          "environment": "Životní prostředí",
+          "energy": "Energie",
+          "citizens": "Občané"
+        }
+      }
+    }
+  },
+  "datasetFacets": {
+    "facets": {
+      "datascopeField": {
+        "countryData": "Národní data",
+        "io": "Mezinárodní data",
+        "eu": "Data Evropské unie"
+      },
+      "datascope": "Rozsah dat",
+      "dataServices": {
+        "dataServicesOnly": "Datové služby"
+      },
+      "country": "Původ",
+      "format": "Formáty",
+      "scoring": {
+        "badScoring": "Jakýkoliv",
+        "sufficientScoring": "Dostatečný",
+        "goodScoring": "Dobrý",
+        "excellentScoring": "Výborný"
+      },
+      "publisher": "Vydavatel",
+      "license": "Licence",
+      "keywords": "Klíčová slova",
+      "categories": "Kategorie",
+      "catalog": "Katalogy",
+      "countrydata": "Data země",
+      "tags": "Štítky"
+    },
+    "title": "Filtry",
+    "and": "A",
+    "settings": "Nastavení filtru",
+    "scoring": "Hodnocení",
+    "or": "NEBO",
+    "europeanCatalogs": "Evropské katalogy",
+    "operator": "Operátor",
+    "moreFilters": "Více filtrů",
+    "lessFilters": "Méně filtrů"
+  },
+  "homepage": {
+    "title": "Dobré ráno",
+    "subtitle": "Co je nového na vaší platformě?"
+  },
+  "datasetDetails": {
+    "previewFailedToLoad": "Něco se pokazilo. Obnovte stránku nebo to zkuste znovu později."
+  },
+  "message": {
+    "dataupload": {
+      "newDistribution": "Přidat distribuci",
+      "info": {
+        "defaultdescription": "Klikněte na ikonu informací pro zobrazení podrobného vysvětlení pole.",
+        "information": "Informace",
+        "advised": "Doporučeno",
+        "mandatory": "Povinné",
+        "recommended": "Doporučeno",
+        "overview": "Přehled",
+        "distributions": "Distribuce",
+        "add": "přidat další",
+        "repeatable": "Tato vlastnost je opakovatelná. Můžete {add} nebo {remove}.",
+        "remove": "odebrat tuto vlastnost",
+        "selectDisplayLanguage": "Vyberte zobrazovaný jazyk",
+        "expand": "Rozbalit vše",
+        "hide": "Skrýt vše",
+        "suggestions": "návrhy",
+        "suggestionText": "Můžete generovat návrhy na základě popisu, který jste zadali",
+        "tryIt": "Zkusit",
+        "searchVocabulary": "Zadejte libovolné slovo pro živé vyhledávání ve slovníku",
+        "matchesNothingFound": "Nic nenalezeno",
+        "preferredInput": "Zvolte preferovaný způsob zadávání",
+        "newDistribution": "Přidat distribuci",
+        "deleteDistribution": "Smazat všechny distribuce"
+      },
+      "steps": {
+        "Mandatory": "Povinná pole",
+        "Advised": "Doporučená pole",
+        "Recommended": "Doporučená pole",
+        "Distribution": "Distribuční pole",
+        "Overview": "Přehledová pole",
+        "MandatoryStep": "Povinné",
+        "AdvisedStep": "Doporučené",
+        "RecommendedStep": "Doporučené",
+        "DistributionsStep": "Distribuce",
+        "OverviewStep": "Přehled",
+        "nextDisStep": "Další krok distribuce",
+        "previousDisStep": "Předchozí krok distribuce",
+        "DataServiceStep": "Datová služba"
+      },
+      "datasets": {
+        "licenseAttributionByText": {
+          "help": "Tato vlastnost uchovává povinný text pojmenování pro licenční detaily.",
+          "info": "Tato vlastnost uchovává povinný text pojmenování pro licenční detaily.",
+          "label": "Licenční pojmenování podle textu",
+          "add-label": "Přidat více"
+        },
+        "licenseAttributionByTextTitle": {
+          "placeholder": "prosím zadejte název",
+          "help": "Název licenčního pojmenování podle textu",
+          "info": "Název licenčního pojmenování podle textu",
+          "label": "Název"
+        },
+        "availabilityDisDE": {
+          "help": "Dostupnost distribuce datové sady, vybraná z pevného seznamu hodnot prostřednictvím DCAT-AP URI.",
+          "info": "Dostupnost distribuce datové sady, vybraná z pevného seznamu hodnot prostřednictvím DCAT-AP URI.",
+          "label": "Dostupnost"
+        },
+        "accessServiceTitle": {
+          "label": "Název datové služby",
+          "add-label": "Přidat název datové služby v jiném jazyce",
+          "help": "Název datové přístupové služby.",
+          "info": "Název datové přístupové služby."
+        },
+        "accessService": {
+          "label": "Datová služba",
+          "add-label": "Přidat další datovou službu",
+          "info": "Tato vlastnost se vztahuje na datovou službu, která poskytuje přístup k distribuci datové sady.",
+          "help": "Datová služba, která poskytuje přístup k distribuci datové sady."
+        },
+        "accessServiceDescription": {
+          "label": "Popis datové služby",
+          "add-label": "Přidat popis datové služby v jiném jazyce",
+          "help": "Popis datové přístupové služby.",
+          "info": "Tato vlastnost obsahuje volný textový popis distribuce. Tato vlastnost může být opakována pro paralelní jazykové verze popisu."
+        },
+        "licenceVocabulary": {
+          "label": "Licence",
+          "help": "",
+          "info": ""
+        },
+        "licenceDetails": {
+          "label": "Licence",
+          "help": ""
+        },
+        "licence": {
+          "info": "Tato vlastnost se vztahuje na licenci, podle které je distribuce dostupná.",
+          "placeholder": "Distribuční licence zástupný text",
+          "label": "Licence",
+          "help": "Licence, podle které je distribuce dostupná."
+        },
+        "licenceURL": {
+          "label": "URL licence",
+          "placeholder": "Zadejte URL",
+          "help": "Odkaz na licenci."
+        },
+        "licenceTitle": {
+          "label": "Název licence",
+          "placeholder": "Název katalogové licence zástupný text",
+          "help": "Název licence."
+        },
+        "licenceDescription": {
+          "placeholder": "Popis katalogové licence zástupný text",
+          "label": "Popis licence",
+          "help": "Popis licence"
+        },
+        "format": {
+          "label": "Formát",
+          "info": "Tato vlastnost se vztahuje na formát souboru distribuce.",
+          "help": "Formát souboru distribuce.",
+          "placeholder": "Formát distribuce zástupný text"
+        },
+        "downloadUrl": {
+          "label": "Stáhnout URL",
+          "info": "Tato vlastnost obsahuje URL, která je přímým odkazem na stažitelný soubor v daném formátu.",
+          "help": "Přímý odkaz na stažitelný soubor v daném formátu.",
+          "placeholder": "Zadejte URL",
+          "add-label": "Přidat více URL ke stažení"
+        },
+        "accessUrl": {
+          "add-label": "Přidat URL přístupu",
+          "placeholder": "Zadejte URL",
+          "label": "Přístupová URL",
+          "info": "Tato vlastnost obsahuje URL, která poskytuje přístup k distribuci datové sady. Zdroj na přístupové URL může obsahovat informace o tom, jak získat datovou sadu.",
+          "help": "Tato vlastnost obsahuje URL, která poskytuje přístup k distribuci datové sady."
+        },
+        "accessUrlLink": {
+          "label": "URL",
+          "help": "",
+          "placeholder": "Odkaz na přístupovou URL",
+          "info": ""
+        },
+        "accessUrlFile": {
+          "label": "Soubor",
+          "help": ""
+        },
+        "status": {
+          "placeholder": "Distribuční stav zástupný text",
+          "label": "Stav",
+          "info": "Stav distribuce v kontextu životního cyklu vyspělosti. MUSÍ mít jednu z hodnot Dokončeno, Zastaralé, Ve vývoji, Staženo.",
+          "help": "Stav distribuce v kontextu životního cyklu vyspělosti."
+        },
+        "packageFormat": {
+          "label": "Formát balíčku",
+          "info": "Tato vlastnost se vztahuje na formát souboru, ve kterém je jedna nebo více datových souborů seskupeno dohromady, např. pro umožnění společného stažení souvisejících souborů. MĚLA by být vyjádřena pomocí typu média, jak je definováno v oficiálním registru typů médií spravovaného IANA.",
+          "help": "Formát souboru, ve kterém je jedna nebo více datových souborů seskupeno dohromady.",
+          "placeholder": "Distribuční formát balíčku zástupný text"
+        },
+        "compressFormat": {
+          "label": "Formát komprese",
+          "info": "Tato vlastnost se vztahuje na formát souboru, ve kterém jsou data obsažena v komprimované podobě, např. pro snížení velikosti stažitelného souboru. MĚLA by být vyjádřena pomocí typu média, jak je definováno v oficiálním registru typů médií spravovaného IANA.",
+          "help": "Formát souboru, ve kterém jsou data obsažena v komprimované podobě.",
+          "placeholder": "Distribuční formát komprese zástupný text"
+        },
+        "checksum": {
+          "label": "Kontrolní součet",
+          "placeholder": "Distribuční kontrolní součet zástupný text",
+          "info": "Tato vlastnost poskytuje mechanismus, který může být použit k ověření, že obsah distribuce nebyl změněn. Kontrolní součet souvisí s downloadURL.",
+          "help": "Kontrolní součet souvisí s downloadURL."
+        },
+        "checksumAlgorithm": {
+          "label": "Algoritmus kontrolního součtu",
+          "help": "Algoritmus použitý pro kontrolní součet.",
+          "info": "Algoritmus použitý pro kontrolní součet.",
+          "placeholder": "Algoritmus kontrolního součtu zástupný text"
+        },
+        "mediaType": {
+          "label": "Typ média",
+          "info": "Tato vlastnost se vztahuje na formát souboru, ve kterém jsou data obsažena v komprimované podobě, např. pro snížení velikosti stažitelného souboru. MĚLA by být vyjádřena pomocí typu média, jak je definováno v oficiálním registru typů médií.",
+          "help": "Formát souboru, ve kterém jsou data obsažena v komprimované podobě.",
+          "placeholder": "Distribuční typ média zástupný text"
+        },
+        "availability": {
+          "label": "Dostupnost",
+          "placeholder": "Dostupnost distribuce zástupný text",
+          "info": "Jak dlouho se plánuje, že distribuce datové sady bude dostupná.",
+          "help": "Jak dlouho se plánuje, že distribuce datové sady bude dostupná."
+        },
+        "byteSize": {
+          "label": "Velikost v bajtech",
+          "info": "Tato vlastnost obsahuje velikost distribuce v bajtech.",
+          "help": "Velikost distribuce v bajtech.",
+          "placeholder": "Zástupný text pro velikost distribuce v bajtech"
+        },
+        "accessServiceEndpointURL": {
+          "label": "URL koncového bodu datové služby",
+          "placeholder": "Zadejte URL",
+          "help": "Odkaz na webovou stránku datové služby.",
+          "info": "Odkaz na webovou stránku datové služby."
+        },
+        "rights": {
+          "info": "Tato vlastnost se vztahuje na prohlášení, které specifikuje práva spojená s distribucí.",
+          "help": "Tato vlastnost se vztahuje na prohlášení, které specifikuje práva spojená s distribucí.",
+          "placeholder": "Zástupný text pro práva distribuce",
+          "label": "Práva"
+        },
+        "rightsUrl": {
+          "label": "URL práv",
+          "placeholder": "Zástupná URL pro práva",
+          "help": "Odkaz na definici práv",
+          "info": "Odkaz na definici práv"
+        },
+        "rightsString": {
+          "label": "Prohlášení o právech",
+          "placeholder": "Zástupné prohlášení o právech",
+          "help": "Prohlášení popisující práva spojená s distribucí"
+        },
+        "hasPolicy": {
+          "label": "Má politiku",
+          "info": "Tato vlastnost se vztahuje na politiku vyjadřující práva spojená s distribucí, pokud používáte slovník ODRL.",
+          "help": "Politika vyjadřující práva.",
+          "add-label": "Přidat politiku"
+        },
+        "hasPolicyUrl": {
+          "placeholder": "Zadejte URL",
+          "label": "URL",
+          "help": "Politika vyjadřující práva",
+          "info": "Tato vlastnost se vztahuje na politiku vyjadřující práva spojená s distribucí, pokud používáte slovník ODRL."
+        },
+        "disTitle": {
+          "help": "Název distribuce.",
+          "placeholder": "Jazyk"
+        },
+        "conditional": {
+          "text": "Prosím, zadejte text",
+          "URL": "Prosím, zadejte URL",
+          "vocabulary": "Prohledat slovník",
+          "manually": "Prosím, zadejte informace ručně",
+          "Text": "Prosím, zadejte text",
+          "fileupload": "Poskytněte soubor"
+        },
+        "individual": {
+          "foaf:mbox": "Prosím, zadejte platnou e-mailovou adresu",
+          "foaf:name": "Prosím, zadejte jméno",
+          "foaf:homepage": "Prosím, zadejte platnou domovskou stránku",
+          "text": "Prosím, zadejte text",
+          "dct:title": "Prosím, zadejte název",
+          "skos:prefLabel": "Prosím, zadejte popis",
+          "skos:exactMatch": "Prosím, zadejte URL"
+        },
+        "titleLabel": {
+          "label": "Text názvu",
+          "help": "Prosím, zadejte název.",
+          "info": "Prosím, zadejte název.",
+          "placeholder": "Přidat název"
+        },
+        "datasetDescription": {
+          "label": "Popis datové sady",
+          "help": "Popis datové sady",
+          "info": "Hlavní popis datové sady. Často je zobrazován spolu s názvem balíčku. Zejména by měl začínat krátkou větou, která stručně popisuje datovou sadu, protože prvních pár slov může být použito v některých zobrazeních datových sad.",
+          "add-label": "Přidat více popisů"
+        },
+        "keywordHeader": {
+          "label": "Klíčová slova pro popis datové sady",
+          "help": "Vyberte popisná klíčová slova",
+          "info": "Termíny, které mohou tuto datovou sadu propojit s podobnými. Klíčová slova musí být malými písmeny a obsahovat pouze alfanumerické znaky nebo symboly: -_. Slova ve frázích by měla být propojena pomlčkou. např. znečištění, řeky, kvalita-vody",
+          "add-label": "Přidat více klíčových slov"
+        },
+        "isReferencedBy": {
+          "add-label": "Přidat Je odkazováno",
+          "placeholder": "Tato datová sada je odkazována",
+          "help": "Tato vlastnost se týká souvisejícího zdroje.",
+          "info": "Tato vlastnost se týká souvisejícího zdroje, jako je publikace, která odkazuje, cituje nebo jiným způsobem ukazuje na datovou sadu.",
+          "label": "Je odkazováno"
+        },
+        "contactPointAddressCity": {
+          "placeholder": "Město kontaktního bodu",
+          "label": "Město adresy",
+          "help": "Město adresy kontaktního bodu",
+          "info": "Město adresy kontaktního bodu"
+        },
+        "source": {
+          "label": "Zdroj",
+          "help": "Datová sada, ze které je popisovaná datová sada odvozena.",
+          "info": "Tato vlastnost se vztahuje na související datovou sadu, ze které je popisovaná datová sada odvozena.",
+          "placeholder": "Přidat zdroj",
+          "add-label": "Přidat zdroj"
+        },
+        "type": {
+          "label": "Typ",
+          "help": "Tato vlastnost se vztahuje na typ datové sady.",
+          "info": "Tato vlastnost se vztahuje na typ datové sady.",
+          "placeholder": "Přidat typ"
+        },
+        "pageUrl": {
+          "label": "URL",
+          "placeholder": "Zadejte URL stránky",
+          "help": "Odkaz na webovou stránku.",
+          "info": "Odkaz na webovou stránku."
+        },
+        "admsIdentifierSkosNotation": {
+          "help": "Schéma adms:identifikátorů",
+          "label": "Schéma",
+          "info": "Schéma adms:identifikátorů"
+        },
+        "spatialPlace": {
+          "placeholder": "Prosím, vyberte",
+          "label": "Místo",
+          "help": ""
+        },
+        "subject": {
+          "label": "Předmět",
+          "help": "Kategorie datové sady.",
+          "info": "Tato vlastnost se vztahuje na kategorii datové sady. Datová sada může být spojena s více tématy.",
+          "placeholder": "Zástupný text pro předmět datové sady"
+        },
+        "qualifiedRelationUrl": {
+          "placeholder": "Zadejte URL kvalifikovaného vztahu",
+          "label": "URL",
+          "help": "Odkaz na webovou stránku vlastnosti.",
+          "info": "Odkaz na webovou stránku vztahu."
+        },
+        "accrualPeriodicity": {
+          "info": "Tato vlastnost se vztahuje na frekvenci, s jakou je datová sada aktualizována.",
+          "label": "Periodicita shromažďování",
+          "placeholder": "Zástupný text pro periodicitu shromažďování datové sady",
+          "help": "Tato vlastnost se vztahuje na frekvenci, s jakou je datová sada aktualizována."
+        },
+        "isReferencedByUrl": {
+          "label": "URL",
+          "placeholder": "Zadejte URL",
+          "help": "Odkaz na webovou stránku vlastnosti.",
+          "info": "Odkaz na webovou stránku vlastnosti."
+        },
+        "versionNotes": {
+          "placeholder": "Prosím, uveďte poznámky k verzi.",
+          "label": "Poznámky k verzi",
+          "help": "Popis změn mezi touto a předchozí verzí datové sady.",
+          "info": "Tato vlastnost obsahuje popis rozdílů mezi touto verzí a předchozí verzí datové sady. Tuto vlastnost lze opakovat pro paralelní jazykové verze poznámek k verzi.",
+          "add-label": "Přidat poznámky k verzi v jiném jazyce"
+        },
+        "contactPointAddressStreet": {
+          "label": "Adresa ulice",
+          "placeholder": "Název ulice",
+          "help": "Ulice adresy kontaktního bodu",
+          "info": "Ulice adresy kontaktního bodu"
+        },
+        "relationUrl": {
+          "label": "URL",
+          "placeholder": "Zadejte URL",
+          "help": "Odkaz na webovou stránku vztahu.",
+          "info": "Odkaz na webovou stránku vztahu."
+        },
+        "isVersionOfUrl": {
+          "placeholder": "Zadejte URL",
+          "label": "URL",
+          "help": "Odkaz na webovou stránku vlastnosti.",
+          "info": "Odkaz na webovou stránku vlastnosti."
+        },
+        "conformsTo": {
+          "label": "Odpovídá",
+          "help": "Tato vlastnost odkazuje na implementační pravidlo nebo jinou specifikaci.",
+          "info": "Tato vlastnost odkazuje na implementační pravidlo nebo jinou specifikaci.",
+          "placeholder": "Zástupný text pro odpovídá datové sadě",
+          "add-label": "Přidat odpovídá"
+        },
+        "pageFormat": {
+          "placeholder": "Formát stránky",
+          "label": "Formát",
+          "help": "Formát stránky.",
+          "info": "Formát stránky."
+        },
+        "qualifiedAttributionUrl": {
+          "placeholder": "Zadejte URL",
+          "label": "URL",
+          "help": "Odkaz na webovou stránku vlastnosti.",
+          "info": "Odkaz na webovou stránku vlastnosti."
+        },
+        "isVersionOf": {
+          "add-label": "Přidat je verzí",
+          "help": "Datová sada je verze, vydání nebo adaptace.",
+          "label": "Je verzí",
+          "info": "Tato vlastnost se vztahuje na související datovou sadu, jejíž verzí, vydáním nebo adaptací je popisovaná datová sada.",
+          "placeholder": "Zástupný text pro je verzí datové sady"
+        },
+        "relation": {
+          "placeholder": "Zástupný text pro vztah datové sady",
+          "add-label": "Přidat vztah",
+          "help": "Tato vlastnost odkazuje na související zdroj.",
+          "info": "Tato vlastnost odkazuje na související zdroj.",
+          "label": "Vztah"
+        },
+        "provenance": {
+          "label": "Text původu",
+          "help": "Tato vlastnost obsahuje prohlášení o původu datové sady.",
+          "add-label": "Přidat původ",
+          "info": "Tato vlastnost obsahuje prohlášení o původu datové sady.",
+          "placeholder": "prosím, uveďte původ"
+        },
+        "provenanceGroup": {
+          "label": "Původ",
+          "help": "Tato vlastnost obsahuje prohlášení o původu datové sady.",
+          "add-label": "Přidat původ",
+          "info": "Tato vlastnost obsahuje prohlášení o původu datové sady.",
+          "placeholder": "Zástupný text pro původ datové sady"
+        },
+        "language": {
+          "help": "Vyberte jazyk uvedené vlastnosti",
+          "info": "Vyberte jazyk uvedené vlastnosti",
+          "placeholder": "Vyberte jazyk",
+          "label": "Jazyk"
+        },
+        "spatialContinent": {
+          "placeholder": "Zástupný text pro kontinent",
+          "label": "Kontinent",
+          "help": "",
+          "info": ""
+        },
+        "spatialResolutionInMeters": {
+          "help": "Tato vlastnost odkazuje na minimální prostorové rozlišení v datové sadě, měřeno v metrech.",
+          "info": "Tato vlastnost odkazuje na minimální prostorové rozlišení v datové sadě, měřeno v metrech.",
+          "label": "Prostorové rozlišení v metrech",
+          "placeholder": "Zástupný text pro prostorové rozlišení v metrech"
+        },
+        "qualifiedAttribution": {
+          "add-label": "Přidat kvalifikovanou atribuci",
+          "help": "Odkaz na agenta, který má nějakou odpovědnost za zdroj",
+          "info": "Tato vlastnost odkazuje na agenta, který má nějakou odpovědnost za zdroj",
+          "label": "Kvalifikovaná atribuce",
+          "placeholder": "Zástupný text pro kvalifikovanou atribuci"
+        },
+        "temporal": {
+          "help": "Tato vlastnost odkazuje na časové období, které datová sada pokrývá.",
+          "info": "Tato vlastnost odkazuje na časové období, které datová sada pokrývá.",
+          "add-label": "Přidat časové období",
+          "label": "Časové období",
+          "placeholder": "Zástupný text pro časové období datové sady"
+        },
+        "temporalResolutionYear": {
+          "placeholder": "prosím, uveďte rok",
+          "label": "Rok",
+          "help": "Rok časového rozlišení.",
+          "info": "Počet let."
+        },
+        "admsIdentifier": {
+          "add-label": "Přidat další adms:Identifikátor",
+          "label": "Jiný identifikátor",
+          "help": "Identifikátor v konkrétním kontextu, sestávající z řetězce, který je identifikátorem.",
+          "info": "Identifikátor v konkrétním kontextu, sestávající z řetězce, který je identifikátorem; volitelný identifikátor pro schéma identifikátorů; volitelný identifikátor pro verzi schématu identifikátorů; volitelný identifikátor pro agenturu, která spravuje schéma identifikátorů"
+        },
+        "accessRights": {
+          "help": "Přístupová práva k datové sadě.",
+          "info": "Tato vlastnost odkazuje na informace, které naznačují, zda jsou data otevřená, mají přístupová omezení, nebo nejsou veřejná.",
+          "label": "Přístupová práva",
+          "placeholder": "Zástupný text pro přístupová práva k datové sadě"
+        },
+        "pageDescription": {
+          "label": "Popis stránky",
+          "placeholder": "Prosím, uveďte popis stránky",
+          "help": "Popište stránku co nejpřesněji",
+          "info": "Popis stránky.",
+          "add-label": "Přidat více"
+        },
+        "identifier": {
+          "add-label": "Přidat identifikátor",
+          "placeholder": "Hlavní identifikátor datové sady",
+          "label": "Identifikátor",
+          "help": "Tato vlastnost obsahuje hlavní identifikátor pro datovou sadu.",
+          "info": "Tato vlastnost obsahuje hlavní identifikátor pro datovou sadu, např. URI nebo jiný jedinečný identifikátor v kontextu katalogu."
+        },
+        "creatorName": {
+          "placeholder": "Jméno tvůrce",
+          "label": "Jméno",
+          "help": "Tato vlastnost odkazuje na jméno tvůrce.",
+          "info": "Tato vlastnost odkazuje na jméno tvůrce."
+        },
+        "hasVersionUrl": {
+          "label": "URL",
+          "placeholder": "Zadejte URL",
+          "help": "Odkaz na webovou stránku vlastnosti.",
+          "info": "Odkaz na webovou stránku vlastnosti."
+        },
+        "versionInfo": {
+          "label": "Informace o verzi",
+          "placeholder": "Zástupný text pro informace o verzi datové sady",
+          "help": "Číslo verze datové sady.",
+          "info": "Tato vlastnost obsahuje číslo verze nebo jiné označení verze datové sady."
+        },
+        "theme": {
+          "label": "Téma",
+          "placeholder": "Zástupný text pro téma datové sady",
+          "help": "Domény EuroVoc pro tuto datovou sadu.",
+          "info": "Hodnoty, které se mají použít pro tuto vlastnost, jsou URI konceptů ve slovníku."
+        },
+        "hasVersion": {
+          "placeholder": "Zástupný text pro má verzi datové sady",
+          "help": "To je verze, vydání nebo adaptace popisované datové sady.",
+          "info": "Tato vlastnost odkazuje na související datovou sadu, která je verzí, vydáním nebo adaptací popisované datové sady.",
+          "add-label": "Přidat má verzi",
+          "label": "Má verzi"
+        },
+        "temporalResolution": {
+          "add-label": "Přidat časové rozlišení",
+          "label": "Časové rozlišení",
+          "help": "Minimální časové období, které lze v datové sadě rozlišit.",
+          "info": "Tato vlastnost odkazuje na minimální časové období, které lze v datové sadě rozlišit.",
+          "placeholder": "Zástupný text pro časové rozlišení datové sady"
+        },
+        "wasGeneratedBy": {
+          "label": "Bylo vygenerováno",
+          "add-label": "Přidat bylo vygenerováno",
+          "placeholder": "Zástupný text pro bylo vygenerováno datovou sadou",
+          "help": "Tato vlastnost odkazuje na aktivitu, která vygenerovala.",
+          "info": "Tato vlastnost odkazuje na aktivitu, která vygenerovala, nebo poskytuje obchodní kontext pro vytvoření datové sady."
+        },
+        "temporalResolutionHour": {
+          "placeholder": "Zástupný text pro časové rozlišení v hodinách",
+          "label": "Hodina",
+          "help": "Hodina časového rozlišení.",
+          "info": "Hodina časového rozlišení."
+        },
+        "qualifiedRelation": {
+          "help": "Tato vlastnost poskytuje odkaz na popis vztahu s jiným zdrojem",
+          "info": "Tato vlastnost poskytuje odkaz na popis vztahu s jiným zdrojem",
+          "label": "Kvalifikovaný vztah",
+          "add-label": "Přidat kvalifikovaný vztah",
+          "placeholder": "Zástupný text pro kvalifikovaný vztah datové sady"
+        },
+        "pageTitle": {
+          "placeholder": "Název stránky",
+          "label": "Název stránky",
+          "help": "Popisný název stránky",
+          "info": "Popisný název stránky",
+          "add": "Přidat další název stránky",
+          "add-label": "Přidat více"
+        },
+        "pageTitleSub": {
+          "placeholder": "Prosím, uveďte popisný název",
+          "label": "Text názvu",
+          "help": "Text pro název stránky.",
+          "info": "Text pro název stránky."
+        },
+        "landingPageUrl": {
+          "label": "URL",
+          "placeholder": "URL pro přistávací stránku",
+          "help": "Tato vlastnost odkazuje na webovou stránku, která poskytuje přístup k datové sadě, jejím distribucím a/nebo dalším informacím.",
+          "info": "Tato vlastnost odkazuje na webovou stránku, která poskytuje přístup k datové sadě, jejím distribucím a/nebo dalším informacím."
+        },
+        "conformsToTitle": {
+          "placeholder": "Poskytněte název, kterému datová sada odpovídá",
+          "label": "Název",
+          "help": "Název vlastnosti.",
+          "info": "Název vlastnosti."
+        },
+        "conformsToUrl": {
+          "placeholder": "Zadejte URL",
+          "label": "URL",
+          "help": "Odkaz na vlastnost.",
+          "info": "Odkaz na vlastnost."
+        },
+        "landingPage": {
+          "help": "Tato vlastnost odkazuje na webovou stránku, která poskytuje přístup k datové sadě.",
+          "info": "Tato vlastnost odkazuje na webovou stránku, která poskytuje přístup k datové sadě, jejím distribucím a/nebo dalším informacím. Je určena k odkazování na přistávací stránku původního poskytovatele dat, ne na stránku na webu třetí strany, jako je například agregátor.",
+          "label": "Přistávací stránka",
+          "placeholder": "Zástupný text pro přistávací stránku datové sady",
+          "add-label": "Přidat přistávací stránku"
+        },
+        "creatorType": {
+          "label": "Typ",
+          "placeholder": "Osoba nebo organizace?",
+          "help": "Tato vlastnost odkazuje na typ tvůrce.",
+          "info": "Tato vlastnost odkazuje na typ tvůrce."
+        },
+        "contactPointAddressPostcode": {
+          "label": "PSČ adresy",
+          "placeholder": "PSČ",
+          "help": "PSČ adresy kontaktního bodu",
+          "info": "PSČ adresy kontaktního bodu"
+        },
+        "contactPointTelephone": {
+          "label": "Telefon",
+          "placeholder": "Telefonní číslo",
+          "help": "Telefonní číslo kontaktního bodu",
+          "info": "Telefonní číslo kontaktního bodu"
+        },
+        "spatial": {
+          "placeholder": "Prosím, vyberte",
+          "help": "Geografický region, který je pokryt datovou sadou.",
+          "info": "Tato vlastnost se vztahuje na geografický region, který je pokryt datovou sadou.",
+          "label": "Prostorový",
+          "add-label": "Přidat prostorový"
+        },
+        "page": {
+          "label": "Stránka",
+          "help": "Stránka nebo dokument o této datové sadě.",
+          "placeholder": "Zástupný text pro stránku datové sady",
+          "info": "Tato vlastnost se vztahuje na stránku nebo dokument o této datové sadě.",
+          "add-label": "Přidat stránku"
+        },
+        "temporalResolutionMonth": {
+          "placeholder": "Zástupný text pro časové rozlišení v měsících",
+          "label": "Měsíc",
+          "help": "Měsíc časového rozlišení.",
+          "info": "Počet měsíců."
+        },
+        "temporalResolutionSecond": {
+          "placeholder": "Zástupný text pro časové rozlišení v sekundách",
+          "label": "Sekunda",
+          "help": "Počet sekund.",
+          "info": "Počet sekund."
+        },
+        "identifierText": {
+          "placeholder": "Zástupný text pro text identifikátoru datové sady",
+          "label": "Text"
+        },
+        "contactPointAddressCountry": {
+          "label": "Země adresy",
+          "placeholder": "Název země",
+          "help": "Země adresy kontaktního bodu",
+          "info": "Země adresy kontaktního bodu"
+        },
+        "contactPointName": {
+          "placeholder": "Jméno kontaktního bodu",
+          "label": "Jméno",
+          "help": "Jméno kontaktního bodu",
+          "info": "Jméno kontaktního bodu"
+        },
+        "isUsedBy": {
+          "help": "Tato vlastnost se vztahuje na aplikaci nebo jinou práci, která používá datovou sadu jakýmkoli způsobem.",
+          "label": "Používá se v",
+          "info": "Tato vlastnost se vztahuje na aplikaci nebo jinou práci, která používá datovou sadu jakýmkoli způsobem.",
+          "placeholder": "Používá se v?",
+          "add-label": "Přidat více"
+        },
+        "contactPointType": {
+          "label": "Typ",
+          "placeholder": "Osoba nebo organizace?",
+          "help": "Typ kontaktního bodu",
+          "info": "Typ kontaktního bodu"
+        },
+        "temporalResolutionMinute": {
+          "placeholder": "Zástupný text pro časové rozlišení v minutách",
+          "label": "Minuta",
+          "help": "Minuty časového rozlišení.",
+          "info": "Počet minut."
+        },
+        "sourceUrl": {
+          "label": "URL",
+          "placeholder": "Zadejte URL",
+          "help": "Odkaz na webovou stránku vlastnosti.",
+          "info": "Odkaz na webovou stránku vlastnosti."
+        },
+        "spatialCountry": {
+          "label": "Země",
+          "placeholder": "Zástupný text pro prostorovou zemi datové sady",
+          "help": ""
+        },
+        "creatorEmail": {
+          "label": "Email",
+          "placeholder": "Email tvůrce",
+          "help": "Tato vlastnost se vztahuje na e-mailovou adresu tvůrce.",
+          "info": "Tato vlastnost se vztahuje na e-mailovou adresu tvůrce."
+        },
+        "contactPointEmail": {
+          "label": "Email",
+          "placeholder": "Emailová adresa kontaktního bodu",
+          "help": "E-mailová adresa kontaktního bodu",
+          "info": "E-mailová adresa kontaktního bodu"
+        },
+        "contactPointAddress": {
+          "label": "Adresa kontaktního bodu",
+          "help": "Plná adresa kontaktního bodu",
+          "info": "Plná adresa kontaktního bodu"
+        },
+        "admsIdentifierUrl": {
+          "label": "URL",
+          "placeholder": "URL identifikátoru adms",
+          "help": "Odkaz na webovou stránku admsIdentifier.",
+          "info": "Odkaz na webovou stránku admsIdentifier."
+        },
+        "temporalStart": {
+          "label": "Začátek",
+          "help": "Tato vlastnost odkazuje na začátek časového období, které datová sada pokrývá.",
+          "info": "Tato vlastnost odkazuje na začátek časového období, které datová sada pokrývá."
+        },
+        "contactPointOrganisationName": {
+          "placeholder": "Název organizace",
+          "label": "Název organizace",
+          "help": "Název organizace kontaktního bodu.",
+          "info": "Název organizace kontaktního bodu."
+        },
+        "creator": {
+          "help": "Tato vlastnost odkazuje na subjekt zodpovědný za vytvoření datové sady.",
+          "add-label": "Přidat tvůrce",
+          "info": "Tato vlastnost odkazuje na subjekt zodpovědný za vytvoření datové sady.",
+          "label": "Tvůrce"
+        },
+        "contactPoint": {
+          "label": "Kontaktní bod",
+          "placeholder": "Zástupný text pro kontaktní bod datové sady",
+          "add-label": "Přidat kontaktní bod",
+          "help": "Tato vlastnost obsahuje kontaktní informace.",
+          "info": "Tato vlastnost obsahuje kontaktní informace, které lze použít pro zasílání komentářů k datové sadě."
+        },
+        "admsIdentifierValue": {
+          "placeholder": "Prosím, poskytněte popis pro identifikátor",
+          "label": "Identifikátor",
+          "help": "Řetězec identifikátoru admsIdentifier.",
+          "info": "Řetězec identifikátoru admsIdentifier."
+        },
+        "temporalEnd": {
+          "label": "Konec",
+          "help": "Tato vlastnost odkazuje na konec časového období, které datová sada pokrývá.",
+          "info": "Tato vlastnost odkazuje na konec časového období, které datová sada pokrývá."
+        },
+        "contactPointUrl": {
+          "label": "URL",
+          "placeholder": "Prosím, poskytněte URL",
+          "help": "Webová stránka kontaktního bodu.",
+          "info": "Webová stránka kontaktního bodu"
+        },
+        "temporalResolutionDay": {
+          "label": "Den",
+          "placeholder": "Zástupný text pro časové rozlišení v dnech",
+          "help": "Den časového rozlišení.",
+          "info": "Počet dnů."
+        },
+        "creatorHomepage": {
+          "placeholder": "Zástupný text pro domovskou stránku tvůrce",
+          "label": "Domovská stránka",
+          "help": "Tato vlastnost odkazuje na domovskou stránku tvůrce.",
+          "info": "Tato vlastnost odkazuje na domovskou stránku tvůrce."
+        },
+        "admsIdentifierType": {
+          "label": "Typ",
+          "help": "Typ admsIdentifier.",
+          "info": "Typ admsIdentifier.",
+          "placeholder": "Zástupný text pro typ identifikátoru adms"
+        },
+        "admsIdentifierCheckbox": {
+          "label": "adms:Identifier Checkbox"
+        },
+        "wasGeneratedByUrl": {
+          "label": "URL",
+          "placeholder": "Zadejte URL",
+          "help": "Odkaz na webovou stránku vlastnosti.",
+          "info": "Odkaz na webovou stránku vlastnosti."
+        },
+        "provenanceText": {
+          "label": "Text",
+          "placeholder": "Zástupný text pro text původu datové sady"
+        },
+        "schemeIdentifier": {
+          "label": "Schéma identifikátoru"
+        },
+        "description": {
+          "label": "Popis textu",
+          "add-label": "Přidat popis v jiném jazyce",
+          "placeholder": "Zástupný text pro popis datové sady",
+          "help": "Prosím, vyberte jazyk a uveďte popis datové sady.",
+          "info": "Prosím, vyberte jazyk a uveďte popis datové sady."
+        },
+        "publisherType": {
+          "label": "Typ",
+          "placeholder": "Zástupný text pro typ vydavatele datové sady"
+        },
+        "title": {
+          "add-label": "Přidat název v jiném jazyce",
+          "placeholder": "Zástupný text pro název datové sady",
+          "help": "Krátký popisný název datové sady.",
+          "info": "Krátký popisný název datové sady. Neměl by to být popis – ten patří do pole Popis. Nezakončujte tečkou. Nepoužívejte velká písmena.",
+          "label": "Název datové sady"
+        },
+        "datasetID": {
+          "help": "Tato vlastnost obsahuje hlavní identifikátor datové sady.",
+          "info": "Tato vlastnost obsahuje hlavní identifikátor datové sady, například URI nebo jiný jedinečný identifikátor v kontextu katalogu. MĚJTE NA PAMĚTI: pokud ID změníte ručně, generování ID podle vámi zadaného názvu už nebude fungovat.",
+          "label": "ID datové sady",
+          "invalidFormat": "ID datové sady může obsahovat pouze malá písmena, čísla a jednotlivé pomlčky (-). Prosím vyberte jiné ID.",
+          "duplicate": "Toto ID je již používáno, prosím vyberte jiné.",
+          "required": "Toto pole je povinné."
+        },
+        "publisherName": {
+          "placeholder": "Zástupný text pro název vydavatele datové sady",
+          "label": "Jméno"
+        },
+        "keyword": {
+          "add-label": "Přidat klíčové slovo",
+          "help": "Termíny, které mohou tuto datovou sadu spojit s podobnými.",
+          "placeholder": "Poskytněte popisná klíčová slova",
+          "info": "Termíny, které mohou tuto datovou sadu spojit s podobnými.",
+          "label": "Text klíčového slova"
+        },
+        "modified": {
+          "label": "Změněno",
+          "help": "Nejnovější datum, kdy byla datová sada změněna, aktualizována nebo upravena.",
+          "info": "Nejnovější datum, kdy byla datová sada změněna, aktualizována nebo upravena.",
+          "placeholder": "Zástupný text pro změněnou datovou sadu"
+        },
+        "publisher": {
+          "help": "Subjekt, jako je osoba, organizace nebo služba, který je zodpovědný za zpřístupnění datové sady.",
+          "add-label": "Přidat vydavatele v jiném jazyce",
+          "info": "Subjekt, jako je osoba, organizace nebo služba, který je zodpovědný za zpřístupnění datové sady.",
+          "placeholder": "Zástupný text pro vydavatele datové sady",
+          "label": "Vydavatel"
+        },
+        "datetime": {
+          "label": "Datum a čas",
+          "help": "Přijatelné formáty dat: YYYY-MM-DD:HH:MM.",
+          "info": ""
+        },
+        "catalog": {
+          "placeholder": "Vyberte katalog",
+          "help": "Katalog datové sady.",
+          "label": "Katalog",
+          "info": "Katalog datové sady."
+        },
+        "issued": {
+          "placeholder": "Zástupný text pro vydanou datovou sadu",
+          "label": "Vydáno",
+          "help": "Datum formálního vydání (například publikace) datové sady. Přijatelné formáty dat: YYYY-MM-DD, YYYY-MM, YYYY.",
+          "info": "Tato vlastnost obsahuje datum formálního vydání (například publikace) datové sady."
+        },
+        "publisherEmail": {
+          "placeholder": "E-mailová adresa vydavatele",
+          "label": "Email"
+        },
+        "publisherHomepage": {
+          "label": "Domovská stránka",
+          "placeholder": "Zástupný text pro domovskou stránku vydavatele datové sady"
+        },
+        "date": {
+          "label": "Datum",
+          "help": "Přijatelné formáty dat: YYYY-MM-DD.",
+          "info": ""
+        },
+        "stepper": {
+          "step4": {
+            "name": "@:message.metadata.dataServices"
+          },
+          "step3": {
+            "children": {
+              "distribution3": {
+                "name": "Další informace"
+              },
+              "distribution4": {
+                "name": "Další informace"
+              },
+              "distribution1": {
+                "name": "Obecné informace"
+              },
+              "distribution2": {
+                "name": "Další informace"
+              }
+            },
+            "name": "@:message.dataupload.datasets.stepper.additional.name"
+          },
+          "overview": "Přehled datové sady",
+          "distoverview": {
+            "name": "Přehled distribucí"
+          },
+          "essential": {
+            "name": "Základní vlastnosti"
+          },
+          "additional": {
+            "name": "Další vlastnosti"
+          },
+          "advised": {
+            "name": "Doporučené vlastnosti"
+          },
+          "step2": {
+            "name": "@:message.dataupload.datasets.stepper.advised.name"
+          },
+          "step1": {
+            "name": "@:message.dataupload.datasets.stepper.essential.name"
+          }
+        },
+        "spatialUrl": {
+          "label": "Prostorová URL",
+          "placeholder": "Prostorová URL",
+          "help": "Pomocný text pro prostorovou URL",
+          "info": "Pomocný text pro prostorovou URL"
+        },
+        "spatialVocabulary": {
+          "label": "Prostorový",
+          "placeholder": "Vyberte slovník",
+          "help": "Buď kontinent, země nebo místo.",
+          "info": "Buď kontinent, země nebo místo."
+        },
+        "qualifiedRelationHadRole": {
+          "placeholder": "Zástupný text pro roli",
+          "info": "Informační text pro roli",
+          "help": "Pomocný text pro roli",
+          "label": "Měla roli"
+        },
+        "politicalGeocodingLevelURI": {
+          "help": "Pro kódované označení příslušné úrovně principu řízení, ze které byla datová struktura sesbírána a nastavena.",
+          "info": "Pro kódované označení příslušné úrovně principu řízení, ze které byla datová struktura sesbírána a nastavena.",
+          "label": "URI politického geokódování úrovně",
+          "placeholder": "Vyhledat slovník"
+        },
+        "politicalGeocodingURI": {
+          "help": "Tato vlastnost propojuje datovou sadu se správní oblastí Spolkové republiky Německo, kterou pokrývá, jako je konkrétní spolková země, obec nebo okres reprezentovaný URI.",
+          "info": "Tato vlastnost propojuje datovou sadu se správní oblastí Spolkové republiky Německo, kterou pokrývá, jako je konkrétní spolková země, obec nebo okres reprezentovaný URI.",
+          "label": "URI politického geokódování",
+          "placeholder": "Vyberte nebo zadejte URL pro slovník",
+          "add-label": "Přidat více"
+        },
+        "politicalGeocodingURIVocabulary": {
+          "help": "Tato vlastnost propojuje datovou sadu se správní oblastí Spolkové republiky Německo, kterou pokrývá, jako je konkrétní spolková země, obec nebo okres reprezentovaný URI.",
+          "info": "Tato vlastnost propojuje datovou sadu se správní oblastí Spolkové republiky Německo, kterou pokrývá, jako je konkrétní spolková země, obec nebo okres reprezentovaný URI.",
+          "label": "Vyberte slovník",
+          "placeholder": "Vyhledat slovník"
+        },
+        "politicalGeocodingURIMunicipalityKey": {
+          "help": "Tato vlastnost propojuje datovou sadu se správní oblastí Spolkové republiky Německo, kterou pokrývá, jako je konkrétní spolková země, obec nebo okres reprezentovaný URI.",
+          "info": "Tato vlastnost propojuje datovou sadu se správní oblastí Spolkové republiky Německo, kterou pokrývá, jako je konkrétní spolková země, obec nebo okres reprezentovaný URI.",
+          "label": "Klíč obce"
+        },
+        "availabilityDE": {
+          "help": "Plánovaná dostupnost datové sady jako výběr z pevného seznamu hodnot prostřednictvím URI DCAT-AP.",
+          "info": "Plánovaná dostupnost datové sady jako výběr z pevného seznamu hodnot prostřednictvím URI DCAT-AP.",
+          "label": "Dostupnost",
+          "placeholder": "Vyhledat slovník"
+        },
+        "contributorID": {
+          "help": "Tato vlastnost přenáší ID poskytovatele dat z vlastního přístupu a správy identit portálu (pokud je k dispozici). Jeho přesné použití je definováno pouze pro doručení do GovData a je podrobně popsáno v příručce pro konvence.",
+          "info": "Tato vlastnost přenáší ID poskytovatele dat z vlastního přístupu a správy identit portálu (pokud je k dispozici). Jeho přesné použití je definováno pouze pro doručení do GovData a je podrobně popsáno v příručce pro konvence.",
+          "label": "ID přispěvatele",
+          "placeholder": "Vyhledat slovník"
+        },
+        "geocodingDescription": {
+          "help": "Tato vlastnost obsahuje geografické pokrytí datové sady, reprezentované názvem správní oblasti nebo předmětem jako volný text.",
+          "info": "Tato vlastnost obsahuje geografické pokrytí datové sady, reprezentované názvem správní oblasti nebo předmětem jako volný text.",
+          "label": "Popis geokódování",
+          "add-label": "Přidat více",
+          "placeholder": "Popis geokódování"
+        },
+        "legalBasis": {
+          "help": "Toto pole volitelně dokumentuje jako volný text právní základ pro přístup k informacím (přístupové otevření), tedy původní právní základ pro přístup k datům správy.",
+          "info": "Toto pole volitelně dokumentuje jako volný text právní základ pro přístup k informacím (přístupové otevření), tedy původní právní základ pro přístup k datům správy.",
+          "label": "Právní základ",
+          "add-label": "Přidat více",
+          "placeholder": "Právní základ"
+        },
+        "qualityProcessURI": {
+          "help": "URI, které odkazuje na proces zajištění kvality datové sady. Ideálně je to URL webové stránky.",
+          "info": "URI, které odkazuje na proces zajištění kvality datové sady. Ideálně je to URL webové stránky.",
+          "label": "URI procesu kvality",
+          "placeholder": "Přidat URL"
+        },
+        "contributor": {
+          "help": "Tato vlastnost odkazuje na subjekty nebo osoby, které data upravovaly (např. formátováním). Její použití je podrobně popsáno v příručce pro konvence.",
+          "info": "Tato vlastnost přenáší ID poskytovatele dat z vlastního přístupu a správy identit portálu (pokud je k dispozici). Jeho přesné použití je definováno pouze pro doručení do GovData.",
+          "label": "Přispěvatel",
+          "add-label": "Přidat více"
+        },
+        "contributorType": {
+          "help": "Typ přispěvatele",
+          "info": "Typ přispěvatele",
+          "label": "Typ přispěvatele",
+          "placeholder": "Poskytněte typ"
+        },
+        "contributorEmail": {
+          "help": "Emailová adresa přispěvatele",
+          "info": "Emailová adresa přispěvatele",
+          "label": "Emailová adresa přispěvatele",
+          "placeholder": "Poskytněte email"
+        },
+        "contributorName": {
+          "help": "Jméno přispěvatele",
+          "info": "Jméno přispěvatele",
+          "label": "Jméno přispěvatele",
+          "placeholder": "Poskytněte jméno"
+        },
+        "contributorHomepage": {
+          "help": "Domovská stránka přispěvatele",
+          "info": "Domovská stránka přispěvatele",
+          "label": "Domovská stránka přispěvatele",
+          "placeholder": "Poskytněte domovskou stránku"
+        },
+        "originator": {
+          "help": "Tato vlastnost odkazuje na osoby, které mají autorská práva k datové sadě. Podle autorského práva je dílo chráněno, pokud je osobním duševním výtvorem jeho autora.",
+          "info": "Tato vlastnost odkazuje na osoby, které mají autorská práva k datové sadě. Podle autorského práva je dílo chráněno, pokud je osobním duševním výtvorem jeho autora.",
+          "label": "Autor",
+          "add-label": "Přidat více"
+        },
+        "originatorType": {
+          "help": "Typ původce",
+          "info": "Typ původce",
+          "label": "Typ původce",
+          "placeholder": "Poskytněte typ"
+        },
+        "originatorEmail": {
+          "help": "Emailová adresa původce",
+          "info": "Emailová adresa původce",
+          "label": "Emailová adresa původce",
+          "placeholder": "Poskytněte email"
+        },
+        "originatorName": {
+          "help": "Jméno původce",
+          "info": "Jméno původce",
+          "label": "Jméno původce",
+          "placeholder": "Poskytněte jméno"
+        },
+        "originatorHomepage": {
+          "help": "Domovská stránka původce",
+          "info": "Domovská stránka původce",
+          "label": "Domovská stránka původce",
+          "placeholder": "Poskytněte domovskou stránku"
+        },
+        "maintainer": {
+          "help": "Tato vlastnost odkazuje na orgány nebo jednotlivce, kteří nesou odpovědnost a zodpovědnost za data a jejich správnou údržbu.",
+          "info": "Tato vlastnost odkazuje na orgány nebo jednotlivce, kteří nesou odpovědnost a zodpovědnost za data a jejich správnou údržbu.",
+          "label": "Správce",
+          "add-label": "Přidat více"
+        },
+        "maintainerType": {
+          "help": "Typ správce",
+          "info": "Typ správce",
+          "label": "Typ správce",
+          "placeholder": "Poskytněte typ"
+        },
+        "maintainerEmail": {
+          "help": "Emailová adresa správce",
+          "info": "Emailová adresa správce",
+          "label": "Emailová adresa správce",
+          "placeholder": "Poskytněte email"
+        },
+        "maintainerName": {
+          "help": "Jméno správce",
+          "info": "Jméno správce",
+          "label": "Jméno správce",
+          "placeholder": "Poskytněte jméno"
+        },
+        "maintainerHomepage": {
+          "help": "Domovská stránka správce",
+          "info": "Domovská stránka správce",
+          "label": "Domovská stránka správce",
+          "placeholder": "Poskytněte domovskou stránku"
+        },
+        "references": {
+          "help": "Tato vlastnost může být použita k odkazu na referenční datové sady, jako jsou High Value Dataset (HVD) nebo vzorové datové sady katalogu vzorových dat.",
+          "info": "Tato vlastnost může být použita k odkazu na referenční datové sady, jako jsou High Value Dataset (HVD) nebo vzorové datové sady katalogu vzorových dat.",
+          "label": "Reference",
+          "placeholder": "Přidat URL"
+        },
+        "descriptionLanguage": {
+          "info": "Vyberte jazyk zadaného popisu",
+          "placeholder": "Vyberte jazyk",
+          "label": "Jazyk",
+          "help": "Vyberte jazyk zadaného popisu"
+        },
+        "dctTitle": {
+          "placeholder": "Vyberte jazyk",
+          "help": "Poskytněte název ve zvoleném jazyce"
+        },
+        "pageTitlelang": {
+          "placeholder": "Vyberte jazyk",
+          "help": "Poskytněte název stránky ve zvoleném jazyce"
+        },
+        "page-desc": {
+          "placeholder": "Vyberte jazyk"
+        },
+        "pageDesc": {
+          "help": "Vyberte jazyk a správně popište stránku",
+          "placeholder": "Poskytněte popis stránky"
+        },
+        "keywordsLanguage": {
+          "placeholder": "Vyberte jazyk",
+          "help": "Vyberte jazyk a poskytněte popisná klíčová slova pro datovou sadu"
+        },
+        "temporalRange": {
+          "help": "Počáteční a koncové datum temporálu.",
+          "info": "Definuje rozsah temporálu",
+          "label": "Časové období temporálu"
+        }
+      },
+      "catalogues": {
+        "datasetID": {
+          "help": "Tato vlastnost obsahuje hlavní identifikátor katalogu.",
+          "info": "Tato vlastnost obsahuje hlavní identifikátor datasetu, např. URI nebo jiný jedinečný identifikátor v kontextu katalogu.",
+          "label": "ID katalogu"
+        },
+        "rights": {
+          "placeholder": "Text pro práva katalogu",
+          "help": "Prohlášení, které specifikuje práva spojená s katalogem.",
+          "label": "Práva",
+          "info": "Tato vlastnost se vztahuje na prohlášení, které specifikuje práva spojená s katalogem."
+        },
+        "rightsUrl": {
+          "label": "Práva URL",
+          "help": "Odkaz na definici práv",
+          "placeholder": "Práva URL",
+          "info": "Odkaz na definici práv"
+        },
+        "rightsString": {
+          "label": "Prohlášení o právech",
+          "help": "Prohlášení popisující práva spojená s distribucí",
+          "placeholder": "Prohlášení o právech"
+        },
+        "isPartOf": {
+          "label": "Je součástí",
+          "placeholder": "Text pro Je součástí katalogu",
+          "help": "Související katalog, ve kterém je popsaný katalog fyzicky nebo logicky zahrnut.",
+          "info": "Tato vlastnost se vztahuje na související katalog, ve kterém je popsaný katalog fyzicky nebo logicky zahrnut."
+        },
+        "catalog": {
+          "label": "Katalog",
+          "help": "Katalog, jehož obsah je v kontextu tohoto katalogu zajímavý.",
+          "info": "Tato vlastnost se vztahuje na katalog, jehož obsah je v kontextu tohoto katalogu zajímavý.",
+          "add-label": "Přidat katalog v jiném jazyce",
+          "placeholder": "Text katalogu"
+        },
+        "creatorEmail": {
+          "label": "Email",
+          "placeholder": "Emailová adresa tvůrce katalogu",
+          "help": ""
+        },
+        "language": {
+          "help": "Jazyk použitý v textových metadatech popisujících názvy, popisy atd.",
+          "info": "Tato vlastnost se vztahuje na jazyk použitý v textových metadatech popisujících názvy, popisy atd. datasetu. Tato vlastnost může být opakována, pokud jsou metadata poskytnuta ve více jazycích.",
+          "label": "Jazyk",
+          "add-label": "Přidat jazyk v jiném jazyce",
+          "placeholder": "Text pro jazyk katalogu"
+        },
+        "spatialVocabulary": {
+          "label": "Prostorové",
+          "placeholder": "Vyberte slovník",
+          "help": ""
+        },
+        "availabilityCatDE": {
+          "help": "Dostupnost katalogu",
+          "info": "Stav dostupnosti katalogu",
+          "label": "Dostupnost",
+          "placeholder": "Vyberte dostupnost"
+        },
+        "spatialUrl": {
+          "label": "Prostorová URL",
+          "help": "Nápověda pro prostorovou URL",
+          "placeholder": "Prostorová URL"
+        },
+        "spatialContinent": {
+          "label": "Kontinent",
+          "placeholder": "Text pro kontinent katalogu",
+          "help": ""
+        },
+        "spatial": {
+          "help": "Tato vlastnost se vztahuje na geografickou oblast pokrytou katalogem.",
+          "info": "Tato vlastnost se vztahuje na geografickou oblast pokrytou katalogem.",
+          "add-label": "Přidat prostor v jiném jazyce",
+          "label": "Prostor",
+          "placeholder": "Vyberte prosím"
+        },
+        "creatorType": {
+          "placeholder": "Text pro typ tvůrce katalogu",
+          "label": "Typ",
+          "help": ""
+        },
+        "hasPart": {
+          "add-label": "Přidat část",
+          "label": "Má část",
+          "help": "Tato vlastnost se vztahuje na související katalog, který je součástí popsaného katalogu.",
+          "placeholder": "Text pro Má část katalogu",
+          "info": "Tato vlastnost se vztahuje na související katalog, který je součástí popsaného katalogu."
+        },
+        "spatialCountry": {
+          "label": "Země",
+          "placeholder": "Text pro zemi katalogu",
+          "help": ""
+        },
+        "creator": {
+          "help": "Subjekt odpovědný za vytvoření katalogu.",
+          "info": "Tato vlastnost se vztahuje na subjekt odpovědný za vytvoření katalogu.",
+          "label": "Tvůrce",
+          "add-label": "Přidat tvůrce"
+        },
+        "hasPartURL": {
+          "placeholder": "Poskytněte URL",
+          "label": "Má část",
+          "help": "Odkaz na katalog, který je součástí popsaného katalogu."
+        },
+        "spatialPlace": {
+          "placeholder": "Vyberte prosím",
+          "label": "Místo",
+          "help": ""
+        },
+        "creatorHomepage": {
+          "label": "Domovská stránka",
+          "placeholder": "Text pro domovskou stránku tvůrce katalogu",
+          "help": "Tato vlastnost se vztahuje na domovskou stránku tvůrce.",
+          "info": "Tato vlastnost se vztahuje na domovskou stránku tvůrce."
+        },
+        "creatorName": {
+          "placeholder": "Text pro jméno tvůrce katalogu",
+          "label": "Jméno"
+        },
+        "issued": {
+          "info": "Tato vlastnost obsahuje datum, kdy byl dataset zařazen do katalogu.",
+          "add-label": "Přidat datum vydání v jiném jazyce",
+          "label": "Datum vydání",
+          "placeholder": "Text pro datum vydání katalogu",
+          "help": "Tato vlastnost obsahuje datum, kdy byl dataset zařazen do katalogu."
+        },
+        "title": {
+          "label": "Název",
+          "placeholder": "Text pro název katalogu",
+          "help": "Název přiřazený záznamu katalogu.",
+          "info": "Tato vlastnost obsahuje název přiřazený záznamu katalogu. Tato vlastnost může být opakována pro paralelní jazykové verze názvu.",
+          "add-label": "Přidat název v jiném jazyce"
+        },
+        "description": {
+          "label": "Popis",
+          "help": "Tato vlastnost obsahuje popis záznamu ve volném textu.",
+          "info": "Tato vlastnost obsahuje popis záznamu ve volném textu. Tato vlastnost může být opakována pro paralelní jazykové verze popisu.",
+          "add-label": "Přidat popis v jiném jazyce",
+          "placeholder": "Text pro popis katalogu"
+        },
+        "license": {
+          "help": "Licence, pod kterou může být katalog použit nebo znovu použit.",
+          "info": "Tato vlastnost se vztahuje na licenci, pod kterou může být katalog použit nebo znovu použit.",
+          "label": "Licence",
+          "placeholder": "Text pro licenci katalogu"
+        },
+        "modified": {
+          "help": "Nejnovější datum, kdy byl záznam katalogu změněn nebo upraven.",
+          "info": "Tato vlastnost obsahuje nejnovější datum, kdy byl záznam katalogu změněn nebo upraven.",
+          "placeholder": "Text pro datum úpravy katalogu",
+          "label": "Datum úpravy",
+          "add-label": "Přidat datum úpravy v jiném jazyce"
+        },
+        "publisher": {
+          "label": "Vydavatel",
+          "placeholder": "Text pro vydavatele katalogu",
+          "help": "Tato vlastnost se vztahuje na subjekt (organizaci) odpovědný za zpřístupnění datasetu.",
+          "info": "Tato vlastnost se vztahuje na subjekt (organizaci) odpovědný za zpřístupnění datasetu."
+        },
+        "licenceDescription": {
+          "label": "Popis licence",
+          "placeholder": "Zástupný text pro popis licence katalogu",
+          "help": "Popis licence"
+        },
+        "licenceURL": {
+          "placeholder": "Zadejte URL",
+          "label": "URL licence",
+          "help": "Odkaz na licenci."
+        },
+        "homepage": {
+          "placeholder": "Zástupný text pro úvodní stránku katalogu",
+          "label": "Úvodní stránka",
+          "help": "Webová stránka, která slouží jako hlavní stránka katalogu.",
+          "info": "Tato vlastnost odkazuje na webovou stránku, která slouží jako hlavní stránka katalogu."
+        },
+        "datetime": {
+          "label": "Datum a čas",
+          "help": "Přijatelné formáty data: RRRR-MM-DD:HH:MM.",
+          "info": ""
+        },
+        "catalogURL": {
+          "label": "URL katalogu",
+          "placeholder": "Zadejte URL",
+          "help": "Odkaz na katalog, jehož obsah je zajímavý pro tento katalog."
+        },
+        "date": {
+          "label": "Datum",
+          "help": "Přijatelné formáty data: RRRR-MM-DD.",
+          "info": ""
+        },
+        "stepper": {
+          "overview": "Přehled katalogu",
+          "step1": {
+            "name": "Krok 1: Vytvořit katalog"
+          },
+          "step2": {
+            "name": "Krok 2: Definovat vlastnosti katalogu"
+          }
+        },
+        "politicalGeocodingLevelURI": {
+          "help": "Pro kódované označení příslušné úrovně řízení, ze které byla struktura dat shromážděna a nastavena.",
+          "info": "Pro kódované označení příslušné úrovně řízení, ze které byla struktura dat shromážděna a nastavena.",
+          "label": "URI úrovně politického geokódování"
+        }
+      },
+      "clear": "Vymazat",
+      "deletemodal": {
+        "deleteDistribution": "Smazat distribuci",
+        "areyousure": "Opravdu chcete tuto distribuci smazat?"
+      },
+      "createUniqueID": "Vytvořit jedinečné ID",
+      "saveasdraft": "Uložit jako koncept",
+      "savedataset": "Uložit datovou sadu",
+      "skipDistribution": "Přeskočit distribuce",
+      "next": "Další krok",
+      "noDistributions": "Žádné dostupné distribuce",
+      "savedraft": "Uložit koncept",
+      "searchVocabulary": "Vyhledat slovník",
+      "error": {
+        "general": "Došlo k chybě. Zkuste to prosím později!",
+        "invalid-message": "Chybí některá pole. Vyplňte prosím všechna povinná pole!"
+      },
+      "type": "Typ",
+      "preview": "Předchozí krok",
+      "submit": "Odeslat",
+      "publishdataset": "Publikovat datovou sadu",
+      "validationtitle": "Validace",
+      "publishdraft": "Publikovat koncept",
+      "publishcatalogue": "Publikovat katalog",
+      "validationerror": "Došlo k chybě při validaci vašeho formuláře!",
+      "distributions": {
+        "licenseAttributionByText": {
+          "help": "Tato vlastnost uchovává povinný text pro uvedení licence.",
+          "info": "Tato vlastnost uchovává povinný text pro uvedení licence.",
+          "label": "Uvedení licence podle textu",
+          "add-label": "Přidat více"
+        },
+        "licenseAttributionByTextTitle": {
+          "placeholder": "uveďte prosím název",
+          "help": "Název uvedení licence podle textu",
+          "info": "Název uvedení licence podle textu",
+          "label": "Název"
+        },
+        "availabilityDisDE": {
+          "help": "Dostupnost distribuce datové sady, vybraná ze seznamu hodnot prostřednictvím DCAT-AP URI.",
+          "info": "Dostupnost distribuce datové sady, vybraná ze seznamu hodnot prostřednictvím DCAT-AP URI.",
+          "label": "Dostupnost"
+        },
+        "accessServiceTitle": {
+          "label": "Název datové služby",
+          "add-label": "Přidat název datové služby v jiném jazyce",
+          "help": "Název služby pro přístup k datům.",
+          "info": "Název služby pro přístup k datům."
+        },
+        "accessService": {
+          "label": "Datová služba",
+          "add-label": "Přidat další datovou službu",
+          "info": "Tato vlastnost odkazuje na datovou službu, která poskytuje přístup k distribuci datové sady.",
+          "help": "Datová služba, která poskytuje přístup k distribuci datové sady"
+        },
+        "accessServiceDescription": {
+          "label": "Popis datové služby",
+          "add-label": "Přidat popis datové služby v jiném jazyce",
+          "help": "Popis služby pro přístup k datům.",
+          "info": "Tato vlastnost obsahuje volný textový popis distribuce. Tuto vlastnost lze opakovat pro paralelní jazykové verze popisu."
+        },
+        "licenceVocabulary": {
+          "label": "Licence",
+          "help": "",
+          "info": ""
+        },
+        "licenceDetails": {
+          "label": "Licence",
+          "help": ""
+        },
+        "licence": {
+          "info": "Tato vlastnost odkazuje na licenci, pod kterou je distribuce poskytována.",
+          "placeholder": "Zástupný text pro licenci distribuce",
+          "label": "Licence",
+          "help": "Licence, pod kterou je distribuce poskytována."
+        },
+        "licenceURL": {
+          "label": "URL licence",
+          "placeholder": "Zadejte URL",
+          "help": "Odkaz na licenci."
+        },
+        "licenceTitle": {
+          "label": "Název licence",
+          "placeholder": "Zástupný text pro název licence katalogu",
+          "help": "Název licence."
+        },
+        "licenceDescription": {
+          "placeholder": "Zástupný text pro popis licence katalogu",
+          "label": "Popis licence",
+          "help": "Popis licence"
+        },
+        "modified": {
+          "info": "Tato vlastnost obsahuje nejnovější datum, kdy byla distribuce změněna nebo upravena.",
+          "help": "Datum, kdy byla distribuce změněna nebo upravena.",
+          "placeholder": "Zástupný text pro datum úpravy distribuce",
+          "label": "Upraveno"
+        },
+        "issued": {
+          "label": "Vydáno",
+          "info": "Tato vlastnost obsahuje datum formálního vydání (např. publikace) distribuce.",
+          "help": "Datum formálního vydání (např. publikace) distribuce.",
+          "placeholder": "Zástupný text pro datum vydání distribuce"
+        },
+        "date": {
+          "label": "Datum",
+          "help": "Přijatelné formáty data: RRRR-MM-DD.",
+          "info": ""
+        },
+        "datetime": {
+          "label": "Datum a čas",
+          "help": "Přijatelné formáty data: RRRR-MM-DD:HH:MM.",
+          "info": ""
+        },
+        "format": {
+          "label": "Formát",
+          "info": "Tato vlastnost odkazuje na formát souboru distribuce.",
+          "help": "Formát souboru distribuce.",
+          "placeholder": "Zástupný text pro formát distribuce"
+        },
+        "downloadUrl": {
+          "label": "Stáhnout URL",
+          "info": "Tato vlastnost obsahuje URL, které je přímým odkazem na stažení souboru v daném formátu.",
+          "help": "Přímý odkaz na stažení souboru v daném formátu.",
+          "placeholder": "Zadejte URL",
+          "add-label": "Přidat další URL ke stažení"
+        },
+        "description": {
+          "label": "Popis",
+          "placeholder": "Zástupný text pro popis distribuce",
+          "info": "Tato vlastnost obsahuje volný textový popis distribuce.",
+          "help": "Tato vlastnost obsahuje volný textový popis distribuce.",
+          "add-label": "Přidat popis v jiném jazyce"
+        },
+        "title": {
+          "label": "Název",
+          "add-label": "Přidat název v jiném jazyce",
+          "info": "Tato vlastnost obsahuje název, který je přidělen distribuci. Tuto vlastnost lze opakovat pro paralelní jazykové verze popisu.",
+          "help": "Tato vlastnost obsahuje název, který je přidělen distribuci.",
+          "placeholder": "Zástupný text pro název distribuce"
+        },
+        "accessUrl": {
+          "add-label": "Přidat přístupové URL",
+          "placeholder": "Zadejte URL",
+          "label": "Přístupové URL",
+          "info": "Tato vlastnost obsahuje URL, které poskytuje přístup k distribuci datové sady. Zdroj na přístupovém URL může obsahovat informace o tom, jak získat datovou sadu.",
+          "help": "Tato vlastnost obsahuje URL, které poskytuje přístup k distribuci datové sady."
+        },
+        "accessUrlLink": {
+          "label": "URL",
+          "help": "",
+          "placeholder": "Odkaz na přístupové URL",
+          "info": ""
+        },
+        "accessUrlFile": {
+          "label": "Soubor",
+          "help": ""
+        },
+        "spatialResolutionInMeters": {
+          "label": "Prostorové rozlišení v metrech",
+          "placeholder": "Zástupný text pro prostorové rozlišení distribuce v metrech",
+          "info": "Tato vlastnost odkazuje na minimální prostorové rozlišení v datové sadě, měřené v metrech.",
+          "help": "Minimální prostorové rozlišení v datové sadě."
+        },
+        "temporalResolutionSecond": {
+          "placeholder": "Zástupný text pro časové rozlišení datové sady v sekundách",
+          "label": "Sekundy",
+          "help": "Počet sekund.",
+          "info": "Počet sekund."
+        },
+        "temporalResolutionHour": {
+          "label": "Hodiny",
+          "placeholder": "Zástupný text pro časové rozlišení datové sady v hodinách",
+          "help": "Počet hodin.",
+          "info": "Počet hodin."
+        },
+        "temporalResolutionMinute": {
+          "placeholder": "Zástupný text pro časové rozlišení datové sady v minutách",
+          "label": "Minuty",
+          "help": "Počet minut.",
+          "info": ""
+        },
+        "temporalResolutionMonth": {
+          "label": "Měsíc",
+          "placeholder": "Zástupný text pro časové rozlišení datové sady v měsících",
+          "help": "Měsíc časového rozlišení.",
+          "info": "Počet minut."
+        },
+        "temporalResolutionYear": {
+          "label": "Rok",
+          "placeholder": "Zástupný text pro časové rozlišení datové sady v rocích",
+          "help": "Rok časového rozlišení.",
+          "info": "Počet let."
+        },
+        "temporalResolutionDay": {
+          "label": "Den",
+          "placeholder": "Zástupný text pro časové rozlišení datové sady v dnech",
+          "help": "Den časového rozlišení.",
+          "info": "Počet dnů."
+        },
+        "temporalResolution": {
+          "add-label": "Přidat časové rozlišení",
+          "label": "Časové rozlišení",
+          "placeholder": "Zástupný text pro časové rozlišení distribuce",
+          "info": "Tato vlastnost odkazuje na minimální časový interval, který lze vyřešit v distribuci datové sady.",
+          "help": "Minimální časový interval, který lze vyřešit v distribuci datové sady."
+        },
+        "status": {
+          "placeholder": "Zástupný text pro stav distribuce",
+          "label": "Stav",
+          "info": "Stav distribuce v kontextu životního cyklu zralosti. Musí obsahovat jednu z hodnot: Dokončeno, Zastaralé, Ve vývoji, Staženo.",
+          "help": "Stav distribuce v kontextu životního cyklu zralosti."
+        },
+        "language": {
+          "info": "Tato vlastnost odkazuje na jazyk použitý v distribuci. Tato vlastnost může být opakována, pokud jsou metadata poskytována ve více jazycích.",
+          "help": "Jazyk použitý v distribuci.",
+          "label": "Jazyk",
+          "placeholder": "Zástupný text pro jazyk distribuce"
+        },
+        "packageFormat": {
+          "label": "Formát balíčku",
+          "info": "Tato vlastnost odkazuje na formát souboru, ve kterém jsou seskupeny jeden nebo více datových souborů, např. pro umožnění stahování sady souvisejících souborů najednou. Mělo by být vyjádřeno pomocí mediálního typu definovaného v oficiálním registru mediálních typů spravovaného IANA.",
+          "help": "Formát souboru, ve kterém jsou seskupeny jeden nebo více datových souborů.",
+          "placeholder": "Zástupný text pro formát balíčku distribuce"
+        },
+        "compressFormat": {
+          "label": "Komprimační formát",
+          "info": "Tato vlastnost odkazuje na formát souboru, ve kterém jsou data obsažena v komprimované formě, např. pro snížení velikosti stahovaného souboru. Mělo by být vyjádřeno pomocí mediálního typu definovaného v oficiálním registru mediálních typů spravovaného IANA.",
+          "help": "Formát souboru, ve kterém jsou data obsažena v komprimované formě.",
+          "placeholder": "Zástupný text pro komprimační formát distribuce"
+        },
+        "checksum": {
+          "label": "Kontrolní součet",
+          "placeholder": "Zástupný text pro kontrolní součet distribuce",
+          "info": "Tato vlastnost poskytuje mechanismus, který lze použít k ověření, že obsah distribuce se nezměnil. Kontrolní součet je spojen s downloadURL.",
+          "help": "Kontrolní součet je spojen s downloadURL."
+        },
+        "checksumAlgorithm": {
+          "label": "Algoritmus kontrolního součtu",
+          "help": "Algoritmus použitý pro kontrolní součet.",
+          "info": "Algoritmus použitý pro kontrolní součet.",
+          "placeholder": "Zástupný text pro algoritmus kontrolního součtu distribuce"
+        },
+        "mediaType": {
+          "label": "Mediální typ",
+          "info": "Tato vlastnost odkazuje na formát souboru, ve kterém jsou data obsažena v komprimované formě, např. pro snížení velikosti stahovaného souboru. Mělo by být vyjádřeno pomocí mediálního typu definovaného v oficiálním registru mediálních typů spravovaného IANA.",
+          "help": "Formát souboru, ve kterém jsou data obsažena v komprimované formě.",
+          "placeholder": "Zástupný text pro mediální typ distribuce"
+        },
+        "availability": {
+          "label": "Dostupnost",
+          "placeholder": "Zástupný text pro dostupnost distribuce",
+          "info": "Jak dlouho je plánováno udržovat dostupnost distribuce datové sady.",
+          "help": "Jak dlouho je plánováno udržovat dostupnost distribuce datové sady."
+        },
+        "byteSize": {
+          "label": "Velikost v bajtech",
+          "info": "Tato vlastnost obsahuje velikost distribuce v bajtech.",
+          "help": "Velikost distribuce v bajtech.",
+          "placeholder": "Zástupný text pro velikost distribuce v bajtech"
+        },
+        "type": {
+          "info": "Tato vlastnost odkazuje na mediální typ distribuce, jak je definováno v oficiálním registru mediálních typů spravovaného IANA.",
+          "help": "Mediální typ distribuce.",
+          "label": "Typ",
+          "placeholder": "Zástupný text pro typ distribuce"
+        },
+        "accessServiceEndpointURL": {
+          "label": "URL koncového bodu datové služby",
+          "placeholder": "Zadejte URL",
+          "help": "Odkaz na webovou stránku datové služby.",
+          "info": "Odkaz na webovou stránku datové služby."
+        },
+        "rights": {
+          "info": "Tato vlastnost odkazuje na prohlášení, které specifikuje práva spojená s distribucí.",
+          "help": "Tato vlastnost odkazuje na prohlášení, které specifikuje práva spojená s distribucí.",
+          "placeholder": "Zástupný text pro práva distribuce",
+          "label": "Práva"
+        },
+        "rightsUrl": {
+          "label": "URL práv",
+          "placeholder": "Zástupný text pro URL práv",
+          "help": "Odkaz na definici práv.",
+          "info": "Odkaz na definici práv."
+        },
+        "rightsString": {
+          "label": "Prohlášení o právech",
+          "placeholder": "Zástupný text pro prohlášení o právech",
+          "help": "Prohlášení popisující práva spojená s distribucí."
+        },
+        "conformsToUrl": {
+          "label": "URL",
+          "placeholder": "Zadejte URL",
+          "help": "Odkaz na vlastnost.",
+          "info": "Odkaz na vlastnost."
+        },
+        "conformsTo": {
+          "add-label": "Přidat další",
+          "label": "Vyhovuje",
+          "info": "Tato vlastnost odkazuje na zavedené schéma, kterému distribuce vyhovuje.",
+          "help": "Zavedené schéma, kterému distribuce vyhovuje.",
+          "placeholder": "Zástupný text pro vyhovující distribuci"
+        },
+        "conformsToTitle": {
+          "label": "Název",
+          "placeholder": "Zástupný text pro název vyhovující distribuce",
+          "help": "Název vlastnosti.",
+          "info": "Název vlastnosti."
+        },
+        "hasPolicy": {
+          "label": "Má politiku",
+          "info": "Tato vlastnost odkazuje na politiku vyjadřující práva spojená s distribucí při použití slovníku ODRL.",
+          "help": "Politika vyjadřující práva.",
+          "add-label": "Přidat politiku"
+        },
+        "hasPolicyUrl": {
+          "placeholder": "Zadejte URL",
+          "label": "URL",
+          "help": "Politika vyjadřující práva.",
+          "info": "Tato vlastnost odkazuje na politiku vyjadřující práva spojená s distribucí při použití slovníku ODRL."
+        },
+        "pageFormat": {
+          "placeholder": "Zástupný text pro formát stránky distribuce",
+          "label": "Formát",
+          "help": "Formát stránky.",
+          "info": "Formát stránky."
+        },
+        "pageUrl": {
+          "label": "URL",
+          "placeholder": "URL stránky distribuce",
+          "help": "Odkaz na webovou stránku.",
+          "info": "Odkaz na webovou stránku."
+        },
+        "pageDescription": {
+          "label": "Popis",
+          "placeholder": "Zástupný text pro popis stránky distribuce",
+          "help": "Popis stránky.",
+          "add-label": "Přidat další",
+          "info": "Popis stránky."
+        },
+        "page": {
+          "info": "Tato vlastnost odkazuje na stránku nebo dokument týkající se této distribuce.",
+          "help": "Stránka nebo dokument týkající se této distribuce.",
+          "label": "Stránka",
+          "add-label": "Přidat stránku",
+          "placeholder": "Zástupný text pro stránku distribuce"
+        },
+        "pageTitle": {
+          "placeholder": "Zástupný text pro název stránky distribuce",
+          "label": "Název stránky",
+          "help": "Popisný název stránky.",
+          "info": "Název stránky.",
+          "add-label": "Přidat další"
+        },
+        "stepper": {
+          "distoverview": {
+            "name": "Přehled distribuce"
+          },
+          "additional": {
+            "name": "@:message.dataupload.datasets.stepper.additional.name"
+          },
+          "advised": {
+            "name": "@:message.dataupload.datasets.stepper.advised.name"
+          },
+          "step3": {
+            "name": "@:message.dataupload.datasets.stepper.additional.name"
+          },
+          "step2": {
+            "name": "@:message.dataupload.datasets.stepper.advised.name"
+          },
+          "step1": {
+            "name": "@:message.dataupload.datasets.stepper.essential.name"
+          },
+          "step4": {
+            "name": "@:message.metadata.dataServices"
+          }
+        },
+        "disTitle": {
+          "help": "Název distribuce.",
+          "placeholder": "Jazyk"
+        },
+        "descriptionLanguage": {
+          "placeholder": "Vyberte jazyk",
+          "label": "Jazyk",
+          "info": "Tato vlastnost odkazuje na jazyk použitý v popisu distribuce. Tato vlastnost může být opakována, pokud jsou metadata poskytována ve více jazycích.",
+          "help": "Jazyk, ve kterém je popis distribuce."
+        }
+      },
+      "createDataset": "Vytvořit datovou sadu",
+      "defineDatasetProperties": "Definovat vlastnosti datové sady",
+      "createDistributions": "Vytvořit distribuce",
+      "generalInformation": "Obecné informace",
+      "additionalInformation": "Dodatečné informace",
+      "menu": {
+        "registerADoi": {
+          "confirm": "Zaregistrovat DOI (nevratné)",
+          "message": "Opravdu chcete zaregistrovat DOI? Tuto akci nelze vrátit zpět."
+        },
+        "markAsDraft": {
+          "confirm": "Nastavit jako koncept",
+          "message": "Opravdu chcete označit tuto datovou sadu jako koncept?"
+        },
+        "datasetDeletion": {
+          "confirm": "Smazat datovou sadu (nevratné)",
+          "message": "Opravdu chcete smazat tuto datovou sadu? Tuto akci nelze vrátit zpět."
+        },
+        "draftDatasets": "Koncepty datových sad",
+        "dpi": "Rozhraní poskytovatele dat",
+        "registerDoi": "Zaregistrovat DOI",
+        "logout": "Odhlásit se",
+        "setToDraft": "Nastavit jako koncept",
+        "editCatalogue": "Upravit katalog",
+        "editDataset": "Upravit datovou sadu",
+        "deleteDataset": "Smazat datovou sadu",
+        "loggedInAs": "Přihlášen jako"
+      },
+      "createNewCatalogue": "Vytvořit nový katalog",
+      "createNewDataset": "Vytvořit novou datovou sadu"
+    }
+  },
+  "userdashboard": {
+    "widgets": {
+      "orgnews": {
+        "status": {
+          "public": "Veřejné",
+          "draft": "Koncept"
+        },
+        "overview": "Vaše nové datové sady na první pohled",
+        "lastModified": "Poslední úprava",
+        "datasetstab": "Datové sady",
+        "statustab": "Stav",
+        "formattab": "Formát",
+        "nodata": "Žádná data nejsou k dispozici"
+      },
+      "news": {
+        "newsfrom": "Novinky z Městských datových prací",
+        "loading": "Načítání...",
+        "error": "Něco se pokazilo. Prosím, znovu načtěte stránku nebo to zkuste později.",
+        "view": "Zobrazit",
+        "new": {
+          "dataset": "Nová datová sada \"{title}\" byla nahrána",
+          "catalog": "Nový katalog \"{title}\" byl vytvořen",
+          "organization": "Nová organizace \"{title}\" byla vytvořena"
+        }
+      }
+    }
+  },
+  "organisation": {
+    "subtitle": "Zde najdete všechny organizace, které pomáhají formovat platformu.",
+    "categoriesOfData": "Kategorie dat",
+    "datasets": {
+      "label": "Organizační datové sady",
+      "noData": "Žádná data nejsou k dispozici",
+      "search": "Vyhledat datové sady",
+      "datasetName": "Název datové sady",
+      "createdOn": "Vytvořeno dne",
+      "license": "Licence",
+      "format": "Formát"
+    },
+    "colleagues": {
+      "label": "Kolegové",
+      "noData": "Žádná data nejsou k dispozici",
+      "search": "Vyhledat kolegy",
+      "name": "Jméno",
+      "position": "Pozice",
+      "access": "Přístup",
+      "contact": "Kontakt",
+      "email": "Email",
+      "phone": "Telefon"
+    }
+  }
+}

@@ -1,0 +1,98 @@
+:root {
+  --light-100: 255 255 255;
+  --light-200: 241 245 247;
+  --light-300: 217 225 231;
+  --light-400: 179 197 212;
+  --light-500: 153 178 198;
+  --light-600: 128 159 184;
+  --light-700: 102 127 147;
+  --light-800: 77 95 110;
+  --light-900: 51 64 74;
+  --light-1000: 26 41 37;
+
+  
+  /* --blue-100: 231 247 254;
+  --blue-200: 208 239 252;
+  --blue-300: 160 223 249;
+  --blue-400: 113 207 246;
+  --blue-500: 65 191 243;
+  --blue-600: 18 175 240;
+  --blue-700: 14 140 192;
+  --blue-800: 22 65 148;
+  --blue-900: 7 70 96;
+  --blue-1000: 4 35 48;
+
+  --orange-100: #fef0ed;
+  --orange-200: #fde0db;
+  --orange-300: #fac1b7;
+  --orange-400: #f8a392;
+  --orange-500: #f5846e;
+  --orange-600: #f3654a;
+  --orange-700: #c2513b;
+  --orange-800: #923d2c;
+  --orange-900: #61281e;
+  --orange-1000: #31140f;
+
+  --yellow-100: #fffaed;
+  --yellow-200: #fef4db;
+  --yellow-300: #fdeab7;
+  --yellow-400: #fcdf92;
+  --yellow-500: #fbd56e;
+  --yellow-600: #faca4a;
+  --yellow-700: #c8a23b;
+  --yellow-800: #96792c;
+  --yellow-900: #64511e;
+  --yellow-1000: #32280f;
+
+  --green-100: #e8fbf5;
+  --green-200: #d1f7ea;
+  --green-300: #a3eed6;
+  --green-400: #76e6c1;
+  --green-500: #48ddad;
+  --green-600: #1ad598;
+  --green-700: #15aa7a;
+  --green-800: #10805b;
+  --green-900: #0a553d;
+  --green-1000: #052b1e; */
+
+  /* --orig-primary-50: rgb(236 253 245);
+  --orig-primary-100: rgb(209 250 229);
+  --orig-primary-200: rgb(167 243 208);
+  --orig-primary-300: rgb(110 231 183);
+  --orig-primary-400: rgb(52 211 153);
+  --orig-primary-500: rgb(16 185 129);
+  --orig-primary-600: rgb(5 150 105);
+  --orig-primary-700: rgb(4 120 87);
+  --orig-primary-800: rgb(6 95 70);
+  --orig-primary-900: rgb(4 78 56);
+  --orig-primary-950: rgb(2 44 34);
+
+  --primary-50: rgb(236 253 245);
+  --primary-100: rgb(209 250 229);
+  --primary-200: rgb(167 243 208);
+  --primary-300: rgb(110 231 183);
+  --primary-400: rgb(52 211 153);
+  --primary-500: rgb(16 185 129);
+  --primary-600: rgb(5 150 105);
+  --primary-700: rgb(4 120 87);
+  --primary-800: rgb(6 95 70);
+  --primary-900: rgb(4 78 56);
+  --primary-950: rgb(2 44 34); */
+
+  --surface-0: rgb(255 255 255);
+  --surface-50: rgb(248 250 252);
+  --surface-100: rgb(241 245 249);
+  --surface-200: rgb(226 232 240);
+  --surface-300: rgb(203 213 225);
+  --surface-400: rgb(148 163 184);
+  --surface-500: rgb(100 116 139);
+  --surface-600: rgb(71 85 105);
+  --surface-700: rgb(45 55 72);
+  --surface-800: rgb(30 41 59);
+  --surface-900: rgb(15 23 42);
+  --surface-950: rgb(3 6 23);
+
+  --btn-hover: 182 234 250;
+  --btn-regular: 14 140 192;
+  --btn-pressed: 22 65 148;
+}

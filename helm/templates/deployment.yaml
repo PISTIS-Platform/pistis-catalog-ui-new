@@ -1,0 +1,200 @@
+{{- $APP_URL := include "city-os-ui.fullUrl" . -}}
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "city-os-ui.fullname" . }}
+  labels:
+    {{- include "city-os-ui.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      {{- include "city-os-ui.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      {{- with .Values.podAnnotations }}
+      annotations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      labels:
+        {{- include "city-os-ui.selectorLabels" . | nindent 8 }}
+    spec:
+      {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - name: http
+              containerPort: {{ .Values.service.port }}
+              protocol: TCP
+          readinessProbe:
+            httpGet:
+              path: /
+              port: http
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+          env:
+            - name: VITE_API_BASE_URL
+              value: {{ $APP_URL | quote }}
+            {{- if .Values.authConfig.enabled }}
+            - name: VITE_AUTHENTICATION_KEYCLOAK_URL
+              value: {{ include "common.tplvalues.render" (dict "value" .Values.authConfig.serverUrl "context" $) | quote }}
+            - name: VITE_AUTHENTICATION_KEYCLOAK_REALM
+              value: {{ include "common.tplvalues.render" (dict "value" .Values.authConfig.realm "context" $) | quote }}
+            - name: VITE_AUTHENTICATION_KEYCLOAK_CLIENT_ID
+              value: {{ .Values.authConfig.clientId | quote }}
+            - name: VITE_KEYCLOAK_MIN_TOKEN_VALIDITY
+              value: {{ .Values.authConfig.minTokenValidity | quote }}
+            {{- end }}
+            - name: VITE_LANGUAGE_DISPLAY_OPTIONS
+              value: {{ .Values.languages.displayOptions | join "," | quote }}
+            - name: VITE_LANGUAGE_FALLBACK
+              value: {{ .Values.languages.fallbackLanguage | quote }}
+            - name: VITE_SUPERSET_URL
+              value: {{ include "common.tplvalues.render" (dict "value" .Values.connections.superset "context" $) | quote }}
+            - name: VITE_API_HUB_SEARCH_URL
+              value: {{ include "common.tplvalues.render" (dict "value" .Values.connections.search "context" $) | quote }}
+            - name: VITE_API_HUB_REPO_URL
+              value: {{ include "common.tplvalues.render" (dict "value" .Values.connections.repo "context" $) | quote }}
+            - name: VITE_API_HUB_STORE_URL
+              value: {{ include "common.tplvalues.render" (dict "value" .Values.connections.store "context" $) | quote }}
+            - name: VITE_API_MIDDLEWARE_URL
+              value: {{ include "common.tplvalues.render" (dict "value" .Values.connections.middleware "context" $) | quote }}
+            - name: VITE_API_SPARQL_URL
+              value: {{ include "common.tplvalues.render" (dict "value" .Values.connections.sparql "context" $) | quote }}
+            - name: VITE_DIGITAL_TWIN_URL
+              value: {{ include "common.tplvalues.render" (dict "value" .Values.connections.digitalTwin "context" $) | quote }}
+            - name: VITE_CUSTOMER_NAME
+              value: {{ .Values.customerConfig.name | quote }}
+            - name: VITE_CUSTOMER_PRIMARY_COLOR
+              value: {{ .Values.customerConfig.primaryColor | quote }}
+            - name: VITE_CUSTOMER_LANDING_PAGE_PUBLIC
+              value: {{ .Values.customerConfig.landingPagePublic | quote }}
+            - name: VITE_CUSTOMER_REQUIRES_LOGIN
+              value: {{ .Values.customerConfig.landingPagePublic | quote }}
+            - name: VITE_CUSTOMER_MODULES_HOME_REQUIRES_LOGIN
+              value: {{ .Values.customerConfig.landingPagePublic | quote }}
+            - name: VITE_CUSTOMER_MODULES_HOME_AVAILABLE
+              value: {{ .Values.customerConfig.modules.home.available | quote }}
+            - name: VITE_CUSTOMER_MODULES_HOME_ORDER
+              value: {{ .Values.customerConfig.modules.home.order | quote }}
+            - name: VITE_CUSTOMER_MODULES_HOME_REQUIRES_LOGIN
+              value: {{ .Values.customerConfig.modules.home.requiresLogin | quote }}
+            - name: VITE_CUSTOMER_MODULES_HOME_WIDGETS
+              value: {{ .Values.customerConfig.modules.home.widgets | quote }}
+            - name: VITE_CUSTOMER_MODULES_DASHBOARDS_AVAILABLE
+              value: {{ .Values.customerConfig.modules.dashboards.available | quote }}
+            - name: VITE_CUSTOMER_MODULES_DASHBOARDS_ORDER
+              value: {{ .Values.customerConfig.modules.dashboards.order | quote }}
+            - name: VITE_CUSTOMER_MODULES_DASHBOARDS_REQUIRES_LOGIN
+              value: {{ .Values.customerConfig.modules.dashboards.requiresLogin | quote }}
+            - name: VITE_CUSTOMER_MODULES_ORGANISATION_SITES_AVAILABLE
+              value: {{ .Values.customerConfig.modules.organisationSites.available | quote }}
+            - name: VITE_CUSTOMER_MODULES_ORGANISATION_SITES_ORDER
+              value: {{ .Values.customerConfig.modules.organisationSites.order | quote }}
+            - name: VITE_CUSTOMER_MODULES_ORGANISATION_SITES_REQUIRES_LOGIN
+              value: {{ .Values.customerConfig.modules.organisationSites.requiresLogin | quote }}
+            - name: VITE_CUSTOMER_MODULES_DATA_CATALOG_AVAILABLE
+              value: {{ .Values.customerConfig.modules.dataCatalog.available | quote }}
+            - name: VITE_CUSTOMER_MODULES_DATA_CATALOG_ORDER
+              value: {{ .Values.customerConfig.modules.dataCatalog.order | quote }}
+            - name: VITE_CUSTOMER_MODULES_DATA_CATALOG_REQUIRES_LOGIN
+              value: {{ .Values.customerConfig.modules.dataCatalog.requiresLogin | quote }}
+            - name: VITE_CUSTOMER_MODULES_DIGITAL_TWIN_AVAILABLE
+              value: {{ .Values.customerConfig.modules.digitalTwin.available | quote }}
+            - name: VITE_CUSTOMER_MODULES_DIGITAL_TWIN_ORDER
+              value: {{ .Values.customerConfig.modules.digitalTwin.order | quote }}
+            - name: VITE_CUSTOMER_MODULES_DIGITAL_TWIN_REQUIRES_LOGIN
+              value: {{ .Values.customerConfig.modules.digitalTwin.requiresLogin | quote }}
+            - name: VITE_CUSTOMER_MODULES_DKSR_APPS_AVAILABLE
+              value: {{ .Values.customerConfig.modules.dksrApps.available | quote }}
+            - name: VITE_CUSTOMER_MODULES_DKSR_APPS_ORDER
+              value: {{ .Values.customerConfig.modules.dksrApps.order | quote }}
+            - name: VITE_CUSTOMER_MODULES_DKSR_APPS_REQUIRES_LOGIN
+              value: {{ .Values.customerConfig.modules.dksrApps.requiresLogin | quote }}
+            - name: VITE_APP_HEADER_LOGO_FILE_NAME
+              value: {{ .Values.customerConfig.appHeader.logoFileName | quote }}
+            - name: VITE_APP_HEADER_HEADER_TITLE
+              value: {{ .Values.customerConfig.appHeader.headerTitle | quote }}
+            - name: VITE_APP_HEADER_USER_MENU_FIRST_TRANSLATION_KEY
+              value: {{ .Values.customerConfig.appHeader.userMenu.first.translationKey | quote }}
+            - name: VITE_APP_HEADER_USER_MENU_FIRST_URL_TARGET
+              value: {{ .Values.customerConfig.appHeader.userMenu.first.urlTarget | quote }}
+            - name: VITE_APP_HEADER_USER_MENU_FIRST_REQUIRES_ROLE
+              value: {{ .Values.customerConfig.appHeader.userMenu.first.requiresRole | quote }}
+            - name: VITE_APP_HEADER_USER_MENU_SECOND_TRANSLATION_KEY
+              value: {{ .Values.customerConfig.appHeader.userMenu.second.translationKey | quote }}
+            - name: VITE_APP_HEADER_USER_MENU_SECOND_URL_TARGET
+              value: {{ .Values.customerConfig.appHeader.userMenu.second.urlTarget | quote }}
+            - name: VITE_APP_HEADER_USER_MENU_SECOND_REQUIRES_ROLE
+              value: {{ .Values.customerConfig.appHeader.userMenu.second.requiresRole | quote }}
+            - name: VITE_APP_HEADER_USER_MENU_THIRD_TRANSLATION_KEY
+              value: {{ .Values.customerConfig.appHeader.userMenu.third.translationKey | quote }}
+            - name: VITE_APP_HEADER_USER_MENU_THIRD_URL_TARGET
+              value: {{ .Values.customerConfig.appHeader.userMenu.third.urlTarget | quote }}
+            - name: VITE_APP_HEADER_USER_MENU_THIRD_REQUIRES_ROLE
+              value: {{ .Values.customerConfig.appHeader.userMenu.third.requiresRole | quote }}
+            - name: VITE_APP_HEADER_USER_MENU_FOURTH_TRANSLATION_KEY
+              value: {{ .Values.customerConfig.appHeader.userMenu.fourth.translationKey | quote }}
+            - name: VITE_APP_HEADER_USER_MENU_FOURTH_URL_TARGET
+              value: {{ .Values.customerConfig.appHeader.userMenu.fourth.urlTarget | quote }}
+            - name: VITE_APP_HEADER_USER_MENU_FOURTH_REQUIRES_ROLE
+              value: {{ .Values.customerConfig.appHeader.userMenu.fourth.requiresRole | quote }}
+            - name: VITE_APP_HEADER_USER_MENU_FIFTH_TRANSLATION_KEY
+              value: {{ .Values.customerConfig.appHeader.userMenu.fifth.translationKey | quote }}
+            - name: VITE_APP_HEADER_USER_MENU_FIFTH_URL_TARGET
+              value: {{ .Values.customerConfig.appHeader.userMenu.fifth.urlTarget | quote }}
+            - name: VITE_APP_HEADER_USER_MENU_FIFTH_REQUIRES_ROLE
+              value: {{ .Values.customerConfig.appHeader.userMenu.fifth.requiresRole | quote }}
+            - name: VITE_APP_HEADER_USER_MENU_SIXTH_TRANSLATION_KEY
+              value: {{ .Values.customerConfig.appHeader.userMenu.sixth.translationKey | quote }}
+            - name: VITE_APP_HEADER_USER_MENU_SIXTH_URL_TARGET
+              value: {{ .Values.customerConfig.appHeader.userMenu.sixth.urlTarget | quote }}
+            - name: VITE_APP_HEADER_USER_MENU_SIXTH_REQUIRES_ROLE
+              value: {{ .Values.customerConfig.appHeader.userMenu.sixth.requiresRole | quote }}
+            - name: VITE_COMPONENTS_HEADER_IMAGE_FILE_NAME
+              value: {{ .Values.customerConfig.components.headerImageFileName | quote }}
+            - name: VITE_DASHBOARD_USERNAME
+              value: {{ .Values.customerConfig.dashboard.username | quote }}
+            - name: VITE_DASHBOARD_PASSWORD
+              value: {{ .Values.customerConfig.dashboard.password | quote }}
+            - name: VITE_EMBEDDABLE_DASHBOARD_ID
+              value: {{ .Values.customerConfig.dashboard.embeddableDashboardId | quote }}
+            - name: VITE_OUP_URL
+              value: {{ .Values.customerConfig.oup.url | quote }}
+            - name: VITE_OUP_USERNAME
+              value: {{ .Values.customerConfig.oup.username | quote }}
+            - name: VITE_OUP_PASSWORD
+              value: {{ .Values.customerConfig.oup.password | quote }}
+            - name: VITE_HOME_QUICK_LINKS_FIRST_TITLE
+              value: {{ .Values.customerConfig.homeQuickLinks.first.title | quote }}
+            - name: VITE_HOME_QUICK_LINKS_FIRST_SUBTITLE
+              value: {{ .Values.customerConfig.homeQuickLinks.first.subtitle | quote }}
+            - name: VITE_HOME_QUICK_LINKS_FIRST_ICON
+              value: {{ .Values.customerConfig.homeQuickLinks.first.icon | quote }}
+            - name: VITE_HOME_QUICK_LINKS_FIRST_ROUTE
+              value: {{ .Values.customerConfig.homeQuickLinks.first.route | quote }}
+            - name: VITE_HOME_QUICK_LINKS_SECOND_TITLE
+              value: {{ .Values.customerConfig.homeQuickLinks.second.title | quote }}
+            - name: VITE_HOME_QUICK_LINKS_SECOND_SUBTITLE
+              value: {{ .Values.customerConfig.homeQuickLinks.second.subtitle | quote }}
+            - name: VITE_HOME_QUICK_LINKS_SECOND_ICON
+              value: {{ .Values.customerConfig.homeQuickLinks.second.icon | quote }}
+            - name: VITE_HOME_QUICK_LINKS_SECOND_ROUTE
+              value: {{ .Values.customerConfig.homeQuickLinks.second.route | quote }}
+            - name: VITE_HOME_QUICK_LINKS_THIRD_TITLE
+              value: {{ .Values.customerConfig.homeQuickLinks.third.title | quote }}
+            - name: VITE_HOME_QUICK_LINKS_THIRD_SUBTITLE
+              value: {{ .Values.customerConfig.homeQuickLinks.third.subtitle | quote }}
+            - name: VITE_HOME_QUICK_LINKS_THIRD_ICON
+              value: {{ .Values.customerConfig.homeQuickLinks.third.icon | quote }}
+            - name: VITE_HOME_QUICK_LINKS_THIRD_ROUTE
+              value: {{ .Values.customerConfig.homeQuickLinks.third.route | quote }}
+            {{- if .Values.extraEnvs }}
+            {{- toYaml .Values.extraEnvs | nindent 12 }}
+            {{- end }}
+

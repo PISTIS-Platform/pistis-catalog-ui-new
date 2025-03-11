@@ -1,0 +1,36 @@
+{
+  "id": "PS-2025-001",
+  "activity": "Data Collection",
+  "description": "This step involves collecting raw traffic sensor data using IoT hardware devices deployed throughout the city. These devices capture real-time traffic conditions, vehicle counts, and environmental parameters.",
+  "previous_step": {},
+  "inputs": {
+    "linked_hardware": [
+      {
+        "id": "HW-DC-001"
+      },
+      {
+        "id": "HW-DC-002"
+      }
+    ],
+    "linked_software": [],
+    "linked_data": []
+  },
+  "methods_used": [
+    {
+      "method": "Real-Time Data Capture",
+      "description": "Collecting continuous data streams from multiple hardware sensors deployed across the city."
+    },
+    {
+      "method": "Data Aggregation",
+      "description": "Consolidating data from various hardware devices into a centralized raw dataset for further analysis."
+    }
+  ],
+  "actors_responsibility": [
+    {
+      "role": "Field Technician",
+      "organization": "City Infrastructure",
+      "contact": "tech.support@example.org"
+    }
+  ],
+  "documentation": ""
+}

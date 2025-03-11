@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Check if exactly one argument is passed
+if [ "$#" -ne 1 ]; then
+  echo "Usage: $0 <project name>"
+  exit 1
+fi
+
+# Define variables
+PROJECT_NAME=$1
+
+# Append .js to the project name if it's not already there
+if [[ $PROJECT_NAME != *.js ]]; then
+  PROJECT_NAME="${PROJECT_NAME}.js"
+fi
+
+# Paths
+CONFIG_FOLDER="./config"
+PROJECTS_FOLDER="${CONFIG_FOLDER}/dev-configs"
+CONFIG_FILE="${CONFIG_FOLDER}/config.dev.js"
+PROJECT_FILE="${PROJECTS_FOLDER}/${PROJECT_NAME}"
+
+# Check if the project file exists
+if [ ! -f "${PROJECT_FILE}" ]; then
+  echo "Error: ${PROJECT_FILE} does not exist."
+  exit 1
+fi
+
+# Overwrite the config.dev.js with the content of the project file
+cp "${PROJECT_FILE}" "${CONFIG_FILE}"
+
+echo "Config file ${CONFIG_FILE} has been updated with ${PROJECT_FILE}."
