@@ -1,7 +1,7 @@
 stages:
   - build
-  - push
-  - deploy
+#  - push
+#  - deploy
 
 include:
   - template: Jobs/Build.gitlab-ci.yml
@@ -28,24 +28,24 @@ build:
   rules:
     - !reference [.rules, deploy-branch]
 
-deploy to staging:
-  stage: deploy
-  variables:
-    TF_IMAGES: vars/images.tfvars
-    TF_PROJECT: gitlab.com/dksr2/twin-by-data/infra.git
-    TF_VAR_NAME_DIGEST: piveau_hub_ui_digest
-  dependencies:
-    - build
-  image: alpine/git-tag
-  rules:
-    - !reference [.rules, deploy-branch]
-  before_script:
-    - git config --global user.name "$GITLAB_USER_NAME"
-    - git config --global user.email "$GITLAB_USER_EMAIL"
-    - git remote set-url origin "https://gitlab-token:$GITLAB_DEPLOY_TOKEN@$TF_PROJECT"
-    - git fetch origin develop && git reset --hard FETCH_HEAD
-  script:
-    - sed -i -e "s/^$TF_VAR_NAME_DIGEST = .*/$TF_VAR_NAME_DIGEST = \"$CI_APPLICATION_TAG\"/g" $TF_IMAGES
-    - git add $TF_IMAGES
-    - git commit -m "CI Update \"$CI_PROJECT_NAME\" image to ${CI_APPLICATION_TAG:0:13}"
-    - git push origin HEAD:develop
+#deploy to staging:
+#  stage: deploy
+#  variables:
+#    TF_IMAGES: vars/images.tfvars
+#    TF_PROJECT: gitlab.com/dksr2/twin-by-data/infra.git
+#    TF_VAR_NAME_DIGEST: piveau_hub_ui_digest
+#  dependencies:
+#    - build
+#  image: alpine/git-tag
+#  rules:
+#    - !reference [.rules, deploy-branch]
+#  before_script:
+#    - git config --global user.name "$GITLAB_USER_NAME"
+#    - git config --global user.email "$GITLAB_USER_EMAIL"
+#    - git remote set-url origin "https://gitlab-token:$GITLAB_DEPLOY_TOKEN@$TF_PROJECT"
+#    - git fetch origin develop && git reset --hard FETCH_HEAD
+#  script:
+#    - sed -i -e "s/^$TF_VAR_NAME_DIGEST = .*/$TF_VAR_NAME_DIGEST = \"$CI_APPLICATION_TAG\"/g" $TF_IMAGES
+#    - git add $TF_IMAGES
+#    - git commit -m "CI Update \"$CI_PROJECT_NAME\" image to ${CI_APPLICATION_TAG:0:13}"
+#    - git push origin HEAD:develop
