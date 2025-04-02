@@ -5,9 +5,6 @@ import { createRouter, createWebHistory } from 'vue-router'
 import AboutView from '../views/AboutView.vue'
 import CatalogSearchView from '../views/CatalogSearchView.vue'
 import DatasetDetailsView from '../views/DatasetDetailsView.vue'
-// import PublicAboutView from '../views/public/PublicAboutView.vue'
-// import PublicTwinsView from '../views/public/PublicTwinsView.vue'
-// import PublicFirstStepView from '../views/public/PublicFirstStepView.vue'
 import DatasetSearchView from '../views/DatasetSearchView.vue'
 import FindTwinsView from '../views/FindTwinsView.vue'
 import FirstStepView from '../views/FirstStepView.vue'
@@ -128,43 +125,8 @@ const router = createRouter({
       },
     },
 
-  ],
-  scrollBehavior(to, from, savedPosition) {
-    // Scroll to top if navigating to a new page
-    if (to.path !== from.path)
-      return { ...savedPosition, top: 0 }
-
-    if (savedPosition)
-      return savedPosition
-
-    return false
-  },
+  ]
 })
-
-// router.beforeEach(async (to, from, next) => {
-//   const authStore = useAuthStore()
-//   if (to.matched.some((record) => record.meta.requiresAuth)) {
-//     if (authStore.authenticated) {
-//       next()
-//     } else {
-//       try {
-//         await authStore.refreshUserToken()
-//         if (authStore.authenticated) {
-//           console.log(next)
-//           next()
-//         } else {
-//           await authStore.logout()
-//           await authStore.login()
-//         }
-//       } catch (error) {
-//         await authStore.logout()
-//         await authStore.login()
-//       }
-//     }
-//   } else {
-//     next()
-//   }
-// })
 
 export const appRoute: string = `${location.origin}/app`
 export default router
