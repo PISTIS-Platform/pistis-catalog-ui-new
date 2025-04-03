@@ -13,6 +13,14 @@
     "noEmit": true
 
   },
-  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "pv-sdk/**/*", "src/global.d.ts", "config/**/*"],
+  "include": [
+    "env.d.ts",
+    "src/**/*",
+    "src/**/*.vue",
+    "pv-sdk/**/*",
+    "src/global.d.ts",
+    "config/**/*",
+    "node_modules/.pnpm/@vue+runtime-core@3.5.13/node_modules/@vue/runtime-core/dist/runtime-core.d.ts"
+  ],
   "exclude": ["src/**/__tests__/*"]
 }
