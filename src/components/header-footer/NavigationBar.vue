@@ -9,10 +9,9 @@ const props = defineProps({
 })
 
 const links = [
-  { to: '/twins', label: 'landing-page.header.findTwins' },
-  { to: '/info', label: 'landing-page.header.firstSteps' },
-  { to: '/about', label: 'landing-page.header.about' },
-  { to: '/datasets', label: 'landing-page.header.findAll' },
+  { to: '/home', label: 'landing-page.header.home' },
+  { to: '/catalogues', label: 'landing-page.header.catalogues' },
+  { to: '/datasets', label: 'landing-page.header.datasets' },
 ]
 </script>
 

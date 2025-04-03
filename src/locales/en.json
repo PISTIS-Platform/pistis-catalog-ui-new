@@ -134,10 +134,12 @@
     },
     "test": "test",
     "header": {
+      "home": "Home",
+      "datasets": "Datasets",
+      "catalogues": "Catalogues",
       "about-kdw": "About KDW",
       "registration": "Register",
       "login": "Login",
-      "findAll": "Find All",
       "about": "About",
       "findTwins": "Find Twins",
       "firstSteps": "First Steps"

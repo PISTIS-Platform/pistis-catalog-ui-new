@@ -135,7 +135,9 @@
     },
     "test": "test",
     "header": {
-      "home": "Startseite",
+      "home": "Home",
+      "datasets": "Datensätze",
+      "catalogues": "Kataloge",
       "datawork": "Kommunales Datenwerk",
       "about-kdw": "Über KDW",
       "legal-notice": "Rechtliche Hinweise",
