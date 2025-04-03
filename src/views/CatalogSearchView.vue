@@ -51,50 +51,51 @@ const {
 </script>
 
 <template>
-  <SearchPage
-    v-model:search-input="searchInput"
-    v-model:hvd="hvdModel"
-    v-model:livedata="livedataModel"
-    v-model:selected-facets="selectedFacets"
-    v-model:sort="sort"
-    v-model:sort-direction="sortDirection"
-    v-model:page="searchParams.queryParams.page.value"
-    v-model:sidebar-visible="sidebarVisible"
-    :available-facets="availableFacetsFormatted"
-    :result-count="formattedDatasetResultCount"
-    :show-only-public="showOnlyPublic"
-    :total-pages="getSearchResultsPagesCount"
-    :is-loading="isLoading"
-    search-placeholder="Suchbegriff eingeben"
-    search-button-text="Suchen"
-    @search="doSearch"
-  >
-    <template #search-results>
-      <template v-if="!isLoading && !isFetching">
-        <DataInfoCard
-          v-for="dataset in datasets"
-          :key="dataset.id"
-          :to="{ name: 'dataset-details', params: { datasetId: dataset.id } }"
-          :title="dataset.title"
-          :description="dataset.description"
-          :file-formats="dataset.formats"
-          :metadata="{
-            AKTUALISIERT: dataset.modified,
-            KATEGORIE: dataset.categories.join(', '),
-            BEREITSTELLER: dataset.publisher,
-            LIZENZ: dataset.license || '',
-          }"
-        />
-      </template>
-      <template v-else>
-        <KDataInfoBox
-          v-for="i in 8"
-          :key="`placeholder--${i}`"
-          title="na"
-          :categories="['na']"
-          ghost
-        />
-      </template>
-    </template>
-  </SearchPage>
+    <h>Catalogues!</h>
+<!--  <SearchPage-->
+<!--    v-model:search-input="searchInput"-->
+<!--    v-model:hvd="hvdModel"-->
+<!--    v-model:livedata="livedataModel"-->
+<!--    v-model:selected-facets="selectedFacets"-->
+<!--    v-model:sort="sort"-->
+<!--    v-model:sort-direction="sortDirection"-->
+<!--    v-model:page="searchParams.queryParams.page.value"-->
+<!--    v-model:sidebar-visible="sidebarVisible"-->
+<!--    :available-facets="availableFacetsFormatted"-->
+<!--    :result-count="formattedDatasetResultCount"-->
+<!--    :show-only-public="showOnlyPublic"-->
+<!--    :total-pages="getSearchResultsPagesCount"-->
+<!--    :is-loading="isLoading"-->
+<!--    search-placeholder="Suchbegriff eingeben"-->
+<!--    search-button-text="Suchen"-->
+<!--    @search="doSearch"-->
+<!--  >-->
+<!--    <template #search-results>-->
+<!--      <template v-if="!isLoading && !isFetching">-->
+<!--        <DataInfoCard-->
+<!--          v-for="dataset in datasets"-->
+<!--          :key="dataset.id"-->
+<!--          :to="{ name: 'dataset-details', params: { datasetId: dataset.id } }"-->
+<!--          :title="dataset.title"-->
+<!--          :description="dataset.description"-->
+<!--          :file-formats="dataset.formats"-->
+<!--          :metadata="{-->
+<!--            AKTUALISIERT: dataset.modified,-->
+<!--            KATEGORIE: dataset.categories.join(', '),-->
+<!--            BEREITSTELLER: dataset.publisher,-->
+<!--            LIZENZ: dataset.license || '',-->
+<!--          }"-->
+<!--        />-->
+<!--      </template>-->
+<!--      <template v-else>-->
+<!--        <KDataInfoBox-->
+<!--          v-for="i in 8"-->
+<!--          :key="`placeholder&#45;&#45;${i}`"-->
+<!--          title="na"-->
+<!--          :categories="['na']"-->
+<!--          ghost-->
+<!--        />-->
+<!--      </template>-->
+<!--    </template>-->
+<!--  </SearchPage>-->
 </template>

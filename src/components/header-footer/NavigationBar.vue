@@ -9,7 +9,7 @@ const props = defineProps({
 })
 
 const links = [
-  { to: '/home', label: 'landing-page.header.home' },
+  { to: '/', label: 'landing-page.header.home' },
   { to: '/catalogues', label: 'landing-page.header.catalogues' },
   { to: '/datasets', label: 'landing-page.header.datasets' },
 ]
