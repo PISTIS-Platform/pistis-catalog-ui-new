@@ -86,7 +86,7 @@ const {
         />
       </template>
       <template v-else>
-        <div v-for="i in itemsCount.value" class="size-full flex flex-col gap-6 text-content animate-pulse bg-slate-200">
+        <div v-for="i in itemsCount.value" :key="i" class="size-full flex flex-col gap-6 text-content animate-pulse bg-slate-200">
           <div class="flex flex-wrap gap-2 h-36" />
         </div>
       </template>
