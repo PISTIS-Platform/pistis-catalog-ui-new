@@ -52,6 +52,9 @@ const {
 
 <template>
     <h>Catalogues!</h>
+    <div>
+      {{ searchParams }}
+    </div>
 <!--  <SearchPage-->
 <!--    v-model:search-input="searchInput"-->
 <!--    v-model:hvd="hvdModel"-->

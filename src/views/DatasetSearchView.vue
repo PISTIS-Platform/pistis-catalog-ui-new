@@ -1,12 +1,14 @@
 <script setup lang="ts">
 import { useDcatApSearch } from '@/sdk'
-import { ref, toRef } from 'vue'
+import { computed, ref, toRef } from 'vue'
 import DataInfoCard from '../components/base/data-info-box/DataInfoCard.vue'
 import KDataInfoBox from '../components/base/data-info-box/KDataInfoBox.vue'
 import SearchPage from '../components/search-page/SearchPage.vue'
 import { useDatasetSearchView } from '../composables/useDatasetsSearchView'
 import { useSearchParams } from '../composables/useSearchParams'
 import { useSelectedFacets } from '../composables/useSelectedFacets'
+import Typography from '@/components/base/typography/Typography.vue'
+import KTag from '@/components/base/tag/KTag.vue'
 
 const props = withDefaults(
   defineProps<{
@@ -26,6 +28,8 @@ const hvdModel = ref<boolean>(false)
 const livedataModel = ref<boolean>(false)
 const selectedFacets = toRef(useSelectedFacets())
 const searchParams = useSearchParams()
+
+const itemsCount = computed(() => (searchParams?.queryParams?.limit ?? 10));
 
 // --- Query management ---
 const {
@@ -82,14 +86,16 @@ const {
         />
       </template>
       <template v-else>
-        <KDataInfoBox
-          v-for="i in 8"
-          :key="`placeholder--${i}`"
-          title="na"
-          :categories="['na']"
-          ghost
-        />
+        <div v-for="i in itemsCount.value" class="size-full flex flex-col gap-6 text-content animate-pulse bg-slate-200">
+          <div class="flex flex-wrap gap-2 h-36" />
+        </div>
       </template>
     </template>
   </SearchPage>
 </template>
+
+<style>
+  .load-item {
+    flex: 1;
+  }
+</style>
