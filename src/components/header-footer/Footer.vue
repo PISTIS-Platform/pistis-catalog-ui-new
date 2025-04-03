@@ -36,13 +36,13 @@ const loginLinks = [
           </h3>
           <ul class="flex flex-col gap-0">
             <li
-              v-for="link in seitenLinks"
-              :key="link.text"
-              class="text-copy-sm"
+                v-for="link in seitenLinks"
+                :key="link.text"
+                class="text-copy-sm"
             >
               <RouterLink
-                :to="link.to"
-                class="hover:text-secondary-hover text-white"
+                  :to="link.to"
+                  class="hover:text-secondary-hover text-white"
               >
                 {{ link.text }}
               </RouterLink>
@@ -57,14 +57,14 @@ const loginLinks = [
           </h3>
           <ul class="flex flex-col gap-0">
             <li
-              v-for="link in socialLinks"
-              :key="link.text"
-              class="text-copy-sm"
+                v-for="link in socialLinks"
+                :key="link.text"
+                class="text-copy-sm"
             >
               <a
-                :href="link.href"
-                target="_blank"
-                class="hover:text-secondary-hover text-white"
+                  :href="link.href"
+                  target="_blank"
+                  class="hover:text-secondary-hover text-white"
               >
                 {{ link.text }}
               </a>
@@ -79,13 +79,13 @@ const loginLinks = [
           </h3>
           <ul class="flex flex-col gap-0">
             <li
-              v-for="link in rechtlichesLinks"
-              :key="link.text"
-              class="text-copy-sm"
+                v-for="link in rechtlichesLinks"
+                :key="link.text"
+                class="text-copy-sm"
             >
               <RouterLink
-                :to="link.to"
-                class="hover:text-secondary-hover text-white"
+                  :to="link.to"
+                  class="hover:text-secondary-hover text-white"
               >
                 {{ link.text }}
               </RouterLink>
@@ -97,13 +97,13 @@ const loginLinks = [
         <div class="w-full md:w-3/12 xl:w-2/12">
           <ul class="flex flex-col gap-4">
             <li
-              v-for="link in loginLinks"
-              :key="link.text"
-              class="text-copy-sm"
+                v-for="link in loginLinks"
+                :key="link.text"
+                class="text-copy-sm"
             >
               <RouterLink
-                :to="link.to"
-                class="hover:text-secondary-hover text-white font-bold"
+                  :to="link.to"
+                  class="hover:text-secondary-hover text-white font-bold"
               >
                 {{ link.text }}
               </RouterLink>
@@ -116,9 +116,9 @@ const loginLinks = [
       <div class="flex flex-wrap justify-center md:items-center items-start flex-col gap-6 md:flex-row">
         <a href="https://www.stmd.bayern.de/">
           <img
-            src="../../assets/images/landing/footer/verbunds-logo.png"
-            alt="Open Bydata Logo"
-            class="h-14 max-h-[110px]"
+              src="../../assets/images/landing/footer/verbunds-logo.png"
+              alt="Open Bydata Logo"
+              class="h-14 max-h-[110px]"
           >
         </a>
       </div>

@@ -9,30 +9,29 @@ const props = defineProps({
 })
 
 const links = [
-  { to: '/twins', label: 'landing-page.header.findTwins' },
-  { to: '/info', label: 'landing-page.header.firstSteps' },
-  { to: '/about', label: 'landing-page.header.about' },
-  { to: '/datasets', label: 'landing-page.header.findAll' },
+  { to: '/', label: 'landing-page.header.home' },
+  { to: '/catalogues', label: 'landing-page.header.catalogues' },
+  { to: '/datasets', label: 'landing-page.header.datasets' },
 ]
 </script>
 
 <template>
   <div
-    id="thenavguy"
-    class="nav-links"
-    :class="{ vertical: direction === 'vertical' }"
+      id="thenavguy"
+      class="nav-links"
+      :class="{ vertical: direction === 'vertical' }"
   >
     <RouterLink
-      v-for="(link, index) in links"
-      :key="index"
-      v-slot="{ href, navigate, isActive, isExactActive }"
-      :to="link.to"
+        v-for="(link, index) in links"
+        :key="index"
+        v-slot="{ href, navigate, isActive, isExactActive }"
+        :to="link.to"
     >
       <a
-        class="header-icon-container leading-[1.625rem]"
-        :class="{ active: isActive && isExactActive }"
-        :href="href"
-        @click="navigate"
+          class="header-icon-container leading-[1.625rem]"
+          :class="{ active: isActive && isExactActive }"
+          :href="href"
+          @click="navigate"
       >
         {{ $t(link.label) }}
       </a>

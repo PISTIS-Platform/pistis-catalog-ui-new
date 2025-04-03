@@ -59,8 +59,8 @@ const router = createRouter({
       },
     },
     {
-      name: 'Catalog',
-      path: '/catalog',
+      name: 'Catalogues',
+      path: '/catalogues',
       component: CatalogSearchView,
       meta: {
         requiresAuth: false,
