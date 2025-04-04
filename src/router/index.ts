@@ -5,6 +5,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import CatalogSearchView from '../views/CatalogSearchView.vue'
 import DatasetDetailsView from '../views/DatasetDetailsView.vue'
 import DatasetSearchView from '../views/DatasetSearchView.vue'
+import Datasets from '../views/search/Datasets.vue'
 import NotFound from '../views/NotFound.vue'
 import LandingPageView from '../views/public/LandingPageView.vue'
 
@@ -21,7 +22,8 @@ const router = createRouter({
     {
       name: 'Datasets',
       path: '/datasets',
-      component: DatasetSearchView,
+      component: Datasets,
+      // component: DatasetSearchView,
       meta: {
         requiresAuth: false,
       },
