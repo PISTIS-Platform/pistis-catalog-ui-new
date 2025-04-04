@@ -2,12 +2,9 @@
 // import { useAuthStore } from '@/stores/authStore'
 import { createRouter, createWebHistory } from 'vue-router'
 
-import AboutView from '../views/AboutView.vue'
 import CatalogSearchView from '../views/CatalogSearchView.vue'
 import DatasetDetailsView from '../views/DatasetDetailsView.vue'
 import DatasetSearchView from '../views/DatasetSearchView.vue'
-import FindTwinsView from '../views/FindTwinsView.vue'
-import FirstStepView from '../views/FirstStepView.vue'
 import NotFound from '../views/NotFound.vue'
 import LandingPageView from '../views/public/LandingPageView.vue'
 
