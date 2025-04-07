@@ -22,8 +22,16 @@ const router = createRouter({
     {
       name: 'Datasets',
       path: '/datasets',
+      // component: Datasets,
+      component: DatasetSearchView,
+      meta: {
+        requiresAuth: false,
+      },
+    },
+    {
+      name: 'Datasets2',
+      path: '/datasets2',
       component: Datasets,
-      // component: DatasetSearchView,
       meta: {
         requiresAuth: false,
       },

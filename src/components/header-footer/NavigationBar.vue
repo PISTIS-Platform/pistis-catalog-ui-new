@@ -12,6 +12,7 @@ const links = [
   { to: '/', label: 'landing-page.header.home' },
   { to: '/catalogues', label: 'landing-page.header.catalogues' },
   { to: '/datasets', label: 'landing-page.header.datasets' },
+  { to: '/datasets2', name: 'New Datasets' },
 ]
 </script>
 
@@ -33,7 +34,7 @@ const links = [
           :href="href"
           @click="navigate"
       >
-        {{ $t(link.label) }}
+        {{ link.label? $t(link.label) : link.name }}
       </a>
     </RouterLink>
   </div>
