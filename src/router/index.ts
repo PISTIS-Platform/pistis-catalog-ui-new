@@ -1,9 +1,7 @@
-// import routes from '@/router/routes'
-// import { useAuthStore } from '@/stores/authStore'
 import { createRouter, createWebHistory } from 'vue-router'
-
 import DatasetDetailsView from '../views/DatasetDetailsView.vue'
 import Datasets from '../views/search/Datasets.vue'
+import Catalogues from '../views/search/Catalogues.vue'
 import NotFound from '../views/NotFound.vue'
 import LandingPageView from '../views/public/LandingPageView.vue'
 
@@ -21,6 +19,14 @@ const router = createRouter({
       name: 'Datasets',
       path: '/datasets',
       component: Datasets,
+      meta: {
+        requiresAuth: false,
+      },
+    },
+    {
+      name: 'Catalogues',
+      path: '/catalogues',
+      component: Catalogues,
       meta: {
         requiresAuth: false,
       },
