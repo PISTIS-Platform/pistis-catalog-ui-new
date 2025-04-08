@@ -9,9 +9,30 @@
       </slot>
     </section>
     <div class="mt-[15px] flex-none px-6 py-[1.875rem]">
-      <slot name="top">
-        <div>A</div>
-      </slot>
+      <section
+          name="top"
+          class="flex flex-col py-16"
+      >
+        <form
+            class="flex gap-3"
+            @submit.prevent="emit('search')"
+        >
+          <KSearchInput
+              v-model="searchInput"
+              disable-dropdown
+              class="w-full max-w-[50rem]"
+              :placeholder="$t('kdw.views.DatasetSearchView.searchDataCatalog')"
+              :select-options="[]"
+          />
+          <KButton
+              class="h-full text-base"
+              size="large"
+              type="submit"
+          >
+            {{ $t('kdw.views.DatasetSearchView.search') }}
+          </KButton>
+        </form>
+      </section>
     </div>
     <div class="flex-1">
       <slot>
@@ -51,6 +72,8 @@ import DataInfoCard from '@/components/base/data-info-box/DataInfoCard.vue'
 import { useDatasetSearchView } from '@/composables/useDatasetsSearchView'
 import { useSearchParams } from '@/composables/useSearchParams'
 import { useSelectedFacets } from '@/composables/useSelectedFacets'
+import KSearchInput from '@/components/search-input/KSearchInput.vue'
+import KButton from '@/components/base/button/KButton.vue'
 
 const props = withDefaults(
     defineProps<{
@@ -60,6 +83,10 @@ const props = withDefaults(
       public: false,
     },
 )
+
+const emit = defineEmits([
+  'search',
+])
 
 // --- UI ---
 const sidebarVisible = ref(false)
