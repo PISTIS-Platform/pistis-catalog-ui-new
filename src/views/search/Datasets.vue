@@ -59,6 +59,14 @@
               v-model="selectedFacets"
               :facets="availableFacetsFormatted"
           />
+          <div class="flex flex-col gap-6">
+            <KSearchInfoPanel
+                v-model:direction="sortDirection"
+                v-model:sort="sort"
+            >
+                {{ formattedDatasetResultCount }}
+            </KSearchInfoPanel>
+          </div>
           <div class="flex flex-col gap-2">
             <template v-if="!isLoading && !isFetching">
               <DataInfoCard
@@ -92,9 +100,9 @@ import { useSearchParams } from '@/composables/useSearchParams'
 import { useSelectedFacets } from '@/composables/useSelectedFacets'
 import KSearchInput from '@/components/search-input/KSearchInput.vue'
 import KButton from '@/components/base/button/KButton.vue'
-import Sidebar from 'primevue/sidebar'
 import FacetSidebar from '@/components/facet-sidebar/FacetSidebar.vue'
 import SelectedFacetsOverview from '@/components/selected-facets-overview/SelectedFacetsOverview.vue'
+import KSearchInfoPanel from '@/components/base/search-info-panel/SearchInfoPanel.vue'
 
 const props = withDefaults(
     defineProps<{
