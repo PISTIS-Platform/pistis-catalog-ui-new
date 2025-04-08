@@ -2,9 +2,7 @@
 // import { useAuthStore } from '@/stores/authStore'
 import { createRouter, createWebHistory } from 'vue-router'
 
-import CatalogSearchView from '../views/CatalogSearchView.vue'
 import DatasetDetailsView from '../views/DatasetDetailsView.vue'
-import DatasetSearchView from '../views/DatasetSearchView.vue'
 import Datasets from '../views/search/Datasets.vue'
 import NotFound from '../views/NotFound.vue'
 import LandingPageView from '../views/public/LandingPageView.vue'
@@ -22,15 +20,6 @@ const router = createRouter({
     {
       name: 'Datasets',
       path: '/datasets',
-      // component: Datasets,
-      component: DatasetSearchView,
-      meta: {
-        requiresAuth: false,
-      },
-    },
-    {
-      name: 'Datasets2',
-      path: '/datasets2',
       component: Datasets,
       meta: {
         requiresAuth: false,
@@ -40,14 +29,6 @@ const router = createRouter({
       name: 'dataset-details',
       path: '/datasets/:datasetId',
       component: DatasetDetailsView,
-      meta: {
-        requiresAuth: false,
-      },
-    },
-    {
-      name: 'Catalogues',
-      path: '/catalogues',
-      component: CatalogSearchView,
       meta: {
         requiresAuth: false,
       },

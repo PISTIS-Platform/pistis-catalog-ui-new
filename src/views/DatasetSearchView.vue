@@ -3,7 +3,7 @@ import { useDcatApSearch } from '@/sdk'
 import { computed, ref, toRef } from 'vue'
 import DataInfoCard from '../components/base/data-info-box/DataInfoCard.vue'
 import KDataInfoBox from '../components/base/data-info-box/KDataInfoBox.vue'
-import SearchPage from '../components/search-page/SearchPage.vue'
+// import SearchPage from '../components/search-page/SearchPage.vue'
 import { useDatasetSearchView } from '../composables/useDatasetsSearchView'
 import { useSearchParams } from '../composables/useSearchParams'
 import { useSelectedFacets } from '../composables/useSelectedFacets'
@@ -55,43 +55,44 @@ const {
 </script>
 
 <template>
-  <SearchPage
-    v-model:search-input="searchInput"
-    v-model:hvd="hvdModel"
-    v-model:livedata="livedataModel"
-    v-model:selected-facets="selectedFacets"
-    v-model:sort="sort"
-    v-model:sort-direction="sortDirection"
-    v-model:page="searchParams.queryParams.page.value"
-    v-model:sidebar-visible="sidebarVisible"
-    :available-facets="availableFacetsFormatted"
-    :result-count="formattedDatasetResultCount"
-    :show-only-public="showOnlyPublic"
-    :total-pages="getSearchResultsPagesCount"
-    :is-loading="isLoading"
-    search-placeholder="Suchbegriff eingeben"
-    search-button-text="Suchen"
-    @search="doSearch"
-  >
-    <template #search-results>
-      <template v-if="!isLoading && !isFetching">
-        <DataInfoCard
-          v-for="dataset in datasets"
-          :key="dataset.id"
-          :to="{ name: 'dataset-details', params: { datasetId: dataset.id } }"
-          :title="dataset.title"
-          :description="dataset.description"
-          :file-formats="dataset.formats"
-          :properties="dataset.summary"
-        />
-      </template>
-      <template v-else>
-        <div v-for="i in itemsCount.value" :key="i" class="size-full flex flex-col gap-6 text-content animate-pulse bg-slate-200">
-          <div class="flex flex-wrap gap-2 h-36" />
-        </div>
-      </template>
-    </template>
-  </SearchPage>
+  <h1>Old Search Page</h1>
+<!--  <SearchPage-->
+<!--    v-model:search-input="searchInput"-->
+<!--    v-model:hvd="hvdModel"-->
+<!--    v-model:livedata="livedataModel"-->
+<!--    v-model:selected-facets="selectedFacets"-->
+<!--    v-model:sort="sort"-->
+<!--    v-model:sort-direction="sortDirection"-->
+<!--    v-model:page="searchParams.queryParams.page.value"-->
+<!--    v-model:sidebar-visible="sidebarVisible"-->
+<!--    :available-facets="availableFacetsFormatted"-->
+<!--    :result-count="formattedDatasetResultCount"-->
+<!--    :show-only-public="showOnlyPublic"-->
+<!--    :total-pages="getSearchResultsPagesCount"-->
+<!--    :is-loading="isLoading"-->
+<!--    search-placeholder="Suchbegriff eingeben"-->
+<!--    search-button-text="Suchen"-->
+<!--    @search="doSearch"-->
+<!--  >-->
+<!--    <template #search-results>-->
+<!--      <template v-if="!isLoading && !isFetching">-->
+<!--        <DataInfoCard-->
+<!--          v-for="dataset in datasets"-->
+<!--          :key="dataset.id"-->
+<!--          :to="{ name: 'dataset-details', params: { datasetId: dataset.id } }"-->
+<!--          :title="dataset.title"-->
+<!--          :description="dataset.description"-->
+<!--          :file-formats="dataset.formats"-->
+<!--          :properties="dataset.summary"-->
+<!--        />-->
+<!--      </template>-->
+<!--      <template v-else>-->
+<!--        <div v-for="i in itemsCount.value" :key="i" class="size-full flex flex-col gap-6 text-content animate-pulse bg-slate-200">-->
+<!--          <div class="flex flex-wrap gap-2 h-36" />-->
+<!--        </div>-->
+<!--      </template>-->
+<!--    </template>-->
+<!--  </SearchPage>-->
 </template>
 
 <style>

@@ -60,7 +60,7 @@
               class="flex gap-3"
               @submit.prevent="doSearch"
           >
-            <KSearchInput
+            <SearchInput
                 v-model="searchInput"
                 disable-dropdown
                 class="w-full max-w-[50rem]"
@@ -87,12 +87,12 @@
               :facets="availableFacetsFormatted"
           />
           <div class="flex flex-col gap-6">
-            <KSearchInfoPanel
+            <SearchInfoPanel
                 v-model:direction="sortDirection"
                 v-model:sort="sort"
             >
                 {{ formattedDatasetResultCount }}
-            </KSearchInfoPanel>
+            </SearchInfoPanel>
           </div>
           <div class="flex flex-col gap-2">
             <template v-if="!isLoading && !isFetching">
@@ -133,11 +133,11 @@ import DataInfoCard from '@/components/base/data-info-box/DataInfoCard.vue'
 import { useDatasetSearchView } from '@/composables/useDatasetsSearchView'
 import { useSearchParams } from '@/composables/useSearchParams'
 import { useSelectedFacets } from '@/composables/useSelectedFacets'
-import KSearchInput from '@/components/search-input/KSearchInput.vue'
+import SearchInput from '@/components/search-input/SearchInput.vue'
 import KButton from '@/components/base/button/KButton.vue'
 import FacetSidebar from '@/components/facet-sidebar/FacetSidebar.vue'
 import SelectedFacetsOverview from '@/components/selected-facets-overview/SelectedFacetsOverview.vue'
-import KSearchInfoPanel from '@/components/base/search-info-panel/SearchInfoPanel.vue'
+import SearchInfoPanel from '@/components/base/search-info-panel/SearchInfoPanel.vue'
 import Paginator from 'primevue/paginator'
 import Sidebar from 'primevue/sidebar'
 
