@@ -151,7 +151,6 @@ const sidebarVisible = defineModel<boolean>('sidebarVisible', { default: false }
 
 const itemsCount = computed(() => (searchParams?.queryParams?.limit ?? 10));
 
-// --- Query management ---
 const {
   availableFacetsFormatted,
   sort,

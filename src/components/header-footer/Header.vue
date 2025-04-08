@@ -25,14 +25,6 @@ const visible = ref(false)
           <NavigationBar />
         </div>
         <div class="authentication-buttons">
-          <!-- <a
-            v-if="registrationURL"
-            class="header-icon-container active"
-            :href="registrationURL"
-            target="_blank">
-            {{ $t('landing-page.header.registration') }}
-          </a> -->
-          <!-- <COSLanguageSwitch /> -->
           <div class="card flex justify-content-center">
             <Sidebar
                 v-model:visible="visible"
@@ -59,10 +51,6 @@ const visible = ref(false)
                 @click="visible = true"
             />
           </div>
-          <!-- <LPLoginButton
-            suffix="src/assets/icons/ArrowRight.svg"
-            :button-text="$t('landing-page.header.login')"
-            route="/app" /> -->
         </div>
       </div>
     </div>
