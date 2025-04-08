@@ -3,16 +3,14 @@
       v-model:visible="sidebarVisible"
       header="Kataloge durchsuchen"
   >
-    <slot name="face-sidebar">
-      <FacetSidebar
-          v-model:model-value="selectedFacets"
-          v-model:hvd="hvdModel"
-          v-model:livedata="livedataModel"
-          :public="true"
-          mobile
-          :facets="availableFacetsFormatted"
-      />
-    </slot>
+    <FacetSidebar
+        v-model:model-value="selectedFacets"
+        v-model:hvd="hvdModel"
+        v-model:livedata="livedataModel"
+        :public="true"
+        mobile
+        :facets="availableFacetsFormatted"
+    />
   </Sidebar>
   <div class="container relative mx-auto grid grid-cols-1 sm:grid-cols-[minmax(auto,_20rem)_1fr] mx-auto max-w-content-max">
     <div
