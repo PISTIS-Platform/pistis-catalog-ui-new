@@ -87,7 +87,7 @@
           </div>
           <div class="grid w-full place-content-center">
             <Paginator
-                v-model:first="page"
+                v-model:first="searchParams.queryParams.page.value"
                 class="rounded"
                 :rows="1"
                 :total-records="getSearchResultsPagesCount"
