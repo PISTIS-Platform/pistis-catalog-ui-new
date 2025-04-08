@@ -39,7 +39,7 @@ const links = [
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 #thenavguy.nav-links {
   display: flex;
   gap: 2.5rem;
