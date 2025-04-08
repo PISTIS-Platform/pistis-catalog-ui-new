@@ -31,7 +31,7 @@
         >
           <form
               class="flex gap-3"
-              @submit.prevent="emit('search')"
+              @submit.prevent="doSearch"
           >
             <KSearchInput
                 v-model="searchInput"
@@ -85,6 +85,14 @@
               </div>
             </template>
           </div>
+          <div class="grid w-full place-content-center">
+            <Paginator
+                v-model:first="page"
+                class="rounded"
+                :rows="1"
+                :total-records="getSearchResultsPagesCount"
+            />
+          </div>
         </section>
       </div>
     </div>
@@ -103,6 +111,7 @@ import KButton from '@/components/base/button/KButton.vue'
 import FacetSidebar from '@/components/facet-sidebar/FacetSidebar.vue'
 import SelectedFacetsOverview from '@/components/selected-facets-overview/SelectedFacetsOverview.vue'
 import KSearchInfoPanel from '@/components/base/search-info-panel/SearchInfoPanel.vue'
+import Paginator from 'primevue/paginator'
 
 const props = withDefaults(
     defineProps<{
@@ -113,15 +122,10 @@ const props = withDefaults(
     },
 )
 
-const emit = defineEmits([
-  'search',
-])
-
 // --- Input models ---
 const searchInput = defineModel<string>('searchInput', { required: true })
 const hvdModel = defineModel<boolean>('hvd', { required: true })
 const livedataModel = defineModel<boolean>('livedata', { required: true })
-// const selectedFacets = defineModel<Record<string, string[]>>('selectedFacets', { required: true })
 const selectedFacets = toRef(useSelectedFacets())
 
 // const sort = defineModel<string>('sort', { required: true })
