@@ -120,8 +120,8 @@ const sidebarVisible = defineModel<boolean>('sidebarVisible', { default: false }
       class="flex flex-col gap-6 px-6"
     >
       <SelectedFacetsOverview
-        v-model="selectedFacets"
-        :facets="availableFacets"
+          v-model="selectedFacets"
+          :facets="availableFacets"
       />
       <div class="flex flex-col gap-6">
         <KSearchInfoPanel
