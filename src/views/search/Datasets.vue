@@ -101,7 +101,7 @@
 
 <script setup lang="ts">
 import { useDcatApSearch } from '@/sdk'
-import { computed, ref, toRef } from 'vue'
+import { computed, toRef } from 'vue'
 import DataInfoCard from '@/components/base/data-info-box/DataInfoCard.vue'
 import { useDatasetSearchView } from '@/composables/useDatasetsSearchView'
 import { useSearchParams } from '@/composables/useSearchParams'
@@ -113,27 +113,13 @@ import SelectedFacetsOverview from '@/components/selected-facets-overview/Select
 import KSearchInfoPanel from '@/components/base/search-info-panel/SearchInfoPanel.vue'
 import Paginator from 'primevue/paginator'
 
-const props = withDefaults(
-    defineProps<{
-      public?: boolean
-    }>(),
-    {
-      public: true,
-    },
-)
-
-// --- Input models ---
 const searchInput = defineModel<string>('searchInput', { required: true })
 const hvdModel = defineModel<boolean>('hvd', { required: true })
 const livedataModel = defineModel<boolean>('livedata', { required: true })
 const selectedFacets = toRef(useSelectedFacets())
-
-// const sort = defineModel<string>('sort', { required: true })
-// const sortDirection = defineModel<string>('sortDirection', { required: true })
+const searchParams = useSearchParams()
 const page = defineModel<number>('page', { required: true })
 const sidebarVisible = defineModel<boolean>('sidebarVisible', { default: false })
-
-const searchParams = useSearchParams()
 
 const itemsCount = computed(() => (searchParams?.queryParams?.limit ?? 10));
 
@@ -150,7 +136,7 @@ const {
   showOnlyPublic,
   doSearch,
 } = useDatasetSearchView({
-  isPublic: props.public,
+  isPublic: true,
   searchInput,
   hvdModel,
   livedataModel,
