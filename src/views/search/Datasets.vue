@@ -1,5 +1,4 @@
 <template>
-  <h1>Datasets!</h1>
   <div class="flex flex-col gap-2">
     <template v-if="!isLoading && !isFetching">
       <DataInfoCard
