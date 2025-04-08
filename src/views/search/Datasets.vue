@@ -1,4 +1,19 @@
 <template>
+  <Sidebar
+      v-model:visible="sidebarVisible"
+      header="Kataloge durchsuchen"
+  >
+    <slot name="face-sidebar">
+      <FacetSidebar
+          v-model:model-value="selectedFacets"
+          v-model:hvd="hvdModel"
+          v-model:livedata="livedataModel"
+          :public="true"
+          mobile
+          :facets="availableFacetsFormatted"
+      />
+    </slot>
+  </Sidebar>
   <div class="container relative mx-auto grid grid-cols-1 sm:grid-cols-[minmax(auto,_20rem)_1fr] mx-auto max-w-content-max">
     <div
         name="sidebar"
@@ -12,7 +27,7 @@
             v-model:model-value="selectedFacets"
             v-model:hvd="hvdModel"
             v-model:livedata="livedataModel"
-            :public="public"
+            :public="true"
             mobile
             :facets="availableFacetsFormatted"
         />
@@ -20,9 +35,23 @@
     </div>
     <div name="content" class="flex flex-col overflow-x-auto">
       <section class="sm:hidden">
-        <slot name="hamburger">
-          hamburger
-        </slot>
+        <div class="flex items-center gap-2 p-2">
+          <KButton
+              severity="contrast"
+              size="large"
+              @click="sidebarVisible = true"
+          >
+            <template #icon>
+              <i class="icon-[ph--text-align-left]" />
+            </template>
+          </KButton>
+          <Typography
+              as="h4"
+              variant="header-4"
+          >
+            Katalog durchsuchen
+          </Typography>
+        </div>
       </section>
       <div class="mt-[15px] flex-none px-6 py-[1.875rem]">
         <section
@@ -112,6 +141,7 @@ import FacetSidebar from '@/components/facet-sidebar/FacetSidebar.vue'
 import SelectedFacetsOverview from '@/components/selected-facets-overview/SelectedFacetsOverview.vue'
 import KSearchInfoPanel from '@/components/base/search-info-panel/SearchInfoPanel.vue'
 import Paginator from 'primevue/paginator'
+import Sidebar from 'primevue/sidebar'
 
 const searchInput = defineModel<string>('searchInput', { required: true })
 const hvdModel = defineModel<boolean>('hvd', { required: true })
