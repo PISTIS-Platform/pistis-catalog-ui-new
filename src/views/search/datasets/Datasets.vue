@@ -2,7 +2,7 @@
   <!-- Facets toggle sidebar for small devices -->
   <Sidebar
       v-model:visible="sidebarVisible"
-      header="Kataloge durchsuchen"
+      header="Suchfilter"
   >
     <FacetSidebar
         v-model:model-value="selectedFacets"
@@ -46,12 +46,7 @@
               <i class="icon-[ph--text-align-left]" />
             </template>
           </KButton>
-          <Typography
-              as="h4"
-              variant="header-4"
-          >
-            Katalog durchsuchen
-          </Typography>
+          <span>Suchfilter</span>
         </div>
       </section>
       <div class="mt-[15px] flex-none px-6 py-[1.875rem]">
