@@ -49,32 +49,10 @@
           <span>Suchfilter</span>
         </div>
       </section>
-      <div class="mt-[15px] flex-none px-6 py-[1.875rem]">
-        <section
-            name="top"
-            class="flex flex-col py-16"
-        >
-          <form
-              class="flex gap-3"
-              @submit.prevent="doSearch"
-          >
-            <SearchInput
-                v-model="searchInput"
-                disable-dropdown
-                class="w-full max-w-[50rem]"
-                :placeholder="$t('kdw.views.DatasetSearchView.searchDataCatalog')"
-                :select-options="[]"
-            />
-            <KButton
-                class="h-full text-base"
-                size="large"
-                type="submit"
-            >
-              {{ $t('kdw.views.DatasetSearchView.search') }}
-            </KButton>
-          </form>
-        </section>
-      </div>
+      <search-bar
+          :search-action="doSearch"
+          v-model="searchInput"
+      />
       <div class="flex-1">
         <section
             name="datasets"
@@ -131,13 +109,14 @@ import DataInfoCard from '@/components/base/data-info-box/DataInfoCard.vue'
 import { useDatasetSearchView } from '@/composables/useDatasetsSearchView'
 import { useSearchParams } from '@/composables/useSearchParams'
 import { useSelectedFacets } from '@/composables/useSelectedFacets'
-import SearchInput from '@/components/search-input/SearchInput.vue'
 import KButton from '@/components/base/button/KButton.vue'
 import FacetSidebar from '@/components/facet-sidebar/FacetSidebar.vue'
 import SelectedFacetsOverview from '@/components/selected-facets-overview/SelectedFacetsOverview.vue'
 import SearchInfoPanel from '@/components/base/search-info-panel/SearchInfoPanel.vue'
 import Paginator from 'primevue/paginator'
 import Sidebar from 'primevue/sidebar'
+import SearchBar from "@/views/search/datasets/SearchBar.vue";
+// import SearchInput from "@/components/search-input/SearchInput.vue"
 
 const searchInput = defineModel<string>('searchInput', { required: true })
 const hvdModel = defineModel<boolean>('hvd', { required: true })
