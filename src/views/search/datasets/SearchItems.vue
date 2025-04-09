@@ -38,7 +38,7 @@ const itemsCount = computed(() => (searchParams?.queryParams?.limit ?? 10));
 
 const props = defineProps<{
   datasets: [],
-  getSearchResultsPagesCount: Function,
+  getSearchResultsPagesCount: number,
   isLoading: boolean,
   isFetching: boolean,
   showOnlyPublic: boolean

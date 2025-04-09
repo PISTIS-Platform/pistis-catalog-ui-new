@@ -31,11 +31,10 @@
 import SearchInput from "@/components/search-input/SearchInput.vue";
 import KButton from '@/components/base/button/KButton.vue';
 
-import {SelectOptionList} from "@/utils/types";
-
 const props = defineProps<{
   searchAction: Function
-}>()
-const searchInput = defineModel<string>()
+}>();
+
+const searchInput = defineModel<string>();
 
 </script>
