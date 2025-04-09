@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import DatasetDetailsView from '../views/DatasetDetailsView.vue'
-import Datasets from '../views/search/Datasets.vue'
+import Datasets from '../views/search/datasets/Datasets.vue'
 import Catalogues from '../views/search/Catalogues.vue'
 import NotFound from '../views/NotFound.vue'
 import LandingPageView from '../views/public/LandingPageView.vue'

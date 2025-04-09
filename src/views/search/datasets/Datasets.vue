@@ -1,4 +1,5 @@
 <template>
+  <!-- Facets toggle sidebar for small devices -->
   <Sidebar
       v-model:visible="sidebarVisible"
       header="Kataloge durchsuchen"
@@ -13,6 +14,7 @@
     />
   </Sidebar>
   <div class="container relative mx-auto grid grid-cols-1 sm:grid-cols-[minmax(auto,_20rem)_1fr] mx-auto max-w-content-max">
+    <!-- Permanent facets for large devices -->
     <div
         name="sidebar"
         class="relative hidden sm:block sm:max-w-96 lg:min-w-[420px]"
@@ -32,6 +34,7 @@
       </div>
     </div>
     <div name="content" class="flex flex-col overflow-x-auto">
+      <!-- Facet Burger button for small devices -->
       <section class="sm:hidden">
         <div class="flex items-center gap-2 p-2">
           <KButton
