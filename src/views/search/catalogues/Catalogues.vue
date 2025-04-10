@@ -34,25 +34,8 @@
       </div>
     </div>
     <div name="content" class="flex flex-col overflow-x-auto">
-      <!-- Facet Burger button for small devices -->
-      <section class="sm:hidden">
-        <div class="flex items-center gap-2 p-2">
-          <KButton
-              severity="contrast"
-              size="large"
-              @click="sidebarVisible = true"
-          >
-            <template #icon>
-              <i class="icon-[ph--text-align-left]" />
-            </template>
-          </KButton>
-          <span>Suchfilter</span>
-        </div>
-      </section>
-      <search-bar
-          :search-action="doSearch"
-          v-model="searchInput"
-      />
+      <facet-burger-button class="sm:hidden" :openSidebar="toggleFacetSidebar" />
+      <search-bar :search-action="doSearch" v-model="searchInput" />
       <div class="flex-1">
         <section
             name="datasets"
@@ -85,17 +68,17 @@
 
 <script setup lang="ts">
 import { useDcatApSearch } from '@/sdk'
-import { computed, toRef } from 'vue'
+import { ref, toRef } from 'vue'
 import { useDatasetSearchView } from '@/composables/useDatasetsSearchView'
 import { useSearchParams } from '@/composables/useSearchParams'
 import { useSelectedFacets } from '@/composables/useSelectedFacets'
-import KButton from '@/components/base/button/KButton.vue'
 import FacetSidebar from '@/components/facet-sidebar/FacetSidebar.vue'
 import SelectedFacetsOverview from '@/components/selected-facets-overview/SelectedFacetsOverview.vue'
 import SearchInfoPanel from '@/components/base/search-info-panel/SearchInfoPanel.vue'
 import Sidebar from 'primevue/sidebar'
-import SearchBar from "@/views/search/datasets/SearchBar.vue";
+import SearchBar from "@/views/search/SearchBar.vue";
 import SearchItems from "@/views/search/datasets/SearchItems.vue";
+import FacetBurgerButton from "@/views/search/FacetBurgerButton.vue";
 
 const searchInput = defineModel<string>('searchInput', { required: true })
 const hvdModel = defineModel<boolean>('hvd', { required: true })
@@ -103,9 +86,11 @@ const livedataModel = defineModel<boolean>('livedata', { required: true })
 const selectedFacets = toRef(useSelectedFacets())
 const searchParams = useSearchParams()
 const page = defineModel<number>('page', { required: true })
-const sidebarVisible = defineModel<boolean>('sidebarVisible', { default: false })
+const sidebarVisible = ref(false);
 
-const itemsCount = computed(() => (searchParams?.queryParams?.limit ?? 10));
+const toggleFacetSidebar = () => {
+  sidebarVisible.value = !sidebarVisible.value;
+};
 
 const {
   availableFacetsFormatted,

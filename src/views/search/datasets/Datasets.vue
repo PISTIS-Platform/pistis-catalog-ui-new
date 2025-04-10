@@ -76,9 +76,9 @@ import FacetSidebar from '@/components/facet-sidebar/FacetSidebar.vue'
 import SelectedFacetsOverview from '@/components/selected-facets-overview/SelectedFacetsOverview.vue'
 import SearchInfoPanel from '@/components/base/search-info-panel/SearchInfoPanel.vue'
 import Sidebar from 'primevue/sidebar'
-import SearchBar from "@/views/search/datasets/SearchBar.vue";
+import SearchBar from "@/views/search/SearchBar.vue";
 import SearchItems from "@/views/search/datasets/SearchItems.vue";
-import FacetBurgerButton from "@/views/search/datasets/FacetBurgerButton.vue";
+import FacetBurgerButton from "@/views/search/FacetBurgerButton.vue";
 
 const searchInput = defineModel<string>('searchInput', { required: true })
 const hvdModel = defineModel<boolean>('hvd', { required: true })
