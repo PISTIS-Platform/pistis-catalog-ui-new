@@ -92,6 +92,27 @@ const toggleFacetSidebar = () => {
   sidebarVisible.value = !sidebarVisible.value;
 };
 
+const x = useDatasetSearchView({
+  isPublic: true,
+  searchInput,
+  hvdModel,
+  livedataModel,
+  selectedFacets,
+  searchParams,
+  hubSearchQueryDefinition: useDcatApSearch,
+})
+
+const y = useDatasetSearchView({
+  isPublic: true,
+  searchInput,
+  hvdModel,
+  livedataModel,
+  selectedFacets,
+  searchParams,
+  hubSearchQueryDefinition: useDcatApSearch,
+})
+
+console.log("RESULT: ", {x,y})
 const {
   availableFacetsFormatted,
   sort,
@@ -103,13 +124,5 @@ const {
   isFetching,
   showOnlyPublic,
   doSearch,
-} = useDatasetSearchView({
-  isPublic: true,
-  searchInput,
-  hvdModel,
-  livedataModel,
-  selectedFacets,
-  searchParams,
-  hubSearchQueryDefinition: useDcatApSearch,
-})
+} = x
 </script>
