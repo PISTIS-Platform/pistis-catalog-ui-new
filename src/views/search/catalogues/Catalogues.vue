@@ -67,7 +67,7 @@
 </template>
 
 <script setup lang="ts">
-import { useDcatApSearch } from '@/sdk'
+import {useDcatApCatalogSearch, useDcatApSearch} from '@/sdk'
 import { ref, toRef } from 'vue'
 import { useDatasetSearchView } from '@/composables/useDatasetsSearchView'
 import { useSearchParams } from '@/composables/useSearchParams'
@@ -79,6 +79,7 @@ import Sidebar from 'primevue/sidebar'
 import SearchBar from "@/views/search/SearchBar.vue";
 import SearchItems from "@/views/search/datasets/SearchItems.vue";
 import FacetBurgerButton from "@/views/search/FacetBurgerButton.vue";
+import {useCatalogs} from "@/composables/useCatalogs";
 
 const searchInput = defineModel<string>('searchInput', { required: true })
 const hvdModel = defineModel<boolean>('hvd', { required: true })
@@ -102,15 +103,15 @@ const x = useDatasetSearchView({
   hubSearchQueryDefinition: useDcatApSearch,
 })
 
-const y = useDatasetSearchView({
+const y = useCatalogs({
   isPublic: true,
   searchInput,
   hvdModel,
   livedataModel,
   selectedFacets,
   searchParams,
-  hubSearchQueryDefinition: useDcatApSearch,
-})
+  hubSearchQueryDefinition: useDcatApSearch
+});
 
 console.log("RESULT: ", {x,y})
 const {
