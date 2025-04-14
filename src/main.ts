@@ -33,8 +33,8 @@ import '@fontsource-variable/space-grotesk'
 import '@formkit/themes/genesis'
 
 async function renderApp() {
-  const { worker } = await import('./services/msw')
-  worker.start()
+  // const { worker } = await import('./services/msw')
+  // worker.start()
 
   const app = createApp(App)
 
