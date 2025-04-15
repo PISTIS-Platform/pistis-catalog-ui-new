@@ -53,17 +53,13 @@
               {{ formattedDatasetResultCount }}
             </SearchInfoPanel>
           </div>
-          <search-items
-              :items="datasets"
+          <catalogues-list
+              :catalogues="datasets"
               :getSearchResultsPagesCount="getSearchResultsPagesCount"
               :isLoading="isLoading"
               :isFetching="isFetching"
               :showOnlyPublic="showOnlyPublic"
-          >
-            <template v-slot="{item}">
-              <h3>HELLOO {{ item.id }}</h3>
-            </template>
-          </search-items>
+          />
         </section>
       </div>
     </div>
@@ -84,6 +80,7 @@ import SearchBar from "@/views/search/SearchBar.vue";
 import SearchItems from "@/views/search/SearchItems.vue";
 import FacetBurgerButton from "@/views/search/FacetBurgerButton.vue";
 import {useCatalogs} from "@/composables/useCatalogs";
+import CataloguesList from "@/views/search/catalogues/CataloguesList.vue";
 
 const searchInput = defineModel<string>('searchInput', { required: true })
 const hvdModel = defineModel<boolean>('hvd', { required: true })
