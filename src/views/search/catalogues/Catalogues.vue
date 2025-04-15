@@ -67,7 +67,7 @@
 </template>
 
 <script setup lang="ts">
-import {useDcatApCatalogSearch, useDcatApSearch} from '@/sdk'
+import {useDcatApCatalogSearch, useDcatApSearch} from '@/sdk';
 import { ref, toRef } from 'vue'
 import { useDatasetSearchView } from '@/composables/useDatasetsSearchView'
 import { useSearchParams } from '@/composables/useSearchParams'
@@ -77,7 +77,7 @@ import SelectedFacetsOverview from '@/components/selected-facets-overview/Select
 import SearchInfoPanel from '@/components/base/search-info-panel/SearchInfoPanel.vue'
 import Sidebar from 'primevue/sidebar'
 import SearchBar from "@/views/search/SearchBar.vue";
-import SearchItems from "@/views/search/datasets/SearchItems.vue";
+import SearchItems from "@/views/search/catalogues/SearchItems.vue";
 import FacetBurgerButton from "@/views/search/FacetBurgerButton.vue";
 import {useCatalogs} from "@/composables/useCatalogs";
 
@@ -113,7 +113,7 @@ const y = useCatalogs({
   hubSearchQueryDefinition: useDcatApSearch
 });
 
-console.log("RESULT: ", {x,y})
+console.log("Catalogues: ", {x,y})
 const {
   availableFacetsFormatted,
   sort,

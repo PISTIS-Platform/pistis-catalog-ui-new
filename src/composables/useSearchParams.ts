@@ -7,7 +7,6 @@ import { useDcatApSearch } from '../sdk'
 
 export function useSearchParams(locale?: MaybeRefOrGetter) {
   const { refSyncedWithRouteQuery } = useDcatApSearch()
-console.log("refSyncedWithRouteQuery", refSyncedWithRouteQuery)
   const q = refSyncedWithRouteQuery('q', '')
   const limit = refSyncedWithRouteQuery('limit', 10)
   const displayedPage = refSyncedWithRouteQuery('page', 1)
