@@ -77,7 +77,7 @@ import SelectedFacetsOverview from '@/components/selected-facets-overview/Select
 import SearchInfoPanel from '@/components/base/search-info-panel/SearchInfoPanel.vue'
 import Sidebar from 'primevue/sidebar'
 import SearchBar from "@/views/search/SearchBar.vue";
-import SearchItems from "@/views/search/datasets/SearchItems.vue";
+import SearchItems from "@/views/search/SearchItems.vue";
 import FacetBurgerButton from "@/views/search/FacetBurgerButton.vue";
 
 const searchInput = defineModel<string>('searchInput', { required: true })
