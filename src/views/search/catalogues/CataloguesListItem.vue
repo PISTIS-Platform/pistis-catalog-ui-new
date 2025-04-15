@@ -1,6 +1,10 @@
 <template>
   <router-link to="datasets">
-    <h3>HELLOO {{ item.id }}</h3>
+    <div class="group relative mx-auto box-border w-full rounded-b-none border-b-[3px]
+      border-neutral-20 border-b-transparent bg-white p-12 hover:border-b-primary-pressed">
+
+      <h3>HELLOO {{ item.id }}</h3>
+    </div>
   </router-link>
 </template>
 
