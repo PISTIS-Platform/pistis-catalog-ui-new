@@ -54,7 +54,7 @@
             </SearchInfoPanel>
           </div>
           <search-items
-              :datasets="datasets"
+              :items="datasets"
               :getSearchResultsPagesCount="getSearchResultsPagesCount"
               :isLoading="isLoading"
               :isFetching="isFetching"

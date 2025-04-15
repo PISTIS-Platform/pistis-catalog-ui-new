@@ -1,15 +1,15 @@
 <template>
   <div class="flex flex-col gap-2">
     <template v-if="!isLoading && !isFetching">
-      <DataInfoCard
-          v-for="dataset in datasets"
-          :key="dataset.id"
-          :to="{ name: 'dataset-details', params: { datasetId: dataset.id } }"
-          :title="dataset.title"
-          :description="dataset.description"
-          :file-formats="dataset.formats"
-          :properties="dataset.summary"
-      />
+      <slot v-for="item in items" :key="item.id">
+        <DataInfoCard
+            :to="{ name: 'dataset-details', params: { datasetId: item.id } }"
+            :title="item.title"
+            :description="item.description"
+            :file-formats="item.formats"
+            :properties="item.summary"
+        />
+      </slot>
     </template>
     <template v-else>
       <div v-for="i in itemsCount.value" :key="i" class="size-full flex flex-col gap-6 text-content animate-pulse bg-slate-200">
@@ -37,7 +37,7 @@ const searchParams = useSearchParams();
 const itemsCount = computed(() => (searchParams?.queryParams?.limit ?? 10));
 
 const props = defineProps<{
-  datasets: [],
+  items: [],
   getSearchResultsPagesCount: number,
   isLoading: boolean,
   isFetching: boolean,
