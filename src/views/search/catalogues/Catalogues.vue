@@ -59,7 +59,11 @@
               :isLoading="isLoading"
               :isFetching="isFetching"
               :showOnlyPublic="showOnlyPublic"
-          />
+          >
+            <template v-slot="{item}">
+              <h3>HELLOO {{ item.id }}</h3>
+            </template>
+          </search-items>
         </section>
       </div>
     </div>

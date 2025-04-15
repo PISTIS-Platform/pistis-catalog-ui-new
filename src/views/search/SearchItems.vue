@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col gap-2">
     <template v-if="!isLoading && !isFetching">
-      <slot v-for="item in items" :key="item.id">
+      <slot v-for="item in items" :key="item.id" :item="item">
         <DataInfoCard
             :to="{ name: 'dataset-details', params: { datasetId: item.id } }"
             :title="item.title"
