@@ -1,8 +1,7 @@
 import { toRef, toRefs } from 'vue';
 import {useDcatApCatalogSearch} from "@/sdk";
-import {useSearchParams} from "@/composables/useSearchParams";
-import {useSelectedFacets} from "@/composables/useSelectedFacets";
-import {watch} from "vue";
+import {useSearchParams} from "../useSearchParams";
+import {useSelectedFacets} from "../useSelectedFacets";
 import {useSearchInput} from "@/views/search/useSearchInput";
 
 export const useCatalogs = (options) => {

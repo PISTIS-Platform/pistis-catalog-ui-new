@@ -69,8 +69,8 @@
 <script setup lang="ts">
 import {useDcatApCatalogSearch} from '@/sdk';
 import { ref, toRef } from 'vue'
-import { useSearchParams } from '@/composables/useSearchParams'
-import { useSelectedFacets } from '@/composables/useSelectedFacets'
+import { useSearchParams } from '../useSearchParams'
+import { useSelectedFacets } from '../useSelectedFacets'
 import FacetSidebar from '@/components/facet-sidebar/FacetSidebar.vue'
 import SelectedFacetsOverview from '@/components/selected-facets-overview/SelectedFacetsOverview.vue'
 import SearchInfoPanel from '@/components/base/search-info-panel/SearchInfoPanel.vue'

@@ -31,7 +31,7 @@
 import { computed, defineProps } from 'vue';
 import Paginator from 'primevue/paginator';
 import DataInfoCard from '@/components/base/data-info-box/DataInfoCard.vue';
-import { useSearchParams } from '@/composables/useSearchParams';
+import { useSearchParams } from './useSearchParams';
 
 const searchParams = useSearchParams();
 const itemsCount = computed(() => (searchParams?.queryParams?.limit ?? 10));

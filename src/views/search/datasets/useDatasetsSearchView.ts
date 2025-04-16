@@ -3,15 +3,13 @@ import type { HubSearchDefinition } from '@piveau/sdk-vue'
 import type { MaybeRef } from 'vue'
 import type { LocationQueryValue } from 'vue-router'
 import { useAuthStore } from '@/stores/authStore'
-import { getTranslationFor } from '@piveau/sdk-vue'
-// src/composables/useDatasetSearchView.ts
 import { computed, ref, toRef, toRefs, unref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
-import { useDcatApSearch } from '../sdk'
-import { getLocalizedValue } from '../sdk/utils/helpers'
-import { useSearchParams } from './useSearchParams'
-import { useSelectedFacets } from './useSelectedFacets'
+import { useDcatApSearch } from '@/sdk'
+import { getLocalizedValue } from '@/sdk/utils/helpers'
+import { useSearchParams } from '../useSearchParams'
+import { useSelectedFacets } from '../useSelectedFacets'
 import {useSearchInput} from "@/views/search/useSearchInput";
 
 export interface EnhancedSearchResult {

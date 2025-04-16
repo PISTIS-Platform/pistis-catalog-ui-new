@@ -1,5 +1,5 @@
 import {watch, toRef} from "vue";
-import {useSearchParams} from "@/composables/useSearchParams";
+import {useSearchParams} from "./useSearchParams";
 
 export const useSearchInput = (options) => {
     const searchInput = toRef((options?.searchInput || '') as string);
