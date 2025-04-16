@@ -158,7 +158,7 @@ export function useDatasetSearchView<TF extends string, TM, TS extends EnhancedS
     doSearch,
     sort,
     sortDirection,
-    formattedDatasetResultCount,
+    getSearchResultsCount,
     datasets,
     queryParams,
     getSearchResultsPagesCount,

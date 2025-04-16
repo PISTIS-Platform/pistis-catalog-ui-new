@@ -12,7 +12,7 @@
             v-model="searchInput"
             disable-dropdown
             class="w-full max-w-[50rem]"
-            :placeholder="$t('kdw.views.DatasetSearchView.searchDataCatalog')"
+            :placeholder="$t('search.searchBarPlaceholder')"
             :select-options="[]"
         />
         <KButton
@@ -20,7 +20,7 @@
             size="large"
             type="submit"
         >
-          {{ $t('kdw.views.DatasetSearchView.search') }}
+          {{ $t('search.searchButton') }}
         </KButton>
       </form>
     </section>

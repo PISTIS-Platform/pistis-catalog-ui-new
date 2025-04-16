@@ -1,4 +1,11 @@
 {
+  "search": {
+    "searchBarPlaceholder": "Suche",
+    "searchButton": "Suchen",
+    "datasets": {
+      "found": "Datensätze gefunden"
+    }
+  },
   "authentication": {
     "logged_out": "Sie wurden ausgeloggt."
   },

@@ -19,5 +19,5 @@ export const useSearchInput = (options) => {
         queryParams.q.value = searchInput.value
         queryParams.page.value = 0
     }
-    return { searchInput, doSearch }
+    return { searchInput, doSearch };
 };

@@ -50,7 +50,7 @@
                 v-model:direction="sortDirection"
                 v-model:sort="sort"
             >
-                {{ formattedDatasetResultCount }}
+                {{ getSearchResultsCount }} {{ $t('search.datasets.found') }}
             </SearchInfoPanel>
           </div>
           <search-items
@@ -96,7 +96,7 @@ const {
   availableFacetsFormatted,
   sort,
   sortDirection,
-  formattedDatasetResultCount,
+  getSearchResultsCount,
   datasets,
   getSearchResultsPagesCount,
   isLoading,
