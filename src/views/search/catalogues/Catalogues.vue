@@ -50,7 +50,7 @@
                 v-model:direction="sortDirection"
                 v-model:sort="sort"
             >
-              {{ formattedDatasetResultCount }}
+              {{ getSearchResultsCount }} Catalogues
             </SearchInfoPanel>
           </div>
           <catalogues-list
@@ -119,8 +119,8 @@ const {
   availableFacetsFormatted,
   sort,
   sortDirection,
-  formattedDatasetResultCount,
   catalogues,
+  getSearchResultsCount,
   getSearchResultsPagesCount,
   isLoading,
   isFetching,

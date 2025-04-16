@@ -2,6 +2,7 @@ import { toRef, toRefs } from 'vue';
 import {useDcatApCatalogSearch, useDcatApSearch} from "@/sdk";
 import {useSearchParams} from "@/composables/useSearchParams";
 import {useSelectedFacets} from "@/composables/useSelectedFacets";
+import {watch} from "vue";
 
 export const useCatalogs = (options) => {
 
@@ -31,16 +32,31 @@ export const useCatalogs = (options) => {
         // headers: searchHeaders,
     });
 
+    const searchInput = toRef((options?.searchInput || '') as string)
+    watch(
+        () => queryParams.q.value,
+        (val) => {
+            searchInput.value = val
+        },
+        { immediate: true },
+    )
+    function doSearch() {
+        if (queryParams.q.value === searchInput.value)
+            return
+        queryParams.q.value = searchInput.value
+        queryParams.page.value = 0
+    }
+
     return {
         availableFacetsFormatted: getAvailableFacetsLocalized('de'),
         sort,
         sortDirection,
-        formattedDatasetResultCount,
-        catalogues,
+        catalogues: getSearchResultsEnhanced,
+        getSearchResultsCount,
         getSearchResultsPagesCount,
         isLoading,
         isFetching,
-        showOnlyPublic,
+        showOnlyPublic: false,
         doSearch,
     };
 }
