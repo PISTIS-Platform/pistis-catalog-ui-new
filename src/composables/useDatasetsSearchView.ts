@@ -12,6 +12,7 @@ import { useDcatApSearch } from '../sdk'
 import { getLocalizedValue } from '../sdk/utils/helpers'
 import { useSearchParams } from './useSearchParams'
 import { useSelectedFacets } from './useSelectedFacets'
+import {useSearchInput} from "@/views/search/useSearchInput";
 
 export interface EnhancedSearchResult {
   getId?: string
@@ -97,21 +98,7 @@ export function useDatasetSearchView<TF extends string, TM, TS extends EnhancedS
     headers: searchHeaders,
   })
 
-  // --- Search Input ---
-  const searchInput = toRef((options?.searchInput || '') as string)
-  watch(
-    () => queryParams.q.value,
-    (val) => {
-      searchInput.value = val
-    },
-    { immediate: true },
-  )
-  function doSearch() {
-    if (queryParams.q.value === searchInput.value)
-      return
-    queryParams.q.value = searchInput.value
-    queryParams.page.value = 0
-  }
+  const { doSearch } = useSearchInput(options);
 
   // --- Search Info Panel ---
   const numOfSearchResults = computed(() => getSearchResultsCount.value)
@@ -170,7 +157,6 @@ export function useDatasetSearchView<TF extends string, TM, TS extends EnhancedS
     livedataModel,
     availableFacetsFormatted,
     availableFacetsDe,
-    searchInput,
     doSearch,
     sort,
     sortDirection,

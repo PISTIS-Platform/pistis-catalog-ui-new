@@ -3,6 +3,7 @@ import {useDcatApCatalogSearch} from "@/sdk";
 import {useSearchParams} from "@/composables/useSearchParams";
 import {useSelectedFacets} from "@/composables/useSelectedFacets";
 import {watch} from "vue";
+import {useSearchInput} from "@/views/search/useSearchInput";
 
 export const useCatalogs = (options) => {
 
@@ -27,20 +28,7 @@ export const useCatalogs = (options) => {
         selectedFacets: toRefs(selectedFacets.value)
     });
 
-    const searchInput = toRef((options?.searchInput || '') as string)
-    watch(
-        () => queryParams.q.value,
-        (val) => {
-            searchInput.value = val
-        },
-        { immediate: true },
-    )
-    function doSearch() {
-        if (queryParams.q.value === searchInput.value)
-            return
-        queryParams.q.value = searchInput.value
-        queryParams.page.value = 0
-    }
+    const { doSearch } = useSearchInput(options);
 
     return {
         availableFacetsFormatted: getAvailableFacetsLocalized('de'),
