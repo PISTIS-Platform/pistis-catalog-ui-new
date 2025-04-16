@@ -98,7 +98,7 @@ function beforeLeave(el: any) {
           :id-name="`selected-facet-${facet.title}-${facet.value}`"
           @click="removeSelectedFacetById(facet.title, facet.id)"
         >
-          <div class="flex flex-row flex-nowrap items-center gap-1">
+          <div class="flex flex-row flex-nowrap items-center gap-1 whitespace-nowrap">
             <Typography>{{ facet.label || facet.title }}:</Typography>
             <Typography variant="paragraph-1">
               {{ facet.value }}
