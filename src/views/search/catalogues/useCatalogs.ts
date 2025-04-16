@@ -1,5 +1,5 @@
 import { toRef, toRefs } from 'vue';
-import {useDcatApCatalogSearch, useDcatApSearch} from "@/sdk";
+import {useDcatApCatalogSearch} from "@/sdk";
 import {useSearchParams} from "@/composables/useSearchParams";
 import {useSelectedFacets} from "@/composables/useSelectedFacets";
 import {watch} from "vue";
@@ -24,12 +24,7 @@ export const useCatalogs = (options) => {
         isLoading,
     } = useSearch({
         queryParams,
-        selectedFacets: {
-            ...toRefs(selectedFacets.value),
-            // is_hvd: isHvd,
-            // periodicity: isLivedata,
-        }
-        // headers: searchHeaders,
+        selectedFacets: toRefs(selectedFacets.value)
     });
 
     const searchInput = toRef((options?.searchInput || '') as string)

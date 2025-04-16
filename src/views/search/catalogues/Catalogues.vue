@@ -67,9 +67,8 @@
 </template>
 
 <script setup lang="ts">
-import {useDcatApCatalogSearch, useDcatApSearch} from '@/sdk';
+import {useDcatApCatalogSearch} from '@/sdk';
 import { ref, toRef } from 'vue'
-import { useDatasetSearchView } from '@/composables/useDatasetsSearchView'
 import { useSearchParams } from '@/composables/useSearchParams'
 import { useSelectedFacets } from '@/composables/useSelectedFacets'
 import FacetSidebar from '@/components/facet-sidebar/FacetSidebar.vue'
@@ -77,9 +76,8 @@ import SelectedFacetsOverview from '@/components/selected-facets-overview/Select
 import SearchInfoPanel from '@/components/base/search-info-panel/SearchInfoPanel.vue'
 import Sidebar from 'primevue/sidebar'
 import SearchBar from "@/views/search/SearchBar.vue";
-import SearchItems from "@/views/search/SearchItems.vue";
 import FacetBurgerButton from "@/views/search/FacetBurgerButton.vue";
-import {useCatalogs} from "@/composables/useCatalogs";
+import {useCatalogs} from "./useCatalogs";
 import CataloguesList from "@/views/search/catalogues/CataloguesList.vue";
 
 const searchInput = defineModel<string>('searchInput', { required: true })
@@ -94,27 +92,6 @@ const toggleFacetSidebar = () => {
   sidebarVisible.value = !sidebarVisible.value;
 };
 
-const x = useDatasetSearchView({
-  isPublic: true,
-  searchInput,
-  hvdModel,
-  livedataModel,
-  selectedFacets,
-  searchParams,
-  hubSearchQueryDefinition: useDcatApSearch,
-})
-
-const y = useCatalogs({
-  isPublic: true,
-  searchInput,
-  hvdModel,
-  livedataModel,
-  selectedFacets,
-  searchParams,
-  hubSearchQueryDefinition: useDcatApSearch
-});
-
-console.log("Catalogues: ", {x,y})
 const {
   availableFacetsFormatted,
   sort,
@@ -126,5 +103,14 @@ const {
   isFetching,
   showOnlyPublic,
   doSearch,
-} = y
+} = useCatalogs({
+  isPublic: true,
+  searchInput,
+  hvdModel,
+  livedataModel,
+  selectedFacets,
+  searchParams,
+  hubSearchQueryDefinition: useDcatApCatalogSearch
+});
+
 </script>
