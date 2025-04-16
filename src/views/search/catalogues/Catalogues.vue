@@ -54,7 +54,7 @@
             </SearchInfoPanel>
           </div>
           <catalogues-list
-              :catalogues="datasets"
+              :catalogues="catalogues"
               :getSearchResultsPagesCount="getSearchResultsPagesCount"
               :isLoading="isLoading"
               :isFetching="isFetching"
@@ -120,11 +120,11 @@ const {
   sort,
   sortDirection,
   formattedDatasetResultCount,
-  datasets,
+  catalogues,
   getSearchResultsPagesCount,
   isLoading,
   isFetching,
   showOnlyPublic,
   doSearch,
-} = x
+} = y
 </script>

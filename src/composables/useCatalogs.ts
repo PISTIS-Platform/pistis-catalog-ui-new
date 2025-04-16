@@ -13,15 +13,6 @@ export const useCatalogs = (options) => {
         : toRef(useSelectedFacets())
 
     const { useSearch } = useDcatApCatalogSearch();
-    const x = useSearch({
-        queryParams,
-        selectedFacets: {
-            ...toRefs(selectedFacets.value),
-            // is_hvd: isHvd,
-            // periodicity: isLivedata,
-        },
-        // headers: searchHeaders,
-    });
 
     const {
         getSearchResultsEnhanced,
@@ -30,26 +21,26 @@ export const useCatalogs = (options) => {
         getAvailableFacetsLocalized,
         isFetching,
         isLoading,
-    } = x;
-
-    const { useSearch: u } = useDcatApSearch();
-    const y = u({
+    } = useSearch({
         queryParams,
         selectedFacets: {
             ...toRefs(selectedFacets.value),
             // is_hvd: isHvd,
             // periodicity: isLivedata,
-        },
+        }
         // headers: searchHeaders,
     });
 
-    console.log("useCatalogs", {x,y})
     return {
-        getSearchResultsEnhanced,
-        getSearchResultsCount,
+        availableFacetsFormatted: getAvailableFacetsLocalized('de'),
+        sort,
+        sortDirection,
+        formattedDatasetResultCount,
+        catalogues,
         getSearchResultsPagesCount,
-        getAvailableFacetsLocalized,
-        isFetching,
         isLoading,
-    }
+        isFetching,
+        showOnlyPublic,
+        doSearch,
+    };
 }
