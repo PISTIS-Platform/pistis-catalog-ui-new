@@ -33,13 +33,13 @@ const links = [
           :href="href"
           @click="navigate"
       >
-        {{ $t(link.label) }}
+        {{ link.label? $t(link.label) : link.name }}
       </a>
     </RouterLink>
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 #thenavguy.nav-links {
   display: flex;
   gap: 2.5rem;

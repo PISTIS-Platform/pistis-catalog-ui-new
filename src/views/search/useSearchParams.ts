@@ -3,11 +3,10 @@ import { syncRef } from '@vueuse/core'
 import { useRouteQuery } from '@vueuse/router'
 import { computed, ref, toValue } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import { useDcatApSearch } from '../sdk'
+import { useDcatApSearch } from '@/sdk';
 
 export function useSearchParams(locale?: MaybeRefOrGetter) {
   const { refSyncedWithRouteQuery } = useDcatApSearch()
-
   const q = refSyncedWithRouteQuery('q', '')
   const limit = refSyncedWithRouteQuery('limit', 10)
   const displayedPage = refSyncedWithRouteQuery('page', 1)

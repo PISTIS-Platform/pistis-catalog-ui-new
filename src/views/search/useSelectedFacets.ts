@@ -1,4 +1,4 @@
-import { useDcatApCatalogSearch, useDcatApSearch } from '../sdk/index'
+import { useDcatApCatalogSearch, useDcatApSearch } from '@/sdk';
 
 export function useSelectedFacets() {
   const { refSyncedWithRouteQueryFacet } = useDcatApSearch()
