@@ -35,7 +35,7 @@ interface UseDatasetSearchViewOptions<TF extends string, TM, TS extends Enhanced
 
 export function useDatasetSearchView<TF extends string, TM, TS extends EnhancedSearchResult>(options: UseDatasetSearchViewOptions<TF, TM, TS>) {
   // --- Authentication, i18n and Routing ---
-  const { t, te } = useI18n()
+  const { t } = useI18n()
   const authStore = useAuthStore()
   const isAuthenticated = computed(() => !!authStore.authenticated)
   const route = useRoute()
@@ -120,7 +120,6 @@ export function useDatasetSearchView<TF extends string, TM, TS extends EnhancedS
     }))
   })
 
-  console.log("unref(selectedFacets))", unref(selectedFacets))
   // --- Facets ---
   const availableFacetsDe = getAvailableFacetsLocalized('de')
   const availableFacetsWithoutHvd = computed(() =>

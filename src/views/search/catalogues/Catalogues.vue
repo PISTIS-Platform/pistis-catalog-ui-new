@@ -70,7 +70,7 @@
 import {useDcatApCatalogSearch} from '@/sdk';
 import { ref, toRef } from 'vue'
 import { useSearchParams } from '../useSearchParams'
-import { useSelectedFacets } from '../useSelectedFacets'
+import {useSelectedFacetsCatalog} from '../useSelectedFacets'
 import FacetSidebar from '@/components/facet-sidebar/FacetSidebar.vue'
 import SelectedFacetsOverview from '@/components/selected-facets-overview/SelectedFacetsOverview.vue'
 import SearchInfoPanel from '@/components/base/search-info-panel/SearchInfoPanel.vue'
@@ -83,7 +83,7 @@ import CataloguesList from "@/views/search/catalogues/CataloguesList.vue";
 const searchInput = defineModel<string>('searchInput', { required: true })
 const hvdModel = defineModel<boolean>('hvd', { required: true })
 const livedataModel = defineModel<boolean>('livedata', { required: true })
-const selectedFacets = toRef(useSelectedFacets())
+const selectedFacets = toRef(useSelectedFacetsCatalog())
 const searchParams = useSearchParams()
 const page = defineModel<number>('page', { required: true })
 const sidebarVisible = ref(false);
