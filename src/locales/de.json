@@ -419,7 +419,13 @@
     "moreFilters": "Mehr Filter",
     "lessFilters": "Weniger Filter"
   },
-  "homepage": {
+  "catalogFacets": {
+    "facets": {
+      "country": "Herkunft",
+      "superCatalog": "Superkatalog"
+    }
+  },
+    "homepage": {
     "title": "Guten Morgen",
     "subtitle": "Was gibt es Neues auf deiner Plattform?"
   },

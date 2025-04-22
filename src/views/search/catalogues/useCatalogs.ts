@@ -18,8 +18,6 @@ export const useCatalogs = (options) => {
         ? toRef(options.selectedFacets)
         : toRef(useSelectedFacetsCatalog())
 
-    console.log("Options", options)
-    console.log("useSelectedFacetsCatalog", useSelectedFacetsCatalog(), selectedFacets.value)
     const { useSearch } = useDcatApCatalogSearch();
 
     const {
@@ -40,7 +38,7 @@ export const useCatalogs = (options) => {
         return getAvailableFacetsLocalized('de').value
             ?.map(facet => ({
                 id: facet.id,
-                label: "HELLO",//t(`datasetFacets.facets.${facet.id}`) ?? facet.id,
+                label: t(`catalogFacets.facets.${facet.id}`) ?? facet.id,
                 items: facet.items.map((item, index) => ({
                     id: item.id || `${index}`,
                     label:
@@ -56,7 +54,6 @@ export const useCatalogs = (options) => {
             .filter(facet => Object.keys(unref(selectedFacets)).includes(facet.id)) || []
     })
 
-    console.log("availableFacetsFormatted", getAvailableFacetsLocalized('de'), selectedFacets)
     return {
         availableFacetsFormatted,
         sort,
