@@ -3,7 +3,7 @@ import DatasetDetailsView from '@/views/DatasetDetailsView.vue';
 import Datasets from '@/views/search/datasets/Datasets.vue';
 import Catalogues from '@/views/search/catalogues/Catalogues.vue';
 import NotFound from '@/views/NotFound.vue';
-import LandingPageView from '@/views/public/LandingPageView.vue';
+import LandingPageView from '@/views/LandingPageView.vue';
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
