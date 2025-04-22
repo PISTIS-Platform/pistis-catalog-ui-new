@@ -1,15 +1,15 @@
-import type { Publisher } from '@piveau/sdk-core'
-import type { HubSearchDefinition } from '@piveau/sdk-vue'
-import type { MaybeRef } from 'vue'
-import type { LocationQueryValue } from 'vue-router'
-import { useAuthStore } from '@/stores/authStore'
-import { computed, ref, toRef, toRefs, unref, watch } from 'vue'
-import { useI18n } from 'vue-i18n'
-import { useRoute } from 'vue-router'
-import { useDcatApSearch } from '@/sdk'
-import { getLocalizedValue } from '@/sdk/utils/helpers'
-import { useSearchParams } from '../useSearchParams'
-import { useSelectedFacets } from '../useSelectedFacets'
+import type {Publisher} from '@piveau/sdk-core'
+import type {HubSearchDefinition} from '@piveau/sdk-vue'
+import type {MaybeRef} from 'vue'
+import {computed, ref, toRef, toRefs, unref} from 'vue'
+import type {LocationQueryValue} from 'vue-router'
+import {useRoute} from 'vue-router'
+import {useAuthStore} from '@/stores/authStore'
+import {useI18n} from 'vue-i18n'
+import {useDcatApSearch} from '@/sdk'
+import {getLocalizedValue} from '@/sdk/utils/helpers'
+import {useSearchParams} from '../useSearchParams'
+import {useSelectedFacets} from '../useSelectedFacets'
 import {useSearchInput} from "@/views/search/useSearchInput";
 
 export interface EnhancedSearchResult {
@@ -120,33 +120,30 @@ export function useDatasetSearchView<TF extends string, TM, TS extends EnhancedS
     }))
   })
 
+  console.log("unref(selectedFacets))", unref(selectedFacets))
   // --- Facets ---
   const availableFacetsDe = getAvailableFacetsLocalized('de')
   const availableFacetsWithoutHvd = computed(() =>
     availableFacetsDe.value?.filter(facet => facet.id !== 'is_hvd'),
   )
   const availableFacetsFormatted = computed(() => {
-    const formatted
-      = availableFacetsWithoutHvd.value
+    return availableFacetsWithoutHvd.value
         ?.map(facet => ({
           id: facet.id,
-          label: te(`datasetFacets.facets.${facet.id}`)
-            ? t(`datasetFacets.facets.${facet.id}`)
-            : facet.id,
-          items: facet.items.map((item, idx) => ({
-            id: item.id || `${idx}`,
+          label: t(`datasetFacets.facets.${facet.id}`) ?? facet.id,
+          items: facet.items.map((item, index) => ({
+            id: item.id || `${index}`,
             label:
-              typeof item.title === 'string'
-                ? item.title
-                : !item.title
-                    ? item.id || `item${idx}` || ''
-                    : getLocalizedValue({ obj: item.title, fallbackLocale: 'de' }),
+                typeof item.title === 'string'
+                    ? item.title
+                    : (!item.title
+                        ? (item.id ?? `item${index}` ?? '')
+                        : getLocalizedValue({obj: item.title, fallbackLocale: 'de'})),
             count: item.count ?? 0,
             value: item.id ?? '__value__',
           })),
         }))
         .filter(facet => Object.keys(unref(selectedFacets)).includes(facet.id)) || []
-    return formatted
   })
 
   return {
