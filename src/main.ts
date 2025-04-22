@@ -21,7 +21,7 @@ import dpiStore from './projects/data-provider-interface/store/dpiStore'
 import snackbarStore from './projects/data-provider-interface/store/snackbarStore'
 import { userConfigShimPlugin } from './projects/data-provider-interface/utils/userConfigShimPlugin'
 
-import router from './router'
+import router from '@/router.ts'
 import { configureMarked } from './sdk/utils/configureMarked'
 import './assets/stylesheets/reset.css'
 import './assets/stylesheets/fonts.css'

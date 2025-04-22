@@ -1,5 +1,5 @@
 import type Keycloak from 'keycloak-js'
-import { appRoute } from '@/router'
+import { appRoute } from '@/router.ts'
 import KeycloakService from '@/services/keycloak'
 import { defineStore } from 'pinia'
 import appConfig from '../../config/appConfig'
