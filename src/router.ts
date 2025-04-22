@@ -3,14 +3,14 @@ import DatasetDetailsView from '@/views/DatasetDetailsView.vue';
 import Datasets from '@/views/search/datasets/Datasets.vue';
 import Catalogues from '@/views/search/catalogues/Catalogues.vue';
 import NotFound from '@/views/NotFound.vue';
-import LandingPageView from '@/views/LandingPageView.vue';
+import Home from '@/views/Home.vue';
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
         {
             path: '/',
-            component: LandingPageView,
+            component: Home,
             meta: {
                 requiresAuth: false,
             },
