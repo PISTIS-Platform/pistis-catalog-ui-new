@@ -8,16 +8,16 @@ const visible = ref(false)
 </script>
 
 <template>
-  <header class="border-b border-gray-200">
+  <header class="border-b border-gray-200 bg-white">
     <div class="flex justify-between gap-3 lg:container lg:px-8 py-5 items-center px-8 mx-auto">
       <RouterLink class="block" to="/">
         <div class="brand">
           <img
-              src="/logo.png"
+              src="../../assets/images/piveau-logo.svg"
               alt="open.bydata"
-              class="block h-12"
+              class="block h-8"
           >
-          <span class="ml-5">Piveau</span>
+          <!-- <span class="ml-5">Piveau</span> -->
         </div>
       </RouterLink>
       <div class="flex flex-row items-center gap-8 justify-between">
@@ -59,6 +59,7 @@ const visible = ref(false)
 
 <style>
 .brand {
+  margin-left: 20px;
   display: flex;
   flex-direction: row;
   font-size: xx-large;

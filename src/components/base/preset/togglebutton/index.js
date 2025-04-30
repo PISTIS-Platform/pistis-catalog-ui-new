@@ -45,7 +45,7 @@ export default {
     ],
   }),
   label: {
-    class: 'font-bold text-center w-full',
+    class: 'font-bold text-center w-full text-black',
   },
   input: {
     class: [
@@ -69,6 +69,7 @@ export default {
       'outline-none',
       'border border-surface-200 dark:border-surface-700',
 
+
       // Misc
       'appareance-none',
       'cursor-pointer',
@@ -76,7 +77,7 @@ export default {
   },
   icon: ({ props }) => ({
     class: [
-      ' mr-2',
+      'mr-2',
       {
         'text-fg-muted active-item': !props.modelValue,
         'text-fg-muted': props.modelValue,

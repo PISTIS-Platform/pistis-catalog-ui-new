@@ -29,17 +29,8 @@ const model = useVModel(props, 'modelValue', emit, { passive: true })
 </script>
 
 <template>
-  <ScrollPanel
-    style="width: 100%; height: 100%"
-    :pt="{
-      wrapper: {
-        style:
-          'border-right: 10px solid rgb(var(--primary-400)/10%); border-bottom: 10px solid rgb(var(--primary-400)/10%);',
-      },
-      bary: 'relative z-20 w-[9px] top-0 rounded-none bg-surface-300 hover:bg-surface-400',
-    }"
-  >
-    <div class="flex flex-col gap-6 px-6 py-8 lg:mt-48">
+
+    <div class="flex flex-col gap-6 pr-10 py-8 lg:mt-48">
       <div
         v-if="ghost"
         class="h-[720px] w-full animate-pulse rounded-lg border bg-surface-200"
@@ -57,5 +48,5 @@ const model = useVModel(props, 'modelValue', emit, { passive: true })
         </div>
       </template>
     </div>
-  </ScrollPanel>
+
 </template>

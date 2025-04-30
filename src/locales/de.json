@@ -1,7 +1,7 @@
 {
   "search": {
-    "searchBarPlaceholder": "Suche",
-    "searchButton": "Suchen",
+    "searchBarPlaceholder": "Search",
+    "searchButton": "Search",
     "datasets": {
       "found": "Datensätze gefunden"
     }

@@ -10,8 +10,8 @@ const props = defineProps({
 
 const links = [
   { to: '/', label: 'landing-page.header.home' },
-  { to: '/catalogues', label: 'landing-page.header.catalogues' },
   { to: '/datasets', label: 'landing-page.header.datasets' },
+  { to: '/catalogues', label: 'landing-page.header.catalogues' },
 ]
 </script>
 
@@ -53,12 +53,12 @@ const links = [
 }
 
 #thenavguy.nav-links a {
-  @apply text-fg text-base font-semibold hover:text-primary-hover leading-[1.625rem];
+  @apply text-fg text-base hover:text-primary-hover leading-[1.625rem];
 }
 
 #thenavguy.nav-links a.active,
 #thenavguy.nav-links a .active {
-  @apply border-b-[3px] border-spacing-4 border-primary-pressed font-semibold text-base leading-[1.625rem] ;
+  @apply border-b-[3px] border-spacing-4 border-primary-pressed text-base leading-[1.625rem] ;
 }
 
 #thenavguy.nav-links.vertical a.active,

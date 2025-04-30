@@ -1,26 +1,22 @@
 <script setup>
 const seitenLinks = [
-  { to: '/', text: 'Startseite' },
-  { to: '/twins', text: 'Twins Finden' },
-  { to: '/info', text: 'First Steps' },
-  { to: '/about', text: 'Über twin.bydata' },
-  { to: '/datasets', text: 'Alle Suchen' },
+  { to: '/', text: 'Home' },
+  { to: '/datasets', text: 'Datasets' },
+  { to: '/catalogues', text: 'Catalogues' },
 ]
 
 const socialLinks = [
-  { href: 'https://www.linkedin.com/company/digitalministerium/?originalSubdomain=de', text: 'LinkedIn' },
+  { href: '...', text: 'LinkedIn' },
 ]
 
 const rechtlichesLinks = [
-  { to: '#', text: 'Impressum' },
-  { to: '#', text: 'Datenschutz' },
-  { to: '#', text: 'Barrierefreiheit' },
-  { to: '#', text: 'Nutzungsbedingungen' },
+  { to: '#', text: 'Imprint' },
+  { to: '#', text: 'Data Privacy' },
 ]
 
 const loginLinks = [
-  { to: '/app', text: 'Anmelden' },
-  { to: '/contact', text: 'Kontakt' },
+  { to: '/app', text: 'Login' },
+  { to: '/contact', text: 'Contact' },
 ]
 </script>
 
@@ -32,7 +28,7 @@ const loginLinks = [
         <!-- Seiten Section -->
         <div class="mr-10 w-full md:w-3/12 xl:w-2/12">
           <h3 class="font-semibold text-xl mb-4">
-            Seiten
+            Sitemap
           </h3>
           <ul class="flex flex-col gap-0">
             <li
@@ -53,7 +49,7 @@ const loginLinks = [
         <!-- Wo du uns findest Section -->
         <div class="w-full md:w-3/12 xl:w-2/12">
           <h3 class="font-semibold text-xl mb-4">
-            Wo du uns findest
+            Social Media
           </h3>
           <ul class="flex flex-col gap-0">
             <li
@@ -75,7 +71,7 @@ const loginLinks = [
         <!-- Rechtliches Section -->
         <div class="mr-10 w-full md:w-3/12 xl:w-2/12">
           <h3 class="font-semibold text-xl mb-4">
-            Rechtliches
+            Legal
           </h3>
           <ul class="flex flex-col gap-0">
             <li
@@ -85,7 +81,7 @@ const loginLinks = [
             >
               <RouterLink
                   :to="link.to"
-                  class="hover:text-secondary-hover text-white"
+                  class="hover:text-primary-hover text-white"
               >
                 {{ link.text }}
               </RouterLink>
@@ -113,15 +109,15 @@ const loginLinks = [
       </div>
 
       <!-- Logo Section -->
-      <div class="flex flex-wrap justify-center md:items-center items-start flex-col gap-6 md:flex-row">
+      <!-- <div class="flex flex-wrap justify-center md:items-center items-start flex-col gap-6 md:flex-row">
         <a href="https://www.stmd.bayern.de/">
           <img
-              src="../../assets/images/landing/footer/verbunds-logo.png"
-              alt="Open Bydata Logo"
+              src=""
+              alt="Piveau"
               class="h-14 max-h-[110px]"
           >
         </a>
-      </div>
+      </div> -->
     </div>
   </footer>
 </template>

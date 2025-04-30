@@ -134,11 +134,11 @@ const {
             <h2 class="text-[2.5rem] font-bold leading-[3rem] text-primary-100">
               Distributionen
             </h2>
-            <KTag interactive class="rounded-full bg-primary-90">
+            <KTag interactive class="rounded-full text-white black-bg">
               {{
                 getFormattedDistributions?.length
               }}
-            </KTag>
+            </KTag> 
           </div>
           <div class="h-px w-full bg-bg-divider" />
           <div name="distribution-cards" class="relative">
@@ -158,7 +158,7 @@ const {
                   <div class="absolute bottom-0 flex w-full flex-row items-center justify-center">
                     <div>
                       <KButton
-                        icon="icon-[ph--eye-fill]" size="small" severity="secondary"
+                        icon="icon-[ph--eye-fill]" size="small" severity="terenity"
                         :label="`Mehr anzeigen (${getFormattedDistributions.length})`" icon-pos="left"
                         @click="showAllDistributions"
                       />
@@ -170,7 +170,7 @@ const {
           </div>
         </section>
         <div v-if="(resultEnhanced?.getCategories?.length || 0) > 0" class="space-y-3">
-          <Typography variant="by-heading-4" class="font-semibold text-primary">
+          <Typography variant="by-heading-4" class="font-semibold text-primary-100">
             Kategorien
           </Typography>
           <div class="flex flex-row gap-2">
@@ -184,8 +184,8 @@ const {
         </div>
         <div class="h-px w-full bg-bg-divider" />
         <div class="space-y-4">
-          <div class="flex flex-col gap-4 pt-12">
-            <Typography variant="by-heading-4" class="text-primary">
+          <div class="flex flex-col gap-4 pt-12 bg-white p-4">
+            <Typography variant="by-heading-4" class="">
               Zusätzliche Informationen
             </Typography>
             <PropertyTable

@@ -39,7 +39,7 @@
       <div class="flex-1">
         <section
             name="datasets"
-            class="flex flex-col gap-6 px-6"
+            class="flex flex-col gap-6 px-6 mb-10"
         >
           <SelectedFacetsOverview
               v-model="selectedFacets"

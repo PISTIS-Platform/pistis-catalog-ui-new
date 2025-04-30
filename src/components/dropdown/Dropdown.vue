@@ -12,14 +12,5 @@ const props = defineProps<{
 </script>
 
 <template>
-  <Menu as="div" class="inline-block relative">
-    <MenuButton as="span">
-      <KButton :severity="severity" icon="icon-[ph--caret-down]" icon-pos="right" :label="label" />
-    </MenuButton>
-    <div class="absolute right-0 bg-neutral-5 z-10">
-      <MenuItems as="div" class="flex flex-col py-2 border border-[#D5D7DA] rounded-lg text-copy-lg">
-        <slot />
-      </MenuItems>
-    </div>
-  </Menu>
+ 
 </template>

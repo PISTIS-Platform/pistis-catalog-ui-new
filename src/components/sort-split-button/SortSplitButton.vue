@@ -10,7 +10,7 @@ const { t } = useI18n()
 const sortDirection = defineModel<string>('direction', { default: 'desc' })
 const sortDirectionClass = computed(() =>
   clsx([
-    'mr-2',
+    'mr-2 text-black',
     {
       'icon-[ph--arrow-up]': sortDirection.value === 'asc',
       'icon-[ph--arrow-down]': sortDirection.value === 'desc',
@@ -47,7 +47,7 @@ const sort = defineModel<string>('sort', { default: 'modified' })
         class="w-full md:w-[14rem] items-center rounded-r-none"
       >
         <template #dropdownicon>
-          <i class="icon-[ph--caret-down]" />
+          <i class="icon-[ph--caret-down] text-black" />
         </template>
       </Dropdown>
       <ToggleButton

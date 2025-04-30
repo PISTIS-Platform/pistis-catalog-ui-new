@@ -53,7 +53,7 @@ const preset = {
         'cursor-pointer': isInteractive.value && !disabled.value,
         'cursor-default': props.disabled,
         // 'focus:ring focus:ring-offset-2 focus:ring-primary-60 outline-none': isInteractive.value,
-        'hover:bg-primary-100 dark:hover:bg-surface-700': isInteractive.value && !unselected.value && !disabled.value,
+        'hover:bg-primary-80 dark:hover:bg-surface-700': isInteractive.value && !unselected.value && !disabled.value,
         'hover:border-primary-100 hover:text-primary-100 dark:hover:border-surface-700': isInteractive.value && unselected.value && !disabled.value,
       },
 
@@ -128,7 +128,7 @@ const preset = {
       :pt="preset"
       :pt-options="{ mergeSections: false, mergeProps: false }"
     >
-      <div class="flex flex-nowrap min-w-fit gap-2 items-center" :class="{ 'flex-row-reverse': props.iconRight }">
+      <div class="flex flex-nowrap min-w-fit gap-2 items-center text-primary-100" :class="{ 'flex-row-reverse': props.iconRight }">
         <PhX v-if="props.removable && !hasIcon" />
         <i v-else-if="hasIcon" :class="props.icon || props.iconLeft || props.iconRight" />
         <slot>
