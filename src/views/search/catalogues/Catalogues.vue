@@ -2,7 +2,7 @@
   <!-- Facets toggle sidebar for small devices -->
   <Sidebar
       v-model:visible="sidebarVisible"
-      header="Suchfilter"
+      header="Search filter"
   >
     <FacetSidebar
         v-model:model-value="selectedFacets"
