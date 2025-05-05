@@ -89,7 +89,7 @@ const panelPreset = {
 <template>
   <Panel
     v-model:collapsed="collapsed"
-    class="flex min-w-64 flex-col"
+    class="flex min-w-64 flex-col bg-white rounded-custom"
     :pt="panelPreset"
     :pt-options="{ mergeSections: false, mergeProps: false }"
     toggleable
@@ -135,10 +135,10 @@ const panelPreset = {
               :name="facet.label"
             >
             <div
-              class="max-h-12 w-full px-4 py-3 pr-6 peer-focus:ring-1 peer-focus:ring-fg"
+              class="max-h-12 w-full px-4 py-3 pr-6"
               :class="{
                 'text-fg-muted hover:bg-neutral-20': !model?.includes(facet.id),
-                'border-b border-b-primary-60 bg-primary-light font-semibold text-primary-fg': model?.includes(facet.id),
+                'border-b border-b-primary-60 bg-primary-30 font-semibold text-primary-fg': model?.includes(facet.id),
               }"
               :name="facet.label"
               :value="facet.value || facet.id"

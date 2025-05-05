@@ -118,8 +118,8 @@ const truncatedEllipsedDescription = computed(() => {
         <!-- Go previous page -->
         <div class="flex flex-col gap-12">
           <div>
-            <button class="-ml-6 mt-[10px] rounded-by-button px-4 py-1 hover:bg-primary-20" @click="router.back()">
-              <Typography variant="paragraph-1" class="flex items-center gap-2 text-primary-80">
+            <button class="-ml-6 mt-[10px] rounded-by-button px-4 py-1" @click="router.back()">
+              <Typography variant="paragraph-1" class="flex items-center gap-2 text-primary">
                 <PhCaretLeft />
                 <span>Zurück</span>
               </Typography>
@@ -160,7 +160,7 @@ const truncatedEllipsedDescription = computed(() => {
             <template v-if="id === 'dataset'">
               <div class="flex flex-col gap-4">
                 <div>
-                  <Typography as="h5" variant="by-heading-4" class="mb-8 text-primary">
+                  <Typography as="h5" variant="by-heading-4" class="mb-8">
                     <slot name="about-this-dataset">
                       Über diesen Datensatz
                     </slot>

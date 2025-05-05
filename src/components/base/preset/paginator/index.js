@@ -12,7 +12,8 @@ export default {
 
       // Color
       'bg-surface-0 dark:bg-surface-800',
-      'text-surface-500 dark:text-white/60',
+      'text-primary dark:text-white/60',
+      'text-white',
     ],
   },
   firstpagebutton: ({ context }) => ({
@@ -30,7 +31,7 @@ export default {
       'leading-none',
 
       // Color
-      'text-surface-500 dark:text-white/60',
+      'text-primary dark:text-white/60',
 
       // State
       {
@@ -62,7 +63,7 @@ export default {
       'leading-none',
 
       // Color
-      'text-surface-500 dark:text-white/60',
+      'text-primary dark:text-white/60',
 
       // State
       {
@@ -94,7 +95,7 @@ export default {
       'leading-none',
 
       // Color
-      'text-surface-500 dark:text-white/60',
+      'text-primary dark:text-white/60',
 
       // State
       {
@@ -126,7 +127,7 @@ export default {
       'leading-none',
 
       // Color
-      'text-surface-500 dark:text-white/60',
+      'text-primary dark:text-white/60',
 
       // State
       {
@@ -158,9 +159,9 @@ export default {
       'leading-none',
 
       // Color
-      'text-surface-500 dark:text-white/80',
+      'text-primary dark:text-white/80',
       {
-        'bg-primary-50 border-primary-50 dark:border-transparent text-primary-700 dark:text-surface-0 dark:bg-primary-400/30':
+        'bg-primary-50 border-primary-50 dark:border-transparent text-primary-700 dark:text-surface-0 dark:bg-primary-400/30  text-white':
           context.active,
       },
 

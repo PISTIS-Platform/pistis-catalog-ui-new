@@ -17,7 +17,7 @@ export default {
       'duration-200',
 
       // States
-      'hover:bg-secondary hover:border-primary-hover',
+      'hover:bg-primary-80 ',
       { 'outline-none outline-offset-0 ring ring-primary-400/50 dark:ring-primary-300/50': state.focused },
 
       // Misc
@@ -37,7 +37,7 @@ export default {
       'flex-auto',
 
       // Color and Background
-      'bg-transparent text-primary font-semibold',
+      'bg-transparent font-semibold',
       'border-0',
 
       'placeholder:text-fg-muted',

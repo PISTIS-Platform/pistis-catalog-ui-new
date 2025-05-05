@@ -21,6 +21,7 @@ const selectValue = defineModel<string>('select')
       v-model="searchValue"
       :placeholder="props.placeholder"
       size="small"
+      class="custom-input"
     />
     <Dropdown
       v-if="!props.disableDropdown"
@@ -33,3 +34,11 @@ const selectValue = defineModel<string>('select')
     />
   </InputGroup>
 </template>
+
+<style scoped>
+.custom-input {
+  border: 0.3px solid #dedede ;
+  border-radius: 100px !important;
+  padding-left: 1rem;
+}
+</style>

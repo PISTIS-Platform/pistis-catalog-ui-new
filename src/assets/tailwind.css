@@ -4,109 +4,103 @@
 
 @layer base {
   :root {
-    /* Primitives */
-    --twinby-blue-10: #f3fbff;
-    --twinby-blue-20: #d4edfc;
-    --twinby-blue-30: #aedff8;
-    --twinby-blue-40: #67c5f0;
-    --twinby-blue-50: #2bafe9;
-    --twinby-blue-60: #009fe3;
-    --twinby-blue-70: #0196d8;
-    --twinby-blue-80: #0172ad;
-    --twinby-blue-90: #015184;
-    --twinby-blue-100: #003f6f;
-    --twinby-blue-110: #093150;
 
-    --twinby-green-10: #E8F8E1;
-    --twinby-green-20: #E8F8E1;
-    --twinby-green-30: #C2EAAF;
-    --twinby-green-40: #9ADB7C;
-    --twinby-green-50: #70CC44;
-    --twinby-green-60: #59A436;
-    --twinby-green-70: #3D6E26;
-    --twinby-green-80: #2E521D;
-    --twinby-green-90: #2E521D;
-    --twinby-green-100: #2E521D;
-    --twinby-green-110: #2E521D;
+    /* TODO: Clean up the naming of these variables */ 
 
-    /* Branding */
-    --neutral-0: #FFFFFF;
-    --neutral-5: #FAFAFB;
-    --neutral-10: #F1F1F3;
-    --neutral-20: #E6E7E9;
-    --neutral-30: #D5D7DA;
-    --neutral-60: #687178;
-    --neutral-80: #3D4952;
-    --neutral-90: #25333D;
-    --neutral-100: #0B1A25;
+    --primary: var(--piveau-primary); /* primary button background color */
+    --primary-40: var(--piveau-primary-variant); /* primary variant color */
+    --primary-20: var(--piveau-secondary); /* secondary color */
+    --primary-30: #f2efff; /* Facet bg */
+    --primary-80: #dedede; /* Labels light */
+    --primary-100: var(--piveau-text); /* Text Color */
 
-    --primary-10: var(--twinby-blue-10);
-    --primary-20: var(--twinby-blue-20);
-    --primary-30: var(--twinby-blue-30);
-    --primary-40: var(--twinby-blue-40);
-    --primary-50: var(--twinby-blue-50);
-    --primary-60: var(--twinby-blue-60);
-    --primary-70: var(--twinby-blue-70);
-    --primary-80: var(--twinby-blue-80);
-    --primary-90: var(--twinby-blue-90);
-    --primary-100: var(--twinby-blue-100);
-    --primary-110: var(--twinby-blue-110);
+    --primary-10: var(--piveau-primary);
+    --primary-50: var(--piveau-primary);
+    --primary-60: var(--piveau-primary);
+    --primary-70: var(--piveau-primary);
 
     --fg: var(--primary-100);
     --bg: var(--neutral-100);
 
+    /* Piveau Vanilla Branding (primary, secnondary, ...) */
 
-    /* Tokens */
-    --background: var(--neutral-0);
-    --background--dark: var(--primary-110);
+    --neutral-100: #262626;
 
-    --focused: var(--primary-70);
-    --focused--dark: var(--primary-70);
+    --piveau-text: #2E2E2E;
+    --piveau-text-dark: #FFFFFF;
 
-    --primary-background: var(--primary-100);
-    --primary-background-hover: var(--primary-80);
-    --primary-background-pressed: var(--primary-70);
-    --primary-background-disabled: var(--neutral-30);
-    --primary-background--dark: var(--primary-10);
-    --primary-background-hover--dark: var(--primary-30);
-    --primary-background-pressed--dark: var(--primary-20);
-    --primary-background-disabled--dark: var(--neutral-60);
+    --piveau-background: #F4F4F4;
+    --piveau-surface: #FFFFFF;
 
-    --secondary-background: var(--primary-20);
-    --secondary-background-hover: var(--primary-40);
-    --secondary-background-pressed: var(--primary-30);
-    --secondary-background-disabled: var(--neutral-10);
-    --secondary-background--dark: var(--primary-90);
+    --piveau-background-dark: #262626;
+    --piveau-surface-dark: #000;
+
+    --piveau-primary: #7B61FF;
+    --piveau-primary-variant: #3B2F79;
+
+    --piveau-secondary: #B5D0D7;
+    --piveau-secondary-variant: #54666a;
+
+    --piveau-text-on-primary: #FFFFFF;
+    --piveau-text-on-primary-variant: #ffffff;
+    --piveau-text-on-secondary: #2E2E2E;
+    --piveau-text-on-secondary-variant: #FFFFFF;
+
+    /* Tokens */    
+    
+    --background: var(--piveau-background);
+    --background--dark: ;
+
+    --focused: var(--piveau-primary);
+    --focused--dark: ;
+
+    --primary-background: var(--piveau-primary);
+    --primary-background-hover: var(--piveau-primary-variant);
+    --primary-background-pressed: var(--piveau-primary);
+    --primary-background-disabled: gray;
+
+    /* --primary-background--dark: var(--piveau-primary);
+    --primary-background-hover--dark: var(--piveau-primary-variant);
+    --primary-background-pressed--dark: var(--piveau-primary);
+    --primary-background-disabled--dark: gray; */
+
+    --secondary-background: var(--piveau-secondary);
+    --secondary-background-hover: var(--piveau-secondary-variant);
+    --secondary-background-pressed: var(--piveau-secondary-variant);
+    --secondary-background-disabled: gray;
+
+    /* --secondary-background--dark: var(--primary-90);
     --secondary-background-hover--dark: var(--primary-80);
     --secondary-background-pressed--dark: var(--primary-70);
-    --secondary-background-disabled--dark: var(--neutral-10);
+    --secondary-background-disabled--dark: var(--neutral-10); */
 
-    --tertiary-background-hover: var(--primary-20);
-    --tertiary-background-pressed: var(--primary-10);
-    --tertiary-background-hover--dark: var(--primary-90);
-    --tertiary-background-pressed--dark: var(--primary-100);
+    --tertiary-background-hover: #fff;
+    --tertiary-background-pressed: #fff;
 
-    --tooltip-background: var(--neutral-90);
-    --toltip-text: var(--neutral-10);
+    /* --tertiary-background-hover--dark: var(--primary-90);
+    --tertiary-background-pressed--dark: var(--primary-100); */
+
+    --tooltip-background: var(--neutral-100);
+    --toltip-text: var(--piveau-text-dark);
 
     /* Text */
     --text: var(--neutral-100);
 
     /* Text on primary background */
-    --primary-text: var(--neutral-0);
-    --primary-text--dark: var(--neutral-100);
+    --primary-text: var(--piveau-text-on-primary);
+    /* --primary-text--dark: var(--neutral-100); */
 
     /* Text on secondary background */
     --secondary-text: var(--neutral-100);
     --secondary-text-disabled: var(--neutral-30);
-    --secondary-text--dark: var(--neutral-0);
-    --secondary-text-disabled--dark: var(--neutral-30);
+    /* --secondary-text--dark: var(--neutral-0);
+    --secondary-text-disabled--dark: var(--neutral-30); */
 
     /* Text on tertiary background */
     --tertiary-text: var(--neutral-80);
     --tertiary-text-disabled: var(--neutral-30);
-    --tertiary-text--dark: var(--neutral-40);
-    --tertiary-text-disabled--dark: var(--neutral-80);
+    /* --tertiary-text--dark: var(--neutral-40);
+    --tertiary-text-disabled--dark: var(--neutral-80); */
 
     --inline-text-hyperlink: var(--twinby-blue-80);
     --inline-text-hyperlink-hover: var(--twinby-blue-100);
@@ -122,6 +116,7 @@
 
   body {
     @apply bg-neutral-5 text-neutral-content;
+    background: var(--background);
   }
 
   .by-link {
@@ -142,4 +137,5 @@
     /* For markdown interpreted content */
     @apply text-copy-sm font-semibold no-underline text-inline-text-hyperlink hover:bg-inline-text-hyperlink-hover active:bg-inline-text-hyperlink-pressed focus:underline focus:outline-none visited:bg-inline-text-hyperlink-pressed;
   }
+  
 }

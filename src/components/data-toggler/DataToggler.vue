@@ -28,7 +28,7 @@ function handleToggle() {
     <slot :truncated="truncated" :is-expanded="isExpanded">
       {{ truncated }}
     </slot>
-    <span class="by-link cursor-pointer">
+    <span class="by-link cursor-pointer ">
       <button class="inline-flex min-w-fit flex-row items-center gap-2" @click="handleToggle">
         <slot name="label" :is-expanded="isExpanded"><span>{{ isExpanded ? 'Weniger anzeigen' : 'Mehr anzeigen' }}</span></slot>
         <i :class="toggleIcon" />

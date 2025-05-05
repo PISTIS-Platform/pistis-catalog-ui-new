@@ -1,8 +1,6 @@
 import type { Config } from 'tailwindcss'
 import { addDynamicIconSelectors } from '@iconify/tailwind'
-
 import typography from '@tailwindcss/typography'
-
 import { gray } from 'tailwindcss/colors'
 
 export default {
@@ -13,7 +11,7 @@ export default {
       sans: ['"Inter Variable"', 'sans-serif'],
 
       // headings
-      display: ['"Space Grotesk Variable", "Inter Variable", "sans-serif"'],
+      display: ['"Inter Variable", "sans-serif"'],
     },
     extend: {
       colors: {
@@ -174,6 +172,8 @@ export default {
         'by-button': '1.5rem',
         'by-modal': '2rem',
         'by-inside-modal': '1.5rem',
+        'custom': '15px',
+        'search': '100px',
       },
 
       fontSize: {

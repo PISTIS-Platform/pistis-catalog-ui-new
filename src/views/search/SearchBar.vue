@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-[15px] flex-none px-6 py-[1.875rem]">
+  <div class="mt-[5px] flex-none px-6 py-[1.875rem]">
     <section
         name="top"
         class="flex flex-col py-16"

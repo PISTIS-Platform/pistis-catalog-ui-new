@@ -10,7 +10,7 @@
           <i class="icon-[ph--text-align-left]" />
         </template>
       </KButton>
-      <span>Suchfilter</span>
+      <span>Search filter</span>
     </div>
   </section>
 </template>

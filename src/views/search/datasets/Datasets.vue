@@ -2,7 +2,7 @@
   <!-- Facets toggle sidebar for small devices -->
   <Sidebar
       v-model:visible="sidebarVisible"
-      header="Suchfilter"
+      header="Search filter"
   >
     <FacetSidebar
         v-model:model-value="selectedFacets"
@@ -21,7 +21,7 @@
     >
       <div
           name="stickysidey"
-          class="sticky top-0 h-screen"
+          class=""
       >
         <FacetSidebar
             v-model:model-value="selectedFacets"
@@ -39,7 +39,7 @@
       <div class="flex-1">
         <section
             name="datasets"
-            class="flex flex-col gap-6 px-6"
+            class="flex flex-col gap-6 px-6 mb-10"
         >
           <SelectedFacetsOverview
               v-model="selectedFacets"
