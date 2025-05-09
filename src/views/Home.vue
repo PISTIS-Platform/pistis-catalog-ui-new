@@ -6,7 +6,7 @@
   <div class="">
 
     <section class="bg-white lg:grid lg:h-screen lg:place-content-center">
-  <div class="mx-auto w-screen max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
+  <div class="mx-auto w-screen max-w-(--breakpoint-xl) px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
     <div class="mx-auto max-w-prose text-center">
       <h1 class="text-4xl font-bold text-gray-900 sm:text-5xl">
         Unlock the Power of Public Sector Data with
@@ -20,14 +20,14 @@
 
       <div class="mt-4 flex justify-center gap-4 sm:mt-6">
         <a
-          class="inline-block rounded border  bg-primary px-5 py-3 font-medium text-white shadow-sm transition-colors hover:bg-primary-hover"
+          class="inline-block rounded-sm border  bg-primary px-5 py-3 font-medium text-white shadow-xs transition-colors hover:bg-primary-hover"
           href="/datasets"
         >
           Explore Datasets
         </a>
 
         <button
-              class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-3 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
+              class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-3 px-6 focus:outline-hidden hover:bg-gray-200 rounded-sm text-lg">
           
               <a
     href="https://doc.piveau.eu/general/quick-start/"

@@ -120,7 +120,7 @@ export default {
       'bg-inherit text-inherit',
 
       // Focus
-      'focus:outline-none focus:outline-offset-0 focus:ring focus:ring-primary-400/50 dark:focus:ring-primary-300/50',
+      'focus:outline-hidden focus:outline-offset-0 focus:ring-3 focus:ring-primary-400/50 dark:focus:ring-primary-300/50',
 
       // Misc
       'cursor-pointer no-underline select-none',

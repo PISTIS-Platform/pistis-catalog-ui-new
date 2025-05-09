@@ -98,7 +98,7 @@ const pt = {
         'border-surface-200 dark:border-surface-700 ',
         // States
         { 'hover:bg-surface-100 dark:hover:bg-surface-400/30': (props.sortable === '' || props.sortable) && !(context != null && context.sorted) },
-        'focus-visible:outline-none focus-visible:outline-offset-0 focus-visible:ring focus-visible:ring-inset focus-visible:ring-primary-400/50 dark:focus-visible:ring-primary-300/50',
+        'focus-visible:outline-hidden focus-visible:outline-offset-0 focus-visible:ring-3 focus-visible:ring-inset focus-visible:ring-primary-400/50 dark:focus-visible:ring-primary-300/50',
         // Transition
         { 'transition duration-200': props.sortable === '' || props.sortable },
         // Misc
@@ -185,7 +185,7 @@ const pt = {
           'duration-200',
           // States
           'hover:border-primary',
-          { 'outline-none outline-offset-0 ring ring-primary-400/50 dark:ring-primary-300/50': state.focused },
+          { 'outline-hidden outline-offset-0 ring-3 ring-primary-400/50 dark:ring-primary-300/50': state.focused },
           // Misc
           'cursor-pointer',
           'select-none',
@@ -214,7 +214,7 @@ const pt = {
         // States
         { 'hover:bg-surface-100 dark:hover:bg-surface-600/80': !(context != null && context.highlighted) },
         { 'hover:text-surface-700 hover:bg-surface-100 dark:hover:text-white dark:hover:bg-surface-600/80': !(context != null && context.highlighted) },
-        'focus-visible:outline-none focus-visible:outline-offset-0 focus-visible:ring focus-visible:ring-inset focus-visible:ring-primary-400/50 dark:focus-visible:ring-primary-300/50',
+        'focus-visible:outline-hidden focus-visible:outline-offset-0 focus-visible:ring-3 focus-visible:ring-inset focus-visible:ring-primary-400/50 dark:focus-visible:ring-primary-300/50',
         // Transitions
         'transition-shadow',
         'duration-200',
@@ -244,7 +244,7 @@ const pt = {
           'duration-200',
           // States
           'hover:border-primary',
-          { 'outline-none outline-offset-0 ring ring-primary-400/50 dark:ring-primary-300/50': state.focused },
+          { 'outline-hidden outline-offset-0 ring-3 ring-primary-400/50 dark:ring-primary-300/50': state.focused },
           // Misc
           'cursor-pointer',
           'select-none',
@@ -271,11 +271,11 @@ const pt = {
           'transition',
           'duration-200',
           // States
-          'focus:outline-none focus:shadow-none',
+          'focus:outline-hidden focus:shadow-none',
           // Misc
           'relative',
           'cursor-pointer',
-          'overflow-hidden overflow-ellipsis',
+          'overflow-hidden text-ellipsis',
           'whitespace-nowrap',
           'appearance-none',
         ],
@@ -373,7 +373,7 @@ const pt = {
         'dark:text-white/70 dark:hover:text-white/80 dark:bg-surface-800',
         // States
         'hover:text-surface-700 hover:bg-surface-300/20',
-        'focus:outline-none focus:outline-offset-0 focus:ring focus:ring-primary-400/50 dark:focus:ring-primary-300/50',
+        'focus:outline-hidden focus:outline-offset-0 focus:ring-3 focus:ring-primary-400/50 dark:focus:ring-primary-300/50',
         // Transition
         'transition duration-200',
         // Misc
@@ -400,7 +400,7 @@ const pt = {
       ],
     }),
     rowtoggler: {
-      class: ['relative', 'inline-flex items-center justify-center', 'text-left', 'm-0 p-0', 'w-8 h-8', 'border-0 rounded-full', 'text-surface-500 dark:text-white/70', 'bg-transparent', 'focus-visible:outline-none focus-visible:outline-offset-0', 'focus-visible:ring focus-visible:ring-primary-400/50 dark:focus-visible:ring-primary-300/50', 'transition duration-200', 'overflow-hidden', 'cursor-pointer select-none'],
+      class: ['relative', 'inline-flex items-center justify-center', 'text-left', 'm-0 p-0', 'w-8 h-8', 'border-0 rounded-full', 'text-surface-500 dark:text-white/70', 'bg-transparent', 'focus-visible:outline-hidden focus-visible:outline-offset-0', 'focus-visible:ring-3 focus-visible:ring-primary-400/50 dark:focus-visible:ring-primary-300/50', 'transition duration-200', 'overflow-hidden', 'cursor-pointer select-none'],
     },
     columnresizer: {
       class: ['block', 'absolute top-0 right-0', 'w-2 h-full', 'm-0 p-0', 'border border-transparent', 'cursor-col-resize'],
@@ -409,13 +409,13 @@ const pt = {
       class: 'cursor-move',
     },
     roweditorinitbutton: {
-      class: ['relative', 'inline-flex items-center justify-center', 'text-left', 'w-8 h-8', 'border-0 rounded-full', 'text-surface-700 dark:text-white/70', 'border-transparent', 'focus:outline-none focus:outline-offset-0 focus:ring focus:ring-primary-400/50 dark:focus:ring-primary-300/50', 'hover:text-surface-700 hover:bg-surface-300/20', 'transition duration-200', 'overflow-hidden', 'cursor-pointer select-none'],
+      class: ['relative', 'inline-flex items-center justify-center', 'text-left', 'w-8 h-8', 'border-0 rounded-full', 'text-surface-700 dark:text-white/70', 'border-transparent', 'focus:outline-hidden focus:outline-offset-0 focus:ring-3 focus:ring-primary-400/50 dark:focus:ring-primary-300/50', 'hover:text-surface-700 hover:bg-surface-300/20', 'transition duration-200', 'overflow-hidden', 'cursor-pointer select-none'],
     },
     roweditorsavebutton: {
-      class: ['relative', 'inline-flex items-center justify-center', 'text-left', 'w-8 h-8', 'border-0 rounded-full', 'text-surface-700 dark:text-white/70', 'border-transparent', 'focus:outline-none focus:outline-offset-0 focus:ring focus:ring-primary-400/50 dark:focus:ring-primary-300/50', 'hover:text-surface-700 hover:bg-surface-300/20', 'transition duration-200', 'overflow-hidden', 'cursor-pointer select-none'],
+      class: ['relative', 'inline-flex items-center justify-center', 'text-left', 'w-8 h-8', 'border-0 rounded-full', 'text-surface-700 dark:text-white/70', 'border-transparent', 'focus:outline-hidden focus:outline-offset-0 focus:ring-3 focus:ring-primary-400/50 dark:focus:ring-primary-300/50', 'hover:text-surface-700 hover:bg-surface-300/20', 'transition duration-200', 'overflow-hidden', 'cursor-pointer select-none'],
     },
     roweditorcancelbutton: {
-      class: ['relative', 'inline-flex items-center justify-center', 'text-left', 'w-8 h-8', 'border-0 rounded-full', 'text-surface-700 dark:text-white/70', 'border-transparent', 'focus:outline-none focus:outline-offset-0 focus:ring focus:ring-primary-400/50 dark:focus:ring-primary-300/50', 'hover:text-surface-700 hover:bg-surface-300/20', 'transition duration-200', 'overflow-hidden', 'cursor-pointer select-none'],
+      class: ['relative', 'inline-flex items-center justify-center', 'text-left', 'w-8 h-8', 'border-0 rounded-full', 'text-surface-700 dark:text-white/70', 'border-transparent', 'focus:outline-hidden focus:outline-offset-0 focus:ring-3 focus:ring-primary-400/50 dark:focus:ring-primary-300/50', 'hover:text-surface-700 hover:bg-surface-300/20', 'transition duration-200', 'overflow-hidden', 'cursor-pointer select-none'],
     },
     rowRadiobutton: {
       root: {
@@ -450,7 +450,7 @@ const pt = {
         ],
       }),
       input: {
-        class: ['peer', 'w-full ', 'h-full', 'absolute', 'top-0 left-0', 'z-10', 'p-0', 'm-0', 'opacity-0', 'rounded-md', 'outline-none', 'border-2 border-surface-200 dark:border-surface-700', 'appearance-none', 'cursor-pointer'],
+        class: ['peer', 'w-full ', 'h-full', 'absolute', 'top-0 left-0', 'z-10', 'p-0', 'm-0', 'opacity-0', 'rounded-md', 'outline-hidden', 'border-2 border-surface-200 dark:border-surface-700', 'appearance-none', 'cursor-pointer'],
       },
       icon: ({ props }: any) => ({
         class: [
@@ -505,7 +505,7 @@ const pt = {
         ],
       }),
       input: {
-        class: ['peer', 'w-full ', 'h-full', 'absolute', 'top-0 left-0', 'z-10', 'p-0', 'm-0', 'opacity-0', 'rounded-md', 'outline-none', 'border-2 border-surface-200 dark:border-surface-700', 'appearance-none', 'cursor-pointer'],
+        class: ['peer', 'w-full ', 'h-full', 'absolute', 'top-0 left-0', 'z-10', 'p-0', 'm-0', 'opacity-0', 'rounded-md', 'outline-hidden', 'border-2 border-surface-200 dark:border-surface-700', 'appearance-none', 'cursor-pointer'],
       },
       icon: {
         class: ['text-base leading-none', 'w-4', 'h-4', 'text-white dark:text-surface-900', 'transition-all', 'duration-200'],
@@ -545,7 +545,7 @@ const pt = {
         ],
       }),
       input: {
-        class: ['peer', 'w-full ', 'h-full', 'absolute', 'top-0 left-0', 'z-10', 'p-0', 'm-0', 'opacity-0', 'rounded-md', 'outline-none', 'border-2 border-surface-200 dark:border-surface-700', 'appearance-none', 'cursor-pointer'],
+        class: ['peer', 'w-full ', 'h-full', 'absolute', 'top-0 left-0', 'z-10', 'p-0', 'm-0', 'opacity-0', 'rounded-md', 'outline-hidden', 'border-2 border-surface-200 dark:border-surface-700', 'appearance-none', 'cursor-pointer'],
       },
       icon: {
         class: ['text-base leading-none', 'w-4', 'h-4', 'text-white dark:text-surface-900', 'transition-all', 'duration-200'],
@@ -567,7 +567,7 @@ const pt = {
       { 'font-bold bg-surface-0 dark:bg-surface-800 z-20': props.frozenRow },
       { 'odd:bg-surface-0 odd:text-surface-600 dark:odd:bg-surface-800 even:bg-surface-50 even:text-surface-600 dark:even:bg-surface-900/50': context.stripedRows },
       // State
-      { 'focus:outline-none focus:outline-offset-0 focus:ring focus:ring-primary-400/50 ring-inset dark:focus:ring-primary-300/50': context.selectable },
+      { 'focus:outline-hidden focus:outline-offset-0 focus:ring-3 focus:ring-primary-400/50 ring-inset dark:focus:ring-primary-300/50': context.selectable },
       { 'hover:bg-surface-300/20 hover:text-surface-600': props.selectionMode && !context.selected },
       // Transition
       { 'transition duration-200': props.selectionMode && !context.selected || props.rowHover },
@@ -585,7 +585,7 @@ const pt = {
     class: ['sticky z-20', 'bg-surface-0 text-surface-600 dark:text-white/70', 'dark:bg-surface-800'],
   },
   rowgrouptoggler: {
-    class: ['relative', 'inline-flex items-center justify-center', 'text-left', 'm-0 p-0', 'w-8 h-8', 'border-0 rounded-full', 'text-surface-500 dark:text-white/70', 'bg-transparent', 'focus-visible:outline-none focus-visible:outline-offset-0', 'focus-visible:ring focus-visible:ring-primary-400/50 dark:focus-visible:ring-primary-300/50', 'transition duration-200', 'overflow-hidden', 'cursor-pointer select-none'],
+    class: ['relative', 'inline-flex items-center justify-center', 'text-left', 'm-0 p-0', 'w-8 h-8', 'border-0 rounded-full', 'text-surface-500 dark:text-white/70', 'bg-transparent', 'focus-visible:outline-hidden focus-visible:outline-offset-0', 'focus-visible:ring-3 focus-visible:ring-primary-400/50 dark:focus-visible:ring-primary-300/50', 'transition duration-200', 'overflow-hidden', 'cursor-pointer select-none'],
   },
   rowgrouptogglericon: {
     class: 'inline-block w-4 h-4',

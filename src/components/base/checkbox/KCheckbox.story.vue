@@ -34,7 +34,7 @@ const checkboxes = ref([
       <KCheckbox
         v-model="checked"
         binary
-        @blur="logEvent('blur', $event)"
+        @blur="logEvent('blur-sm', $event)"
         @focus="logEvent('focus', $event)"
         @change="logEvent('change', $event)"
       />

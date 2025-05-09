@@ -39,7 +39,7 @@ export default {
 
       // States
       'hover:border-primary-500 dark:hover:border-primary-400',
-      'focus:outline-none focus:outline-offset-0 focus:ring focus:ring-primary-500/50 dark:focus:ring-primary-400/50',
+      'focus:outline-hidden focus:outline-offset-0 focus:ring-3 focus:ring-primary-500/50 dark:focus:ring-primary-400/50',
     ],
   }),
   inputicon: {
@@ -65,7 +65,7 @@ export default {
         'border border-primary-500 dark:border-primary-400',
 
         // States
-        'focus:outline-none focus:outline-offset-0 focus:ring',
+        'focus:outline-hidden focus:outline-offset-0 focus:ring-3',
         'hover:bg-primary-600 dark:hover:bg-primary-300 hover:border-primary-600 dark:hover:border-primary-300',
         'focus:ring-primary-400/50 dark:focus:ring-primary-300/50',
       ],
@@ -290,7 +290,7 @@ export default {
       },
 
       // States
-      'focus:outline-none focus:outline-offset-0 focus:ring focus:ring-primary-400/50 dark:focus:ring-primary-300/50',
+      'focus:outline-hidden focus:outline-offset-0 focus:ring-3 focus:ring-primary-400/50 dark:focus:ring-primary-300/50',
       {
         'hover:bg-surface-100 dark:hover:bg-surface-800/80': !context.selected && !context.disabled,
         'hover:bg-primary-200': context.selected && !context.disabled,
@@ -322,7 +322,7 @@ export default {
       },
 
       // States
-      'focus:outline-none focus:outline-offset-0 focus:ring focus:ring-primary-400/50 dark:focus:ring-primary-300/50',
+      'focus:outline-hidden focus:outline-offset-0 focus:ring-3 focus:ring-primary-400/50 dark:focus:ring-primary-300/50',
       {
         'hover:bg-surface-100 dark:hover:bg-surface-600/80': !context.selected && !context.disabled,
         'hover:bg-primary-200 dark:hover:bg-primary-200/40': context.selected && !context.disabled,
@@ -359,7 +359,7 @@ export default {
       },
 
       // States
-      'focus:outline-none focus:outline-offset-0 focus:ring focus:ring-primary-400/50 dark:focus:ring-primary-300/50',
+      'focus:outline-hidden focus:outline-offset-0 focus:ring-3 focus:ring-primary-400/50 dark:focus:ring-primary-300/50',
       {
         'hover:bg-surface-100 dark:hover:bg-surface-600/80': !context.selected && !context.disabled,
         'hover:bg-primary-200 dark:hover:bg-primary-200/40': context.selected && !context.disabled,
@@ -395,7 +395,7 @@ export default {
       },
 
       // States
-      'focus:outline-none focus:outline-offset-0 focus:ring focus:ring-primary-400/50 dark:focus:ring-primary-300/50',
+      'focus:outline-hidden focus:outline-offset-0 focus:ring-3 focus:ring-primary-400/50 dark:focus:ring-primary-300/50',
       {
         'hover:bg-surface-100 dark:hover:bg-surface-600/80': !context.selected && !context.disabled,
         'hover:bg-primary-200 dark:hover:bg-primary-200/40': context.selected && !context.disabled,
@@ -598,7 +598,7 @@ export default {
         'transition-colors duration-200 ease-in-out',
 
         // States
-        'focus:outline-none focus:outline-offset-0 focus:ring',
+        'focus:outline-hidden focus:outline-offset-0 focus:ring-3',
         'hover:bg-primary-300/20',
 
         // Misc
@@ -626,7 +626,7 @@ export default {
         'transition-colors duration-200 ease-in-out',
 
         // States
-        'focus:outline-none focus:outline-offset-0 focus:ring',
+        'focus:outline-hidden focus:outline-offset-0 focus:ring-3',
         'hover:bg-primary-300/20',
 
         // Misc

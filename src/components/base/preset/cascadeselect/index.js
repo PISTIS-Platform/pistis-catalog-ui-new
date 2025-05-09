@@ -18,7 +18,7 @@ export default {
 
       // States
       'hover:border-primary-500 dark:hover:border-primary-300',
-      { 'outline-none outline-offset-0 ring ring-primary-400/50 dark:ring-primary-300/50': state.focused },
+      { 'outline-hidden outline-offset-0 ring-3 ring-primary-400/50 dark:ring-primary-300/50': state.focused },
 
       // Misc
       'cursor-pointer',
@@ -56,12 +56,12 @@ export default {
       'duration-200',
 
       // States
-      'focus:outline-none focus:shadow-none',
+      'focus:outline-hidden focus:shadow-none',
 
       // Misc
       'relative',
       'cursor-pointer',
-      'overflow-hidden overflow-ellipsis',
+      'overflow-hidden text-ellipsis',
       'whitespace-nowrap',
       'appearance-none',
     ],

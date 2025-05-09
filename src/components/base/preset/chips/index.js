@@ -33,9 +33,9 @@ export default {
 
       // States
       'hover:border-primary-500 dark:hover:border-primary-400',
-      'focus:outline-none focus:outline-offset-0',
-      { 'ring ring-primary-400/50 dark:ring-primary-300/50': state.focused },
-      { 'ring ring-primary-400/50 dark:ring-primary-300/50': state.hovered },
+      'focus:outline-hidden focus:outline-offset-0',
+      { 'ring-3 ring-primary-400/50 dark:ring-primary-300/50': state.focused },
+      { 'ring-3 ring-primary-400/50 dark:ring-primary-300/50': state.hovered },
 
       // Transition
       'transition-colors duration-200',
@@ -62,7 +62,7 @@ export default {
 
       // Shape
       'appearance-none rounded-none',
-      'border-0 outline-none',
+      'border-0 outline-hidden',
       'shadow-none',
 
       // Color

@@ -46,9 +46,9 @@ export default {
 
       // States
       'hover:border-primary-500 dark:hover:border-primary-400',
-      'focus:outline-none focus:outline-offset-0',
-      { 'ring ring-primary-400/50 dark:ring-primary-300/50': state.focused },
-      { 'ring ring-primary-400/50 dark:ring-primary-300/50': state.hovered },
+      'focus:outline-hidden focus:outline-offset-0',
+      { 'ring-3 ring-primary-400/50 dark:ring-primary-300/50': state.focused },
+      { 'ring-3 ring-primary-400/50 dark:ring-primary-300/50': state.hovered },
       // Transition
       'transition duration-200 ease-in-out',
 
@@ -67,7 +67,7 @@ export default {
       // Shape
       'appearance-none rounded-md',
       { 'rounded-tr-none rounded-br-none': props.dropdown },
-      { 'outline-none shadow-none rounded-none': props.multiple },
+      { 'outline-hidden shadow-none rounded-none': props.multiple },
 
       // Size
       { 'w-full': props.multiple },
@@ -86,7 +86,7 @@ export default {
 
       // States
       {
-        'focus:outline-none focus:outline-offset-0 focus:ring focus:ring-primary-400/50 dark:focus:ring-primary-300/50':
+        'focus:outline-hidden focus:outline-offset-0 focus:ring-3 focus:ring-primary-400/50 dark:focus:ring-primary-300/50':
           !props.multiple,
       },
 
@@ -154,7 +154,7 @@ export default {
         'border border-primary-500 dark:border-primary-400',
 
         // States
-        'focus:outline-none focus:outline-offset-0 focus:ring',
+        'focus:outline-hidden focus:outline-offset-0 focus:ring-3',
         'hover:bg-primary-600 dark:hover:bg-primary-300 hover:border-primary-600 dark:hover:border-primary-300',
         'focus:ring-primary-400/50 dark:focus:ring-primary-300/50',
       ],

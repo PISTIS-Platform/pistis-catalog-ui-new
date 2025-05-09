@@ -30,7 +30,7 @@ export default {
 
       // States
       {
-        'peer-focus-visible:ring text-primary peer-focus-visible:ring-primary-400/50 dark:peer-focus-visible:ring-primary-300/50':
+        'peer-focus-visible:ring-3 text-primary peer-focus-visible:ring-primary-400/50 dark:peer-focus-visible:ring-primary-300/50':
           !props.disabled,
       },
 
@@ -66,7 +66,7 @@ export default {
       // Shape
       'opacity-0',
       'rounded-md',
-      'outline-none',
+      'outline-hidden',
       'border border-surface-200 dark:border-surface-700',
 
 

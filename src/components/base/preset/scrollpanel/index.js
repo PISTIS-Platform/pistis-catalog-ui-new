@@ -5,7 +5,7 @@ export default {
       'h-full w-full',
 
       // Layering
-      'z-[1]',
+      'z-1',
 
       // Spacing
       'overflow-hidden',
@@ -38,7 +38,7 @@ export default {
       'h-[9px] bottom-0',
 
       // Appearance
-      'bg-surface-50 dark:bg-surface-700 rounded',
+      'bg-surface-50 dark:bg-surface-700 rounded-sm',
 
       // Interactivity
       'cursor-pointer',
@@ -59,7 +59,7 @@ export default {
       'w-[9px] top-0',
 
       // Appearance
-      'bg-surface-50 dark:bg-surface-700 rounded',
+      'bg-surface-50 dark:bg-surface-700 rounded-sm',
 
       // Interactivity
       'cursor-pointer',

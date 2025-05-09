@@ -8,7 +8,7 @@ const myEmits = defineEmits<{
   'update:modelValue': [value: any]
   'change': [event: Event]
   'focus': [event: Event]
-  'blur': [event: Event]
+  'blur-sm': [event: Event]
 }>()
 defineSlots<{
   default: () => any
@@ -61,7 +61,7 @@ const preset = {
       'm-0',
       'opacity-0',
       'rounded-md',
-      'outline-none',
+      'outline-hidden',
       'border-2 border-surface-200 dark:border-surface-700',
       'appareance-none',
       'cursor-pointer',
@@ -88,7 +88,7 @@ function CheckboxFC() {
     'onUpdate:modelValue': (value: any) => myEmits('update:modelValue', value),
     'onChange': (event: Event) => myEmits('change', event),
     'onFocus': (event: Event) => myEmits('focus', event),
-    'onBlur': (event: Event) => myEmits('blur', event),
+    'onBlur': (event: Event) => myEmits('blur-sm', event),
   })
 }
 </script>

@@ -1,7 +1,8 @@
 import type { Config } from 'tailwindcss'
 import { addDynamicIconSelectors } from '@iconify/tailwind'
 import typography from '@tailwindcss/typography'
-//import { gray } from 'tailwindcss/colors'
+import { config } from 'process'
+import { gray } from 'tailwindcss/colors'
 
 export default {
   darkMode: 'selector',
@@ -103,7 +104,7 @@ export default {
         },
 
         'fg': 'var(--text)',
-        //'fg-muted': gray['600'],
+        'fg-muted': gray['600'],
 
         'border': '#495057',
 

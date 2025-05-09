@@ -83,7 +83,7 @@ onMounted(async () => {
 
 .catWrap .annifItems {
   background: #ECECEC;
-  flex-grow: 1;
+  grow: 1;
   text-align: center;
 }
 

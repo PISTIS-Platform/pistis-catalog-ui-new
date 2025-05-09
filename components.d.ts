@@ -7,7 +7,6 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    'Dashboard.story': typeof import('./src/components/dashboard/Dashboard.story.vue')['default']
     'DataInfoBox.story': typeof import('./src/components/base/data-info-box/DataInfoBox.story.vue')['default']
     DataInfoCard: typeof import('./src/components/base/data-info-box/DataInfoCard.vue')['default']
     DataToggler: typeof import('./src/components/data-toggler/DataToggler.vue')['default']
@@ -42,17 +41,11 @@ declare module 'vue' {
     'KInteractiveChip.story': typeof import('./src/components/interactive-chip/KInteractiveChip.story.vue')['default']
     KRadioButton: typeof import('./src/components/base/radio-button/KRadioButton.vue')['default']
     'KRadioButton.story': typeof import('./src/components/base/radio-button/KRadioButton.story.vue')['default']
-    KSearchInput: typeof import('./src/components/search-input/KSearchInput.vue')['default']
-    'KSearchInput.story': typeof import('./src/components/search-input/KSearchInput.story.vue')['default']
     KSplitButton: typeof import('./src/components/base/split-button/KSplitButton.vue')['default']
     'KSplitButton.story': typeof import('./src/components/base/split-button/KSplitButton.story.vue')['default']
     KTag: typeof import('./src/components/base/tag/KTag.vue')['default']
     'KTag.story': typeof import('./src/components/base/tag/KTag.story.vue')['default']
-    LPFooter: typeof import('./src/components/landing-page/LPFooter.vue')['default']
-    LPHeader: typeof import('./src/components/landing-page/LPHeader.vue')['default']
     NavigationBar: typeof import('./src/components/header-footer/NavigationBar.vue')['default']
-    NavigationLinks: typeof import('./src/components/landing-page/NavigationLinks.vue')['default']
-    NotFound: typeof import('./src/components/not-found/NotFound.vue')['default']
     'PropertyTable.story': typeof import('./src/components/property-table/PropertyTable.story.vue')['default']
     PropertyTableValue: typeof import('./src/components/property-table/PropertyTableValue.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']

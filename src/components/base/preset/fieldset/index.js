@@ -60,7 +60,7 @@ export default {
       // States
       { 'hover:text-surface-900 dark:hover:text-surface-100': props.toggleable },
       {
-        'focus-visible:outline-none focus-visible:outline-offset-0 focus-visible:ring focus-visible:ring-inset focus-visible:ring-primary-400/50 dark:focus-visible:ring-primary-300/50':
+        'focus-visible:outline-hidden focus-visible:outline-offset-0 focus-visible:ring-3 focus-visible:ring-inset focus-visible:ring-primary-400/50 dark:focus-visible:ring-primary-300/50':
           props.toggleable,
       },
 
