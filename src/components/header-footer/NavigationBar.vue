@@ -28,7 +28,7 @@ const links = [
         :to="link.to"
     >
       <a
-          class="header-icon-container leading-[1.625rem]"
+          class="header-icon-container leading-[1.625rem] text-fg text-base hover:text-primary-hover"
           :class="{ active: isActive && isExactActive }"
           :href="href"
           @click="navigate"
@@ -39,7 +39,8 @@ const links = [
   </div>
 </template>
 
-<style scoped lang="scss">
+<style>
+
 #thenavguy.nav-links {
   display: flex;
   gap: 2.5rem;
@@ -53,16 +54,32 @@ const links = [
 }
 
 #thenavguy.nav-links a {
-  @apply text-fg text-base hover:text-primary-hover leading-[1.625rem];
+  color: var(--fg);
+  font-size: 1rem;
+  line-height: 1.625rem;
+  transition: color 0.2s;
+  /* @apply text-fg text-base hover:text-primary-hover leading-[1.625rem]; */
 }
+#thenavguy.nav-links a:hover {
+  color: var(--primary);
+}
+
 
 #thenavguy.nav-links a.active,
 #thenavguy.nav-links a .active {
-  @apply border-b-[3px] border-spacing-4 border-primary-pressed text-base leading-[1.625rem] ;
+  border-bottom-width: 3px;
+  border-spacing: 1rem;
+  border-color: var(--primary);
+  font-size: 1rem;
+  line-height: 1.625rem;
+  /* @apply border-b-[3px] border-spacing-4 border-primary-pressed text-base leading-[1.625rem] ; */
 }
 
 #thenavguy.nav-links.vertical a.active,
 #thenavguy.nav-links.vertical a .active {
-  @apply border-l-[2.5px] border-b-0 pl-2;
+  border-left-width: 2.5px;
+  border-bottom-width: 0;
+  padding-left: 0.5rem;
+  /* @apply border-l-[2.5px] border-b-0 pl-2; */
 }
 </style>
