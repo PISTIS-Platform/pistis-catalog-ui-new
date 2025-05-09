@@ -61,7 +61,7 @@ const links = [
   /* @apply text-fg text-base hover:text-primary-hover leading-[1.625rem]; */
 }
 #thenavguy.nav-links a:hover {
-  color: var(--primary);
+  color: var(--primary-hover);
 }
 
 
