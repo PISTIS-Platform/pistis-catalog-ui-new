@@ -70,7 +70,7 @@ const links = [
   border-color: var(--primary);
   font-size: 1rem;
   line-height: 1.625rem;
-  /* @apply border-b-[3px] border-spacing-4 border-primary-pressed text-base leading-[1.625rem] ; */
+  /* @apply border-b-[3px] border-spacing-4 border-primary text-base leading-[1.625rem] ; */
 }
 
 #thenavguy.nav-links.vertical a.active,

@@ -3,10 +3,12 @@ const seitenLinks = [
   { to: '/', text: 'Home' },
   { to: '/datasets', text: 'Datasets' },
   { to: '/catalogues', text: 'Catalogues' },
+  { to: 'https://doc.piveau.eu/general/introduction/', text: 'Docs' },
+  { to: 'https://gitlab.com/piveau/', text: 'GitLab' },
 ]
 
 const socialLinks = [
-  { href: '...', text: 'LinkedIn' },
+  { href: 'https://www.linkedin.com/company/fraunhoferfokus/?originalSubdomain=de', text: 'LinkedIn' },
 ]
 
 const rechtlichesLinks = [
@@ -21,8 +23,8 @@ const loginLinks = [
 </script>
 
 <template>
-  <footer class="bg-primary-bg px-8 py-16 text-white">
-    <div class="container mx-auto max-w-7xl space-y-32">
+  <footer class="bg-footer-bg text-footer-bg-text py-16 px-8">
+    <div class="space-y-32 container mx-auto max-w-7xl">
       <!-- Main Footer Content -->
       <div class="flex flex-col flex-wrap justify-between gap-x-10 gap-y-20 md:flex-row xl:gap-10">
         <!-- Seiten Section -->
@@ -36,12 +38,24 @@ const loginLinks = [
               :key="link.text"
               class="text-copy-sm"
             >
+            <template v-if="link.to.startsWith('http')">
+                <a
+                  :href="link.to"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hover:text-secondary-hover"
+                >
+                  {{ link.text }}
+                </a>
+              </template>
+              <template v-else>
               <RouterLink
-                :to="link.to"
-                class="text-white hover:text-secondary-hover"
+                  :to="link.to"
+                  class="hover:text-secondary-hover"
               >
                 {{ link.text }}
               </RouterLink>
+            </template>
             </li>
           </ul>
         </div>
@@ -58,9 +72,9 @@ const loginLinks = [
               class="text-copy-sm"
             >
               <a
-                :href="link.href"
-                target="_blank"
-                class="text-white hover:text-secondary-hover"
+                  :href="link.href"
+                  target="_blank"
+                  class="hover:text-secondary-hover"
               >
                 {{ link.text }}
               </a>
@@ -80,8 +94,8 @@ const loginLinks = [
               class="text-copy-sm"
             >
               <RouterLink
-                :to="link.to"
-                class="text-white hover:text-primary-hover"
+                  :to="link.to"
+                  class="hover:text-primary-hover"
               >
                 {{ link.text }}
               </RouterLink>
@@ -98,8 +112,8 @@ const loginLinks = [
               class="text-copy-sm"
             >
               <RouterLink
-                :to="link.to"
-                class="font-bold text-white hover:text-secondary-hover"
+                  :to="link.to"
+                  class="hover:text-secondary-hover font-bold"
               >
                 {{ link.text }}
               </RouterLink>

@@ -74,7 +74,7 @@ const preset = {
       {
         'text-white dark:text-surface-900':
           !props.link && props.severity === null && !props.text && !props.outlined && !props.plain,
-        'bg-primary dark:bg-primary-dark hover:bg-primary-hover dark:hover:bg-primary-dark-hover active:bg-primary-pressed dark:active:bg-primary-dark-pressed':
+        'bg-primary dark:bg-primary-dark hover:bg-primary-hover dark:hover:bg-primary-dark-hover active:bg-primary dark:active:bg-primary-dark-pressed':
           !props.link && props.severity === null && !props.text && !props.outlined && !props.plain,
         // 'border border-primary-800 dark:border-primary-400': !props.link && props.severity === null && !props.text && !props.outlined && !props.plain
       },
@@ -82,7 +82,7 @@ const preset = {
       { 'text-primary-800 dark:text-primary-400': props.text && props.severity === null && !props.plain },
       // Primary Outlined Button
       {
-        'text-primary-800 border border-primary-pressed hover:bg-primary-300/20':
+        'text-primary-800 border border-primary hover:bg-primary-300/20':
           props.outlined && props.severity === null && !props.plain,
       },
 

@@ -17,17 +17,17 @@
             <strong>collection and aggregation to publication and reuse</strong>.
           </p>
 
-          <div class="mt-4 flex justify-center gap-4 sm:mt-6">
-            <a
-              class="shadow-xs inline-block rounded-sm  border bg-primary px-5 py-3 font-medium text-white transition-colors hover:bg-primary-hover"
-              href="/datasets"
-            >
-              Explore Demo
-            </a>
+      <div class="mt-4 flex justify-center gap-4 sm:mt-6">
+        <a
+          class="inline-block rounded-3xl border  bg-primary px-5 py-3 font-medium text-white shadow-xs transition-colors hover:bg-primary-hover"
+          href="/datasets"
+        >
+          Explore Demo
+        </a>
 
-            <button
-              class="focus:outline-hidden ml-4 inline-flex rounded-sm border-0 bg-gray-100 px-6 py-3 text-lg text-gray-700 hover:bg-gray-200"
-            >
+        <button
+              class="ml-2 inline-flex rounded-3xl text-gray-700 bg-gray-100 border-0 py-3 px-6 focus:outline-hidden hover:bg-gray-200 text-lg">
+          
               <a
                 href="https://doc.piveau.eu/general/introduction/"
                 target="_blank"

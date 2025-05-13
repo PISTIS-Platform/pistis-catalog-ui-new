@@ -8,75 +8,49 @@ export default {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx,html}'],
   theme: {
     fontFamily: {
-      sans: ['"Inter Variable"', 'sans-serif'],
-      // headings
-      display: ['"Inter Variable", "sans-serif"'],
+      sans: ['var(--font-sans)', 'sans-serif'],
+      display: ['var(--font-display)', 'sans-serif'],
     },
     extend: {
       colors: {
         'primary': {
-          DEFAULT: 'var(--primary-background)',
-          hover: 'var(--primary-background-hover)',
-          pressed: 'var(--primary-background-pressed)',
-          disabled: 'var(--primary-background-disabled)',
-
-          light: '#d4edfc',
-          // This color is used for all text and icons
-          fg: 'var(--fg)',
-          // THis color is used for backgrounds
-          bg: 'var(--bg)',
-
+          DEFAULT: 'var(--primary)',
+          hover: 'var(--primary-hover)',
+          disabled: 'var(--primary-disabled)',
+          light: 'var(--primary-light)',
           text: 'var(--primary-text)',
-
-          10: 'var(--primary-10)',
-          20: 'var(--primary-20)',
-          30: 'var(--primary-30)',
-          40: 'var(--primary-40)',
-          50: 'var(--primary-50)',
-          60: 'var(--primary-60)',
-          70: 'var(--primary-70)',
-          80: 'var(--primary-80)',
-          90: 'var(--primary-90)',
-          100: 'var(--primary-100)',
-          110: 'var(--primary-110)',
-        },
-
-        'primary-dark': {
-          DEFAULT: 'var(--primary-background--dark)',
-          hover: 'var(--primary-background-hover--dark)',
-          pressed: 'var(--primary-background-pressed--dark)',
-          disabled: 'var(--primary-background-disabled--dark)',
-          text: 'var(--primary-text--dark)',
         },
 
         'secondary': {
-          DEFAULT: 'var(--secondary-background)',
+          DEFAULT: 'var(--secondary)',
           hover: 'var(--secondary-background-hover)',
           pressed: 'var(--secondary-background-pressed)',
           disabled: 'var(--secondary-background-disabled)',
           text: 'var(--secondary-text)',
         },
 
-        'secondary-dark': {
-          DEFAULT: 'var(--secondary-background--dark)',
-          hover: 'var(--secondary-background-hover--dark)',
-          pressed: 'var(--secondary-background-pressed--dark)',
-          disabled: 'var(--secondary-background-disabled--dark)',
-          text: 'var(--secondary-text--dark)',
+        'gray': {
+          DEFAULT: 'var(--gray)',
+          hover: 'var(--gray-hover)',
         },
 
-        'tertiary': {
-          DEFAULT: 'var(--tertiary-background)',
-          hover: 'var(--tertiary-background-hover)',
-          pressed: 'var(--tertiary-background-pressed)',
-          text: 'var(--tertiary-text)',
+        'black': {
+          DEFAULT: 'var(--black)',
         },
 
-        'tertiary-dark': {
-          DEFAULT: 'var(--tertiary-background--dark)',
-          hover: 'var(--tertiary-background-hover--dark)',
-          pressed: 'var(--tertiary-background-pressed--dark)',
-          text: 'var(--tertiary-text--dark)',
+        'surface': {
+          DEFAULT: 'var(--surface)',
+          text: 'var(--surface-text)',
+        },
+
+        'header-bg': {
+          DEFAULT: 'var(--header-bg)',
+          text: 'var(--header-text)',
+        },
+
+       'footer-bg': {
+          DEFAULT: 'var(--footer-bg)',
+          text: 'var(--footer-text)',
         },
 
         'neutral': {
@@ -89,22 +63,12 @@ export default {
           80: 'var(--neutral-80)',
           90: 'var(--neutral-90)',
           100: 'var(--neutral-100)',
-
-          // OLD VALUES:
-          DEFAULT: 'rgb(var(--light-1000))',
-          lighter: 'rgb(var(--light-900))',
-          icon: 'rgb(var(--light-700))',
         },
 
         // For text content on lighter bg
         'neutral-content': {
           DEFAULT: 'rgb(33, 37, 41)',
         },
-
-        'fg': 'var(--text)',
-        'fg-muted': gray['600'],
-
-        'border': '#495057',
 
         // Map surface to 'light' color palette from KDW
         // Because surface is more finely grained than light,
@@ -126,14 +90,6 @@ export default {
         'content-lighter': 'rgb(var(--light-900))',
         'content-icon': 'rgb(var(--light-700))',
 
-        'bg-lighter': 'rgb(var(--light-0))',
-        'bg-darker': 'rgb(var(--light-200))',
-        'bg-divider': 'rgb(var(--light-300))',
-        'bg-base': '#f5f7fa',
-
-        // primary: "rgb(var(--btn-pressed))",
-        // tertiary: "#ffffff",
-
         'btn-hover': 'rgb(var(--btn-hover))',
         'btn-regular': 'rgb(var(--btn-regular))',
         'btn-pressed': 'rgb(var(--btn-pressed))',
@@ -149,8 +105,7 @@ export default {
       },
 
       spacing: {
-        // bydata spacing; corresponds to "spacing-*" design tokens
-        // see: https://www.figma.com/design/KWszsqB7p1j75OXDDCtO4W/%5BLibrary%5D-Open-Data?node-id=0-1&m=dev&focus-id=136-6159
+        // spacing; corresponds to "spacing-*" design tokens
         // Usage example: "px-by2"
         by1: '0.25rem',
         by2: '0.5rem',
@@ -167,12 +122,8 @@ export default {
       },
 
       borderRadius: {
-        'by': '.5rem',
-        'by-button': '1.5rem',
-        'by-modal': '2rem',
-        'by-inside-modal': '1.5rem',
-        'custom': '15px',
-        'search': '100px',
+        custom: 'var(--border-radius-custom)',
+        search: 'var(--border-radius-search)',
       },
 
       fontSize: {
@@ -182,23 +133,17 @@ export default {
       },
 
       maxWidth: {
-        // See: https://www.figma.com/design/KWszsqB7p1j75OXDDCtO4W/%5BLibrary%5D-Open-Data?node-id=0-1&m=dev&focus-id=459-9548
         // Usage example: "max-w-content-max"
         'content-max': '1280px',
       },
     },
 
     screens: {
-      // bydata grids & breakpoints
       // Adopted from Bootstrap breakpoints
-      // See: https://www.figma.com/design/KWszsqB7p1j75OXDDCtO4W/%5BLibrary%5D-Open-Data?node-id=0-1&m=dev&focus-id=459-9548
-      // See: https://getbootstrap.com/docs/5.0/layout/breakpoints/
       'sm': '576px',
       'md': '768px',
       'lg': '992px',
       'xl': '1200px',
-
-      // Not specified in bydata, but thrown in anyways to match Bootstrap breakpoints for completion
       '2xl': '1400px',
     },
   },

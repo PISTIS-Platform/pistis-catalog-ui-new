@@ -18,7 +18,7 @@ export default {
 
       // States
       'hover:bg-primary-80 ',
-      { 'outline-hidden outline-offset-0 ring-3 ring-primary-400/50 dark:ring-primary-300/50': state.focused },
+      { 'outline-hidden outline-offset-0 ring-primary-400/50 dark:ring-primary-300/50': state.focused },
 
       // Misc
       'cursor-pointer',
@@ -149,7 +149,7 @@ export default {
         'hover:text-surface-700 hover:bg-surface-100 dark:hover:text-white dark:hover:bg-surface-600/80':
           context.focused && !context.selected,
       },
-      'focus-visible:outline-hidden focus-visible:outline-offset-0 focus-visible:ring-3 focus-visible:ring-inset focus-visible:ring-primary-400/50 dark:focus-visible:ring-primary-300/50',
+      'focus-visible:outline-hidden focus-visible:outline-offset-0 focus-visible:ring-inset focus-visible:ring-primary-400/50 dark:focus-visible:ring-primary-300/50',
 
       // Transitions
       'transition-shadow',
@@ -239,7 +239,7 @@ export default {
 
       // States
       'hover:border-primary-500 dark:hover:border-primary-300',
-      'focus:ring-3 focus:outline-hidden focus:outline-offset-0',
+      'focus:outline-hidden focus:outline-offset-0',
       'focus:ring-primary-400/50 dark:focus:ring-primary-300/50',
 
       // Misc

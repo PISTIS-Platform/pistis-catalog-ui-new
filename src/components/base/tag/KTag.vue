@@ -67,9 +67,7 @@ const preset = {
       [
         {
           // 'bg-[#015184] text-white': !light.value && !outline.value,
-          'bg-primary-20 text-neutral-100 dark:bg-[#015184] dark:text-white': !isInteractive.value,
-          'bg-primary-80 text-neutral-0 dark:bg-[#015184] dark:text-white': isInteractive.value && !unselected.value,
-          'bg-neutral-60 opacity-60 text-neutral-0 dark:bg-[#015184] dark:text-white': isInteractive.value && disabled.value && !unselected.value,
+          'bg-secondary text-neutral-100 dark:bg-[#015184] dark:text-white': !isInteractive.value,
         },
         // unselected
         {
@@ -119,7 +117,7 @@ const preset = {
   <component
     :is="isInteractive ? 'button' : 'span'"
     :class="{
-      'focus:ring-3 outline-hidden rounded-2xl focus:ring-primary-60 focus:ring-offset-2': isInteractive,
+      'bg-gray focus:ring-offset-2 focus:ring-secondary rounded-2xl outline-hidden': isInteractive,
     }"
     @click.prevent="$emit('click', $event)"
   >

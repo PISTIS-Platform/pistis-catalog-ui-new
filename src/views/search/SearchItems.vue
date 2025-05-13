@@ -36,10 +36,10 @@ const itemsCount = computed(() => (searchParams?.queryParams?.limit ?? 10))
   </div>
   <div class="grid w-full place-content-center">
     <Paginator
-      v-model:first="searchParams.queryParams.page.value"
-      class="rounded-sm"
-      :rows="1"
-      :total-records="getSearchResultsPagesCount"
+        v-model:first="searchParams.queryParams.page.value"
+        class="rounded-sm cursor-pointer"
+        :rows="1"
+        :total-records="getSearchResultsPagesCount"
     />
   </div>
 </template>

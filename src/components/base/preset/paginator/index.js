@@ -161,7 +161,7 @@ export default {
       // Color
       'text-primary dark:text-white/80',
       {
-        'bg-primary-50 border-primary-50 dark:border-transparent text-primary-700 dark:text-surface-0 dark:bg-primary-400/30  text-white':
+        'bg-primary border-primary-50 dark:border-transparent text-primary-700 dark:text-surface-0 dark:bg-primary-400/30  text-white':
           context.active,
       },
 
@@ -326,7 +326,7 @@ export default {
             context.focused && context.selected,
         },
         {
-          'bg-primary-50 dark:bg-primary-400/40 text-primary-700 dark:text-white/80':
+          'bg-primary dark:bg-primary-400/40 text-primary-700 dark:text-white/80':
             !context.focused && context.selected,
         },
 
@@ -539,7 +539,7 @@ export default {
             context.focused && context.selected,
         },
         {
-          'bg-primary-50 dark:bg-primary-400/40 text-primary-700 dark:text-white/80':
+          'bg-primary dark:bg-primary-400/40 text-primary-700 dark:text-white/80':
             !context.focused && context.selected,
         },
 

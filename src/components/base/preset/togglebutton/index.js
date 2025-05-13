@@ -45,7 +45,7 @@ export default {
     ],
   }),
   label: {
-    class: 'font-bold text-center w-full text-black',
+    class: 'font-bold text-center w-full text-surface-text',
   },
   input: {
     class: [
