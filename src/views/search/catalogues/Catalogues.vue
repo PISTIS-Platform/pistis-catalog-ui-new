@@ -13,7 +13,7 @@
         :facets="availableFacetsFormatted"
     />
   </Sidebar>
-  <div class="container relative mx-auto grid grid-cols-1 sm:grid-cols-[minmax(auto,_20rem)_1fr] mx-auto max-w-content-max">
+  <div class="container relative mx-auto grid grid-cols-1 sm:grid-cols-[minmax(auto,20rem)_1fr] mx-auto max-w-content-max">
     <!-- Permanent facets for large devices -->
     <div
         name="sidebar"

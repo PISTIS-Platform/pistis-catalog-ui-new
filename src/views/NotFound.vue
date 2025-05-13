@@ -3,11 +3,11 @@ import Typography from '../components/base/typography/Typography.vue'
 </script>
 
 <template>
-  <div class="mx-auto max-w-screen-xl px-4 py-12 lg:px-6 lg:py-12">
+  <div class="mx-auto max-w-(--breakpoint-xl) px-4 py-12 lg:px-6 lg:py-12">
     <Typography
       as="h1"
       variant="by-heading-1"
-      class="mx-auto max-w-screen-xl py-8"
+      class="mx-auto max-w-(--breakpoint-xl) py-8"
     >
       404 Not Found
     </Typography>

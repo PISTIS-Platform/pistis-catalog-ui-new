@@ -218,7 +218,7 @@ export default {
         },
 
         // --- Severity Button States ---
-        'focus:outline-none focus:outline-offset-0 focus:ring',
+        'focus:outline-hidden focus:outline-offset-0 focus:ring-3',
 
         // Link
         { 'focus:ring-primary-400/50 dark:focus:ring-primary-300/50': parent.props.link },
@@ -550,7 +550,7 @@ export default {
         },
 
         // --- Severity Button States ---
-        'focus:outline-none focus:outline-offset-0 focus:ring',
+        'focus:outline-hidden focus:outline-offset-0 focus:ring-3',
 
         // Link
         { 'focus:ring-primary-400/50 dark:focus:ring-primary-300/50': parent.props.link },
@@ -694,7 +694,7 @@ export default {
         'list-none',
         'm-0',
         'p-0',
-        'outline-none',
+        'outline-hidden',
       ],
     },
     menuitem: {

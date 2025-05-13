@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss'
 import { addDynamicIconSelectors } from '@iconify/tailwind'
 import typography from '@tailwindcss/typography'
+import { config } from 'process'
 import { gray } from 'tailwindcss/colors'
 
 export default {

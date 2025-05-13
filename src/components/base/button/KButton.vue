@@ -195,7 +195,7 @@ const preset = {
       },
 
       // --- Severity Button States ---
-      'focus:outline-none focus:outline-offset-0 focus:ring-2 focus:ring-primary-70 focus:ring-offset-1',
+      'focus:outline-hidden focus:outline-offset-0 focus:ring-2 focus:ring-primary-70 focus:ring-offset-1',
 
       // Link
       { 'focus:ring-primary-400/50 dark:focus:ring-primary-300/50': props.link },
@@ -339,4 +339,4 @@ const preset = {
   </Button>
 </template>
 
-<!-- bg-icon relative items-center inline-flex text-center align-bottom justify-center leading-[normal] px-4 py-3 rounded-full text-white dark:text-surface-900 bg-surface-500 dark:bg-surface-400 border border-surface-500 dark:border-surface-400 focus:outline-none focus:outline-offset-0 focus:ring hover:bg-surface-600 dark:hover:bg-surface-300 hover:border-surface-600 dark:hover:border-surface-300 focus:ring-surface-400/50 dark:focus:ring-surface-300/50 transition duration-200 ease-in-out cursor-pointer overflow-hidden select-none font-medium relative items-center inline-flex text-center align-bottom justify-center leading-[normal] h-10 px-4 py-2 rounded-full text-neutral-100 dark:text-primary-900 focus:outline-none focus:outline-offset-0 focus:ring hover:bg-surface-300 dark:hover:bg-surface-300 hover:border-surface-600 dark:hover:border-surface-300 focus:ring-surface-400/50 dark:focus:ring-surface-300/50 transition duration-200 ease-in-out cursor-pointer overflow-hidden select-none -->
+<!-- bg-icon relative items-center inline-flex text-center align-bottom justify-center leading-[normal] px-4 py-3 rounded-full text-white dark:text-surface-900 bg-surface-500 dark:bg-surface-400 border border-surface-500 dark:border-surface-400 focus:outline-hidden focus:outline-offset-0 focus:ring-3 hover:bg-surface-600 dark:hover:bg-surface-300 hover:border-surface-600 dark:hover:border-surface-300 focus:ring-surface-400/50 dark:focus:ring-surface-300/50 transition duration-200 ease-in-out cursor-pointer overflow-hidden select-none font-medium relative items-center inline-flex text-center align-bottom justify-center leading-[normal] h-10 px-4 py-2 rounded-full text-neutral-100 dark:text-primary-900 focus:outline-hidden focus:outline-offset-0 focus:ring-3 hover:bg-surface-300 dark:hover:bg-surface-300 hover:border-surface-600 dark:hover:border-surface-300 focus:ring-surface-400/50 dark:focus:ring-surface-300/50 transition duration-200 ease-in-out cursor-pointer overflow-hidden select-none -->

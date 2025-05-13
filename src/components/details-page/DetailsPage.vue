@@ -212,7 +212,7 @@ const truncatedEllipsedDescription = computed(() => {
                   <div
                     v-if="i === truncatedFormattedDistributions.length - 1 && isDistributionsTruncated"
                     name="distribution-card-overlay"
-                    class="absolute left-0 top-0 size-full bg-gradient-to-b from-transparent from-0% to-white to-55%"
+                    class="absolute left-0 top-0 size-full bg-linear-to-b from-transparent from-0% to-white to-55%"
                   >
                     <div class="absolute bottom-0 flex w-full flex-row items-center justify-center">
                       <div>

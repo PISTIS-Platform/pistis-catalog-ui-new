@@ -18,7 +18,7 @@ export default {
       { 'first:ml-0 ml-[-1px]': parent.instance.$name == 'InputGroup' && !props.showButtons },
 
       // Sizing
-      { '!w-16': props.showButtons && props.buttonLayout == 'vertical' },
+      { 'w-16!': props.showButtons && props.buttonLayout == 'vertical' },
     ],
   }),
   input: {
@@ -43,7 +43,7 @@ export default {
         { 'rounded-tl-none rounded-bl-none': parent.props.showButtons && parent.props.buttonLayout == 'horizontal' },
         { 'rounded-none': parent.props.showButtons && parent.props.buttonLayout == 'vertical' },
 
-        { '!rounded-none': parent.instance.$parentInstance?.$name == 'InputGroup' && !parent.props.showButtons },
+        { 'rounded-none!': parent.instance.$parentInstance?.$name == 'InputGroup' && !parent.props.showButtons },
         { 'border-0': parent.instance.$parentInstance?.$name == 'InputGroup' && !parent.props.showButtons },
 
         // Colorsh
@@ -54,7 +54,7 @@ export default {
 
         // States
         'hover:border-primary-500 dark:hover:border-primary-400',
-        'focus:outline-none focus:outline-offset-0 focus:ring focus:ring-primary-500/50 dark:focus:ring-primary-400/50 focus:z-10',
+        'focus:outline-hidden focus:outline-offset-0 focus:ring-3 focus:ring-primary-500/50 dark:focus:ring-primary-400/50 focus:z-10',
         { 'opacity-60 select-none pointer-events-none cursor-default': context.disabled },
 
         // Position
@@ -107,7 +107,7 @@ export default {
         { 'rounded-bl-none rounded-br-none': parent.props.showButtons && parent.props.buttonLayout == 'vertical' },
 
         // States
-        'focus:outline-none focus:outline-offset-0 focus:ring',
+        'focus:outline-hidden focus:outline-offset-0 focus:ring-3',
         'hover:bg-primary-600 dark:hover:bg-primary-300 hover:border-primary-600 dark:hover:border-primary-300',
 
         // Misc
@@ -155,7 +155,7 @@ export default {
         { 'rounded-tr-none rounded-tl-none ': parent.props.showButtons && parent.props.buttonLayout == 'vertical' },
 
         // States
-        'focus:outline-none focus:outline-offset-0 focus:ring',
+        'focus:outline-hidden focus:outline-offset-0 focus:ring-3',
         'hover:bg-primary-600 dark:hover:bg-primary-300 hover:border-primary-600 dark:hover:border-primary-300',
 
         // Misc

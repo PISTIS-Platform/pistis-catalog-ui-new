@@ -52,7 +52,7 @@ const preset = {
       {
         'cursor-pointer': isInteractive.value && !disabled.value,
         'cursor-default': props.disabled,
-        // 'focus:ring focus:ring-offset-2 focus:ring-primary-60 outline-none': isInteractive.value,
+        // 'focus:ring-3 focus:ring-offset-2 focus:ring-primary-60 outline-hidden': isInteractive.value,
         'hover:bg-primary-80 dark:hover:bg-surface-700': isInteractive.value && !unselected.value && !disabled.value,
         'hover:border-primary-100 hover:text-primary-100 dark:hover:border-surface-700': isInteractive.value && unselected.value && !disabled.value,
       },
@@ -119,7 +119,7 @@ const preset = {
   <component
     :is="isInteractive ? 'button' : 'span'"
     :class="{
-      'focus:ring focus:ring-offset-2 focus:ring-primary-60 rounded-2xl outline-none': isInteractive,
+      'focus:ring-3 focus:ring-offset-2 focus:ring-primary-60 rounded-2xl outline-hidden': isInteractive,
     }"
     @click.prevent="$emit('click', $event)"
   >

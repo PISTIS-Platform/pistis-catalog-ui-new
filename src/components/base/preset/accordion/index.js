@@ -39,7 +39,7 @@ export default {
         // States
         'hover:bg-surface-100 dark:hover:bg-surface-700/40',
         'hover:text-surface-900',
-        'focus:outline-none focus:outline-offset-0 focus-visible:ring focus-visible:ring-primary-400/50 ring-inset dark:focus-visible:ring-primary-300/50', // Focus
+        'focus:outline-hidden focus:outline-offset-0 focus-visible:ring-3 focus-visible:ring-primary-400/50 ring-inset dark:focus-visible:ring-primary-300/50', // Focus
 
         // Misc
         'cursor-pointer no-underline select-none',

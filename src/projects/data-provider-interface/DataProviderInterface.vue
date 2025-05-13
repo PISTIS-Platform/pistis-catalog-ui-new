@@ -322,7 +322,7 @@ export default {
   //   .step-progress__step-label {
   //     position: unset;
   //     transform: unset;
-  //     flex-grow: 1;
+  //     grow: 1;
   //   }
 
   //   .step-progress__step {}

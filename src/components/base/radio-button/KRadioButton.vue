@@ -64,7 +64,7 @@ const pt = {
       'm-0',
       'opacity-0',
       'rounded-md',
-      'outline-none',
+      'outline-hidden',
       'border-2 border-surface-200 dark:border-surface-700',
       'appearance-none',
       'cursor-pointer',

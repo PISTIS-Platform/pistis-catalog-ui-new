@@ -454,7 +454,7 @@ export default defineComponent({
 
 .formkit-form {
   max-width: 500px;
-  flex-shrink: 0;
+  shrink: 0;
   margin-top: 1em;
   margin-bottom: 1em;
   background: #fff;
@@ -488,8 +488,8 @@ export default defineComponent({
   background: var(--gray-l);
   border-right: 1px solid var(--gray);
   color: gray;
-  flex-grow: 0;
-  flex-shrink: 0;
+  grow: 0;
+  shrink: 0;
   position: relative;
 }
 
@@ -636,7 +636,7 @@ summary {
 }
 
 .activeItem {
-  flex-grow: 1;
+  grow: 1;
 
   .seperatorHorizontalStepper {
     height: 100%;
