@@ -20,14 +20,14 @@
 
       <div class="mt-4 flex justify-center gap-4 sm:mt-6">
         <a
-          class="inline-block rounded-sm border  bg-primary px-5 py-3 font-medium text-white shadow-xs transition-colors hover:bg-primary-hover"
+          class="inline-block rounded-3xl border  bg-primary px-5 py-3 font-medium text-white shadow-xs transition-colors hover:bg-primary-hover"
           href="/datasets"
         >
           Explore Demo
         </a>
 
         <button
-              class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-3 px-6 focus:outline-hidden hover:bg-gray-200 rounded-sm text-lg">
+              class="ml-2 inline-flex rounded-3xl text-gray-700 bg-gray-100 border-0 py-3 px-6 focus:outline-hidden hover:bg-gray-200 text-lg">
           
               <a
     href="https://doc.piveau.eu/general/introduction/"

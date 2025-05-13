@@ -54,7 +54,7 @@ export default {
 
         // States
         'hover:border-primary-500 dark:hover:border-primary-400',
-        'focus:outline-hidden focus:outline-offset-0 focus:ring-3 focus:ring-primary-500/50 dark:focus:ring-primary-400/50 focus:z-10',
+        'focus:outline-hidden focus:outline-offset-0 focus:ring-3 focus:ring-primary',
         { 'opacity-60 select-none pointer-events-none cursor-default': context.disabled },
 
         // Position

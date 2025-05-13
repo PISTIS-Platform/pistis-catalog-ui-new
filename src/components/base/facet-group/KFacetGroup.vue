@@ -89,7 +89,7 @@ const panelPreset = {
 <template>
   <Panel
     v-model:collapsed="collapsed"
-    class="flex min-w-64 flex-col bg-white rounded-custom"
+    class="flex min-w-64 flex-col bg-surface text-surface-text rounded-custom"
     :pt="panelPreset"
     :pt-options="{ mergeSections: false, mergeProps: false }"
     toggleable
@@ -102,7 +102,7 @@ const panelPreset = {
         >
           <Typography
             variant="by-heading-5"
-            class="flex flex-row justify-between text-neutral-100"
+            class="flex flex-row justify-between"
           >
             {{ title }}
             <!-- <PhCaretDown class="text-lg font-semibold" /> -->
@@ -138,12 +138,12 @@ const panelPreset = {
               class="max-h-12 w-full px-4 py-3 pr-6"
               :class="{
                 'text-fg-muted hover:bg-neutral-20': !model?.includes(facet.id),
-                'border-b border-b-primary-60 bg-primary-30 font-semibold text-primary-fg': model?.includes(facet.id),
+                'border-b border-b-primary bg-primary-light font-semibold': model?.includes(facet.id),
               }"
               :name="facet.label"
               :value="facet.value || facet.id"
             >
-              <div class="flex flex-1 flex-row flex-nowrap items-center justify-between">
+              <div class="flex flex-1 flex-row flex-nowrap items-center justify-between cursor-pointer">
                 <div class="truncate">
                   {{ facet.label }}
                 </div>
@@ -159,7 +159,7 @@ const panelPreset = {
           </label>
         </li>
         <li v-if="isTruncationNeeded">
-          <button class="grid max-h-12 w-full place-content-center border border-t-0 bg-[#f7f7f7] px-4 py-3 pr-6" @click="toggleFacetsTruncation">
+          <button class="grid max-h-12 w-full place-content-center border border-t-0 bg-[#f7f7f7] px-4 py-3 pr-6 cursor-pointer" @click="toggleFacetsTruncation">
             <i v-if="isTruncated" class="icon-[ph--caret-down]" />
             <i v-else class="icon-[ph--caret-up]" />
           </button>

@@ -20,7 +20,7 @@
   <div class="grid w-full place-content-center">
     <Paginator
         v-model:first="searchParams.queryParams.page.value"
-        class="rounded-sm"
+        class="rounded-sm cursor-pointer"
         :rows="1"
         :total-records="getSearchResultsPagesCount"
     />

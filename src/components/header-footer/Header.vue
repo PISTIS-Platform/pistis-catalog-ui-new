@@ -8,7 +8,7 @@ const visible = ref(false)
 </script>
 
 <template>
-  <header class=" border-gray-200 bg-white">
+  <header class=" border-gray-200 bg-header-bg text-header-bg-text">
     <div class="flex justify-between gap-3 lg:container lg:px-8 py-5 items-center px-8 mx-auto">
       <RouterLink class="block" to="/">
         <div class="brand">
