@@ -27,5 +27,5 @@ const props = defineProps<{
         </div>
       </div>
     </div>
-  </RouterLink>
+  </router-link>
 </template>
