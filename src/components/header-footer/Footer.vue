@@ -26,17 +26,17 @@ const loginLinks = [
   <footer class="bg-footer-bg text-footer-bg-text py-16 px-8">
     <div class="space-y-32 container mx-auto max-w-7xl">
       <!-- Main Footer Content -->
-      <div class="flex flex-col md:flex-row flex-wrap xl:gap-10 gap-x-10 gap-y-20 justify-between">
+      <div class="flex flex-col flex-wrap justify-between gap-x-10 gap-y-20 md:flex-row xl:gap-10">
         <!-- Seiten Section -->
         <div class="mr-10 w-full md:w-3/12 xl:w-2/12">
-          <h3 class="font-semibold text-xl mb-4">
+          <h3 class="mb-4 text-xl font-semibold">
             Sitemap
           </h3>
           <ul class="flex flex-col gap-0">
             <li
-                v-for="link in seitenLinks"
-                :key="link.text"
-                class="text-copy-sm"
+              v-for="link in seitenLinks"
+              :key="link.text"
+              class="text-copy-sm"
             >
             <template v-if="link.to.startsWith('http')">
                 <a
@@ -62,14 +62,14 @@ const loginLinks = [
 
         <!-- Wo du uns findest Section -->
         <div class="w-full md:w-3/12 xl:w-2/12">
-          <h3 class="font-semibold text-xl mb-4">
+          <h3 class="mb-4 text-xl font-semibold">
             Social Media
           </h3>
           <ul class="flex flex-col gap-0">
             <li
-                v-for="link in socialLinks"
-                :key="link.text"
-                class="text-copy-sm"
+              v-for="link in socialLinks"
+              :key="link.text"
+              class="text-copy-sm"
             >
               <a
                   :href="link.href"
@@ -84,14 +84,14 @@ const loginLinks = [
 
         <!-- Rechtliches Section -->
         <div class="mr-10 w-full md:w-3/12 xl:w-2/12">
-          <h3 class="font-semibold text-xl mb-4">
+          <h3 class="mb-4 text-xl font-semibold">
             Legal
           </h3>
           <ul class="flex flex-col gap-0">
             <li
-                v-for="link in rechtlichesLinks"
-                :key="link.text"
-                class="text-copy-sm"
+              v-for="link in rechtlichesLinks"
+              :key="link.text"
+              class="text-copy-sm"
             >
               <RouterLink
                   :to="link.to"
@@ -107,9 +107,9 @@ const loginLinks = [
         <div class="w-full md:w-3/12 xl:w-2/12">
           <ul class="flex flex-col gap-4">
             <li
-                v-for="link in loginLinks"
-                :key="link.text"
-                class="text-copy-sm"
+              v-for="link in loginLinks"
+              :key="link.text"
+              class="text-copy-sm"
             >
               <RouterLink
                   :to="link.to"

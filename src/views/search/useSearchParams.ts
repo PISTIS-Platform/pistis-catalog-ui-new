@@ -1,9 +1,9 @@
 import type { MaybeRefOrGetter } from 'vue'
+import { useDcatApSearch } from '@/sdk'
 import { syncRef } from '@vueuse/core'
 import { useRouteQuery } from '@vueuse/router'
 import { computed, ref, toValue } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import { useDcatApSearch } from '@/sdk';
 
 export function useSearchParams(locale?: MaybeRefOrGetter) {
   const { refSyncedWithRouteQuery } = useDcatApSearch()

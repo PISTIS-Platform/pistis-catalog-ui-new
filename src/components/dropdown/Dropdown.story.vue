@@ -7,7 +7,7 @@ import DropdownItem from './DropdownItem.vue'
   <Story
     title="Components/Dropdown"
   >
-    <div class="grid place-content-center w-full h-96 p-4">
+    <div class="grid h-96 w-full place-content-center p-4">
       <div class="flex flex-col gap-4">
         <Dropdown label="Beschreibung speichern">
           <DropdownItem as="a" href="//example.org" target="_blank">

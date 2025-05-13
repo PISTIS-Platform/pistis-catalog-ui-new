@@ -22,7 +22,7 @@ const data = ref(table)
 
 <template>
   <Story title="Components/Property Table">
-    <div class="p-4 bg-white">
+    <div class="bg-white p-4">
       <PropertyTableRow :node="data" />
     </div>
   </Story>

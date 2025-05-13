@@ -99,7 +99,7 @@ function CheckboxFC() {
     class="flex cursor-pointer items-center"
   >
     <CheckboxFC />
-    <div class="ml-2 flex-1 w-full min-w-0 cursor-pointer text-neutral">
+    <div class="ml-2 w-full min-w-0 flex-1 cursor-pointer text-neutral">
       <slot />
     </div>
   </label>

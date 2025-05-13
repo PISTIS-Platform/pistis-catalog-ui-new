@@ -69,7 +69,6 @@ export default {
       'outline-hidden',
       'border border-surface-200 dark:border-surface-700',
 
-
       // Misc
       'appareance-none',
       'cursor-pointer',

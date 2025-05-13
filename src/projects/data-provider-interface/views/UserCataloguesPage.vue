@@ -38,7 +38,7 @@ onMounted(async () => {
 
 <template>
   <div class="catOverview">
-    <div class="d-flex flex-column bg-transparent container-fluid justify-content-between content ">
+    <div class="d-flex flex-column container-fluid justify-content-between content bg-transparent ">
       <h1 class="small-headline">
         My Catalogues
       </h1>

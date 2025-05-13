@@ -44,7 +44,7 @@ const sort = defineModel<string>('sort', { default: 'modified' })
         option-label="name"
         option-value="id"
         placeholder="Select a City"
-        class="w-full md:w-[14rem] items-center rounded-r-none"
+        class="w-full items-center rounded-r-none md:w-56"
       >
         <template #dropdownicon>
           <i class="icon-[ph--caret-down] text-surface-text" />
@@ -54,7 +54,7 @@ const sort = defineModel<string>('sort', { default: 'modified' })
         v-model="checked"
         :off-label="t('kdw.components.sort-split-button.SortSplitButton.toggleButton.descending')"
         :on-label="t('kdw.components.sort-split-button.SortSplitButton.toggleButton.ascending')"
-        class="border-r-0 rounded-l-none"
+        class="rounded-l-none border-r-0"
       >
         <template #icon>
           <i :class="sortDirectionClass" />

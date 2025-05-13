@@ -93,7 +93,7 @@ export default {
 <template>
   <label :for="context.id" class="w-100">
     <button
-      class="btn p-0 w-100 d-flex align-items-center justify-content-between"
+      class="btn w-100 d-flex align-items-center justify-content-between p-0"
       data-cy="collapsible-input-group-button"
       @click.prevent.stop="toggleCollapse"
     >

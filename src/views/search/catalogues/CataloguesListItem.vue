@@ -1,3 +1,15 @@
+<script setup lang="ts">
+import { RouterLink } from 'vue-router'
+
+const props = defineProps<{
+  item: {
+    id: string
+    title: string
+    description: string
+  }
+}>()
+</script>
+
 <template>
   <router-link to="datasets">
     <div class="group relative mx-auto box-border w-full rounded-b-none border-b-[3px]
@@ -15,16 +27,5 @@
         </div>
       </div>
     </div>
-  </router-link>
+  </RouterLink>
 </template>
-
-<script setup lang="ts">
-import {RouterLink} from "vue-router";
-const props = defineProps<{
-  item: {
-    id: string,
-    title: string,
-    description: string
-  }
-}>();
-</script>

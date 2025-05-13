@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import Footer from './components/header-footer/Footer.vue'
+import Header from './components/header-footer/Header.vue'
+</script>
+
 <template>
   <div class="flex min-h-screen flex-col">
     <Header />
@@ -7,8 +12,3 @@
     <Footer class="mt-auto" />
   </div>
 </template>
-
-<script setup lang="ts">
-import Header from './components/header-footer/Header.vue';
-import Footer from './components/header-footer/Footer.vue';
-</script>

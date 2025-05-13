@@ -1,17 +1,18 @@
 import i18n from '@/i18n'
+import router from '@/router.ts'
 import { defaultConfig, plugin as FormKitPlugin } from '@formkit/vue'
 import { plugin as piveauPlugin } from '@piveau/sdk-vue'
 import { de } from '@piveau/sdk-vue/locale'
 import { QueryClient, VueQueryPlugin } from '@tanstack/vue-query'
-import { createPinia } from 'pinia'
 
+import { createPinia } from 'pinia'
 import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 import PrimeVue from 'primevue/config'
+
 import { createApp } from 'vue'
 
 // @ts-expect-error legacy stuff
 import { createStore } from 'vuex'
-
 import App from './App.vue'
 import KDW from './components/base/preset/index.js'
 import config from './formkit.config.js'
@@ -19,9 +20,8 @@ import AuthStorePlugin from './plugins/authStorePlugin'
 import authStore from './projects/data-provider-interface/store/authStore'
 import dpiStore from './projects/data-provider-interface/store/dpiStore'
 import snackbarStore from './projects/data-provider-interface/store/snackbarStore'
-import { userConfigShimPlugin } from './projects/data-provider-interface/utils/userConfigShimPlugin'
 
-import router from '@/router.ts'
+import { userConfigShimPlugin } from './projects/data-provider-interface/utils/userConfigShimPlugin'
 import { configureMarked } from './sdk/utils/configureMarked'
 import './assets/stylesheets/reset.css'
 import './assets/stylesheets/fonts.css'

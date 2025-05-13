@@ -97,7 +97,7 @@ onMounted(async () => {
 
       <ul v-show="showList" ref="dropdownList" class="autocompleteResultList selectListFK catSelectList">
         <li
-          v-for="match in filteredCatalogs" :key="match" class="p-2 border-b border-gray-200 data-[selected=true]:bg-blue-100 choosableItemsAC"
+          v-for="match in filteredCatalogs" :key="match" class="choosableItemsAC border-b border-gray-200 p-2 data-[selected=true]:bg-blue-100"
           @click="setvalue(match)"
         >
           {{
@@ -105,7 +105,7 @@ onMounted(async () => {
         </li>
         <li
           v-for="idMatch in userCats" v-if="filteredCatalogs.length === 0" :key="idMatch"
-          class="p-2 border-b border-gray-200 data-[selected=true]:bg-blue-100 choosableItemsAC"
+          class="choosableItemsAC border-b border-gray-200 p-2 data-[selected=true]:bg-blue-100"
           @click="setvalue(idMatch)"
         >
           {{

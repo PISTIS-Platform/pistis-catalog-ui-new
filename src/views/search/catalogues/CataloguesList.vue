@@ -1,27 +1,28 @@
+<script setup lang="ts">
+import SearchItems from '@/views/search/SearchItems.vue'
+import CataloguesListItem from './CataloguesListItem.vue'
+
+const props = defineProps<{
+  catalogues: []
+  getSearchResultsPagesCount: number
+  isLoading: boolean
+  isFetching: boolean
+  showOnlyPublic: boolean
+}>()
+</script>
+
 <template>
-  <search-items
-      :items="catalogues"
-      :getSearchResultsPagesCount="getSearchResultsPagesCount"
-      :isLoading="isLoading"
-      :isFetching="isFetching"
-      :showOnlyPublic="showOnlyPublic"
+  <SearchItems
+    :items="catalogues"
+    :get-search-results-pages-count="getSearchResultsPagesCount"
+    :is-loading="isLoading"
+    :is-fetching="isFetching"
+    :show-only-public="showOnlyPublic"
   >
-    <template v-slot="{item}">
-      <catalogues-list-item
+    <template #default="{ item }">
+      <CataloguesListItem
         :item="item"
       />
     </template>
-  </search-items>
+  </SearchItems>
 </template>
-
-<script setup lang="ts">
-import SearchItems from "@/views/search/SearchItems.vue";
-import CataloguesListItem from "./CataloguesListItem.vue";
-const props = defineProps<{
-  catalogues: [],
-  getSearchResultsPagesCount: number,
-  isLoading: boolean,
-  isFetching: boolean,
-  showOnlyPublic: boolean
-}>();
-</script>

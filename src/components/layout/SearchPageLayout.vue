@@ -5,7 +5,7 @@
     <div
       name="sidebar"
       class="relative hidden sm:block sm:max-w-96 lg:min-w-[420px]"
-    > 
+    >
       <div
         name="stickysidey"
         class="sticky top-0 h-screen"
