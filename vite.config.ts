@@ -53,7 +53,6 @@ export default defineConfig(({ mode }) => {
     resolve: {
       alias: {
         '@': fileURLToPath(new URL('./src', import.meta.url)),
-        'vue': fileURLToPath(new URL('./node_modules/vue', import.meta.url)),
         '@config': fileURLToPath(new URL('./config', import.meta.url)),
       },
     },
