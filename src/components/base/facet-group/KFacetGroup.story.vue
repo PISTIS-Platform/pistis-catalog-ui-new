@@ -35,7 +35,7 @@ const items = ref([])
 
 <template>
   <Story title="Components/Facets/Facet Group">
-    <div class="flex flex-col gap-4 bg-white max-w-[20rem]">
+    <div class="flex max-w-[20rem] flex-col gap-4 bg-white">
       <KFacetGroup
         v-model="items"
         title="Kategorien"

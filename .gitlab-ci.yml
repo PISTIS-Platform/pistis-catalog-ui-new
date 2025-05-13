@@ -28,7 +28,7 @@ build:
   rules:
     - !reference [.rules, deploy-branch]
 
-#deploy to staging:
+# deploy to staging:
 #  stage: deploy
 #  variables:
 #    TF_IMAGES: vars/images.tfvars

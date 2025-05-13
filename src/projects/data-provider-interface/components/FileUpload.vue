@@ -242,20 +242,20 @@ export default {
 <template>
   <div class="position-relative w-100 ">
     <FormKit
-      name="mode" v-model="inputChoice" validation="required" type="text" class="selectInputField formkit-inner "
+      v-model="inputChoice" name="mode" validation="required" type="text" class="selectInputField formkit-inner "
       readonly="readonly" :placeholder="t('message.dataupload.info.preferredInput')" :validation-messages="{
         required: t('message.dataupload.info.preferredInput'),
       }" @click="triggerDropdown()"
     />
     <ul v-if="drop.active" ref="fLoad" class="selectListUpload fileuploadList">
       <li
-        class="p-2 border-b border-gray-200 data-[selected=true]:bg-blue-100 choosableItemsAC"
+        class="choosableItemsAC border-b border-gray-200 p-2 data-[selected=true]:bg-blue-100"
         @click="uploadFileSwitch = true; toggleUploadUrl()"
       >
         {{ $t('message.dataupload.datasets.conditional.fileupload') }}
       </li>
       <li
-        class="p-2 border-b border-gray-200 data-[selected=true]:bg-blue-100 choosableItemsAC"
+        class="choosableItemsAC border-b border-gray-200 p-2 data-[selected=true]:bg-blue-100"
         @click="uploadURL = true; toggleUploadFileSwitch()"
       >
         {{ $t('message.dataupload.datasets.conditional.URL') }}
@@ -272,7 +272,7 @@ export default {
     />
   </div>
   <div
-    v-if="uploadFileSwitch" ref="fileupload" class="p-3 w-100"
+    v-if="uploadFileSwitch" ref="fileupload" class="w-100 p-3"
     :class="`formkit-input-element formkit-input-element--${context.type}`" :data-type="context.type" v-bind="$attrs"
   >
     <input v-model="context.model" type="text" hidden @blur="context.blurHandler">
@@ -296,11 +296,11 @@ export default {
         context.model }}</a>
     </p>
     <div v-if="validExtensions && validExtensions.length" class="allowedTypesWrapper">
-      <p v-if="!success" class="errorSub my-3 d-flex ">
+      <p v-if="!success" class="errorSub d-flex my-3 ">
         Allowed types:
       </p>
-      <div class="d-flex flex-wrap w-100">
-        <span v-for="types in validExtensions" :key="types" class="mr-1 mb-1 allowedFTypes ">
+      <div class="d-flex w-100 flex-wrap">
+        <span v-for="types in validExtensions" :key="types" class="allowedFTypes mb-1 mr-1 ">
           {{ types }}
         </span>
       </div>

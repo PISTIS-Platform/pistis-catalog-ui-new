@@ -44,7 +44,7 @@ const resolvedData = computed(() => {
 </script>
 
 <template>
-  <div class="border-b bg-bg-lighter bg-white p-4 rounded-sm mb-3">
+  <div class="mb-3 rounded-sm border-b bg-bg-lighter bg-white p-4">
     <div class="py-12">
       <div class="flex items-start justify-between">
         <Typography as="h2" variant="by-heading-4" class="text-primary-fg">

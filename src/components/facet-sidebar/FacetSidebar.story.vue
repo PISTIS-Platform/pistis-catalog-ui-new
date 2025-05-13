@@ -4,7 +4,7 @@ import FacetSidebar from './FacetSidebar.vue'
 
 <template>
   <Story title="Components/Facet Sidebar">
-    <div class="w-[20rem] h-[60rem] bg-white">
+    <div class="h-[60rem] w-80 bg-white">
       <FacetSidebar />
     </div>
   </Story>

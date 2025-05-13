@@ -134,11 +134,11 @@ const {
             <h2 class="text-[2.5rem] font-bold leading-[3rem] text-primary-100">
               Distributionen
             </h2>
-            <KTag interactive class="rounded-full text-white black-bg">
+            <KTag interactive class="black-bg rounded-full text-white">
               {{
                 getFormattedDistributions?.length
               }}
-            </KTag> 
+            </KTag>
           </div>
           <div class="h-px w-full bg-bg-divider" />
           <div name="distribution-cards" class="relative">
@@ -153,7 +153,7 @@ const {
                 <div
                   v-if="i === truncatedFormattedDistributions.length - 1 && isDistributionsTruncated"
                   name="distribution-card-overlay"
-                  class="absolute left-0 top-0 size-full bg-linear-to-b from-transparent from-0% to-white to-55%"
+                  class="bg-linear-to-b absolute left-0 top-0 size-full from-transparent from-0% to-white to-55%"
                 >
                   <div class="absolute bottom-0 flex w-full flex-row items-center justify-center">
                     <div>
@@ -184,7 +184,7 @@ const {
         </div>
         <div class="h-px w-full bg-bg-divider" />
         <div class="space-y-4">
-          <div class="flex flex-col gap-4 pt-12 bg-white p-4">
+          <div class="flex flex-col gap-4 bg-white p-4 pt-12">
             <Typography variant="by-heading-4" class="">
               Zusätzliche Informationen
             </Typography>

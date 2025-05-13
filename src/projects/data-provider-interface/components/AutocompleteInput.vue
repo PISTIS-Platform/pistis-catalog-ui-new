@@ -350,7 +350,7 @@ function removeMultipleProperty(e) {
           </div>
           <ul v-show="activeList" ref="dropdownList" class="autocompleteResultList">
             <li
-              v-for="match in matches" :key="match" class="p-2 border-b border-gray-200 data-[selected=true]:bg-blue-100 choosableItemsAC"
+              v-for="match in matches" :key="match" class="choosableItemsAC border-b border-gray-200 p-2 data-[selected=true]:bg-blue-100"
               @click="setValue(match); activeList = !activeList"
             >
               {{ match.name }}

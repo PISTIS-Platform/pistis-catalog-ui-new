@@ -117,7 +117,7 @@ const hasIcon = computed(() => props.icon || props.iconRight || props.iconLeft)
   >
     <template v-if="hasIcon">
       <span
-        class="inline-flex flex-row flex-nowrap min-w-fit gap-2 items-center" :class="{
+        class="inline-flex min-w-fit flex-row flex-nowrap items-center gap-2" :class="{
           'flex-row-reverse': props.iconRight,
         }"
       >

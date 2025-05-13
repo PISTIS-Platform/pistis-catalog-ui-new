@@ -66,13 +66,13 @@ export default {
     <!-- INFO TABLE -->
     <div class="mt-5">
       <div class="row">
-        <div class="col-10 offset-1 py-2 bg-white">
+        <div class="col-10 offset-1 bg-white py-2">
           <h2 class="heading">
             {{ $t('message.datasetDetails.additionalInfo') }}
           </h2>
         </div>
         <div class="col-10 offset-1">
-          <table class="table table-borderless table-responsive pl-3 bg-light">
+          <table class="table-borderless table-responsive bg-light table pl-3">
             <div
               v-for="(value, name, index) in tableProperties"
               :key="index"

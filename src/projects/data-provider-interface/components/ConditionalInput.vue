@@ -60,7 +60,7 @@ onClickOutside(I1, event => showSelect.value = false)
     >
       <svg
         xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor"
-        class="bi bi-info-circle mx-3 mb-3 mt-1 infoboxI " viewBox="0 0 16 16"
+        class="bi bi-info-circle infoboxI mx-3 mb-3 mt-1 " viewBox="0 0 16 16"
       >
         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
         <path
@@ -102,7 +102,7 @@ onClickOutside(I1, event => showSelect.value = false)
     >
       <svg
         xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor"
-        class="bi bi-info-circle mx-3 mb-3 mt-1 infoboxI" viewBox="0 0 16 16"
+        class="bi bi-info-circle infoboxI mx-3 mb-3 mt-1" viewBox="0 0 16 16"
       >
         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
         <path
@@ -130,7 +130,7 @@ onClickOutside(I1, event => showSelect.value = false)
           <div v-if="showSelect">
             <ul class="selectListConditional">
               <li
-                v-for="el, index in props.context.attrs.selection" class="p-2 border-b border-gray-200 "
+                v-for="el, index in props.context.attrs.selection" class="border-b border-gray-200 p-2 "
                 @click="selectMode(el, $t(`message.dataupload.datasets.conditional.${el}`))"
               >
                 {{
@@ -167,7 +167,7 @@ onClickOutside(I1, event => showSelect.value = false)
           <div v-if="showSelect">
             <ul class="selectListConditional">
               <li
-                v-for="el, index in props.context.attrs.selection" class="p-2 border-b border-gray-200 "
+                v-for="el, index in props.context.attrs.selection" class="border-b border-gray-200 p-2 "
                 @click="selectMode(el, $t(`message.dataupload.datasets.conditional.${el}`))"
               >
                 {{

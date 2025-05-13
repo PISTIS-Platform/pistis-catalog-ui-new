@@ -151,7 +151,7 @@ export default {
           </div>
           <div class="modal-body">
             <h3>{{ $t('message.dataupload.deletemodal.areyousure') }}</h3>
-            <div class="mt-3 d-flex justify-content-start align-items-center" />
+            <div class="d-flex justify-content-start align-items-center mt-3" />
           </div>
           <div class="modal-footer">
             <button id="cancel" data-dismiss="modal">

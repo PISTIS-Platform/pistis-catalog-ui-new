@@ -26,7 +26,7 @@ const computedWrapperComponent = computed(() => {
   <component
     :is="computedWrapperComponent"
     :to="props.to || '/'"
-    class="group relative flex cursor-pointer gap-8 overflow-clip rounded-lg border border-bg-divider bg-white p-4 transition-colors hover:bg-bg-darker focus:outline-hidden focus:outline-offset-0 focus:ring-3 focus:ring-primary-400/50"
+    class="focus:outline-hidden focus:ring-3 focus:ring-primary-400/50 group relative flex cursor-pointer gap-8 text-clip rounded-lg border border-bg-divider bg-white p-4 transition-colors hover:bg-bg-darker focus:outline-offset-0"
   >
     <div>
       <div class="flex-1">
@@ -36,7 +36,7 @@ const computedWrapperComponent = computed(() => {
               <Typography
                 as="h3"
                 variant="header-3"
-                class="group-hover:underline text-primary-800"
+                class="text-primary-800 group-hover:underline"
               >
                 {{ props.title }}
               </Typography>

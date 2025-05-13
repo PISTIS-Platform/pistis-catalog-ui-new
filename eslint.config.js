@@ -3,6 +3,4 @@ import tailwind from 'eslint-plugin-tailwindcss'
 
 export default antfu({
 
-},
-...tailwind.configs['flat/recommended'],
-)
+}, ...tailwind.configs['flat/recommended'])

@@ -30,7 +30,7 @@ const selectValue = defineModel<string>('select')
       option-label="label"
       option-value="value"
       :placeholder="props.selectPlaceholder"
-      class="md:w-[14rem] rounded-l-none"
+      class="rounded-l-none md:w-56"
     />
   </InputGroup>
 </template>

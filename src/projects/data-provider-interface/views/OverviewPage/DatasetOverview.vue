@@ -179,7 +179,7 @@ export default {
         </p>
       </div>
       <div class="">
-        <table class="table table-borderless table-responsive  bg-light disOverview p-3">
+        <table class="table-borderless table-responsive bg-light  disOverview table p-3">
           <div v-for="(value, name, index) in tableProperties" :key="index">
             <PropertyEntry
               profile="datasets" :data="values" :property="name" :value="value"
@@ -210,7 +210,7 @@ export default {
         >
           <small
             :title="element"
-            class="d-inline-block w-100 p-2 ml-1 rounded-pill text-center text-white text-truncate bg-primary"
+            class="d-inline-block w-100 rounded-pill text-truncate ml-1 bg-primary p-2 text-center text-white"
           >
             {{ element['@value'] }}
           </small>

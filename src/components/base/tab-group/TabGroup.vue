@@ -46,17 +46,17 @@ function setActiveTab(tabId: string) {
     <!-- Tab Navigation -->
     <div v-if="tabs.length > 1" class="border-b border-surface-50">
       <nav
-        class="flex -mb-px"
+        class="-mb-px flex"
         aria-label="Tabs"
       >
         <button
           v-for="tab in tabs"
           :key="tab.id"
           :disabled="tab.disabled"
-          class="w-full font-semibold border-b-0 py-4 px-6 text-center text-sm rounded-t-lg transition-colors duration-200" :class="[
+          class="w-full rounded-t-lg border-b-0 px-6 py-4 text-center text-sm font-semibold transition-colors duration-200" :class="[
             activeTab === tab.id
-              ? 'active:border-primary text-primary bg-white'
-              : 'border-transparent hover:text-fg/90 bg-surface-100 hover:bg-surface-50 text-fg-muted',
+              ? 'bg-white text-primary active:border-primary'
+              : 'hover:text-fg/90 border-transparent bg-surface-100 text-fg-muted hover:bg-surface-50',
           ]"
           :aria-current="activeTab === tab.id ? 'page' : undefined"
           :aria-selected="activeTab === tab.id"
@@ -74,7 +74,7 @@ function setActiveTab(tabId: string) {
         v-for="tab in tabs"
         v-show="activeTab === tab.id"
         :key="tab.id"
-        class="prose max-w-none py-10 px-6 bg-white rounded-sm"
+        class="prose max-w-none rounded-sm bg-white px-6 py-10"
         role="tabpanel"
         :aria-labelledby="`tab-${tab.id}`"
       >

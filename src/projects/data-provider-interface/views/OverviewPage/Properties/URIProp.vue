@@ -117,8 +117,8 @@ export default {
     {{ nameOfProperty }}
   </td>
   <!-- MULTIPLE URIs -->
-  <td v-if="value.type === 'multiURI'" class="flex-wrap d-flex multiURI">
-    <div v-for="(el, index) in data[property]" :key="index" class="border shadow-xs p-2 mb-1 mr-1">
+  <td v-if="value.type === 'multiURI'" class="d-flex multiURI flex-wrap">
+    <div v-for="(el, index) in data[property]" :key="index" class="shadow-xs mb-1 mr-1 border p-2">
       {{ el.name }}
     </div>
   </td>

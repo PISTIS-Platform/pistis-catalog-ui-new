@@ -152,7 +152,7 @@ export default {
 <template>
   <div class="col-12">
     <!-- LANGUAGE SELECTOR -->
-    <div class="mt-5 mb-0">
+    <div class="mb-0 mt-5">
       <div class="row">
         <div class="col-10 ">
           {{ $t('message.dataupload.info.selectDisplayLanguage') }}:

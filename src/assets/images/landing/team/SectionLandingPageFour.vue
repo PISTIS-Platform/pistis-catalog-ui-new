@@ -14,7 +14,7 @@ export default defineComponent({
     <template #title>
       oc.bydata, das open bydata competence center
     </template>
-    <div class="community-strength-container d-flex flex-wrap flex-row text-center justify-content-center">
+    <div class="community-strength-container d-flex justify-content-center flex-row flex-wrap text-center">
       <div class="community-strength w-100">
         <p class="by-copy-large-regular text-by-neutral-5 text-center">
           Als Kompetenzzentrum für das Thema Open Data in Bayern stärken
@@ -25,13 +25,13 @@ export default defineComponent({
         </p>
       </div>
       <div class="d-flex flex-column align-items-center justify-content-center">
-        <div class="avatar-container avatar-ocbydata d-flex flex-wrap justify-content-center w-100">
+        <div class="avatar-container avatar-ocbydata d-flex justify-content-center w-100 flex-wrap">
           <img class="avatar" src="../../assets/img/Luis.png" alt="Luis Moßburger auf einem isometrischen Muster">
           <img class="avatar" src="../../assets/img/Ruth.png" alt="Ruth Neeser auf einem isometrischen Muster">
           <img class="avatar" src="../../assets/img/Mitarbyterin.png" alt="Ein isometrisches Muster">
           <img class="avatar" src="../../assets/img/Bianca.png" alt="Bianca Sammer auf einem isometrischen Muster">
         </div>
-        <div class="avatar-container avatar-byte d-flex flex-wrap justify-content-center w-100 mt-5 mb-8">
+        <div class="avatar-container avatar-byte d-flex justify-content-center w-100 mb-8 mt-5 flex-wrap">
           <img class="d-none avatar" src="../../assets/img/Kai.png" alt="Kai Wanschura auf einem blauen Kreis">
           <img class="avatar" src="../../assets/img/Julia.png" alt="Julia Radermacher auf einem blauen Kreis">
           <img class="avatar" src="../../assets/img/Patryk.png" alt="Patryk Brzoza auf einem blauen Kreis">
