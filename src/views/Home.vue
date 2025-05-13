@@ -14,8 +14,8 @@
       </h1>
 
       <p class="mt-4 text-base text-pretty text-gray-700 sm:text-lg/relaxed">
-        <strong>piveau</strong> is a comprehensive data management ecosystem that streamlines the entire <strong>data lifecycle </strong>— from
-            <strong>collection</strong> and <strong>aggregation</strong> to <strong>publication</strong> and <strong>reuse</strong>.
+        <strong>piveau</strong> is a comprehensive <strong> data management ecosystem </strong>that streamlines the entire data lifecycle — from
+            <strong>collection and aggregation to publication and reuse</strong>.
       </p>
 
       <div class="mt-4 flex justify-center gap-4 sm:mt-6">
@@ -23,14 +23,14 @@
           class="inline-block rounded-sm border  bg-primary px-5 py-3 font-medium text-white shadow-xs transition-colors hover:bg-primary-hover"
           href="/datasets"
         >
-          Explore Datasets
+          Explore Demo
         </a>
 
         <button
               class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-3 px-6 focus:outline-hidden hover:bg-gray-200 rounded-sm text-lg">
           
               <a
-    href="https://doc.piveau.eu/general/quick-start/"
+    href="https://doc.piveau.eu/general/introduction/"
     target="_blank"
     rel="noopener noreferrer"
     class="inline-block w-full h-full"
