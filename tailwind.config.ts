@@ -9,7 +9,6 @@ export default {
   theme: {
     fontFamily: {
       sans: ['"Inter Variable"', 'sans-serif'],
-
       // headings
       display: ['"Inter Variable", "sans-serif"'],
     },
