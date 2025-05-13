@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import type { FacetList } from '../../utils/types'
 import { useVModel } from '@vueuse/core'
-import ScrollPanel from 'primevue/scrollpanel'
 import { toRefs } from 'vue'
 import { useI18n } from 'vue-i18n'
 
@@ -29,24 +28,22 @@ const model = useVModel(props, 'modelValue', emit, { passive: true })
 </script>
 
 <template>
-
-    <div class="flex flex-col gap-6 pr-10 py-8 lg:mt-48">
-      <div
-        v-if="ghost"
-        class="h-[720px] w-full animate-pulse rounded-lg border bg-surface-200"
-      />
-      <template v-else>
-        <div class="flex flex-col gap-4 w-full">
-          <KFacetGroup
-            v-for="facet of facets.filter((facet) => facet.items.length > 0)"
-            :id="`facet-group-${facet.id}`"
-            :key="`facet-group-${facet.id}`"
-            v-model="model[facet.id]"
-            :title="facet.label"
-            :facets="facet.items"
-          />
-        </div>
-      </template>
-    </div>
-
+  <div class="flex flex-col gap-6 py-8 pr-10 lg:mt-48">
+    <div
+      v-if="ghost"
+      class="h-[720px] w-full animate-pulse rounded-lg border bg-surface-200"
+    />
+    <template v-else>
+      <div class="flex w-full flex-col gap-4">
+        <KFacetGroup
+          v-for="facet of facets.filter((facet) => facet.items.length > 0)"
+          :id="`facet-group-${facet.id}`"
+          :key="`facet-group-${facet.id}`"
+          v-model="model[facet.id]"
+          :title="facet.label"
+          :facets="facet.items"
+        />
+      </div>
+    </template>
+  </div>
 </template>

@@ -60,7 +60,7 @@ function deleteAllDistributions() {
   <div name="distribution-stepper-list" class="distributionsListClass">
     <FormKit type="list" name="distributionList">
       <section v-for="(dist, index) in list.disList" :key="index" class="distributionOuter">
-        <div class="d-flex m-4 align-items-center justify-content-between">
+        <div class="d-flex align-items-center justify-content-between m-4">
           <h2 class="m-0">
             Distribution {{ index + 1 }}
           </h2>

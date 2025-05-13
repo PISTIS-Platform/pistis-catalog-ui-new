@@ -176,7 +176,7 @@ export default {
     </div>
     <div v-else>
       <div class=" w-100 d-flex">
-        <div class="d-flex position-relative m-3 w-100">
+        <div class="d-flex position-relative w-100 m-3">
           <input
             id="I1" type="text"
             class="selectInputField formkit-inner" readonly="readonly" placeholder="Select input method"
@@ -184,20 +184,20 @@ export default {
           >
           <ul v-show="showTable.first" ref="I1" class="spatialListUpload">
             <li
-              class="p-2 border-b border-gray-200 choosableItemsAC"
+              class="choosableItemsAC border-b border-gray-200 p-2"
               @click="activeInput('showTable'); man = true; if (vocSearch) { vocSearch = false; };"
             >
               Manually submit information
             </li>
             <li
-              class="p-2 border-b border-gray-200 choosableItemsAC"
+              class="choosableItemsAC border-b border-gray-200 p-2"
               @click="activeInput('showTable'); vocSearch = true; if (man) { man = false }"
             >
               Choose from vocabulary
             </li>
           </ul>
         </div>
-        <div v-if="man" class="d-flex position-relative m-3 w-100">
+        <div v-if="man" class="d-flex position-relative w-100 m-3">
           <label class="w-100"> Provide an URL
             <input
               type="URL" class="selectInputField formkit-inner" placeholder="URL"
@@ -205,7 +205,7 @@ export default {
             >
           </label>
         </div>
-        <div v-if="vocSearch" class="d-flex position-relative m-3 w-100">
+        <div v-if="vocSearch" class="d-flex position-relative w-100 m-3">
           <label class="w-100"> Choose type of vocabulary
             <input
               id="I2" type="text" class="selectInputField formkit-inner" readonly="readonly"
@@ -214,7 +214,7 @@ export default {
           </label>
           <ul v-if="showTable.second" ref="I2" class="spatialListUpload">
             <li
-              v-for="el in listOfVoc" :key="el" class="p-2 border-b border-gray-200 choosableItemsAC"
+              v-for="el in listOfVoc" :key="el" class="choosableItemsAC border-b border-gray-200 p-2"
               @click=" closeAll(); el.active = !el.active; activeInput('showVocTable'); inputText = ''; voc = el.item"
             >
               {{ el.item }}
@@ -232,7 +232,7 @@ export default {
           </label>
           <ul v-if="showTable.third && el.active" ref="I3" class="spatialListUpload">
             <li
-              v-for="el in matches" :key="el" class="p-2 border-b border-gray-200 choosableItemsAC"
+              v-for="el in matches" :key="el" class="choosableItemsAC border-b border-gray-200 p-2"
               @click="props.context.node.input(el); inputText = el.name; activeInput('showVocEntries'); showTable.third = false; saveToLocal(el)"
             >
               {{ el.name }}

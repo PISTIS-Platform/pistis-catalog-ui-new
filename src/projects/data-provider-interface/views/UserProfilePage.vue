@@ -20,7 +20,7 @@ export default {
 </script>
 
 <template>
-  <div class="d-flex flex-column bg-transparent container-fluid justify-content-between content">
+  <div class="d-flex flex-column container-fluid justify-content-between content bg-transparent">
     <h1 class="small-headline">
       My Profile
     </h1>
@@ -29,7 +29,7 @@ export default {
         <div class="col-md-12">
           <strong class="table-header">User Information</strong><br>
           <div class="table-responsive">
-            <table class="table table-user-information">
+            <table class="table-user-information table">
               <tbody>
                 <tr>
                   <td>

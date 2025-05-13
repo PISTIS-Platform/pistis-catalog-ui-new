@@ -91,7 +91,7 @@ export default {
 </script>
 
 <template>
-  <div class="d-flex flex-column bg-transparent container-fluid justify-content-between content">
+  <div class="d-flex flex-column container-fluid justify-content-between content bg-transparent">
     <div v-if="isLoading" class="loading-spinner ml-3" />
     <div v-else>
       <div class="d-flex justify-content-between">

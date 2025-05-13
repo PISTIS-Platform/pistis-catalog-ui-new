@@ -17,30 +17,29 @@ const links = [
 
 <template>
   <div
-      id="thenavguy"
-      class="nav-links"
-      :class="{ vertical: direction === 'vertical' }"
+    id="thenavguy"
+    class="nav-links"
+    :class="{ vertical: direction === 'vertical' }"
   >
     <RouterLink
-        v-for="(link, index) in links"
-        :key="index"
-        v-slot="{ href, navigate, isActive, isExactActive }"
-        :to="link.to"
+      v-for="(link, index) in links"
+      :key="index"
+      v-slot="{ href, navigate, isActive, isExactActive }"
+      :to="link.to"
     >
       <a
-          class="header-icon-container leading-[1.625rem] text-fg text-base hover:text-primary-hover"
-          :class="{ active: isActive && isExactActive }"
-          :href="href"
-          @click="navigate"
+        class="header-icon-container text-base leading-[1.625rem] text-fg hover:text-primary-hover"
+        :class="{ active: isActive && isExactActive }"
+        :href="href"
+        @click="navigate"
       >
-        {{ link.label? $t(link.label) : link.name }}
+        {{ link.label ? $t(link.label) : link.name }}
       </a>
     </RouterLink>
   </div>
 </template>
 
 <style>
-
 #thenavguy.nav-links {
   display: flex;
   gap: 2.5rem;
@@ -63,7 +62,6 @@ const links = [
 #thenavguy.nav-links a:hover {
   color: var(--primary-hover);
 }
-
 
 #thenavguy.nav-links a.active,
 #thenavguy.nav-links a .active {

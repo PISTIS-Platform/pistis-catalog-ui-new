@@ -159,7 +159,7 @@ export default defineComponent({
       </div>
     </div>
   </FormKit>
-  <div class="m-3 d-flex justify-content-end">
+  <div class="d-flex justify-content-end m-3">
     <button type="button" class="btn btn-secondary" @click="goToPreviousStep(); scrollToTop();">
       {{ $t('message.dataupload.steps.previousDisStep')
       }}

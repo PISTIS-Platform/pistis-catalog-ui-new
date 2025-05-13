@@ -187,13 +187,13 @@ export default {
             <li :key="`distribution${id + 1}`" class="disWrapper">
               <!-- DISTRIBUTIONS FORMAT -->
 
-              <span class=" mb-3 disDetails">
+              <span class=" disDetails mb-3">
                 <span class="row" />
                 <span class="row bg-light mb-2 ">
                   <!-- DISTRIBUTIONS ACCESS URL -->
                   <table
                     v-if="showValue(distribution, 'dcat:accessURL')"
-                    class="table table-borderless table-responsive pl-3 bg-light mb-0"
+                    class="table-borderless table-responsive bg-light mb-0 table pl-3"
                   >
                     <tr v-for="(elem, index) in distribution['dcat:accessURL'] " :key="index">
                       <td class="font-weight-bold w-25">
@@ -206,7 +206,7 @@ export default {
                       </td>
                     </tr>
                   </table>
-                  <table class="table table-borderless table-responsive pl-3 bg-light">
+                  <table class="table-borderless table-responsive bg-light table pl-3">
                     <div v-for="(value, name, index) in tableProperties " :key="index">
                       <PropertyEntry
                         profile="distributions" :data="distributionList[id]"

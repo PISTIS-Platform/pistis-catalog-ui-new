@@ -89,7 +89,7 @@ const panelPreset = {
 <template>
   <Panel
     v-model:collapsed="collapsed"
-    class="flex min-w-64 flex-col bg-white rounded-custom"
+    class="flex min-w-64 flex-col rounded-custom bg-white"
     :pt="panelPreset"
     :pt-options="{ mergeSections: false, mergeProps: false }"
     toggleable

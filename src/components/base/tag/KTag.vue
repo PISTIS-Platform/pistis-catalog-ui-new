@@ -119,7 +119,7 @@ const preset = {
   <component
     :is="isInteractive ? 'button' : 'span'"
     :class="{
-      'focus:ring-3 focus:ring-offset-2 focus:ring-primary-60 rounded-2xl outline-hidden': isInteractive,
+      'focus:ring-3 outline-hidden rounded-2xl focus:ring-primary-60 focus:ring-offset-2': isInteractive,
     }"
     @click.prevent="$emit('click', $event)"
   >
@@ -128,7 +128,7 @@ const preset = {
       :pt="preset"
       :pt-options="{ mergeSections: false, mergeProps: false }"
     >
-      <div class="flex flex-nowrap min-w-fit gap-2 items-center text-primary-100" :class="{ 'flex-row-reverse': props.iconRight }">
+      <div class="flex min-w-fit flex-nowrap items-center gap-2 text-primary-100" :class="{ 'flex-row-reverse': props.iconRight }">
         <PhX v-if="props.removable && !hasIcon" />
         <i v-else-if="hasIcon" :class="props.icon || props.iconLeft || props.iconRight" />
         <slot>

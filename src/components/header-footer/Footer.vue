@@ -21,24 +21,24 @@ const loginLinks = [
 </script>
 
 <template>
-  <footer class="bg-primary-bg text-white py-16 px-8">
-    <div class="space-y-32 container mx-auto max-w-7xl">
+  <footer class="bg-primary-bg px-8 py-16 text-white">
+    <div class="container mx-auto max-w-7xl space-y-32">
       <!-- Main Footer Content -->
-      <div class="flex flex-col md:flex-row flex-wrap xl:gap-10 gap-x-10 gap-y-20 justify-between">
+      <div class="flex flex-col flex-wrap justify-between gap-x-10 gap-y-20 md:flex-row xl:gap-10">
         <!-- Seiten Section -->
         <div class="mr-10 w-full md:w-3/12 xl:w-2/12">
-          <h3 class="font-semibold text-xl mb-4">
+          <h3 class="mb-4 text-xl font-semibold">
             Sitemap
           </h3>
           <ul class="flex flex-col gap-0">
             <li
-                v-for="link in seitenLinks"
-                :key="link.text"
-                class="text-copy-sm"
+              v-for="link in seitenLinks"
+              :key="link.text"
+              class="text-copy-sm"
             >
               <RouterLink
-                  :to="link.to"
-                  class="hover:text-secondary-hover text-white"
+                :to="link.to"
+                class="text-white hover:text-secondary-hover"
               >
                 {{ link.text }}
               </RouterLink>
@@ -48,19 +48,19 @@ const loginLinks = [
 
         <!-- Wo du uns findest Section -->
         <div class="w-full md:w-3/12 xl:w-2/12">
-          <h3 class="font-semibold text-xl mb-4">
+          <h3 class="mb-4 text-xl font-semibold">
             Social Media
           </h3>
           <ul class="flex flex-col gap-0">
             <li
-                v-for="link in socialLinks"
-                :key="link.text"
-                class="text-copy-sm"
+              v-for="link in socialLinks"
+              :key="link.text"
+              class="text-copy-sm"
             >
               <a
-                  :href="link.href"
-                  target="_blank"
-                  class="hover:text-secondary-hover text-white"
+                :href="link.href"
+                target="_blank"
+                class="text-white hover:text-secondary-hover"
               >
                 {{ link.text }}
               </a>
@@ -70,18 +70,18 @@ const loginLinks = [
 
         <!-- Rechtliches Section -->
         <div class="mr-10 w-full md:w-3/12 xl:w-2/12">
-          <h3 class="font-semibold text-xl mb-4">
+          <h3 class="mb-4 text-xl font-semibold">
             Legal
           </h3>
           <ul class="flex flex-col gap-0">
             <li
-                v-for="link in rechtlichesLinks"
-                :key="link.text"
-                class="text-copy-sm"
+              v-for="link in rechtlichesLinks"
+              :key="link.text"
+              class="text-copy-sm"
             >
               <RouterLink
-                  :to="link.to"
-                  class="hover:text-primary-hover text-white"
+                :to="link.to"
+                class="text-white hover:text-primary-hover"
               >
                 {{ link.text }}
               </RouterLink>
@@ -93,13 +93,13 @@ const loginLinks = [
         <div class="w-full md:w-3/12 xl:w-2/12">
           <ul class="flex flex-col gap-4">
             <li
-                v-for="link in loginLinks"
-                :key="link.text"
-                class="text-copy-sm"
+              v-for="link in loginLinks"
+              :key="link.text"
+              class="text-copy-sm"
             >
               <RouterLink
-                  :to="link.to"
-                  class="hover:text-secondary-hover text-white font-bold"
+                :to="link.to"
+                class="font-bold text-white hover:text-secondary-hover"
               >
                 {{ link.text }}
               </RouterLink>

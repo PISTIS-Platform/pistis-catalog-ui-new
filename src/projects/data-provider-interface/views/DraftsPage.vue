@@ -103,12 +103,12 @@ export default {
 
 <template>
   <!-- TODO Add a Mobile Version of that overview (pref with Icons) -->
-  <div class="d-flex flex-column bg-transparent container-fluid justify-content-between content draftsWrapper">
+  <div class="d-flex flex-column container-fluid justify-content-between content draftsWrapper bg-transparent">
     <h1 class="small-headline text-center">
       Draft datasets
     </h1>
     <div class="d-flex align-items-center justify-content-center">
-      <table class="table w-75">
+      <table class="w-75 table">
         <thead>
           <tr>
             <th scope="col">
@@ -129,7 +129,7 @@ export default {
             <td class="buttonWrapper">
               <button type="button" class="btn btn-secondary">
                 <AppLink
-                  id="linkedDataDropdown" class="dropdown-toggle text-nowrap text-decoration-none" fragment="#"
+                  id="linkedDataDropdown" class="dropdown-toggle text-decoration-none text-nowrap" fragment="#"
                   role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                 >
                   <span :title="$t('message.metadata.linkedData')" data-toggle="tooltip" data-placement="top">

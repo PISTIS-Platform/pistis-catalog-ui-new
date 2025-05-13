@@ -6,8 +6,8 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div class="text-neutral-900 flex h-[91px] max-h-[91px] gap-4 rounded-lg border bg-white">
-    <div class="size-[91px] flex-none rounded-l-lg bg-primary-800 text-white">
+  <div class="flex h-[91px] max-h-[91px] gap-4 rounded-lg border bg-white text-neutral-900">
+    <div class="bg-primary-800 size-[91px] flex-none rounded-l-lg text-white">
       <div class="grid size-full place-content-center">
         <div class="grid place-content-center">
           <slot name="icon">

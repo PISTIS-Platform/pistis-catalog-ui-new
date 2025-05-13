@@ -79,8 +79,8 @@ export default {
 </script>
 
 <template>
-  <div class="flex justify-center w-full">
-    <div class="max-w-[70.5rem] w-full p-8">
+  <div class="flex w-full justify-center">
+    <div class="w-full max-w-[70.5rem] p-8">
       <RouterLink to="/app/data-catalog">
         <KButton severity="contrast" icon="icon-[ph--arrow-left]">
           {{ $t('dpi.back-to-datacatalog') }}
@@ -89,7 +89,7 @@ export default {
     </div>
   </div>
   <div id="data-provider-interface" class="grid place-content-center">
-    <div :key="property" class="max-w-[70.5rem] w-[70.5rem] d-flex flex-column bg-transparent justify-content-between dpi position-relative">
+    <div :key="property" class="d-flex flex-column justify-content-between dpi position-relative w-[70.5rem] max-w-[70.5rem] bg-transparent">
       <!-- CONTENT -->
       <router-view ref="view" :key="$route.query.edit" />
     </div>

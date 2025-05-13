@@ -25,7 +25,7 @@ function handleTabChange(tabId: string) {
   <Story title="Base Components/TabGroup">
     <TabGroup
       :tabs="tabs"
-      class="max-w-4xl mx-auto"
+      class="mx-auto max-w-4xl"
       @tab-change="handleTabChange"
     />
   </Story>
