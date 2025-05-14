@@ -1,6 +1,6 @@
-#stages:
-#  - build
-#
+stages:
+  - build
+
 #build-asset:
 #  stage: build
 #  image: node:18-alpine
