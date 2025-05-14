@@ -11,6 +11,7 @@ build-asset:
   tags:
     - fokus-runner
   script:
+    - npm i -g pnpm
     - pnpm ci
     - cp .env.template .env.local
     - pnpm run build-only
