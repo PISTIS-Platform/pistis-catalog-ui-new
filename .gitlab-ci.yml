@@ -12,7 +12,7 @@ build-asset:
     - fokus-runner
   script:
     - npm i -g pnpm
-    - pnpm ci
+    - pnpm install
     - cp .env.template .env.local
     - pnpm run build-only
   artifacts:
