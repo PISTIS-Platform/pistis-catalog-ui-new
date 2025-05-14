@@ -31,6 +31,13 @@
                 </div>
 
                 <div class="input-group">
+                    <label class="block font-medium mb-2">Primary Light Color</label>
+                    <input type="color" v-model="colors.primaryLight" @input="updateExample"
+                        class="w-12 h-8 p-0 border rounded" />
+                    <span class="ml-2">{{ colors.primaryLight }}</span>
+                </div>
+
+                <div class="input-group">
                     <label class="block font-medium mb-2">Secondary Color</label>
                     <input type="color" v-model="colors.secondary" @input="updateExample"
                         class="w-12 h-8 p-0 border rounded" />

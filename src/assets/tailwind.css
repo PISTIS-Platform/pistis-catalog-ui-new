@@ -28,47 +28,85 @@
     /************************/
     /***** Piveau Fonts *****/
     /************************/
-    --font-sans: "Inter", sans-serif;
-    --font-display: "Inter", sans-serif;
+    --font-sans: "inter", sans-serif;
+    --font-display: "inter", sans-serif;
 
     /********************************/
     /***** Piveau Border-radius *****/
     /*******************************/
-    --border-radius-custom: 0px;
+    
+    --border-radius-custom: 15px;
     --border-radius-search: 100px;
-
+    
     /*****************************/
     /* Piveau Background Colors */
     /*****************************/
-    --piveau-primary: #012b7f;
-    --piveau-primary-variant: #335599;
-    --piveau-primary-light: #ece8ff;
+
+    /* Primary */
+    --piveau-primary: #7B61FF;
+    --piveau-primary-variant: #3B2F79;
+    --piveau-pirmary-light: #ece8ff;
     --piveau-primary-disabled: #8d8d8d;
-    --piveau-secondary: #a2bd3f;
+
+    /* Secondary */
+    --piveau-secondary: #B5D0D7;
     --piveau-secondary-variant: #2f6f88;
     --piveau-secondary-disabled: #8d8d8d;
+
+    /* Background */
     --piveau-background: #F4F4F4;
+
+    /* Surfcafe */
     --piveau-surface: #FFFFFF;
+
+    /* Error */
     --piveau-error: #D15353;
+
+    /* Background gray */
     --piveau-gray: #dbdbdb;
+
+    /* Background black */
     --piveau-black: #000000;
 
     /**********************/
     /* Piveau Text colors */
     /**********************/
+
+    /* Text on Primary */
     --piveau-text-on-primary: #ffffff;
+
+    /* Text on Secondary */
     --piveau-text-on-secondary: #262626;
+
+    /* Text on Background */
     --piveau-text-on-bg: #262626;
+
+    /* Text on Surface */
     --piveau-text-on-surface: #262626;
+
+    /* Text on Error */
     --piveau-text-on-error: #ffffff;
 
     /*************************/
-    /* Header and Footer */
+    /* Custom/Special colors */
     /*************************/
+
+    /* if needed */
+
+    /*************************/
+    /**** Header colors *****/
+    /*************************/
+
     --piveau-header-bg: #ffffff;
     --piveau-header-text: #262626;
+
+    /*************************/
+    /**** Footer colors ******/
+    /*************************/
+
     --piveau-footer-bg: #424242;
     --piveau-footer-text: #ffffff;
+
 
     /**************************************************************************************************************************************/
 
@@ -102,6 +140,7 @@
     --secondary-text: var(--piveau-text-on-secondary);
     --bg-text: var(--piveau-text-on-bg);
     --surface-text: var(--piveau-text-on-surface);
+
     --header-text: var(--piveau-header-text);
     --footer-text: var(--piveau-footer-text);
   }
