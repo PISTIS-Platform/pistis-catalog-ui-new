@@ -121,7 +121,7 @@ const truncatedEllipsedDescription = computed(() => {
             <button class="-ml-6 mt-[10px] px-4 py-1 cursor-pointer" @click="router.back()">
               <Typography variant="paragraph-1" class="flex items-center gap-2 text-primary hover:text-primary-hover">
                 <PhCaretLeft />
-                <span>Zurück</span>
+                <span>back</span>
               </Typography>
             </button>
           </div>

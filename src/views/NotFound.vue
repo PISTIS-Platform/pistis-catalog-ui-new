@@ -3,7 +3,7 @@ import Typography from '../components/base/typography/Typography.vue'
 </script>
 
 <template>
-  <div class="max-w-(--breakpoint-xl) mx-auto px-4 py-12 lg:px-6 lg:py-12">
+  <div class="container mx-auto max-w-(--breakpoint-xl) mx-auto px-4 py-12 lg:px-6 lg:py-12 ml-50 mt-10">
     <Typography
       as="h1"
       variant="by-heading-1"

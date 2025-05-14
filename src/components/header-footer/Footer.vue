@@ -3,7 +3,7 @@ const seitenLinks = [
   { to: '/', text: 'Home' },
   { to: '/datasets', text: 'Datasets' },
   { to: '/catalogues', text: 'Catalogues' },
-  { to: '/Themer', text: 'Themer' },
+  { to: '/Themer', text: 'Theme Generator' },
   { to: 'https://doc.piveau.eu/general/introduction/', text: 'Docs' },
   { to: 'https://gitlab.com/piveau/', text: 'GitLab' },
 ]

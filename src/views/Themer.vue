@@ -91,11 +91,18 @@
                 </div>
 
                 <div class="input-group">
-                <label class="block font-medium mb-2">Text on Surface</label>
-            <input type="color" v-model="colors.textOnSurface" @input="updateExample"
-                class="w-12 h-8 p-0 border rounded" />
-            <span class="ml-2">{{ colors.textOnSurface }}</span>
-            </div>
+                    <label class="block font-medium mb-2">Text on Surface</label>
+                    <input type="color" v-model="colors.textOnSurface" @input="updateExample"
+                        class="w-12 h-8 p-0 border rounded" />
+                    <span class="ml-2">{{ colors.textOnSurface }}</span>
+                </div>
+
+                <div class="input-group">
+                    <label class="block font-medium mb-2">Text on Surface Light</label>
+                    <input type="color" v-model="colors.textOnSurfaceLight" @input="updateExample"
+                        class="w-12 h-8 p-0 border rounded" />
+                    <span class="ml-2">{{ colors.textOnSurfaceLight }}</span>
+                </div>
 
                 <hr class="mb-5">
 
@@ -208,6 +215,7 @@ export default {
             textOnSecondary: '#262626',
             textOnBg: '#262626',
             textOnSurface: '#262626',
+            textOnSurfaceLight: '#4e4e4e',
             textOnError: '#ffffff',
             headerBg: '#ffffff',
             headerText: '#262626',
@@ -254,6 +262,7 @@ export default {
     --piveau-text-on-secondary: ${colors.value.textOnSecondary};
     --piveau-text-on-bg: ${colors.value.textOnBg};
     --piveau-text-on-surface: ${colors.value.textOnSurface};
+    --piveau-text-on-surface-light: ${colors.value.textOnSurfaceLight}; 
     --piveau-text-on-error: ${colors.value.textOnError};
 
     /*************************/

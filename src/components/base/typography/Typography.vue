@@ -47,10 +47,10 @@ const computedClasses = computed(() =>
   clsx(
     // heading
     {
-      'font-bold text-5xl text-primary-fg': props.variant === 'header-1',
-      'font-semibold text-4xl text-primary-fg': props.variant === 'header-2',
-      'font-semibold text-3xl text-primary-fg': props.variant === 'header-3',
-      'font-semibold text-lg text-primary-fg': props.variant === 'header-4',
+      'font-bold text-5xl text-surface-text': props.variant === 'header-1',
+      'font-semibold text-4xl text-surface-text': props.variant === 'header-2',
+      'font-semibold text-3xl text-surface-text': props.variant === 'header-3',
+      'font-semibold text-lg text-surface-text': props.variant === 'header-4',
 
       // by-heading
       'font-display font-bold text-[3.5rem] leading-[3.5rem] md:text-[4.5rem] md:leading[4.75rem]': props.variant === 'by-heading-1',
@@ -67,7 +67,7 @@ const computedClasses = computed(() =>
     // by-caption
     {
       // .75rem/1.125rem
-      'font-bold uppercase text-xs leading-[1.125rem] text-neutral-100': props.variant === 'caption' || props.variant === 'by-caption',
+      'font-bold uppercase text-xs leading-[1.125rem] text-surface-text': props.variant === 'caption' || props.variant === 'by-caption',
     },
     // by-copy
     [
