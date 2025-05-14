@@ -126,7 +126,7 @@ const preset = {
       :pt="preset"
       :pt-options="{ mergeSections: false, mergeProps: false }"
     >
-      <div class="flex min-w-fit flex-nowrap items-center gap-2 text-primary-100" :class="{ 'flex-row-reverse': props.iconRight }">
+      <div class="flex min-w-fit flex-nowrap items-center gap-2 text-secondary-text" :class="{ 'flex-row-reverse': props.iconRight }">
         <PhX v-if="props.removable && !hasIcon" />
         <i v-else-if="hasIcon" :class="props.icon || props.iconLeft || props.iconRight" />
         <slot>

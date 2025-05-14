@@ -40,6 +40,7 @@ export default {
         'surface': {
           DEFAULT: 'var(--surface)',
           text: 'var(--surface-text)',
+          light: 'var(--surface-text-light)',
         },
 
         'header-bg': {

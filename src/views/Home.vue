@@ -4,28 +4,28 @@
 
 <template>
   <div class="">
-    <section class="bg-white">
-      <div class="max-w-(--breakpoint-xl) mx-auto w-screen px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
+    <section class="bg-surface">
+      <div class="max-w-(--breakpoint-xl) mx-auto w-screen px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32 bg-surface">
         <div class="mx-auto max-w-prose text-center">
-          <h1 class="text-4xl font-bold text-gray-900 sm:text-5xl">
+          <h1 class="text-4xl font-bold text-surface-text sm:text-5xl">
             Unlock the Power of Public Sector Data with
             <strong class="text-primary"> piveau </strong>
           </h1>
 
-          <p class="mt-4 text-pretty text-base text-gray-700 sm:text-lg/relaxed">
+          <p class="mt-4 text-pretty text-base text-surface-light sm:text-lg/relaxed">
             <strong>piveau</strong> is a comprehensive <strong> data management ecosystem </strong>that streamlines the
             entire data lifecycle — from
             <strong>collection and aggregation to publication and reuse</strong>.
           </p>
 
           <div class="mt-4 flex justify-center gap-4 sm:mt-6">
-            <a class="inline-block rounded-3xl border  bg-primary px-5 py-3 font-medium text-white shadow-xs transition-colors hover:bg-primary-hover"
+            <a class="inline-block rounded-3xl  bg-primary px-5 py-3 font-medium text-white shadow-xs transition-colors hover:bg-primary-hover"
               href="/datasets">
               Explore Demo
             </a>
 
             <button
-              class="ml-2 inline-flex rounded-3xl text-gray-700 bg-gray-100 border-0 py-3 px-6 focus:outline-hidden hover:bg-gray-200 text-lg">
+              class="ml-2 inline-flex rounded-3xl text-gray-700 bg-gray py-3 px-6 focus:outline-hidden hover:bg-gray-200 text-lg">
               <a href="https://doc.piveau.eu/general/introduction/" target="_blank" rel="noopener noreferrer"
                 class="inline-block size-full">Documentation </a>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -60,15 +60,14 @@
       </div>
     </section>
 
-
-    <section class="mt-10 mb-15">
+    <section class="p-10 pb-18 bg-surface">
       <div class="p-8 md:p-12 lg:px-16 lg:py-24">
         <div class="mx-auto max-w-lg text-center">
-          <h2 class="text-2xl font-bold text-gray-900 md:text-3xl dark:text-white">
+          <h2 class="text-2xl font-bold text-surface-text md:text-3xl dark:text-white">
             Join the piveau Community
           </h2>
 
-          <p class="hidden text-gray-500 sm:mt-4 sm:block dark:text-gray-400">
+          <p class="hidden text-surface-light sm:mt-4 sm:block dark:text-gray-400">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae dolor officia blanditiis
             repellat in, vero, aperiam porro ipsum laboriosam consequuntur exercitationem incidunt
             tempora nisi?
@@ -81,7 +80,7 @@
               <label for="email" class="sr-only">Email</label>
 
               <input type="email" placeholder="Email address"
-                class="w-full rounded-3xl bg-white p-3 transition focus:ring-primary focus:outline-none" />
+                class="w-full text-surface-text bg-surface rounded-3xl border border-gray p-3 transition focus:ring-primary focus:outline-none" />
             </div>
 
             <button type="submit"

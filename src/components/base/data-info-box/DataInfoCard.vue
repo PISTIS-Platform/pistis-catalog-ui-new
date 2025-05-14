@@ -35,7 +35,7 @@ const computedWrapperComponent = computed(() => {
   <component
     :is="computedWrapperComponent"
     :to="props.to || '/'"
-    class="group relative mx-auto box-border rounded-custom by w-full border-neutral-20 border-b-transparent bg-surface text-surface-text p-12 hover:border-b-primary mb-6"
+    class="group relative mx-auto box-border rounded-custom by w-full border border-transparent border-b-[3px] bg-surface text-surface-text p-12 hover:border-b-primary mb-6"
   >
     <!-- Header -->
     <div class="flex flex-col gap-by5">
