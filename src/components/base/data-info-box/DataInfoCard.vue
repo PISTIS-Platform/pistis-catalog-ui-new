@@ -44,9 +44,9 @@ const computedWrapperComponent = computed(() => {
       </Typography>
       <div class="flex flex-col gap-16">
         <slot name="body">
-          <div class="grid grid-cols-12 gap-4">
+          <div class="grid grid-cols-12 gap-10">
             <!-- Description -->
-            <p class="col-span-12 line-clamp-6 text-fg-muted lg:col-span-8">
+            <p class="col-span-12 line-clamp-6 text-surface-light lg:col-span-8 ">
               {{ description }}
             </p>
             <slot name="sidebar">

@@ -161,7 +161,7 @@ const {
                         icon="icon-[ph--eye-fill]" size="small" severity="terenity"
                         :label="`Mehr anzeigen (${getFormattedDistributions.length})`" icon-pos="left"
                         @click="showAllDistributions"
-                      />
+                      /> 
                     </div>
                   </div>
                 </div>
@@ -184,7 +184,7 @@ const {
         </div>
         <div class="h-px w-full bg-bg-divider" />
         <div class="space-y-4">
-          <div class="flex flex-col gap-4 bg-white p-4 pt-12">
+          <div class="flex flex-col rounded-xl gap-4 bg-surface p-4 pt-12">
             <Typography variant="by-heading-4" class="">
               Zusätzliche Informationen
             </Typography>

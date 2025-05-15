@@ -9,7 +9,7 @@ export default {
       'rounded-full',
 
       // Color and Background
-      'bg-surface-0 dark:bg-surface-900',
+      'bg-surface dark:bg-surface-900',
       'border',
 
       // Transitions
@@ -37,7 +37,7 @@ export default {
       'flex-auto',
 
       // Color and Background
-      'bg-transparent font-semibold',
+      'bg-transparent font-light',
       'border-0',
 
       'placeholder:text-fg-muted',

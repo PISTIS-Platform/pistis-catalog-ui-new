@@ -74,7 +74,7 @@ function setActiveTab(tabId: string) {
         v-for="tab in tabs"
         v-show="activeTab === tab.id"
         :key="tab.id"
-        class="prose max-w-none rounded-sm bg-white px-6 py-10"
+        class="prose max-w-none rounded-xl bg-surface px-6 py-10"
         role="tabpanel"
         :aria-labelledby="`tab-${tab.id}`"
       >
