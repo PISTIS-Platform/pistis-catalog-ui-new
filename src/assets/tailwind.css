@@ -23,9 +23,8 @@
 }
 
 @layer base {
-  :root {
 
-  
+  :root {
     /************************/
     /***** Piveau Fonts *****/
     /************************/
@@ -43,8 +42,8 @@
     /*****************************/
     --piveau-primary: #7B61FF;
     --piveau-primary-variant: #3B2F79;
-    --piveau-primary-light: #ece8ff;
-    --piveau-primary-disabled: #8d8d8d;
+    --piveau-primary-light: #cdc3ff;
+    --piveau-primary-disabled: #787878;
     --piveau-secondary: #B5D0D7;
     --piveau-secondary-variant: #2f6f88;
     --piveau-secondary-disabled: #8d8d8d;
@@ -72,6 +71,7 @@
     --piveau-footer-bg: #424242;
     --piveau-footer-text: #ffffff;
     
+    
     /**************************************************************************************************************************************/
 
     /**************************/
@@ -81,7 +81,7 @@
     /* background colors mapping */
     --primary: var(--piveau-primary);
     --primary-hover: var(--piveau-primary-variant);
-    --primary-light: var(--piveau-pirmary-light);
+    --primary-light: var(--piveau-primary-light);
     --primary-disabled: var(--piveau-primary-disabled);
 
     --secondary: var(--piveau-secondary);
@@ -110,6 +110,20 @@
     --footer-text: var(--piveau-footer-text);
 
     --black: var(--piveau-black)
+  }
+
+     :root[data-theme="dark"] {
+    /* Only override what needs to change */
+    --piveau-primary-light: #3b3b3b;
+    --piveau-background: #1A1A1A;
+    --piveau-surface: #262626;
+    --piveau-text-on-bg: #cccccc;
+    --piveau-text-on-surface: #FFFFFF;
+    --piveau-text-on-surface-light: #E0E0E0;
+    --piveau-header-bg: #212121;
+    --piveau-header-text: #ededed;
+    --piveau-footer-bg: #1c1c1c;
+    --piveau-footer-text: #e9e9e9;
   }
 
   body {

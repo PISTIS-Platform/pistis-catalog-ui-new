@@ -13,7 +13,7 @@ const searchInput = defineModel<string>()
   <div class="mt-[5px] flex-none px-6 py-[1.875rem]">
     <section
       name="top"
-      class="flex flex-col py-16"
+      class="flex flex-col lg:py-16"
     >
       <form
         class="flex gap-3"

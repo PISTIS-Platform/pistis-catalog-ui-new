@@ -13,6 +13,13 @@ const links = [
   { to: '/datasets', label: 'landing-page.header.datasets' },
   { to: '/catalogues', label: 'landing-page.header.catalogues' },
 ]
+
+const emit = defineEmits(['close-nav'])
+
+const handleNavigate = (navigate) => {
+  navigate()
+  emit('close-nav')
+}
 </script>
 
 <template>
@@ -28,10 +35,10 @@ const links = [
       :to="link.to"
     >
       <a
-        class="header-icon-container text-base leading-[1.625rem] text-fg hover:text-primary-hover"
+        class="header-icon-container text-base leading-[1.625rem]"
         :class="{ active: isActive && isExactActive }"
         :href="href"
-        @click="navigate"
+        @click="handleNavigate(navigate)"
       >
         {{ link.label ? $t(link.label) : link.name }}
       </a>
@@ -60,7 +67,8 @@ const links = [
   /* @apply text-fg text-base hover:text-primary-hover leading-[1.625rem]; */
 }
 #thenavguy.nav-links a:hover {
-  color: var(--primary-hover);
+  color: var(--primary);
+
 }
 
 #thenavguy.nav-links a.active,

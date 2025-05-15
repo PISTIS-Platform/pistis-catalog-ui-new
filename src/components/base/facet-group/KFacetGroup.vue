@@ -133,7 +133,7 @@ const panelPreset = {
               type="checkbox"
               :value="facet.id"
               :name="facet.label"
-            >
+            > 
             <div
               class="max-h-12 w-full px-4 py-3 pr-6"
               :class="{

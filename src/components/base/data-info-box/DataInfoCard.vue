@@ -44,16 +44,16 @@ const computedWrapperComponent = computed(() => {
       </Typography>
       <div class="flex flex-col gap-16">
         <slot name="body">
-          <div class="grid grid-cols-12 gap-10">
+          <div class="grid grid-cols-12 gap-2">
             <!-- Description -->
-            <p class="col-span-12 line-clamp-6 text-surface-light lg:col-span-8 ">
+            <p class="col-span-12 line-clamp-6 text-surface-light lg:col-span-8 break-words overflow-hidden max-w-full">
               {{ description }}
             </p>
             <slot name="sidebar">
               <!-- File Format Tags -->
               <SummaryBox
                 v-if="fileFormats.length > 0"
-                class="col-span-12 lg:col-span-4"
+                class="col-span-12 lg:col-span-4 mt-6 md:mt-0 lg:ml-10"
                 title="Dateiformate"
               >
                 <template #text>
