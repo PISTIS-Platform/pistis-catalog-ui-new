@@ -11,7 +11,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <router-link to="datasets">
+  <router-link :to="{ path: '/datasets', query: { catalog: item.getId }}">
     <div class="group relative mx-auto box-border w-full rounded-3xl border-b-[3px]
       border-neutral-20 border-b-transparent bg-surface p-12 hover:border-b-primary">
       <div class="flex flex-col gap-by5 text-surface-text">

@@ -143,7 +143,7 @@ const panelPreset = {
               :name="facet.label"
               :value="facet.value || facet.id"
             >
-              <div class="flex flex-1 flex-row flex-nowrap items-center justify-between cursor-pointer">
+              <div class="flex flex-1 flex-row text-surface-text flex-nowrap items-center justify-between cursor-pointer">
                 <div class="truncate">
                   {{ facet.label }}
                 </div>
