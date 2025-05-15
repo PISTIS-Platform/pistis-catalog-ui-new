@@ -3,7 +3,14 @@
 </script>
 
 <template>
-  <div class="">
+  <div>
+
+    <!-- ////////////////////// -->
+    <!-- Hero Section Prototype -->
+    <!-- ////////////////////// -->
+
+    <!-- Note: This is only a prototype/draft, open for feedback, ideas and further design/decelopment-->
+
     <section class="bg-surface">
       <div class="max-w-(--breakpoint-xl) mx-auto w-screen px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32 bg-surface">
         <div class="mx-auto max-w-prose text-center">
@@ -12,26 +19,26 @@
             <strong class="text-primary"> piveau </strong>
           </h1>
 
-          <p class="mt-4 text-pretty text-base text-surface-light sm:text-lg/relaxed">
+          <p class="mt-4  text-surface-light sm:text-lg/relaxed">
             <strong>piveau</strong> is a comprehensive <strong> data management ecosystem </strong>that streamlines the
             entire data lifecycle — from
             <strong>collection and aggregation to publication and reuse</strong>.
           </p>
 
           <div class="mt-4 flex justify-center gap-4 sm:mt-6">
-            <a class="inline-block rounded-3xl  bg-primary px-5 py-3 font-medium text-white shadow-xs transition-colors hover:bg-primary-hover"
+            <a class="inline-block rounded-3xl bg-primary px-5 py-3 font-medium text-primary-text transition-colors hover:bg-primary-hover"
               href="/datasets">
               Explore Demo
             </a>
 
-            <button
-              class="ml-2 inline-flex rounded-3xl text-gray-700 bg-gray py-3 px-6 focus:outline-hidden hover:bg-gray-200 text-lg">
-              <a href="https://doc.piveau.eu/general/introduction/" target="_blank" rel="noopener noreferrer"
-                class="inline-block size-full">Documentation </a>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-arrow-right spacing" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+            <button type="submit"
+              class="group mt-4 flex w-full items-center justify-center gap-2 rounded-3xl px-5 py-3 text-gray-700 bg-gray hover:bg-primary-hover sm:mt-0 sm:w-auto">
+              <span class="text-lg font-medium">  <a href="https://doc.piveau.eu/general/introduction/" target="_blank" rel="noopener noreferrer"
+                class="inline-block size-full"> Documentation </a> </span>
+
+              <svg class="size-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </button>
 
@@ -40,25 +47,34 @@
       </div>
     </section>
 
+    <!-- ////////////////////////////////// -->
+    <!-- Theme Generator Section Prototype  -->
+    <!-- ////////////////////////////////// -->
+
+    <!-- Note: This is only a prototype/draft, open for feedback, ideas and further design/decelopment. We can also remove it completly when going live! -->
     <section
       class="overflow-hidden bg-[url(https://images.unsplash.com/photo-1601952899827-3db57e7943f7?q=80&w=1586&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover bg-bottom bg-no-repeat">
-      <div class="bg-black/50 p-8 md:p-12 lg:px-16 lg:py-24">
+      <div class="p-8 md:p-12 lg:px-16 lg:py-24">
         <div class="text-center">
-          <h2 class="text-2xl font-bold text-black sm:text-3xl md:text-5xl">Try our new Theme Generator</h2>
+          <h2 class="text-2xl font-bold [color:#141414] sm:text-3xl md:text-5xl">Try our new Theme Generator</h2>
 
-          <p class="mt-5">
+          <p class="mt-5 [color:#171717]">
             Adapt piveau to your visual framework with our new theme generator.
           </p>
 
           <div class="mt-4 sm:mt-8">
             <a href="/themer"
               class="inline-block rounded-full bg-primary px-12 py-3 text-sm font-medium text-white transition hover:bg-primary-hover">
-              Try the Theme Generator
+              Try Theme Generator
             </a>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- ////////////////////////////////// -->
+    <!--        Newsletter Prototype        -->
+    <!-- ////////////////////////////////// -->
 
     <section class="p-10 pb-18 bg-surface">
       <div class="p-8 md:p-12 lg:px-16 lg:py-24">
@@ -87,7 +103,7 @@
               class="group mt-4 flex w-full items-center justify-center gap-2 rounded-3xl bg-primary px-5 py-3 text-white hover:bg-primary-hover sm:mt-0 sm:w-auto">
               <span class="text-sm font-medium"> Sign Up </span>
 
-              <svg class="size-5 shadow-sm rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none"
+              <svg class="size-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none"
                 viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
@@ -97,18 +113,9 @@
       </div>
     </section>
 
-
-
   </div>
 </template>
 
 <style scoped>
-.spacing {
-  margin-top: 7px;
-  margin-left: 5px;
-}
 
-body {
-  background-color: #fff;
-}
 </style>

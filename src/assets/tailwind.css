@@ -25,90 +25,53 @@
 @layer base {
   :root {
 
+  
     /************************/
     /***** Piveau Fonts *****/
     /************************/
-    --font-sans: "inter", sans-serif;
-    --font-display: "inter", sans-serif;
+    --font-sans: "Inter", sans-serif;
+    --font-display: "Inter", sans-serif;
 
     /********************************/
     /***** Piveau Border-radius *****/
     /*******************************/
-    
-    --border-radius-custom: 15px;
+    --border-radius-custom: 25px;
     --border-radius-search: 100px;
-    
+
     /*****************************/
     /* Piveau Background Colors */
     /*****************************/
-
-    /* Primary */
     --piveau-primary: #7B61FF;
     --piveau-primary-variant: #3B2F79;
-    --piveau-pirmary-light: #ece8ff;
+    --piveau-primary-light: #ece8ff;
     --piveau-primary-disabled: #8d8d8d;
-
-    /* Secondary */
     --piveau-secondary: #B5D0D7;
     --piveau-secondary-variant: #2f6f88;
     --piveau-secondary-disabled: #8d8d8d;
-
-    /* Background */
     --piveau-background: #F4F4F4;
-
-    /* Surfcafe */
     --piveau-surface: #FFFFFF;
-
-    /* Error */
     --piveau-error: #D15353;
-
-    /* Background gray */
     --piveau-gray: #dbdbdb;
-
-    /* Background black */
     --piveau-black: #000000;
 
     /**********************/
     /* Piveau Text colors */
     /**********************/
-
-    /* Text on Primary */
     --piveau-text-on-primary: #ffffff;
-
-    /* Text on Secondary */
     --piveau-text-on-secondary: #262626;
-
-    /* Text on Background */
     --piveau-text-on-bg: #262626;
-
-    /* Text on Surface */
     --piveau-text-on-surface: #262626;
-    --piveau-text-on-surface-light: #4e4e4e;
-
-    /* Text on Error */
+    --piveau-text-on-surface-light: #4e4e4e; 
     --piveau-text-on-error: #ffffff;
 
     /*************************/
-    /* Custom/Special colors */
+    /* Header and Footer */
     /*************************/
-
-    /* if needed */
-
-    /*************************/
-    /**** Header colors *****/
-    /*************************/
-
     --piveau-header-bg: #ffffff;
     --piveau-header-text: #262626;
-
-    /*************************/
-    /**** Footer colors ******/
-    /*************************/
-
     --piveau-footer-bg: #424242;
     --piveau-footer-text: #ffffff;
-
-
+    
     /**************************************************************************************************************************************/
 
     /**************************/
@@ -145,37 +108,55 @@
 
     --header-text: var(--piveau-header-text);
     --footer-text: var(--piveau-footer-text);
+
+    --black: var(--piveau-black)
   }
 
   body {
-    @apply bg-neutral-5 text-neutral-content;
+    @apply bg-neutral-5 text-surface-light;
     background: var(--background);
   }
 
   .by-link {
-    @apply text-copy-sm font-semibold no-underline text-inline-text-hyperlink hover:bg-inline-text-hyperlink-hover active:bg-inline-text-hyperlink-pressed focus:underline focus:outline-hidden visited:bg-inline-text-hyperlink-pressed;
+    @apply text-sm text-primary font-semibold no-underline text-inline-text-hyperlink hover:bg-inline-text-hyperlink-hover active:bg-inline-text-hyperlink-pressed focus:underline focus:outline-hidden visited:bg-inline-text-hyperlink-pressed;
   }
 
   .by-copy-small-regular {
-    @apply text-copy-sm font-normal;
+    @apply text-sm text-surface-light font-normal;
   }
 
   .by-copy-small-semibold {
-    @apply text-copy-sm font-semibold;
+    @apply text-sm text-surface-light font-semibold;
   }
 
   .by-copy-small-bold {
-    @apply text-copy-sm font-bold;
+    @apply text-sm text-surface-light font-bold;
   }
 
   .markdown-content a {
     /* For markdown interpreted content */
-    @apply text-copy-sm font-semibold no-underline text-inline-text-hyperlink hover:bg-inline-text-hyperlink-hover active:bg-inline-text-hyperlink-pressed focus:underline focus:outline-hidden visited:bg-inline-text-hyperlink-pressed;
+    @apply text-sm text-surface-light! font-semibold no-underline text-inline-text-hyperlink hover:bg-inline-text-hyperlink-hover active:bg-inline-text-hyperlink-pressed focus:underline focus:outline-hidden visited:bg-inline-text-hyperlink-pressed;
+
   }
 
   button,
   a {
     @apply cursor-pointer;
   }
+
+  strong {
+    @apply text-surface-light
+  }
+
+  :where(strong):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    color: var(--surface-text) !important;
+    font-weight: 600;
+  }
+
+  /* Alternativ spezifischer für mehr Gewicht */
+  .prose  {
+    color: var(--surface-text) !important;
+  }
+
 
 }

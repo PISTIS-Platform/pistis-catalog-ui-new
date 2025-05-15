@@ -26,7 +26,10 @@ export default {
       // Shapes
       'rounded-full border',
 
-      'peer-hover:bg-secondary peer-hover:border-primary-hover',
+      // colors
+      'bg-surface',
+
+      'peer-hover:text-primary-hover ',
 
       // States
       {
@@ -45,7 +48,7 @@ export default {
     ],
   }),
   label: {
-    class: 'font-bold text-center w-full text-surface-text',
+    class: 'font-light text-center w-full text-surface-text',
   },
   input: {
     class: [

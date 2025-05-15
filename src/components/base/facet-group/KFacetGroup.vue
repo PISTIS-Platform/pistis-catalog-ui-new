@@ -159,7 +159,7 @@ const panelPreset = {
           </label>
         </li>
         <li v-if="isTruncationNeeded">
-          <button class="grid max-h-12 w-full place-content-center border border-t-0 bg-surface px-4 py-3 pr-6 cursor-pointer rounded-b-lg" @click="toggleFacetsTruncation">
+          <button class="grid max-h-12 w-full place-content-center border-t-0 bg-surface px-4 py-3 pr-6 cursor-pointer rounded-b-lg" @click="toggleFacetsTruncation">
             <i v-if="isTruncated" class="icon-[ph--caret-down]" />
             <i v-else class="icon-[ph--caret-up]" />
           </button>

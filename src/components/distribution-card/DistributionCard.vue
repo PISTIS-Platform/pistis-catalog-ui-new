@@ -23,7 +23,7 @@ interface CardProps {
 }
 
 const props = withDefaults(defineProps<CardProps>(), {
-  downloadText: 'Zum Download',
+  downloadText: 'Download',
   saveText: 'Beschreibung speichern',
   lastUpdated: '',
   onSave: () => {},
@@ -44,10 +44,10 @@ const resolvedData = computed(() => {
 </script>
 
 <template>
-  <div class="mb-3 rounded-sm border-b bg-bg-lighter bg-white p-4">
+  <div class="mb-3 rounded-xl border-b-none bg-surface p-4">
     <div class="py-12">
       <div class="flex items-start justify-between">
-        <Typography as="h2" variant="by-heading-4" class="text-primary-fg">
+        <Typography as="h2" variant="by-heading-4" class="text-surface-text">
           {{ title }}
         </Typography>
         <KTag class="hidden md:block">
@@ -57,7 +57,7 @@ const resolvedData = computed(() => {
 
       <div class="my-0 flex flex-col lg:my-12 lg:flex-row lg:justify-between lg:gap-28">
         <div class="flex flex-1 flex-col gap-6">
-          <div class="markdown-content mt-4 text-sm leading-6 text-fg-muted" v-html="description" />
+          <div class="markdown-content mt-4 text-sm leading-6 text-surface-light" v-html="description" />
           <div class="flex">
             <KTag class="md:hidden">
               {{ format }}
@@ -65,7 +65,7 @@ const resolvedData = computed(() => {
           </div>
         </div>
 
-        <div class="my-12 lg:my-0 lg:basis-4/12">
+        <div class="my-12 lg:my-0 lg:basis-4/12 text-surface-text"> 
           <DataToggler v-slot="{ truncated }" :data="resolvedData || []" :limit="1" :expanded="false">
             <PropertyTable
               :node="{
@@ -78,7 +78,7 @@ const resolvedData = computed(() => {
             />
           </DataToggler>
         </div>
-      </div>
+      </div> 
 
       <div class="flex items-center justify-between">
         <div class="flex gap-6">
@@ -92,9 +92,14 @@ const resolvedData = computed(() => {
             <KButton :label="downloadText" icon="icon-[ph--arrow-square-out]" icon-pos="right" />
           </a>
 
-          <Dropdown severity="secondary" label="Beschreibung speichern">
+          <KButton>
+            Preview
+          </KButton>
+          
+          <!-- Why is this not showing?? -->
+          <Dropdown severity="secondary" label="Beschreibung speichern"> 
             <DropdownItem v-for="[key, uri] in Object.entries(linkedData || {})" :key="key" as="a" :href="uri" target="_blank">
-              {{ key }}
+              {{ key }} 
             </DropdownItem>
           </Dropdown>
 

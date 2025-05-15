@@ -53,11 +53,11 @@ const computedClasses = computed(() =>
       'font-semibold text-lg text-surface-text': props.variant === 'header-4',
 
       // by-heading
-      'font-display font-bold text-[3.5rem] leading-[3.5rem] md:text-[4.5rem] md:leading[4.75rem]': props.variant === 'by-heading-1',
-      'font-display font-bold text-[2rem] leading-[2.5rem] md:text-[3rem] md:leading-[3.5rem]': props.variant === 'by-heading-2',
-      'font-sans font-bold text-[1.75rem] leading-[2.375rem] md:font-size[2.5rem] md:leading-[3rem]': props.variant === 'by-heading-3',
-      'font-sans font-bold text-[1.375rem] leading-[2rem] md:text-[1.5rem] md:leading-[2.25rem]': props.variant === 'by-heading-4',
-      'font-sans font-semibold text-[1.125rem] leading-[1.75rem]': props.variant === 'by-heading-5',
+      'font-display text-surface-text font-bold text-[3.5rem] leading-[3.5rem] md:text-[4.5rem] md:leading[4.75rem]': props.variant === 'by-heading-1',
+      'font-display text-surface-text font-bold text-[2rem] leading-[2.5rem] md:text-[3rem] md:leading-[3.5rem]': props.variant === 'by-heading-2',
+      'font-sans text-surface-text font-bold text-[1.75rem] leading-[2.375rem] md:font-size[2.5rem] md:leading-[3rem]': props.variant === 'by-heading-3',
+      'font-sans text-surface-text font-bold text-[1.375rem] leading-[2rem] md:text-[1.5rem] md:leading-[2.25rem]': props.variant === 'by-heading-4',
+      'font-sans text-surface-text font-semibold text-[1.125rem] leading-[1.75rem]': props.variant === 'by-heading-5',
     },
     // paragraph
     {
@@ -73,21 +73,21 @@ const computedClasses = computed(() =>
     [
       // large
       {
-        'text-copy-lg font-normal': props.variant === 'by-copy-large-regular',
-        'text-copy-lg font-semibold': props.variant === 'by-copy-large-semibold',
-        'text-copy-lg font-bold': props.variant === 'by-copy-large-bold',
+        'text-surface-light text-lg font-normal': props.variant === 'by-copy-large-regular',
+        'text-surface-light text-lg font-semibold': props.variant === 'by-copy-large-semibold',
+        'text-surface-light text-lg font-bold': props.variant === 'by-copy-large-bold',
       },
       // small
       {
-        'text-copy-sm font-normal': props.variant === 'by-copy-small-regular',
-        'text-copy-sm font-semibold': props.variant === 'by-copy-small-semibold',
-        'text-copy-sm font-bold': props.variant === 'by-copy-small-bold',
+        'text-surface-light text-sm font-normal': props.variant === 'by-copy-small-regular',
+        'text-surface-light text-sm font-semibold': props.variant === 'by-copy-small-semibold',
+        'text-surface-light text-sm font-bold': props.variant === 'by-copy-small-bold',
       },
       // mini
       {
-        'text-copy-xs font-normal': props.variant === 'by-copy-mini-regular',
-        'text-copy-xs font-semibold': props.variant === 'by-copy-mini-semibold',
-        'text-copy-xs font-bold': props.variant === 'by-copy-mini-bold',
+        'text-surface-light text-xs font-normal': props.variant === 'by-copy-mini-regular',
+        'text-surface-light text-xs font-semibold': props.variant === 'by-copy-mini-semibold',
+        'text-surface-light text-xs font-bold': props.variant === 'by-copy-mini-bold',
       },
     ],
     // numeric

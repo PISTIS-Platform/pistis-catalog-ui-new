@@ -8,10 +8,10 @@ export default {
       'px-4 py-2',
 
       // Shape
-      'border-0',
+      'rounded-xl ',
 
       // Color
-      'bg-surface-0 dark:bg-surface-800',
+      'bg-surface dark:bg-surface-800',
       'text-primary dark:text-white/60',
       'text-white',
     ],

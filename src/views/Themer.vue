@@ -4,7 +4,7 @@
             <h1 class="font-bold text-[1.375rem] mb-5">Theme Generator</h1>
 
             <!-- Font Family -->
-            <div class="bg-white p-5 rounded-lg">
+            <div class="bg-surface p-5 rounded-lg">
                 <div class="input-group-2">
                     <label class="block font-medium mb-2">Font</label>
                     <select v-model="fontFamily" @change="updateExample" class="p-2 border rounded w-50 mb-5">
@@ -15,39 +15,39 @@
             </div>
 
             <!-- Colors -->
-            <div class="bg-white p-5 rounded-lg mt-10">
+            <div class="bg-surface p-5 rounded-lg mt-10">
                 <div class="input-group">
                     <label class="block font-medium mb-2">Primary Color</label>
                     <input type="color" v-model="colors.primary" @input="updateExample"
-                        class="w-12 h-8 p-0 border rounded" />
+                        class="w-12 h-8 p-0 rounded" />
                     <span class="ml-2">{{ colors.primary }}</span>
                 </div>
 
                 <div class="input-group">
                     <label class="block font-medium mb-2">Primary Variant Color</label>
                     <input type="color" v-model="colors.primaryVariant" @input="updateExample"
-                        class="w-12 h-8 p-0 border rounded" />
+                        class="w-12 h-8 p-0 rounded" />
                     <span class="ml-2">{{ colors.primaryVariant }}</span>
                 </div>
 
                 <div class="input-group">
                     <label class="block font-medium mb-2">Primary Light Color</label>
                     <input type="color" v-model="colors.primaryLight" @input="updateExample"
-                        class="w-12 h-8 p-0 border rounded" />
+                        class="w-12 h-8 p-0 rounded" />
                     <span class="ml-2">{{ colors.primaryLight }}</span>
                 </div>
 
                 <div class="input-group">
                     <label class="block font-medium mb-2">Secondary Color</label>
                     <input type="color" v-model="colors.secondary" @input="updateExample"
-                        class="w-12 h-8 p-0 border rounded" />
+                        class="w-12 h-8 p-0 rounded" />
                     <span class="ml-2">{{ colors.secondary }}</span>
                 </div>
 
                 <div class="input-group">
                     <label class="block font-medium mb-2">Error Color</label>
                     <input type="color" v-model="colors.error" @input="updateExample"
-                        class="w-12 h-8 p-0 border rounded" />
+                        class="w-12 h-8 p-0 rounded" />
                     <span class="ml-2">{{ colors.error }}</span>
                 </div>
 
@@ -56,14 +56,14 @@
                 <div class="input-group">
                     <label class="block font-medium mb-2">Background Color</label>
                     <input type="color" v-model="colors.background" @input="updateExample"
-                        class="w-12 h-8 p-0 border rounded" />
+                        class="w-12 h-8 p-0 rounded" />
                     <span class="ml-2">{{ colors.background }}</span>
                 </div>
 
                 <div class="input-group">
                     <label class="block font-medium mb-2">Surface Color</label>
                     <input type="color" v-model="colors.surface" @input="updateExample"
-                        class="w-12 h-8 p-0 border rounded" />
+                        class="w-12 h-8 p-0 rounded" />
                     <span class="ml-2">{{ colors.surface }}</span>
                 </div>
 
@@ -72,35 +72,35 @@
                 <div class="input-group">
                     <label class="block font-medium mb-2">Text on Primary</label>
                     <input type="color" v-model="colors.textOnPrimary" @input="updateExample"
-                        class="w-12 h-8 p-0 border rounded" />
+                        class="w-12 h-8 p-0 rounded" />
                     <span class="ml-2">{{ colors.textOnPrimary }}</span>
                 </div>
 
                 <div class="input-group">
                     <label class="block font-medium mb-2">Text on Secondary</label>
                     <input type="color" v-model="colors.textOnSecondary" @input="updateExample"
-                        class="w-12 h-8 p-0 border rounded" />
+                        class="w-12 h-8 p-0 rounded" />
                     <span class="ml-2">{{ colors.textOnSecondary }}</span>
                 </div>
 
                 <div class="input-group">
                     <label class="block font-medium mb-2">Text on Background</label>
                     <input type="color" v-model="colors.textOnBg" @input="updateExample"
-                        class="w-12 h-8 p-0 border rounded" />
+                        class="w-12 h-8 p-0 rounded" />
                     <span class="ml-2">{{ colors.textOnBg }}</span>
                 </div>
 
                 <div class="input-group">
                     <label class="block font-medium mb-2">Text on Surface</label>
                     <input type="color" v-model="colors.textOnSurface" @input="updateExample"
-                        class="w-12 h-8 p-0 border rounded" />
+                        class="w-12 h-8 p-0 rounded" />
                     <span class="ml-2">{{ colors.textOnSurface }}</span>
                 </div>
 
                 <div class="input-group">
                     <label class="block font-medium mb-2">Text on Surface Light</label>
                     <input type="color" v-model="colors.textOnSurfaceLight" @input="updateExample"
-                        class="w-12 h-8 p-0 border rounded" />
+                        class="w-12 h-8 p-0 rounded" />
                     <span class="ml-2">{{ colors.textOnSurfaceLight }}</span>
                 </div>
 
@@ -109,14 +109,14 @@
                 <div class="input-group">
                     <label class="block font-medium mb-2">Header Background</label>
                     <input type="color" v-model="colors.headerBg" @input="updateExample"
-                        class="w-12 h-8 p-0 border rounded" />
+                        class="w-12 h-8 p-0 rounded" />
                     <span class="ml-2">{{ colors.headerBg }}</span>
                 </div>
 
                 <div class="input-group">
                     <label class="block font-medium mb-2">Header Text</label>
                     <input type="color" v-model="colors.headerText" @input="updateExample"
-                        class="w-12 h-8 p-0 border rounded" />
+                        class="w-12 h-8 p-0 rounded" />
                     <span class="ml-2">{{ colors.headerText }}</span>
                 </div>
 
@@ -125,20 +125,20 @@
                 <div class="input-group">
                     <label class="block font-medium mb-2">Footer Background</label>
                     <input type="color" v-model="colors.footerBg" @input="updateExample"
-                        class="w-12 h-8 p-0 border rounded" />
+                        class="w-12 h-8 p-0 rounded" />
                     <span class="ml-2">{{ colors.footerBg }}</span>
                 </div>
 
                 <div class="input-group">
                     <label class="block font-medium mb-2">Footer Text</label>
                     <input type="color" v-model="colors.footerText" @input="updateExample"
-                        class="w-12 h-8 p-0 border rounded" />
+                        class="w-12 h-8 p-0 rounded" />
                     <span class="ml-2">{{ colors.footerText }}</span>
                 </div>
             </div>
 
             <!-- Border Radius -->
-            <div class="bg-white p-5 rounded-lg">
+            <div class="bg-surface p-5 rounded-lg">
                 <div class="input-group-2">
                     <label class="block font-medium mb-2">Border Radius</label>
                     <select v-model="borderRadius" @change="updateExample" class="p-2 border rounded w-50">
@@ -164,10 +164,10 @@
             <h2 class="font-bold text-[1.375rem] mb-5">Generated CSS</h2>
             <div class="relative">
                 <textarea v-model="cssOutput" rows="20" cols="50"
-                    class="w-full p-4 rounded-lg bg-white font-mono text-sm"></textarea>
+                    class="w-full p-4 rounded-lg bg-surface font-mono text-sm"></textarea>
                 <button @click="copyConfig" class="absolute top-2 right-2 p-2 bg-gray-200 rounded hover:bg-gray-300">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-copy" viewBox="0 0 16 16">
+                        class="bi bi-copy text-black" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                             d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z" />
                     </svg>

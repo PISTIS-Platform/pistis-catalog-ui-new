@@ -32,7 +32,7 @@ const preset = {
       'border',
       // Colors
       {
-        'border-neutral-icon bg-surface-0 dark:border-surface-700 dark:bg-surface-900': !context.checked,
+        'border-neutral-icon bg-surface dark:border-surface-700 dark:bg-surface-900': !context.checked,
         'border-border bg-primary': context.checked,
       },
       // States

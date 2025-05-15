@@ -165,7 +165,7 @@ const truncatedEllipsedDescription = computed(() => {
                       Über diesen Datensatz
                     </slot>
                   </Typography>
-                  <Typography as="p" variant="by-copy-small-regular" class="text-neutral-60">
+                  <Typography as="p" variant="by-copy-small-regular">
                     <div class="markdown-content" v-html="content" />
                   </Typography>
                 </div>
@@ -173,7 +173,7 @@ const truncatedEllipsedDescription = computed(() => {
                   v-if="isDescriptionTruncationNeeded" class="grid w-full place-content-center"
                   @click="toggleDescription"
                 >
-                  <div class="flex flex-col items-center justify-center text-copy-xs/6 font-bold">
+                  <div class="flex flex-col items-center justify-center text-primary text-xs/6 font-bold">
                     <span>Mehr lesen</span>
                     <i v-if="isDescriptionTruncated" class="icon-[ph--caret-down]" />
                     <i v-else class="icon-[ph--caret-up]" />
