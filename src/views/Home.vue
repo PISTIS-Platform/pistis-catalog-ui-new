@@ -16,7 +16,7 @@
         <div class="mx-auto max-w-prose text-center">
           <h1 class="text-4xl font-bold text-surface-text sm:text-5xl">
             Unlock the Power of Public Sector Data with
-            <strong class="text-primary"> piveau </strong>
+            <span class="text-primary"> piveau </span>
           </h1>
 
           <p class="mt-4  text-surface-light sm:text-lg/relaxed">
@@ -26,22 +26,22 @@
           </p>
 
           <div class="mt-4 flex justify-center gap-4 sm:mt-6">
+            <button class="mt-4">
             <a class="inline-block rounded-3xl bg-primary px-5 py-3 font-medium text-primary-text transition-colors hover:bg-primary-hover"
               href="/datasets">
               Explore Demo
             </a>
-
+          </button>
             <button type="submit"
-              class="group mt-4 flex w-full items-center justify-center gap-2 rounded-3xl px-5 py-3 text-gray-700 bg-gray hover:bg-primary-hover sm:mt-0 sm:w-auto">
-              <span class="text-lg font-medium">  <a href="https://doc.piveau.eu/general/introduction/" target="_blank" rel="noopener noreferrer"
+              class="mt-4 flex w-m items-center justify-center gap-2 rounded-3xl px-5 py-3 text-gray-700 bg-gray hover:bg-primary-hover">
+              <span class="font-medium">  <a href="https://doc.piveau.eu/general/introduction/" target="_blank" rel="noopener noreferrer"
                 class="inline-block size-full"> Documentation </a> </span>
 
-              <svg class="size-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none"
+              <svg class="size-4 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none"
                 viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </button>
-
           </div>
         </div>
       </div>
@@ -56,7 +56,7 @@
       class="overflow-hidden bg-[url(https://images.unsplash.com/photo-1601952899827-3db57e7943f7?q=80&w=1586&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover bg-bottom bg-no-repeat">
       <div class="p-8 md:p-12 lg:px-16 lg:py-24">
         <div class="text-center">
-          <h2 class="text-2xl font-bold [color:#141414] sm:text-3xl md:text-5xl">Try our new Theme Generator</h2>
+          <h2 class="text-2xl font-black [color:#141414] sm:text-3xl md:text-5xl">Try our new Theme Generator</h2>
 
           <p class="mt-5 [color:#171717]">
             Adapt piveau to your visual framework with our new theme generator.
@@ -100,7 +100,7 @@
             </div>
 
             <button type="submit"
-              class="group mt-4 flex w-full items-center justify-center gap-2 rounded-3xl bg-primary px-5 py-3 text-white hover:bg-primary-hover sm:mt-0 sm:w-auto">
+              class="group mt-4 flex w-m items-center justify-center gap-2 rounded-3xl bg-primary px-5 py-3 text-white hover:bg-primary-hover sm:mt-0 sm:w-auto">
               <span class="text-sm font-medium"> Sign Up </span>
 
               <svg class="size-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none"

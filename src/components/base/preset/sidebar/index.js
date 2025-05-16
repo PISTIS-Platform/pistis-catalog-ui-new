@@ -41,12 +41,12 @@ export default {
       'p-5',
 
       // Colors
-      'bg-surface-0 dark:bg-surface-800',
+      'bg-surface dark:bg-surface-800',
       'text-surface-700 dark:text-surface-0/80',
     ],
   },
   title: {
-    class: ['font-bold text-lg'],
+    class: ['font-bold text-surface-text text-lg'],
   },
   icons: {
     class: ['flex items-center'],
