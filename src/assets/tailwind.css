@@ -117,11 +117,11 @@
     --piveau-primary-light: #3b3b3b;
     --piveau-background: #1A1A1A;
     --piveau-surface: #262626;
-    --piveau-text-on-bg: #cccccc;
-    --piveau-text-on-surface: #FFFFFF;
+    --piveau-text-on-bg: #f4f4f4;
+    --piveau-text-on-surface: #ececec;
     --piveau-text-on-surface-light: #E0E0E0;
     --piveau-header-bg: #212121;
-    --piveau-header-text: #ededed;
+    --piveau-header-text: #f3f3f3;
     --piveau-footer-bg: #1c1c1c;
     --piveau-footer-text: #e9e9e9;
   }

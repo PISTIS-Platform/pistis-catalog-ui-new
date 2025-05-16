@@ -42,7 +42,7 @@
     /*****************************/
     --piveau-primary: #7B61FF;
     --piveau-primary-variant: #3B2F79;
-    --piveau-primary-light: #8a74f8;
+    --piveau-primary-light: #cdc3ff;
     --piveau-primary-disabled: #787878;
     --piveau-secondary: #B5D0D7;
     --piveau-secondary-variant: #2f6f88;
@@ -114,13 +114,14 @@
 
      :root[data-theme="dark"] {
     /* Only override what needs to change */
+    --piveau-primary-light: #3b3b3b;
     --piveau-background: #1A1A1A;
     --piveau-surface: #262626;
-    --piveau-text-on-bg: #cccccc;
-    --piveau-text-on-surface: #FFFFFF;
+    --piveau-text-on-bg: #f4f4f4;
+    --piveau-text-on-surface: #ececec;
     --piveau-text-on-surface-light: #E0E0E0;
     --piveau-header-bg: #212121;
-    --piveau-header-text: #ededed;
+    --piveau-header-text: #f3f3f3;
     --piveau-footer-bg: #1c1c1c;
     --piveau-footer-text: #e9e9e9;
   }
