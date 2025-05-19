@@ -29,7 +29,7 @@ const itemsCount = computed(() => (searchParams?.queryParams?.limit ?? 10))
       </slot>
     </template>
     <template v-else>
-      <div v-for="i in itemsCount.value" :key="i" class="flex size-full animate-pulse flex-col gap-6 bg-slate-200 text-content">
+      <div v-for="i in itemsCount.value" :key="i" class="flex size-full animate-pulse flex-col gap-6 bg-slate-200 text-content rounded-3xl">
         <div class="flex h-64 flex-wrap gap-2" />
       </div>
     </template>
