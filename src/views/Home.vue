@@ -9,8 +9,19 @@
     <!-- Hero Section Prototype -->
     <!-- ////////////////////// -->
 
-    <!-- Note: This is only a prototype/draft, open for feedback, ideas and further design/decelopment-->
+    
+    <!-- Idea: 
+         Put search on the first page with "What is piveau?" as search example. 
+         On our demo we could have a sample of own datasets with "what is piveea", 
+         "how to set up piveau", "Gitlab resources of pivea", "latest Docker images", "full Dumentation", 
+         "what is MQA?", "what is Consus?", "pivea paper" ...
+         
+         >> so users can find all resources related to piveau and the data management ecosystem
+         >> and we can use the search function to show how it works
+     -->
 
+
+    <!-- Note: This is only a prototype/draft, open for feedback, ideas and further design/decelopment-->
     <section class="bg-surface">
       <div class="max-w-(--breakpoint-xl) mx-auto w-screen px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32 bg-surface">
         <div class="mx-auto max-w-prose text-center">
