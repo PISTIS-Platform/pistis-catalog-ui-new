@@ -33,5 +33,7 @@ build-and-push:
       - docker push $IMAGE_NAME
     dependencies:
       - build-asset
+    tags:
+      - fokus-runner
     rules:
       - if: '$CI_COMMIT_BRANCH == "test-ci"'
