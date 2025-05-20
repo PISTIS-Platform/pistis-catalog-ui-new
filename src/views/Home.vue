@@ -9,7 +9,6 @@
     <!-- Hero Section Prototype -->
     <!-- ////////////////////// -->
 
-    
     <!-- Idea: 
          Put search on the first page with "What is piveau?" as search example. 
          On our demo we could have a sample of own datasets with "what is piveea", 
@@ -30,7 +29,7 @@
             <span class="text-primary"> piveau </span>
           </h1>
 
-          <p class="mt-4  text-surface-light sm:text-lg/relaxed">
+          <p class="mt-4 text-surface-light sm:text-lg/relaxed">
             <strong>piveau</strong> is a comprehensive <strong> data management ecosystem </strong>that streamlines the
             entire data lifecycle — from
             <strong>collection and aggregation to publication and reuse</strong>.
@@ -44,7 +43,7 @@
             </a>
           </button>
             <button type="submit"
-              class="mt-4 flex w-m items-center justify-center gap-2 rounded-3xl px-5 py-3 text-gray-700 bg-gray hover:bg-primary-hover">
+              class="mt-4 flex w-m items-center justify-center gap-2 rounded-3xl px-5 py-3 text-gray-700 bg-gray hover:bg-primary-hover hover:text-white">
               <span class="font-medium">  <a href="https://doc.piveau.eu/general/introduction/" target="_blank" rel="noopener noreferrer"
                 class="inline-block size-full"> Documentation </a> </span>
 
