@@ -19,7 +19,7 @@ build-asset:
     paths:
       - dist
 
-  build-and-push:
+build-and-push:
     stage: build
     image: docker:stable
     services:
