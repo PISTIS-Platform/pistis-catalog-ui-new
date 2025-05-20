@@ -23,7 +23,7 @@ export default {
 
       // Colors
       'text-surface-800 dark:text-surface-200',
-      'placeholder:text-surface dark:placeholder:text-surface',
+      'placeholder:text-surface-500 dark:placeholder:text-surface-500',
       'bg-surface-0 dark:bg-surface-900',
       'border border-surface-300 dark:border-surface-600',
 

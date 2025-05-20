@@ -13,7 +13,7 @@ const props = defineProps<{
 <template>
   <router-link :to="{ path: '/datasets', query: { catalog: item.getId }}">
     <div class="group relative mx-auto box-border w-full rounded-3xl border-b-[3px]
-      border-neutral-20 border-b-transparent bg-surface p-12 hover:border-b-primary">
+      border-neutral-20 border-b-transparent bg-surface p-12 hover:border-b-primary mb-6">
       <div class="flex flex-col gap-by5 text-surface-text">
         <span class="font-sans font-bold text-[1.375rem] leading-[2rem] md:text-[1.5rem] md:leading-[2.25rem] mb-6">
           {{ item.getTitle ?? '' }}
