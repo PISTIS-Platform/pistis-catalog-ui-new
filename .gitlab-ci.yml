@@ -18,3 +18,20 @@ build-asset:
   artifacts:
     paths:
       - dist
+
+  build-and-push:
+    stage: build
+    image: docker:stable
+    services:
+      - docker:dind
+    variables:
+      IMAGE_NAME: $CI_REGISTRY_IMAGE:test-$CI_COMMIT_SHA
+    before_script:
+      - echo "$CI_REGISTRY_PASSWORD" | docker login -u "$CI_REGISTRY_USER" --password-stdin $CI_REGISTRY
+    script:
+      - docker build -t $IMAGE_NAME .
+      - docker push $IMAGE_NAME
+    dependencies:
+      - build-asset
+    rules:
+      - if: '$CI_COMMIT_BRANCH == "test-ci"'
