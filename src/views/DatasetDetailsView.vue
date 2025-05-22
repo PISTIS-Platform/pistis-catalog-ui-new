@@ -158,10 +158,11 @@ const {
                   <div class="absolute bottom-0 flex w-full flex-row items-center justify-center">
                     <div>
                       <KButton
-                        icon="icon-[ph--eye-fill]" size="small" severity="terenity"
-                        :label="`Mehr anzeigen (${getFormattedDistributions.length})`" icon-pos="left"
+                        :label="`Mehr anzeigen (${getFormattedDistributions.length})`"
                         @click="showAllDistributions"
-                      /> 
+                      >
+                        <i class="icon-[ph--eye-fill]"></i>
+                      </KButton> 
                     </div>
                   </div>
                 </div>

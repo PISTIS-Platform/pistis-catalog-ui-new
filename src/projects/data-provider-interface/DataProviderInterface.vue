@@ -82,7 +82,8 @@ export default {
   <div class="flex w-full justify-center">
     <div class="w-full max-w-[70.5rem] p-8">
       <RouterLink to="/app/data-catalog">
-        <KButton severity="contrast" icon="icon-[ph--arrow-left]">
+        <KButton>
+          <i class="icon-[ph--arrow-left]"></i>
           {{ $t('dpi.back-to-datacatalog') }}
         </KButton>
       </RouterLink>
