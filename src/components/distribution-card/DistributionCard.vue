@@ -89,7 +89,8 @@ const resolvedData = computed(() => {
             noreferrer
             download
           >
-            <KButton :label="downloadText">
+            <KButton>
+              {{ downloadText }}
               <i class="icon-[ph--arrow-square-out]" />
             </KButton>
           </a>

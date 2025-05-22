@@ -7,7 +7,6 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    DarkModeToggle: typeof import('./src/components/toggler-dark-mode/DarkModeToggle.vue')['default']
     'DataInfoBox.story': typeof import('./src/components/base/data-info-box/DataInfoBox.story.vue')['default']
     DataInfoCard: typeof import('./src/components/base/data-info-box/DataInfoCard.vue')['default']
     DataToggler: typeof import('./src/components/data-toggler/DataToggler.vue')['default']
