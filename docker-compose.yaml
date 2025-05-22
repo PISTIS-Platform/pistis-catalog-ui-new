@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  vanilla.ui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - VITE_API_BASE_URL=${VITE_API_BASE_URL:-http://localhost:3000}
+      - VITE_AUTHENTICATION_KEYCLOAK_URL=${VITE_AUTHENTICATION_KEYCLOAK_URL:-https://auth.mainz-staging.dksr.city}
+      - VITE_AUTHENTICATION_KEYCLOAK_REALM=${VITE_AUTHENTICATION_KEYCLOAK_REALM:-city-os}
+      - VITE_AUTHENTICATION_KEYCLOAK_CLIENT_ID=${VITE_AUTHENTICATION_KEYCLOAK_CLIENT_ID:-city-os}
+      - VITE_SUPERSET_URL=${VITE_SUPERSET_URL:-https://superset.mainz.dksr.city}
+      - VITE_API_HUB_SEARCH_URL=${VITE_API_HUB_SEARCH_URL:-https://data.europa.eu/api/hub/search/}
+      - VITE_API_HUB_REPO_URL=${VITE_API_HUB_REPO_URL:-https://data.europa.eu/api/hub/repo/}
+      - VITE_API_HUB_STORE_URL=${VITE_API_HUB_STORE_URL:-https://data.europa.eu/api/hub/store/}
+      - VITE_API_MIDDLEWARE_URL=${VITE_API_MIDDLEWARE_URL:-http://localhost:5000}
+      - VITE_API_SPARQL_URL=${VITE_API_SPARQL_URL:-https://data.europa.eu/sparql}
+      - VITE_DIGITAL_TWIN_URL=${VITE_DIGITAL_TWIN_URL:-http://localhost:7000}
+
