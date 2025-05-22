@@ -1,49 +1,64 @@
-# Stage 1: Build stage
-FROM node:22.13-slim AS base
+# Stage 1: Dependencies
+FROM node:22.13-slim AS deps
+WORKDIR /app
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
-RUN npm i -g corepack@latest
-RUN corepack prepare pnpm@9
-RUN corepack enable
+RUN npm i -g corepack@latest && \
+    corepack prepare pnpm@9 && \
+    corepack enable
+
+# Copy only files needed for installation
+COPY package.json pnpm-lock.yaml* ./
+RUN pnpm install --no-frozen-lockfile
+
+# Stage 2: Builder
+FROM node:22.13-slim AS builder
+WORKDIR /app
+ENV PNPM_HOME="/pnpm"
+ENV PATH="$PNPM_HOME:$PATH"
+RUN npm i -g corepack@latest && \
+    corepack prepare pnpm@9 && \
+    corepack enable
+COPY --from=deps /pnpm /pnpm
+COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-FROM base AS prod-deps
-RUN pnpm install --prod
+# Set build arguments and environment
+ENV NODE_OPTIONS=--max-old-space-size=8192
+ENV NODE_ENV=production
 
-FROM base AS build
-RUN pnpm install --no-frozen-lockfile
-RUN pnpm run build-with-piveau
+# Build with verbose logging
+RUN pnpm run build-with-piveau --debug
 
-# Stage 2: Production stage
+# Stage 3: Production
 FROM nginx:alpine
-EXPOSE 8080
-
-RUN mkdir /var/cache/nginx/uwsgi_temp && \
-    mkdir /var/cache/nginx/client_temp && \
-    mkdir /var/cache/nginx/proxy_temp && \
-    mkdir /var/cache/nginx/fastcgi_temp && \
-    mkdir /var/cache/nginx/scgi_temp && \
+WORKDIR /usr/share/nginx/html
+RUN mkdir -p /var/cache/nginx/uwsgi_temp \
+    /var/cache/nginx/client_temp \
+    /var/cache/nginx/proxy_temp \
+    /var/cache/nginx/fastcgi_temp \
+    /var/cache/nginx/scgi_temp && \
     chmod g+rwx /var/cache/nginx /var/run /var/log/nginx /var/cache/nginx/client_temp
 
-COPY --from=prod-deps /node_modules /app/node_modules
-COPY --from=build /dist /usr/share/nginx/html
-# workaround to overcome some broken links e.g. hof-lp-header-background.jpg found under localhost:80/assets/src/assets/images
-# instead of localhost:80/src/assets/images
-# same for fonts .. not clear yet why it works sometimes and why not othertimes
-COPY --from=build /dist/src /usr/share/nginx/html/assets/src
-COPY --from=build /nginx/nginx.vh.default.conf /etc/nginx/conf.d/default.conf
-COPY --from=build /runtimeconfig.sh /runtimeconfig.sh
-COPY --from=build /config/default.env /default.env
+# Copy only the built assets and necessary files
+COPY --from=builder /app/dist .
+COPY --from=builder /app/dist/src ./assets/src
+COPY --from=builder /app/nginx/nginx.vh.default.conf /etc/nginx/conf.d/default.conf
+COPY --from=builder /app/runtimeconfig.sh /runtimeconfig.sh
+COPY --from=builder /app/config/default.env /default.env
 
-RUN chmod +x /runtimeconfig.sh && \
-    chmod a+rw /usr/share/nginx/html/ && \
-    chmod a+rw /usr/share/nginx/html/*.png && \
-    chmod a+rw /usr/share/nginx/html/assets && \
-    chmod a+rw /usr/share/nginx/html/assets/* && \
-    chmod a+rw /usr/share/nginx/html/src && \
-    chmod a+rw /usr/share/nginx/html/src/assets && \
-    chmod a+rw /usr/share/nginx/html/src/assets/icons && \
-    chmod a+rw /usr/share/nginx/html/src/assets/images && \
-    chmod a+rw /usr/share/nginx/html/src/assets/images/*
+# Add this line to convert CRLF to LF
+RUN apk add --no-cache bash gettext dos2unix && \
+    dos2unix /runtimeconfig.sh && \
+    dos2unix /default.env && \
+    chmod +x /runtimeconfig.sh && \
+    chmod -R a+rw .
 
-CMD [ "/runtimeconfig.sh" ]
+
+
+EXPOSE 8080
+
+# Use bash for the runtime script
+CMD ["/bin/bash", "/runtimeconfig.sh"]
+
+
