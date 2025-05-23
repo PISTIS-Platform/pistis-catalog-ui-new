@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import { clsx } from 'clsx'
 import Dropdown from 'primevue/dropdown'
-import InputGroup from 'primevue/inputgroup'
-import ToggleButton from 'primevue/togglebutton'
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
@@ -26,6 +24,10 @@ const checked = computed({
   },
 })
 
+function toggle() {
+  checked.value = !checked.value
+}
+
 const sortOptions = computed(() => [
   { name: t('kdw.components.sort-split-button.SortSplitButton.sortOptions.modified'), id: 'modified' },
   { name: t('kdw.components.sort-split-button.SortSplitButton.sortOptions.relevance'), id: 'relevance' },
@@ -37,30 +39,27 @@ const sort = defineModel<string>('sort', { default: 'modified' })
 
 <template>
   <div class="relative">
-    <InputGroup class="w-full"> 
-      <Dropdown
+    <div class="w-full flex"> 
+        <Dropdown
         v-model="sort"
         :options="sortOptions"
         option-label="name"
         option-value="id"
-        placeholder="Select a City"
+
         class="w-full items-center rounded-r-none md:w-56"
       >
         <template #dropdownicon>
           <i class="icon-[ph--caret-down] text-surface-text" />
         </template>
       </Dropdown>
-      <ToggleButton
-        v-model="checked"
-        :off-label="t('kdw.components.sort-split-button.SortSplitButton.toggleButton.descending')"
-        :on-label="t('kdw.components.sort-split-button.SortSplitButton.toggleButton.ascending')"
-        class="rounded-l-none border-r-0"
+      <button 
+        @click="toggle"
+        class="rounded-l-none border-r-0 pl-3 pr-4 rounded-full border border-surface-200 dark:border-surface-700 cursor-pointer bg-white font-light flex items-center"
       >
-        <template #icon>
-          <i :class="sortDirectionClass" />
-        </template>
-      </ToggleButton>
-    </InputGroup>
+        <i :class="sortDirectionClass" class="!text-xs"/>
+        {{ checked ? t('kdw.components.sort-split-button.SortSplitButton.toggleButton.ascending') : t('kdw.components.sort-split-button.SortSplitButton.toggleButton.descending')}}
+      </button> 
+    </div>
   </div>
 </template>
 
