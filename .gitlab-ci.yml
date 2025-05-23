@@ -13,13 +13,9 @@ build-asset:
   image: node:18-alpine
   cache:
     <<: *global_cache
-  rules:
-    - if: '$CI_PIPELINE_SOURCE == "web"'
-      when: manual
-    - if: '$CI_COMMIT_BRANCH == "master"'
-    - if: '$CI_COMMIT_TAG'
+
   tags:
-    - fokus-runner  # Instead of fokus-runner
+    - fokus-runner   # use fokus-runner
   before_script:
     - npm i -g pnpm
     - pnpm config set store-dir .pnpm-store
@@ -46,8 +42,6 @@ build-and-push:
     dependencies:
       - build-asset
     tags:
-      - fokus-runner  # Instead of fokus-runner
-    rules:
-      - if: '$CI_PIPELINE_SOURCE == "web"'
-        when: manual
-      - if: '$CI_COMMIT_BRANCH == "test-ci"'
+      - fokus-runner  #use fokus-runner
+    only:
+      - test-ci
