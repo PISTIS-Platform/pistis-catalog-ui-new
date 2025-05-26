@@ -61,6 +61,8 @@ deploy-to-openshift:
     DEPLOYMENT_NAME: piveau-vanilla-ui
     NAMESPACE: piveau
   before_script:
+    - echo "Server URL: $OPENSHIFT_SERVER"
+    - echo "Token length: ${#OPENSHIFT_TOKEN}"
     # Login to OpenShift cluster
     - oc login $OPENSHIFT_SERVER --token=$OPENSHIFT_TOKEN --insecure-skip-tls-verify=true
     - oc project $NAMESPACE
