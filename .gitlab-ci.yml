@@ -29,27 +29,24 @@ build-asset:
       - dist
 
 build-and-push:
-    stage: build
-    image: docker:stable
-    services:
-      - docker:dind
-    variables:
-      IMAGE_NAME: $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
-    before_script:
-      - echo "$CI_REGISTRY_PASSWORD" | docker login -u "$CI_REGISTRY_USER" --password-stdin $CI_REGISTRY
-    after_script:
-      - echo "Deployment completed for commit $CI_COMMIT_SHA"
-    script:
-      - docker build -t $IMAGE_NAME .
-      - docker push $IMAGE_NAME
-    dependencies:
-      - build-asset
-    tags:
-      - fokus-runner  #use fokus-runner
-    only:
-      - test-ci
-      - master
-
+  stage: build
+  image: docker:stable
+  services:
+    - docker:dind
+  variables:
+    IMAGE_NAME: $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
+  before_script:
+    - echo "$CI_REGISTRY_PASSWORD" | docker login -u "$CI_REGISTRY_USER" --password-stdin $CI_REGISTRY
+  script:
+    - docker build -t $IMAGE_NAME .
+    - docker push $IMAGE_NAME
+  dependencies:
+    - build-asset
+  tags:
+    - fokus-runner  #use fokus-runner
+  only:
+    - master
+    - test-ci
 
 deploy-to-openshift:
   stage: deploy
@@ -61,8 +58,8 @@ deploy-to-openshift:
     DEPLOYMENT_NAME: piveau-vanilla-ui
     NAMESPACE: piveau
   before_script:
-    - echo "Server URL: $OPENSHIFT_SERVER"
-    - echo "Token length: ${#OPENSHIFT_TOKEN}"
+    - echo "Server URL:" $OPENSHIFT_SERVER
+    - echo "Token set:" $(test -n "$OPENSHIFT_TOKEN" && echo "yes" || echo "no")
     # Login to OpenShift cluster
     - oc login $OPENSHIFT_SERVER --token=$OPENSHIFT_TOKEN --insecure-skip-tls-verify=true
     - oc project $NAMESPACE
@@ -76,8 +73,8 @@ deploy-to-openshift:
   tags:
     - fokus-runner
   only:
-    - test-ci
     - master
+    - test-ci
   dependencies:
     - build-and-push
   when: manual  # Remove this line if you want automatic deployment
