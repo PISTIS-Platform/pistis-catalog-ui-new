@@ -45,3 +45,33 @@ build-and-push:
       - fokus-runner  #use fokus-runner
     only:
       - test-ci
+      - master
+
+
+deploy-to-openshift:
+  stage: deploy
+  image:
+    name: quay.io/openshift/origin-cli:latest
+    entrypoint: [""]
+  variables:
+    IMAGE_NAME: $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
+    DEPLOYMENT_NAME: piveau-vanilla-ui
+    NAMESPACE: piveau
+  before_script:
+    # Login to OpenShift cluster
+    - oc login $OPENSHIFT_SERVER --token=$OPENSHIFT_TOKEN --insecure-skip-tls-verify=true
+    - oc project $NAMESPACE
+  script:
+    # Update the deployment with new image
+    - oc set image deployment/$DEPLOYMENT_NAME $DEPLOYMENT_NAME=$IMAGE_NAME -n $NAMESPACE
+    # Wait for rollout to complete
+    - oc rollout status deployment/$DEPLOYMENT_NAME -n $NAMESPACE --timeout=300s
+    # Verify deployment
+    - oc get pods -l app.kubernetes.io/name=piveau-hub-ui -n $NAMESPACE
+  tags:
+    - fokus-runner
+  only:
+    - master
+  dependencies:
+    - build-and-push
+  when: manual  # Remove this line if you want automatic deployment
