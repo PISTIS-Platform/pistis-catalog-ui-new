@@ -37,6 +37,8 @@ build-and-push:
       IMAGE_NAME: $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
     before_script:
       - echo "$CI_REGISTRY_PASSWORD" | docker login -u "$CI_REGISTRY_USER" --password-stdin $CI_REGISTRY
+    after_script:
+      - echo "Deployment completed for commit $CI_COMMIT_SHA"
     script:
       - docker build -t $IMAGE_NAME .
       - docker push $IMAGE_NAME
