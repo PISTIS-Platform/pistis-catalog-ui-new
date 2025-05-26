@@ -1,5 +1,6 @@
 stages:
   - build
+  - deploy
 
 cache: &global_cache
   key: ${CI_COMMIT_REF_SLUG}
@@ -33,7 +34,7 @@ build-and-push:
     services:
       - docker:dind
     variables:
-      IMAGE_NAME: $CI_REGISTRY_IMAGE:test-$CI_COMMIT_SHA
+      IMAGE_NAME: $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
     before_script:
       - echo "$CI_REGISTRY_PASSWORD" | docker login -u "$CI_REGISTRY_USER" --password-stdin $CI_REGISTRY
     script:
