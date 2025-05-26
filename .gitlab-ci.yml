@@ -74,6 +74,7 @@ deploy-to-openshift:
   tags:
     - fokus-runner
   only:
+    - test-ci
     - master
   dependencies:
     - build-and-push
