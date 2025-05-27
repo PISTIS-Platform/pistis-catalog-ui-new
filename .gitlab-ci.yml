@@ -48,7 +48,7 @@ build-and-push:
     - fokus-runner  #use fokus-runner
   only:
     - master
-    - test-ci
+
 
 notify-deployment-ready:
   stage: deploy
