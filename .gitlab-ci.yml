@@ -50,4 +50,28 @@ build-and-push:
     - master
     - test-ci
 
-
+notify-deployment-ready:
+  stage: deploy
+  image: curlimages/curl:latest
+  variables:
+    IMAGE_NAME: $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
+    IMAGE_LATEST: $CI_REGISTRY_IMAGE:latest
+  script:
+    - echo "========================================="
+    - echo "🚀 New image built and pushed successfully!"
+    - echo "========================================="
+    - echo "Commit SHA: $CI_COMMIT_SHA"
+    - echo "Image with SHA: $IMAGE_NAME"
+    - echo "Latest image: $IMAGE_LATEST"
+    - echo ""
+    - echo "📋 To deploy on your OpenShift cluster, run:"
+    - echo ""
+    - echo "oc import-image piveau-vanilla-ui:latest --from=$IMAGE_LATEST --confirm -n piveau"
+    - echo ""
+    - echo "========================================="
+  tags:
+    - fokus-runner
+  only:
+    - master
+  dependencies:
+    - build-and-push
