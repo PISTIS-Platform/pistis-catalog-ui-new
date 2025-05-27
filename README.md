@@ -67,7 +67,32 @@ pnpm change-project hof
 
 If the script doesn't work for you, make sure to run ```chmod +x change-project``` to make it executable.
 
-## CI
+## CI/CD Pipeline
 
-The CI automation is configured to only build a docker image and release/publish a helm chart in case of default branch
-or a tag to a commit happened or if the variable `MANUAL_BUILD_BRANCH` is set manually within new pipeline created.
+The project uses GitLab CI/CD with the following stages:
+
+### Build Stage
+- **build-asset**: Builds the frontend assets
+    - Uses Node.js 18 Alpine image
+    - Utilizes PNPM for package management
+    - Caches dependencies for faster builds
+    - Produces distribution artifacts in `dist/` directory
+
+- **build-and-push**: Creates and pushes Docker images
+    - Builds Docker image using the latest artifacts
+    - Pushes two tags to the registry:
+        - Latest commit SHA (`$CI_REGISTRY_IMAGE:$CI_COMMIT_SHA`)
+        - Latest version (`$CI_REGISTRY_IMAGE:latest`)
+
+### Deploy Stage
+- **notify-deployment-ready**: Provides deployment instructions
+    - Displays instructions for deploying to OpenShift
+    - Shows the command to import the latest image:
+      ```bash
+      oc import-image piveau-vanilla-ui:latest --from=$IMAGE_LATEST --confirm -n piveau
+      ```
+
+### Notes
+- Pipeline runs on `fokus-runner` tags
+- Master branch deployments only
+- Caching strategy uses pull-push policy for node_modules and PNPM store
