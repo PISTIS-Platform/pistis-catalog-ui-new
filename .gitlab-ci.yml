@@ -1,17 +1,26 @@
 stages:
   - build
+  - deploy
+
+cache: &global_cache
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - .pnpm-store
+    - node_modules/
+  policy: pull-push
 
 build-asset:
   stage: build
   image: node:18-alpine
-  only:
-    - master
-    - develop
-    - tags
+  cache:
+    <<: *global_cache
+
   tags:
-    - fokus-runner
-  script:
+    - fokus-runner   # use fokus-runner
+  before_script:
     - npm i -g pnpm
+    - pnpm config set store-dir .pnpm-store
+  script:
     - pnpm install
     - cp .env.template .env.local
     - pnpm run build-only
@@ -20,20 +29,49 @@ build-asset:
       - dist
 
 build-and-push:
-    stage: build
-    image: docker:stable
-    services:
-      - docker:dind
-    variables:
-      IMAGE_NAME: $CI_REGISTRY_IMAGE:test-$CI_COMMIT_SHA
-    before_script:
-      - echo "$CI_REGISTRY_PASSWORD" | docker login -u "$CI_REGISTRY_USER" --password-stdin $CI_REGISTRY
-    script:
-      - docker build -t $IMAGE_NAME .
-      - docker push $IMAGE_NAME
-    dependencies:
-      - build-asset
-    tags:
-      - fokus-runner
-    rules:
-      - if: '$CI_COMMIT_BRANCH == "test-ci"'
+  stage: build
+  image: docker:stable
+  services:
+    - docker:dind
+  variables:
+    IMAGE_NAME: $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
+    IMAGE_LATEST: $CI_REGISTRY_IMAGE:latest
+  before_script:
+    - echo "$CI_REGISTRY_PASSWORD" | docker login -u "$CI_REGISTRY_USER" --password-stdin $CI_REGISTRY
+  script:
+    - docker build -t $IMAGE_NAME -t $IMAGE_LATEST .
+    - docker push $IMAGE_NAME
+    - docker push $IMAGE_LATEST
+  dependencies:
+    - build-asset
+  tags:
+    - fokus-runner  #use fokus-runner
+  only:
+    - master
+    - test-ci
+
+notify-deployment-ready:
+  stage: deploy
+  image: curlimages/curl:latest
+  variables:
+    IMAGE_NAME: $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
+    IMAGE_LATEST: $CI_REGISTRY_IMAGE:latest
+  script:
+    - echo "========================================="
+    - echo "🚀 New image built and pushed successfully!"
+    - echo "========================================="
+    - echo "Commit SHA: $CI_COMMIT_SHA"
+    - echo "Image with SHA: $IMAGE_NAME"
+    - echo "Latest image: $IMAGE_LATEST"
+    - echo ""
+    - echo "📋 To deploy on your OpenShift cluster, run:"
+    - echo ""
+    - echo "oc import-image piveau-vanilla-ui:latest --from=$IMAGE_LATEST --confirm -n piveau"
+    - echo ""
+    - echo "========================================="
+  tags:
+    - fokus-runner
+  only:
+    - master
+  dependencies:
+    - build-and-push
