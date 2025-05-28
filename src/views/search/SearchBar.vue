@@ -27,8 +27,6 @@ const searchInput = defineModel<string>()
           :select-options="[]"
         />
         <KButton
-          class="h-full text-base"
-          size="large"
           type="submit"
         >
           {{ $t('search.searchButton') }}

@@ -49,10 +49,11 @@ const handleCloseNav = () => {
           <!-- Mobile Menu Button -->
           <div class="md:hidden">
             <KButton
-              severity="contrast"
-              icon="icon-[ph--list]"
+              variant="null"
               @click="visible = true"
-            />
+            > 
+              <i class="icon-[ph--list]"></i>
+            </KButton>
           </div>
 
           <!-- Desktop Actions -->

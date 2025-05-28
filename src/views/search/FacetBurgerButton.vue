@@ -10,13 +10,10 @@ const props = defineProps<{
   <section>
     <div class="flex items-center gap-2 p-2">
       <KButton
-        severity="contrast"
-        size="large"
+        variant="null"
         @click="openSidebar()"
       >
-        <template #icon>
-          <i class="icon-[ph--text-align-left]" />
-        </template>
+        <i class="icon-[ph--text-align-left]" />
       </KButton>
       <span>Search filter</span>
     </div>
