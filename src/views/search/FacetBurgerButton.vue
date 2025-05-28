@@ -11,7 +11,6 @@ const props = defineProps<{
     <div class="flex items-center gap-2 p-2">
       <KButton
         variant="null"
-        :icon="true"
         @click="openSidebar()"
       >
         <i class="icon-[ph--text-align-left]" />

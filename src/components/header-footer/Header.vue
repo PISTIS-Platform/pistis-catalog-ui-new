@@ -50,7 +50,6 @@ const handleCloseNav = () => {
           <div class="md:hidden">
             <KButton
               variant="null"
-              icon="true"
               @click="visible = true"
             > 
               <i class="icon-[ph--list]"></i>

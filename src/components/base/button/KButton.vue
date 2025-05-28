@@ -26,16 +26,12 @@ const button = cva('rounded-3xl border-transparent inline-flex min-w-fit items-c
     size: {
       small: 'h-8 text-sm px-4 py-2',
       large: 'h-12 text-lg px-4 py-3',
-    },
-    icon: {
-      true: 'text-black',
-      false: ''
     }
   },
 })
 
 const buttonClass = computed(() =>
-  button({ variant: props.variant, size: props.size, icon: props.icon}),
+  button({ variant: props.variant, size: props.size}),
 )
 </script>
 
