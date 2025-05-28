@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { clsx } from 'clsx'
-import Dropdown from 'primevue/dropdown'
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
+const showDropdown = ref(false)
 const sortDirection = defineModel<string>('direction', { default: 'desc' })
 const sortDirectionClass = computed(() =>
   clsx([
@@ -13,7 +13,7 @@ const sortDirectionClass = computed(() =>
       'icon-[ph--arrow-up]': sortDirection.value === 'asc',
       'icon-[ph--arrow-down]': sortDirection.value === 'desc',
     },
-  ]),
+  ])
 )
 const checked = computed({
   get() {
@@ -24,10 +24,6 @@ const checked = computed({
   },
 })
 
-function toggle() {
-  checked.value = !checked.value
-}
-
 const sortOptions = computed(() => [
   { name: t('kdw.components.sort-split-button.SortSplitButton.sortOptions.modified'), id: 'modified' },
   { name: t('kdw.components.sort-split-button.SortSplitButton.sortOptions.relevance'), id: 'relevance' },
@@ -35,31 +31,62 @@ const sortOptions = computed(() => [
   { name: t('kdw.components.sort-split-button.SortSplitButton.sortOptions.issued'), id: 'issued' },
 ])
 const sort = defineModel<string>('sort', { default: 'modified' })
+
+const selectedOption = computed(() => sortOptions.value.find((opt) => opt.id === sort.value)?.name ?? '')
+
+function toggleDropdown() {
+  showDropdown.value = !showDropdown.value
+}
+
+function selectOption(id: string, name: string) {
+  sort.value = id
+}
+
+function toggle() {
+  checked.value = !checked.value
+}
 </script>
 
 <template>
-  <div class="relative">
-    <div class="w-full flex"> 
-        <Dropdown
-        v-model="sort"
-        :options="sortOptions"
-        option-label="name"
-        option-value="id"
+  <div class="relative w-full flex">
+    <div class="relative rounded-r-none md:w-56 inline-flex rounded-full bg-surface border cursor-pointer">
+      <button
+        @click="toggleDropdown"
+        class="flex-auto font-light px-3 py-2 flex items-center justify-between">
+        {{ selectedOption }}
+        <i class="icon-[ph--caret-down] text-surface-text text-xs" />
+      </button>
 
-        class="w-full items-center rounded-r-none md:w-56"
+      <div
+        v-if="showDropdown"
+        class="absolute z-10 w-full  top-full border dark:border rounded-md shadow-md bg-surface-0 dark:bg-surface-800 text-surface-800 dark:text-white/80 dark:border-surface-700 max-h-[200px] py-3"
       >
-        <template #dropdownicon>
-          <i class="icon-[ph--caret-down] text-surface-text" />
-        </template>
-      </Dropdown>
-      <button 
-        @click="toggle"
-        class="rounded-l-none border-r-0 pl-3 pr-4 rounded-full border border-surface-200 dark:border-surface-700 cursor-pointer bg-white font-light flex items-center"
-      >
-        <i :class="sortDirectionClass" class="!text-xs"/>
-        {{ checked ? t('kdw.components.sort-split-button.SortSplitButton.toggleButton.ascending') : t('kdw.components.sort-split-button.SortSplitButton.toggleButton.descending')}}
-      </button> 
+        <ul
+          v-for="option in sortOptions"
+          :key="option.id"
+          :value="option.id">
+          <li
+            @click="selectOption(option.id, option.name)"
+            class="leading-none m-0 py-3 px-5 font-light dark:bg-primary-400/40 text-primary-700 dark:text-white/80 cursor-pointer hover:bg-gray-hover"
+            :class="{ 'bg-blue-400/20': option.id === sort }">
+            {{ option.name }}
+          </li>
+        </ul>
+      </div>
     </div>
+
+    <button
+      @click="toggle"
+      class="rounded-l-none pl-3 pr-4 rounded-full border border-surface-200 dark:border-surface-700 cursor-pointer bg-surface font-light flex items-center">
+      <i
+        :class="sortDirectionClass"
+        class="!text-xs" />
+      {{
+        checked
+          ? t('kdw.components.sort-split-button.SortSplitButton.toggleButton.ascending')
+          : t('kdw.components.sort-split-button.SortSplitButton.toggleButton.descending')
+      }}
+    </button>
   </div>
 </template>
 
