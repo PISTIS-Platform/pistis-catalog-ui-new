@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { SelectOptionList } from '../../utils/types'
-import InputText from 'primevue/inputtext'
 
 const props = defineProps<{
   placeholder?: string
