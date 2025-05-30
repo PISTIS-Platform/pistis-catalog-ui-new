@@ -118,12 +118,14 @@ const preset = {
     :is="isInteractive ? 'button' : 'span'"
     :class="{
       'bg-gray focus:ring-offset-2 focus:ring-secondary rounded-2xl outline-hidden h-8 px-4 py-1': isInteractive,
-      'h-8 px-4 py-1 rounded-3xl bg-secondary text-neutral-100 dark:bg-[#015184] dark:text-white': !isInteractive
     }"
     @click.prevent="$emit('click', $event)"
   >
     <div
       v-bind="combinedAttrs"
+      :class="{
+        'h-8 px-4 py-1 rounded-3xl bg-secondary text-neutral-100 dark:bg-[#015184] dark:text-white': !isInteractive
+      }"
     >
       <div class="flex min-w-fit flex-nowrap items-center gap-2 text-secondary-text" :class="{ 'flex-row-reverse': props.iconRight }">
         <PhX v-if="props.removable && !hasIcon" />
