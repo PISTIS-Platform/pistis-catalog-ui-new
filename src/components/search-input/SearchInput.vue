@@ -1,8 +1,5 @@
 <script setup lang="ts">
 import type { SelectOptionList } from '../../utils/types'
-import Dropdown from 'primevue/dropdown'
-import InputGroup from 'primevue/inputgroup'
-import InputText from 'primevue/inputtext'
 
 const props = defineProps<{
   placeholder?: string
@@ -12,32 +9,19 @@ const props = defineProps<{
 }>()
 
 const searchValue = defineModel<string>()
-const selectValue = defineModel<string>('select')
 </script>
 
 <template>
-  <InputGroup>
-    <InputText
-      v-model="searchValue"
-      :placeholder="props.placeholder"
-      size="small"
-      class="custom-input"
-    />
-    <Dropdown
-      v-if="!props.disableDropdown"
-      v-model="selectValue"
-      :options="props.selectOptions"
-      option-label="label"
-      option-value="value"
-      :placeholder="props.selectPlaceholder"
-      class="rounded-l-none md:w-56"
-    />
-  </InputGroup>
+  <input
+    v-model="searchValue"
+    :placeholder="props.placeholder"
+    size="small"
+    class="custom-input text-surface-800 dark:text-surface-200 bg-surface-0 dark:bg-surface-900 border focus:outline-hidden" />
 </template>
 
 <style scoped>
 .custom-input {
-  border: 0.3px solid #dedede ;
+  border: 0.3px solid #dedede;
   border-radius: 100px !important;
   padding-left: 1rem;
 }

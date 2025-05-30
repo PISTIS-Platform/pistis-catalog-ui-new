@@ -21,7 +21,6 @@ const searchInput = defineModel<string>()
       >
         <SearchInput
           v-model="searchInput"
-          disable-dropdown
           class="w-full max-w-[50rem]"
           :placeholder="$t('search.searchBarPlaceholder')"
           :select-options="[]"
