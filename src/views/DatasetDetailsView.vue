@@ -134,7 +134,7 @@ const {
             <h2 class="text-[2.5rem] font-bold leading-[3rem] text-primary-100">
               Distributionen
             </h2>
-            <KTag interactive class="rounded-full bg-secondary">
+            <KTag class="rounded-full bg-secondary">
               {{
                 getFormattedDistributions?.length
               }}
