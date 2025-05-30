@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { SelectOptionList } from '../../utils/types'
-import Dropdown from 'primevue/dropdown'
 import InputGroup from 'primevue/inputgroup'
 import InputText from 'primevue/inputtext'
 
@@ -12,7 +11,6 @@ const props = defineProps<{
 }>()
 
 const searchValue = defineModel<string>()
-const selectValue = defineModel<string>('select')
 </script>
 
 <template>
@@ -22,15 +20,6 @@ const selectValue = defineModel<string>('select')
       :placeholder="props.placeholder"
       size="small"
       class="custom-input"
-    />
-    <Dropdown
-      v-if="!props.disableDropdown"
-      v-model="selectValue"
-      :options="props.selectOptions"
-      option-label="label"
-      option-value="value"
-      :placeholder="props.selectPlaceholder"
-      class="rounded-l-none md:w-56"
     />
   </InputGroup>
 </template>
