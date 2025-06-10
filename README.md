@@ -1,6 +1,4 @@
-# Frontend for TwinByData
-
-This is the main repository for the TwinByData Frontend.
+# PISTIS Catalog UI
 
 ## Overview
 
@@ -45,7 +43,7 @@ pnpm story:dev
 
 ## Configuration
 
-For configuration, TwinByData uses config.js files which are tailored according to each customer requirements.
+For configuration, config.js files can be tailored according to each customer requirements.
 
 You can find ```config``` folder inside the project directory.
 
