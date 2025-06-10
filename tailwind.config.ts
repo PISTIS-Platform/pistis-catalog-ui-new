@@ -1,6 +1,8 @@
 import type { Config } from 'tailwindcss'
 import { addDynamicIconSelectors } from '@iconify/tailwind'
 import typography from '@tailwindcss/typography'
+import colors from 'tailwindcss/colors';
+import defaultTheme  from "tailwindcss/defaultTheme";
 /* import { gray } from 'tailwindcss/colors' */
 
 export default {
@@ -8,11 +10,24 @@ export default {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx,html}'],
   theme: {
     fontFamily: {
-      sans: ['var(--font-sans)', 'sans-serif'],
-      display: ['var(--font-display)', 'sans-serif'],
+      sans: ['Inter var', ...defaultTheme.fontFamily.sans],
     },
     extend: {
       colors: {
+        pistis: {
+          '50': '#edefff',
+          '100': '#dfe1ff',
+          '200': '#c5c8ff',
+          '300': '#a2a4ff',
+          '400': '#837cfd',
+          '500': '#705df7',
+          '600': '#613deb',
+          '700': '#5632d0',
+          '800': '#462ba8',
+          '900': '#3b2b84',
+          '950': '#24194d',
+        },
+        secondary: colors.orange,
         'primary': {
           DEFAULT: 'var(--primary)',
           hover: 'var(--primary-hover)',
@@ -20,15 +35,13 @@ export default {
           light: 'var(--primary-light)',
           text: 'var(--primary-text)',
         },
-
-        'secondary': {
-          DEFAULT: 'var(--secondary)',
-          hover: 'var(--secondary-background-hover)',
-          pressed: 'var(--secondary-background-pressed)',
-          disabled: 'var(--secondary-background-disabled)',
-          text: 'var(--secondary-text)',
-        },
-
+        // 'secondary': {
+        //   DEFAULT: 'var(--secondary)',
+        //   hover: 'var(--secondary-background-hover)',
+        //   pressed: 'var(--secondary-background-pressed)',
+        //   disabled: 'var(--secondary-background-disabled)',
+        //   text: 'var(--secondary-text)',
+        // },
         'gray': {
           DEFAULT: 'var(--gray)',
           hover: 'var(--gray-hover)',
@@ -126,7 +139,6 @@ export default {
         custom: 'var(--border-radius-custom)',
         search: 'var(--border-radius-search)',
       },
-
       fontSize: {
         'copy-lg': ['1rem', '1.625rem'],
         'copy-sm': ['0.9375rem', '1.5rem'],
