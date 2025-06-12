@@ -27,7 +27,7 @@ export default {
           '900': '#3b2b84',
           '950': '#24194d',
         },
-        secondary: colors.orange,
+        // secondary: colors.orange,
         'primary': {
           DEFAULT: 'var(--primary)',
           hover: 'var(--primary-hover)',
@@ -35,13 +35,13 @@ export default {
           light: 'var(--primary-light)',
           text: 'var(--primary-text)',
         },
-        // 'secondary': {
-        //   DEFAULT: 'var(--secondary)',
-        //   hover: 'var(--secondary-background-hover)',
-        //   pressed: 'var(--secondary-background-pressed)',
-        //   disabled: 'var(--secondary-background-disabled)',
-        //   text: 'var(--secondary-text)',
-        // },
+        'secondary': {
+          DEFAULT: colors.orange,
+          // hover: 'var(--secondary-background-hover)',
+          // pressed: 'var(--secondary-background-pressed)',
+          // disabled: 'var(--secondary-background-disabled)',
+          // text: 'var(--secondary-text)',
+        },
         'gray': {
           DEFAULT: 'var(--gray)',
           hover: 'var(--gray-hover)',
@@ -108,14 +108,14 @@ export default {
         'btn-regular': 'rgb(var(--btn-regular))',
         'btn-pressed': 'rgb(var(--btn-pressed))',
 
-        'inline-text-hyperlink': 'rgb(var(--twinby-blue-80))',
-        'inline-text-hyperlink-hover': 'rgb(var(--twinby-blue-100))',
-        'inline-text-hyperlink-pressed': 'rgb(var(--twinby-blue-60))',
-        'inline-text-hyperlink-visited': 'rgb(var(--twinby-blue-90))',
-        'inline-text-hyperlink--dark': 'rgb(var(--twinby-blue-40))',
-        'inline-text-hyperlink-hover--dark': 'rgb(var(--twinby-blue-30))',
-        'inline-text-hyperlink-pressed--dark': 'rgb(var(--twinby-blue-60))',
-        'inline-text-hyperlink-visited--dark': 'rgb(var(--twinby-blue-50))',
+        'inline-text-hyperlink': 'rgb(var(--pistis-blue-80))',
+        'inline-text-hyperlink-hover': 'rgb(var(--pistis-blue-100))',
+        'inline-text-hyperlink-pressed': 'rgb(var(--pistis-blue-60))',
+        'inline-text-hyperlink-visited': 'rgb(var(--pistis-blue-90))',
+        'inline-text-hyperlink--dark': 'rgb(var(--pistis-blue-40))',
+        'inline-text-hyperlink-hover--dark': 'rgb(var(--pistis-blue-30))',
+        'inline-text-hyperlink-pressed--dark': 'rgb(var(--pistis-blue-60))',
+        'inline-text-hyperlink-visited--dark': 'rgb(var(--pistis-blue-50))',
       },
 
       spacing: {
