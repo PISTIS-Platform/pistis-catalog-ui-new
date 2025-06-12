@@ -16,14 +16,16 @@ let store = null
 async function init(appInitCallback: Function) {
   try {
     authenticated = await keycloak.init({
-      onLoad: 'check-sso',
+      onLoad: 'login-required',
       silentCheckSsoRedirectUri: `${location.origin}/silent-check-sso.html`,
       checkLoginIframe: true,
     })
 
     appInitCallback()
+    console.log("Keycloak initialized successfully")
   }
   catch (error) {
+    console.error("Keycloak init failed")
     console.error(error)
   }
 }

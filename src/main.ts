@@ -20,6 +20,7 @@ import AuthStorePlugin from './plugins/authStorePlugin'
 import authStore from './projects/data-provider-interface/store/authStore'
 import dpiStore from './projects/data-provider-interface/store/dpiStore'
 import snackbarStore from './projects/data-provider-interface/store/snackbarStore'
+import KeycloakService from './services/keycloak'
 
 import { userConfigShimPlugin } from './projects/data-provider-interface/utils/userConfigShimPlugin'
 import { configureMarked } from './sdk/utils/configureMarked'
@@ -105,4 +106,5 @@ configureMarked()
 if (import.meta.hot) {
   import.meta.hot.accept()
 }
-renderApp()
+// renderApp()
+KeycloakService.initKeycloak(renderApp);
