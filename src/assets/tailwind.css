@@ -83,7 +83,7 @@
     --primary-light: var(--piveau-primary-light);
     --primary-disabled: var(--piveau-primary-disabled);
 
-    --secondary: var(--piveau-secondary);
+    --secondary: #f97316;
     --secondary-hover: var(--piveau-secondary-variant);
     --secondary-disabled: var(--piveau-secondary-disabled);
 
