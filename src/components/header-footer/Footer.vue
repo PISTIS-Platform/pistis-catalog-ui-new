@@ -1,138 +1,51 @@
-<script setup>
-const seitenLinks = [
-  { to: '/', text: 'Home' },
-  { to: '/datasets', text: 'Datasets' },
-  { to: '/catalogues', text: 'Catalogues' },
-  { to: '/Themer', text: 'Theme Generator' },
-  { to: 'https://doc.piveau.eu/general/introduction/', text: 'Docs' },
-  { to: 'https://gitlab.com/piveau/', text: 'GitLab' },
-]
-
-const socialLinks = [
-  { href: 'https://www.linkedin.com/company/fraunhoferfokus/?originalSubdomain=de', text: 'LinkedIn' },
-]
-
-const rechtlichesLinks = [
-  { to: '#', text: 'Imprint' },
-  { to: '#', text: 'Data Privacy' },
-]
-
-const loginLinks = [
-  { to: '/app', text: 'Login' },
-  { to: '/contact', text: 'Contact' },
-]
-</script>
-
 <template>
-  <footer class="bg-footer-bg text-footer-bg-text py-16 px-8">
-    <div class="space-y-32 container mx-auto max-w-7xl">
-      <!-- Main Footer Content -->
-      <div class="flex flex-col flex-wrap justify-between gap-x-10 gap-y-20 md:flex-row xl:gap-10">
-        <!-- Seiten Section -->
-        <div class="mr-10 w-full md:w-3/12 xl:w-2/12">
-          <h3 class="mb-4 text-xl font-semibold">
-            Sitemap
-          </h3>
-          <ul class="flex flex-col gap-0">
-            <li
-              v-for="link in seitenLinks"
-              :key="link.text"
-              class="text-copy-sm"
-            >
-            <template v-if="link.to.startsWith('http')">
-                <a
-                  :href="link.to"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="hover:text-secondary-hover"
-                >
-                  {{ link.text }}
-                </a>
-              </template>
-              <template v-else>
-              <RouterLink
-                  :to="link.to"
-                  class="hover:text-secondary-hover"
-              >
-                {{ link.text }}
-              </RouterLink>
-            </template>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Wo du uns findest Section -->
-        <div class="w-full md:w-3/12 xl:w-2/12">
-          <h3 class="mb-4 text-xl font-semibold">
-            Social Media
-          </h3>
-          <ul class="flex flex-col gap-0">
-            <li
-              v-for="link in socialLinks"
-              :key="link.text"
-              class="text-copy-sm"
-            >
-              <a
-                  :href="link.href"
-                  target="_blank"
-                  class="hover:text-secondary-hover"
-              >
-                {{ link.text }}
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Rechtliches Section -->
-        <div class="mr-10 w-full md:w-3/12 xl:w-2/12">
-          <h3 class="mb-4 text-xl font-semibold">
-            Legal
-          </h3>
-          <ul class="flex flex-col gap-0">
-            <li
-              v-for="link in rechtlichesLinks"
-              :key="link.text"
-              class="text-copy-sm"
-            >
-              <RouterLink
-                  :to="link.to"
-                  class="hover:text-primary-hover"
-              >
-                {{ link.text }}
-              </RouterLink>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Login Section -->
-        <div class="w-full md:w-3/12 xl:w-2/12">
-          <ul class="flex flex-col gap-4">
-            <li
-              v-for="link in loginLinks"
-              :key="link.text"
-              class="text-copy-sm"
-            >
-              <RouterLink
-                  :to="link.to"
-                  class="hover:text-secondary-hover font-bold"
-              >
-                {{ link.text }}
-              </RouterLink>
-            </li>
-          </ul>
-        </div>
+  <footer>
+      <div class="container">
+          <a class="flex-shrink-0" href="/"><img src="../../assets/images/eu_flag.jpeg" class="h-8 w-auto block"></a>
+          <p>
+              This project has received funding from the European Union under Grant Agreement n° 101093016. Views and
+              opinions expressed are however those of the author(s) only and do not necessarily reflect those of the
+              European Union or the European Commission. Neither the European Union nor the granting authority can be
+              held responsible for them.
+          </p>
       </div>
-
-      <!-- Logo Section -->
-      <!-- <div class="flex flex-wrap justify-center md:items-center items-start flex-col gap-6 md:flex-row">
-        <a href="https://www.stmd.bayern.de/">
-          <img
-              src=""
-              alt="Piveau"
-              class="h-14 max-h-[110px]"
-          >
-        </a>
-      </div> -->
-    </div>
   </footer>
 </template>
+
+
+<style lang="scss">
+footer {
+  background-color: #3b2b84;
+  color: #fff;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  .container {
+      max-width: 1210px;
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      align-items: flex-start;
+      font-size: .82rem;
+      font-weight: 500;
+      padding: .9rem;
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      p {
+          margin: 0
+      }
+  }
+}
+
+@media screen and (min-width:800px) {
+  footer {
+      .container {
+          // padding: .9rem 0;
+          align-items: center;
+      }
+  }
+}
+</style>
