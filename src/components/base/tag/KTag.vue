@@ -67,7 +67,7 @@ const preset = {
       [
         {
           // 'bg-[#015184] text-white': !light.value && !outline.value,
-          'bg-secondary text-neutral-100 dark:bg-[#015184] dark:text-white': !isInteractive.value,
+          'bg-primary text-neutral-100 dark:bg-[#015184] dark:text-white': !isInteractive.value,
         },
         // unselected
         {
@@ -124,7 +124,7 @@ const preset = {
     <div
       v-bind="combinedAttrs"
       :class="{
-        'h-8 px-4 py-1 rounded-3xl bg-secondary text-neutral-100 dark:bg-[#015184] dark:text-white': !isInteractive
+        'h-8 px-4 py-1 rounded-3xl bg-secondary-DEFAULT-400 text-neutral-100 dark:bg-[#015184] dark:text-white': !isInteractive
       }"
     >
       <div class="flex min-w-fit flex-nowrap items-center gap-2 text-secondary-text" :class="{ 'flex-row-reverse': props.iconRight }">
