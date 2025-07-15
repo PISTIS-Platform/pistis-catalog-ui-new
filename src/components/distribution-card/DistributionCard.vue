@@ -8,6 +8,7 @@ import DataToggler from '../data-toggler/DataToggler.vue'
 import Dropdown from '../dropdown/Dropdown.vue'
 import DropdownItem from '../dropdown/DropdownItem.vue'
 import { PropertyTable } from '../property-table/PropertyTableRow'
+import LinkedDataSelector from '../base/links/LinkedDataSelector.vue'
 
 interface CardProps {
   title: string
