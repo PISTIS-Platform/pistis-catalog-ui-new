@@ -11,6 +11,7 @@ import TabGroup from '../base/tab-group/TabGroup.vue'
 import Typography from '../base/typography/Typography.vue'
 
 import DetailsPageHeader from './DetailsPageHeader.vue'
+import LinkedDataSelector from '../base/links/LinkedDataSelector.vue'
 
 const props = withDefaults(defineProps<{
   headline?: string
@@ -117,13 +118,14 @@ const truncatedEllipsedDescription = computed(() => {
       <section name="dsd-header" class="flex flex-col gap-12">
         <!-- Go previous page -->
         <div class="flex flex-col gap-12">
-          <div>
+          <div class="flex justify-between">
             <button class="-ml-6 mt-[10px] px-4 py-1 cursor-pointer" @click="router.back()">
               <Typography variant="paragraph-1" class="flex items-center gap-2 text-primary hover:text-primary-hover">
                 <PhCaretLeft />
                 <span>back</span>
               </Typography>
             </button>
+            <LinkedDataSelector :resource-id="datasetId" resource="datasets"/>
           </div>
           <DetailsPageHeader :headline="headline" :title="title" :subtitle="subtitle">
             <template #subtitle>

@@ -6,6 +6,9 @@
       "found": "Datensätze gefunden"
     }
   },
+  "links": {
+    "linkedData": "Linked Data"
+  },
   "authentication": {
     "logged_out": "Sie wurden ausgeloggt."
   },

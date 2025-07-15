@@ -7,6 +7,7 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    AppLink: typeof import('./src/components/base/links/AppLink.vue')['default']
     DarkModeToggle: typeof import('./src/components/toggler-dark-mode/DarkModeToggle.vue')['default']
     'DataInfoBox.story': typeof import('./src/components/base/data-info-box/DataInfoBox.story.vue')['default']
     DataInfoCard: typeof import('./src/components/base/data-info-box/DataInfoCard.vue')['default']
@@ -46,9 +47,11 @@ declare module 'vue' {
     'KSplitButton.story': typeof import('./src/components/base/split-button/KSplitButton.story.vue')['default']
     KTag: typeof import('./src/components/base/tag/KTag.vue')['default']
     'KTag.story': typeof import('./src/components/base/tag/KTag.story.vue')['default']
+    LinkedDataSelector: typeof import('./src/components/base/links/LinkedDataSelector.vue')['default']
     NavigationBar: typeof import('./src/components/header-footer/NavigationBar.vue')['default']
     'PropertyTable.story': typeof import('./src/components/property-table/PropertyTable.story.vue')['default']
     PropertyTableValue: typeof import('./src/components/property-table/PropertyTableValue.vue')['default']
+    ResourceDetailsLinkedDataButton: typeof import('./src/components/base/links/ResourceDetailsLinkedDataButton.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SearchInfoPanel: typeof import('./src/components/base/search-info-panel/SearchInfoPanel.vue')['default']
