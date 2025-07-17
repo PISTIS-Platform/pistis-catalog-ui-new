@@ -20,12 +20,16 @@ import { useDcatApSearch } from '../sdk/index'
 
 import { getLocalizedValue } from '../sdk/utils/helpers'
 
+import { ref } from 'vue'
+import config from '../../config/appConfig'
+
 function ensureDatasetId(id: Ref): asserts id is Ref<string> {
   if (typeof toValue(id) !== 'string')
     throw new Error('id must be a string')
 }
 
 const router = useRouter()
+const searchUrl = ref(config)
 
 const datasetId = useRouteParams('datasetId', '', {
   router,
@@ -148,7 +152,9 @@ const {
                   :title="distribution.title || ''" :description="distribution.descriptionMarkup || ''"
                   :format="distribution.format || 'Unknown'" :download-url="distribution.downloadUrls?.[0]!"
                   :last-updated="distribution.modified" :data="distribution.data"
-                  :linked-data="distribution.linkedData" :distribution-id="distribution.id"
+                  :linked-data="distribution.linkedData"
+                  :datasetId="datasetId"
+                  :distributionId="distribution.id"
                 />
                 <div
                   v-if="i === truncatedFormattedDistributions.length - 1 && isDistributionsTruncated"

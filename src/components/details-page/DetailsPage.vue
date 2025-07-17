@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useDataTruncator } from '@/composables/useDataTruncator'
-import { computed, toValue } from 'vue'
+import { computed, toValue, ref, onMounted, getCurrentInstance } from 'vue'
 
 import { useRouter } from 'vue-router'
 import PhCaretLeft from '~icons/ph/caret-left'
@@ -12,6 +12,7 @@ import Typography from '../base/typography/Typography.vue'
 
 import DetailsPageHeader from './DetailsPageHeader.vue'
 import LinkedDataSelector from '../base/links/LinkedDataSelector.vue'
+import config from '../../../config/appConfig'
 
 const props = withDefaults(defineProps<{
   headline?: string
@@ -25,6 +26,77 @@ const props = withDefaults(defineProps<{
 })
 
 const router = useRouter()
+const { appContext } = getCurrentInstance();
+
+const $keycloak = appContext.config.globalProperties.$keycloak;
+const searchUrl = ref(config.piveauHubSearchUrl)
+const userFactoryUrl = 'https://pistis-market.eu/srv/factories-registry/api/factories/user-factory';
+const pistisMode = config.pistisMode
+const distributionID = ref(null)
+const accessID = ref(null)
+const metadata = ref(null)
+const catalog = ref(null)
+// const token = ref($keycloak.token);
+// const factoryPrefix = ref('')
+
+  const setDistributionID = async (data) => {
+    distributionID.value = data['result']['distributions'][0].id;
+  }
+
+  const setAccessID = async (data) => {
+    try {
+      let accessIDFound = false;
+      for (const distribution of data['result']['distributions']) {
+        if (distribution['access_url'] && distribution['access_url'][0]) {
+          const parts = distribution['access_url'][0].split('asset_uuid=');
+          accessID.value = parts[parts.length - 1];
+          accessIDFound = true;
+          break;
+        }
+      }
+
+      if (!accessIDFound) {
+        console.log("No access_url found in distributions.");
+      }
+    } catch (error) {
+      console.error("Error fetching access ID:", error);
+    }
+  }
+
+  const fetchMetadata = async () => {
+    try {
+      const response = await fetch(`${searchUrl}datasets/${props.datasetId}`);
+      const data = await response.json();
+      metadata.value = data;
+      catalog.value = data.result.catalog.id;
+      
+      setAccessID(data);
+      setDistributionID(data);
+    } catch (error) {
+      console.error("Error fetching the metadata. ERROR: ", error);
+    }
+  }
+
+  // const getUserFactory = async () => {
+  //   try {
+  //     const response = await fetch(`${userFactoryUrl}`, {
+  //         headers: {
+  //           Authorization: `Bearer ${token.value}`,
+  //           'Content-Type': 'application/json',
+  //         },
+  //       }
+  //     );
+  //     const data = await response.json()    
+  //     factoryPrefix.value = data.factoryPrefix
+  //   } catch (error) {
+  //     console.error("Error getting data:", error);
+  //   }
+  // };
+
+  onMounted(() => {
+    fetchMetadata();
+    // getUserFactory();
+  })
 
 // const { useResource: getDataset } = useDcatApSearch()
 
@@ -186,7 +258,32 @@ const truncatedEllipsedDescription = computed(() => {
           </template>
         </TabGroup>
       </section>
-      <slot name="sections">
+      <div v-if="pistisMode === 'cloud'">
+        <section class="container custom_nav_container">
+          <div class="btn_holder">
+            <!-- <a :href="'#'" @click.prevent="buyRequest(factoryPrefix)" class="link">Buy</a> -->
+            <a :href="`/usage-analytics/${datasetId}/questionnaire`" class="link">Provide Feedback</a>
+          </div>
+        </section>
+      </div>
+      <div v-else-if="pistisMode === 'factory'">
+        <section class="container custom_nav_container">
+          <template v-if="catalog === 'my-data'">
+            <div class="btn_holder flex gap-5">
+              <a :href="`/srv/lt-ui/${accessID}`" class="link"><KButton>Data Lineage</KButton></a>
+              <a :href="`/srv/catalog/datasets/${datasetId}/quality`" class="link"><KButton>Quality Assessment</KButton></a>
+              <a :href="`/data/publish-data/${datasetId}`" class="link"><KButton>Publish Data</KButton></a>
+            </div>
+          </template>
+          <template v-if="catalog === 'acquired-data'">
+            <div class="btn_holder">
+              <a :href="`/srv/catalog/datasets/${datasetId}/quality`" class="link">Quality Assessment</a>
+              <a :href="`/usage-analytics/${datasetId}/questionnaire`" class="link">Provide Feedback</a>
+            </div>
+          </template>
+        </section>
+      </div>
+        <slot name="sections">
         <!-- <section class="space-y-4">
             <div class="my-12 flex flex-row items-center gap-2">
               <h2 class="text-[2.5rem] font-bold leading-[3rem] text-primary-100">

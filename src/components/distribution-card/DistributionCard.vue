@@ -19,6 +19,7 @@ interface CardProps {
   lastUpdated?: string
   downloadUrl: string
   linkedData?: Record<string, string>
+  datasetId: string
   distributionId: string
   data: PropertyTableEntryNode
   onSave?: () => void
@@ -96,16 +97,41 @@ const resolvedData = computed(() => {
             <i class="icon-[ph--arrow-square-out]" />
           </a>
 
-          <KButton size="small">
+          <a
+            :href="`/srv/enrichment-ui?datasetId=${datasetId}&distributionId=${distributionId}&file_type=${format}`"
+            target="_blank"
+            nofollow
+            noreferrer
+          >
+            <KButton
+            size="small">
+              Data Enrichment
+              <!-- <i class="icon-[ph--arrow-square-out]" /> -->
+            </KButton>
+          </a>
+
+          <a
+            :href="`/anonymizer?datasetId=${datasetId}&distribution=${distributionId}&language=en`"
+            target="_blank"
+            nofollow
+            noreferrer
+          >
+            <KButton
+            size="small">
+              Anonymize
+              <!-- <i class="icon-[ph--arrow-square-out]" /> -->
+            </KButton>
+          </a>
+          <!-- <KButton>
             Preview
-          </KButton>
+          </KButton> -->
 
           <LinkedDataSelector :resource-id="distributionId" resource="distributions" class="text-white dark:text-surface-900 bg-primary dark:bg-primary-dark hover:bg-primary-hover dark:hover:bg-primary-dark-hover active:bg-primary dark:active:bg-primary-dark-pressed rounded-3xl border-transparent inline-flex min-w-fit items-center justify-center text-center font-medium align-bottom h-8 text-sm px-4 py-2"/>
           
           <!-- Why is this not showing?? -->
           <Dropdown severity="secondary" label="Beschreibung speichern"> 
             <DropdownItem v-for="[key, uri] in Object.entries(linkedData || {})" :key="key" as="a" :href="uri" target="_blank">
-              {{ key }} 
+              {{ key }}
             </DropdownItem>
           </Dropdown>
 

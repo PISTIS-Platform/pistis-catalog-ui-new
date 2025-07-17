@@ -8,6 +8,7 @@ interface Configuration {
   keycloakClientId: string
   supersetUrl: string
   piveauHubSearchUrl: string
+  pistisMode: string
 }
 
 let appConfig: Record<string, any>
