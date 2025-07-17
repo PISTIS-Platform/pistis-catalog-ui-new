@@ -11,6 +11,7 @@ export default {
   // piveauHubRepoUrl: import.meta.env.VITE_API_HUB_REPO_URL || 'https://data.europa.eu/api/hub/repo/',
   // piveauHubStoreUrl: import.meta.env.VITE_API_HUB_STORE_URL || 'https://data.europa.eu/api/hub/store/',
   piveauSparqlUrl: 'https://data.europa.eu/sparql',
+  pistisMode: import.meta.env.VITE_API_PISTIS_MODE ||'cloud',
   appHeader: {
     logoFileName: 'hof-logo.jpg',
     headerTitle: '|   Datenraum Landkreis Hof',
