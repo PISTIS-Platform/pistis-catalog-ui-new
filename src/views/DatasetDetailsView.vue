@@ -148,7 +148,7 @@ const {
                   :title="distribution.title || ''" :description="distribution.descriptionMarkup || ''"
                   :format="distribution.format || 'Unknown'" :download-url="distribution.downloadUrls?.[0]!"
                   :last-updated="distribution.modified" :data="distribution.data"
-                  :linked-data="distribution.linkedData"
+                  :linked-data="distribution.linkedData" :distribution-id="distribution.id"
                 />
                 <div
                   v-if="i === truncatedFormattedDistributions.length - 1 && isDistributionsTruncated"

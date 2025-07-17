@@ -17,6 +17,9 @@
     "dashboards-context": "My dashboards",
     "apps-context": "DKSR Analytics Tools"
   },
+  "links": {
+    "linkedData": "Linked Data"
+  },
   "tooltips": {
     "home": "Home",
     "digital-twin": "Digital Twin",

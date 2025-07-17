@@ -8,6 +8,7 @@ import DataToggler from '../data-toggler/DataToggler.vue'
 import Dropdown from '../dropdown/Dropdown.vue'
 import DropdownItem from '../dropdown/DropdownItem.vue'
 import { PropertyTable } from '../property-table/PropertyTableRow'
+import LinkedDataSelector from '../base/links/LinkedDataSelector.vue'
 
 interface CardProps {
   title: string
@@ -18,6 +19,7 @@ interface CardProps {
   lastUpdated?: string
   downloadUrl: string
   linkedData?: Record<string, string>
+  distributionId: string
   data: PropertyTableEntryNode
   onSave?: () => void
 }
@@ -88,16 +90,17 @@ const resolvedData = computed(() => {
             nofollow
             noreferrer
             download
+            class="text-white dark:text-surface-900 bg-primary dark:bg-primary-dark hover:bg-primary-hover dark:hover:bg-primary-dark-hover active:bg-primary dark:active:bg-primary-dark-pressed rounded-3xl border-transparent inline-flex min-w-fit items-center justify-center text-center font-medium align-bottom h-8 text-sm px-4 py-2"
           >
-            <KButton>
-              {{ downloadText }}
-              <i class="icon-[ph--arrow-square-out]" />
-            </KButton>
+            {{ downloadText }}
+            <i class="icon-[ph--arrow-square-out]" />
           </a>
 
-          <KButton>
+          <KButton size="small">
             Preview
           </KButton>
+
+          <LinkedDataSelector :resource-id="distributionId" resource="distributions" class="text-white dark:text-surface-900 bg-primary dark:bg-primary-dark hover:bg-primary-hover dark:hover:bg-primary-dark-hover active:bg-primary dark:active:bg-primary-dark-pressed rounded-3xl border-transparent inline-flex min-w-fit items-center justify-center text-center font-medium align-bottom h-8 text-sm px-4 py-2"/>
           
           <!-- Why is this not showing?? -->
           <Dropdown severity="secondary" label="Beschreibung speichern"> 
