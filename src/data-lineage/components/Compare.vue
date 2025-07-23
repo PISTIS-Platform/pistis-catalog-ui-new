@@ -141,7 +141,7 @@
 
 <script setup>
 import { ref, computed, watch, onMounted } from 'vue'
-import { useStore } from '../data-lineage/store'
+import { useStore } from '../store'
 
 // Define props for the component
 const props = defineProps({

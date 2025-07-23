@@ -1,0 +1,100 @@
+{
+  "dataset_1": {
+    "data_model": {
+      "columns": [
+        {
+          "name": "entry_id",
+          "dataType": "Integer"
+        },
+        {
+          "name": "name",
+          "dataType": "String"
+        },
+        {
+          "name": "value",
+          "dataType": "Float"
+        }
+      ]
+    },
+    "data": {
+      "rows": [
+        [
+          1,
+          "Item 1",
+          10.5
+        ],
+        [
+          2,
+          "Item 2",
+          20.7
+        ],
+        [
+          3,
+          "Item 3",
+          30.9
+        ]
+      ]
+    }
+  },
+  "dataset_2": {
+    "data_model": {
+      "columns": [
+        {
+          "name": "entry_id",
+          "dataType": "Integer"
+        },
+        {
+          "name": "name",
+          "dataType": "String"
+        },
+        {
+          "name": "value",
+          "dataType": "Float"
+        }
+      ]
+    },
+    "data": {
+      "rows": [
+        [
+          1,
+          "Item 1",
+          10.5
+        ],
+        [
+          2,
+          "Item 2",
+          20.7
+        ],
+        [
+          3,
+          "Item 3 Updated",
+          35
+        ],
+        [
+          4,
+          "Item 4",
+          40.1
+        ]
+      ]
+    }
+  },
+  "diff": {
+    "added": [
+      {
+        "entry_id": "4",
+        "name": "Item 4",
+        "value": "40.1"
+      }
+    ],
+    "removed": [],
+    "changed": [
+      {
+        "entry_id": "3",
+        "name": "Item 3 Updated",
+        "value": "35.0"
+      }
+    ],
+    "columns_added": [],
+    "columns_removed": []
+  }
+}

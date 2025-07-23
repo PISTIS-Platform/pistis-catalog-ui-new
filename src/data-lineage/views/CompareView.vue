@@ -176,11 +176,11 @@ import {
 } from 'vue'
 import {
     useStore
-} from '../stores/store'
-import Layout from '../components/Layout.vue'
+} from '../store.js'
+import Layout from './Layout.vue'
 import CustomTreeComponent from '../components/CustomTreeComponent.vue';
 const store = useStore();
-store.fetchData()
+store.loadMockData()
 
 
 function checkDataset1(inputValue) {

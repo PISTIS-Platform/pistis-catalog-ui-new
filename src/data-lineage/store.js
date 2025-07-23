@@ -3,6 +3,8 @@ import config from '../data-lineage/config';
 import axios from 'axios'
 import { ref } from 'vue'
 import { useAuthStore } from '../stores/authStore'
+import mockData from './mock-lineage.json'
+import mockCompare from './mock-compare.json'
 
 export const useStore = defineStore('store', () => {
     const selectedOption = ref('dataset-history')
@@ -67,23 +69,29 @@ export const useStore = defineStore('store', () => {
         diffError.value = null;
         
         try {
-            const backendUrl = keycloak.value.backendBaseApiHost || '';
-            const url = `${backendUrl}srv/lineage-tracker/get_datasets_diff`;
+            // commented out for dev with mock data
+            // const backendUrl = keycloak.value.backendBaseApiHost || '';
+            // const url = `${backendUrl}srv/lineage-tracker/get_datasets_diff`;
             
-            const response = await axios.get(url, {
-                params: {
-                    uuid_1: id1,
-                    uuid_2: id2
-                },
-                headers: {
-                    'Authorization': `Bearer ${authStore.token}`,
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                }
-            });
+            // const response = await axios.get(url, {
+            //     params: {
+            //         uuid_1: id1,
+            //         uuid_2: id2
+            //     },
+            //     headers: {
+            //         'Authorization': `Bearer ${authStore.token}`,
+            //         'Content-Type': 'application/json',
+            //         'Accept': 'application/json'
+            //     }
+            // });
             
             // Store the response data in diffData
-            diffData.value = response.data;
+            // diffData.value = response.data;
+
+            // working with mockdata
+            const response = mockCompare;
+            diffData.value = response;
+            
             
             console.log('Dataset comparison data received:', diffData.value);
         } catch (err) {
@@ -174,6 +182,19 @@ export const useStore = defineStore('store', () => {
         }
     }
 
+    //Mock Data
+    const loadMockData = async () => {
+        try {
+            const response = mockData;
+            treeObject.value = response;
+            familyTreeData.value = response;
+            parseTableData(treeObject.value)
+            console.log('Mock Data used:', response);
+        } catch (error) {
+            console.error('Loading mock data failed:', error);
+        }
+    }
+
     // A convenience method to explicitly compare two datasets by ID
     const compareDatasets = async (id1, id2) => {
         if (!id1 || !id2) {
@@ -211,6 +232,7 @@ export const useStore = defineStore('store', () => {
         tableData,
         parseTableData,
         fetchData,
+        loadMockData,
         fetchDatasetDiff,
         compareDatasets // Renamed and simplified function
     }

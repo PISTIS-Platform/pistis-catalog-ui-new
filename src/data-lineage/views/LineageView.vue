@@ -25,7 +25,6 @@
                 <div class="tree-column">
                     <div class="component-container">
                         <CustomTreeComponent 
-                            v-if="store.treeObject" 
                             :addToDiff="store.addtoDiff" 
                             :selectedDiff="store.selectedDiff" 
                             :data="store.treeObject"
@@ -65,13 +64,13 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted, watch } from 'vue';
-import { useStore } from '../data-lineage/store.js';
+import { useStore } from '../store.js';
 import { useRoute } from 'vue-router';
-import Layout from '../data-lineage/Layout.vue';
-import Table from '../data-lineage/Table.vue';
-import Compare from '../data-lineage/Compare.vue';
-import CustomTreeComponent from '../data-lineage/CustomTreeComponent.vue';
-import config from '../data-lineage/config';
+import Layout from './Layout.vue';
+import Table from '../components/Table.vue';
+import Compare from '../components/Compare.vue';
+import CustomTreeComponent from '../components/CustomTreeComponent.vue';
+import config from '../config.js';
 
 // Check environment configuration to determine deployment type
 const isFactory = ref(config.keycloak.factory_or_cloud?.toLowerCase() === 'factory');
@@ -81,7 +80,7 @@ console.log('Deployment Type:', isFactory.value ? 'Factory' : 'Cloud');
 const route = useRoute();
 const lineageID = route.params.id;
 const store = useStore();
-store.fetchData(lineageID);
+store.loadMockData(lineageID);
 
 // Set the default tab to 'tracker' (Lineage)
 onMounted(() => {
