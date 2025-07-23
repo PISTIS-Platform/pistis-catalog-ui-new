@@ -15,7 +15,8 @@
     "dksr-apps": "DKSR Apps",
     "go-back": "Back",
     "dashboards-context": "My dashboards",
-    "apps-context": "DKSR Analytics Tools"
+    "apps-context": "DKSR Analytics Tools",
+    "data-lineage": "Data Lineage"
   },
   "links": {
     "linkedData": "Linked Data"

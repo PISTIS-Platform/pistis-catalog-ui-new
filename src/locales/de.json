@@ -25,7 +25,8 @@
     "dksr-apps": "DKSR Analysetools",
     "go-back": "Zurück",
     "dashboards-context": "Meine Dashboards",
-    "apps-context": "DKSR Analysetools"
+    "apps-context": "DKSR Analysetools",
+    "data-lineage": "Data Lineage"
   },
   "tooltips": {
     "home": "Home",
