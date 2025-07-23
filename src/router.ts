@@ -5,6 +5,7 @@ import Catalogues from '@/views/search/catalogues/Catalogues.vue'
 import Datasets from '@/views/search/datasets/Datasets.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import Themer from './views/Themer.vue'
+import LineageView from './data-lineage/LineageView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -44,6 +45,14 @@ const router = createRouter({
       name: 'themer',
       path:  '/themer',
       component: Themer,
+      meta : {
+        requiresAuth: false,
+      }
+    },
+    {
+      name: 'data-lineage',
+      path:  '/data-lineage',
+      component: LineageView,
       meta : {
         requiresAuth: false,
       }
