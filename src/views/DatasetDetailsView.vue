@@ -29,6 +29,8 @@ function ensureDatasetId(id: Ref): asserts id is Ref<string> {
     throw new Error('id must be a string')
 }
 
+const pistisMode = config.pistisMode
+
 const router = useRouter()
 const searchUrl = ref(config)
 
@@ -204,8 +206,10 @@ const {
                 data: resultEnhanced?.getPropertyTable2 || undefined,
               }"
             />
-            <MonetizationView/>
           </div>
+        </div>
+        <div v-if="pistisMode==='cloud'" class="bg-surface p-6 rounded-xl">
+          <MonetizationView />
         </div>
       </template>
     </DetailsPage>
