@@ -1,0 +1,47 @@
+{
+  "monetization": [
+    {
+      "price": 49.99,
+      "access_policies": "Registered users only",
+      "num_resell": 2,
+      "extra_terms": "No commercial redistribution allowed.",
+      "termDate": "2025-12-31",
+      "personal_data_terms": [
+        {
+          "contains_personal_data": true,
+          "personal_data_terms": "Data may not be shared with third parties without consent."
+        }
+      ],
+      "transferable": "not transferable",
+      "publisher": {
+        "email": "info@example.com",
+        "homepage": "https://www.example.com",
+        "name": "Max Mustermann",
+        "organization_id": "org-12345"
+      },
+      "license": {
+        "id": "lic-98765",
+        "label": "CC BY-NC-SA 4.0",
+        "description": "Attribution, non-commercial, share alike",
+        "la_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "resource": "https://www.example.com/license"
+      },
+      "non_renewal_days": 30,
+      "free": false,
+      "contract_breach_days": 14,
+      "seller_id": "user-45678",
+      "num_share": 5,
+      "is_exclusive": true,
+      "spatial_availability": "Europe",
+      "type": "Dataset",
+      "downloads": [
+        {
+          "frequency": "monthly",
+          "downloads": 150
+        }
+      ],
+      "additional_renewal_terms": "Renewal possible after review.",
+      "contract_terms": "Contract is valid until the expiration date. Access will be revoked in case of breach."
+    }
+  ]
+}

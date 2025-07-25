@@ -246,13 +246,14 @@ const truncatedEllipsedDescription = computed(() => {
         </slot>
 
         <!-- Data Lineage -->
-        <div>
+        <div v-if="pistisMode==='factory'">
           <RouterLink
             to="/data-lineage"
             class="text-white dark:text-surface-900 bg-primary dark:bg-primary-dark hover:bg-primary-hover dark:hover:bg-primary-dark-hover active:bg-primary dark:active:bg-primary-dark-pressed rounded-3xl border-transparent inline-flex min-w-fit items-center justify-center text-center font-medium align-bottom h-8 text-sm px-4 py-2">
             {{ $t('navigation.data-lineage') }}
           </RouterLink>
         </div>
+        
       </section>
       <section class="my-12">
         <TabGroup

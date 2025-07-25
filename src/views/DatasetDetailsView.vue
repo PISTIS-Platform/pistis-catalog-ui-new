@@ -22,11 +22,14 @@ import { getLocalizedValue } from '../sdk/utils/helpers'
 
 import { ref } from 'vue'
 import config from '../../config/appConfig'
+import MonetizationView from '@/components/monetization/MonetizationView.vue'
 
 function ensureDatasetId(id: Ref): asserts id is Ref<string> {
   if (typeof toValue(id) !== 'string')
     throw new Error('id must be a string')
 }
+
+const pistisMode = config.pistisMode
 
 const router = useRouter()
 const searchUrl = ref(config)
@@ -204,6 +207,9 @@ const {
               }"
             />
           </div>
+        </div>
+        <div v-if="pistisMode==='cloud'" class="bg-surface p-6 rounded-xl">
+          <MonetizationView />
         </div>
       </template>
     </DetailsPage>
