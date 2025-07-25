@@ -22,6 +22,7 @@ import { getLocalizedValue } from '../sdk/utils/helpers'
 
 import { ref } from 'vue'
 import config from '../../config/appConfig'
+import MonetizationView from '@/components/monetization/MonetizationView.vue'
 
 function ensureDatasetId(id: Ref): asserts id is Ref<string> {
   if (typeof toValue(id) !== 'string')
@@ -203,6 +204,7 @@ const {
                 data: resultEnhanced?.getPropertyTable2 || undefined,
               }"
             />
+            <MonetizationView/>
           </div>
         </div>
       </template>
