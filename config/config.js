@@ -3,7 +3,6 @@ export default {
   keycloakUrl: '$VITE_AUTHENTICATION_KEYCLOAK_URL',
   keycloakRealm: '$VITE_AUTHENTICATION_KEYCLOAK_REALM',
   keycloakClientId: '$VITE_AUTHENTICATION_KEYCLOAK_CLIENT_ID',
-  supersetUrl: '$VITE_SUPERSET_URL',
   piveauHubSearchUrl: '$VITE_API_HUB_SEARCH_URL',
   piveauHubRepoUrl: '$VITE_API_HUB_REPO_URL',
   piveauHubStoreUrl: '$VITE_API_PISTIS_MODE',

@@ -6,7 +6,6 @@ interface Configuration {
   keycloakUrl: string
   keycloakRealm: string
   keycloakClientId: string
-  supersetUrl: string
   piveauHubSearchUrl: string
   pistisMode: string
 }
