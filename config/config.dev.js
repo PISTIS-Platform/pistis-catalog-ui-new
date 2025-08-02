@@ -1,17 +1,20 @@
 export default {
   appUrl: 'http://localhost:5173',
-  keycloakUrl: import.meta.env.VITE_AUTHENTICATION_KEYCLOAK_URL || 'https://auth.pistis-market.eu/auth',
+  keycloakUrl: import.meta.env.VITE_AUTHENTICATION_KEYCLOAK_URL || 'https://auth.pistis-market.eu/',
   keycloakRealm: import.meta.env.VITE_AUTHENTICATION_KEYCLOAK_REALM || 'PISTIS',
   keycloakClientId: import.meta.env.VITE_AUTHENTICATION_KEYCLOAK_CLIENT_ID || 'fhg-ui-test',
-  supersetUrl: 'https://superset.mainz.dksr.city',
-  piveauHubSearchUrl: import.meta.env.VITE_API_HUB_SEARCH_URL || 'https://develop.pistis-market.eu/srv/search/',
-  piveauHubRepoUrl: import.meta.env.VITE_API_HUB_REPO_URL || 'https://develop.pistis-market.eu/srv/repo/',
-  piveauHubStoreUrl: import.meta.env.VITE_API_HUB_STORE_URL || 'https://develop.pistis-market.eu/srv/store/',
-  // piveauHubSearchUrl: import.meta.env.VITE_API_HUB_SEARCH_URL || 'https://data.europa.eu/api/hub/search/',
-  // piveauHubRepoUrl: import.meta.env.VITE_API_HUB_REPO_URL || 'https://data.europa.eu/api/hub/repo/',
-  // piveauHubStoreUrl: import.meta.env.VITE_API_HUB_STORE_URL || 'https://data.europa.eu/api/hub/store/',
+  
+  /* FACTORY */
+  // piveauHubSearchUrl: import.meta.env.VITE_API_HUB_SEARCH_URL || 'https://develop.pistis-market.eu/srv/search/',
+  // piveauHubRepoUrl: import.meta.env.VITE_API_HUB_REPO_URL || 'https://develop.pistis-market.eu/srv/repo/',
+  // piveauHubStoreUrl: import.meta.env.VITE_API_HUB_STORE_URL || 'https://develop.pistis-market.eu/srv/store/',
+
+  /* CLOUD */
+  piveauHubSearchUrl: import.meta.env.VITE_API_HUB_SEARCH_URL || 'https://pistis-market.eu/srv/search/',
+  piveauHubRepoUrl: import.meta.env.VITE_API_HUB_REPO_URL || 'https://pistis-market.eu/srv/repo/',
+  piveauHubStoreUrl: import.meta.env.VITE_API_HUB_STORE_URL || 'https://pistis-market.eu/srv/store/',
   piveauSparqlUrl: 'https://data.europa.eu/sparql',
-  pistisMode: import.meta.env.VITE_API_PISTIS_MODE ||'cloud',
+  pistisMode: import.meta.env.VITE_API_PISTIS_MODE ||'cloud', // cloud(marketplace) | factory(my data)
   appHeader: {
     logoFileName: 'hof-logo.jpg',
     headerTitle: '|   Datenraum Landkreis Hof',

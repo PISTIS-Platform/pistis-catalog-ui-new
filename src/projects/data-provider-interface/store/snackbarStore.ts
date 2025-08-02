@@ -12,7 +12,7 @@ export default {
   namespaced: true,
 
   state: {
-    delay: 5000,
+    delay: 3000,
     autohide: true,
     animation: true,
     variant: '',
@@ -20,11 +20,15 @@ export default {
   },
 
   mutations: {
-    SHOW_MESSAGE(state: Snack, payload: Snack) {
-      state.message = payload.message
-      state.autohide = payload.autohide
-      state.animation = payload.animation
-      state.variant = payload.variant
+    SHOW_MESSAGE(state: Snack, payload: Partial<Snack>) {
+      state.message = payload.message || ''
+      state.autohide = payload.autohide ?? true
+      state.animation = payload.animation ?? true
+      state.variant = payload.variant || 'success'
+      state.delay = payload.delay ?? 3000
+    },
+    HIDE_MESSAGE(state: Snack) {
+      state.message = ''
     },
   },
 
@@ -34,25 +38,28 @@ export default {
      * @param {*} commit
      * @param {*} toastOptions - Object containing the message and the toast options
      */
-    showSnackbar({ commit }: { commit: Commit }, { message = '', variant = 'error', timeout = -1 }) {
+    showSnackbar({ commit, state }: { commit: Commit; state: Snack }, { message = '', variant = 'error', delay = 3000 }) {
       commit('SHOW_MESSAGE', {
-        timeout,
         message,
         variant,
+        delay,
       })
+
+      // If autohide is true, hide after delay
+      if (state.autohide) {
+        setTimeout(() => {
+          commit('HIDE_MESSAGE')
+        }, delay)
+      }
     },
+
     /**
      * Commits an error message to the store.
      * @param {*} commit
      * @param {string} message The message
      */
-    showError({ commit }: { commit: Commit }, message: string) {
-      const payload = {
-        message,
-        timeout: -1,
-        variant: 'error',
-      }
-      commit('SHOW_MESSAGE', payload)
+    showError({ dispatch }, message: string) {
+      dispatch('showSnackbar', { message, variant: 'error' })
     },
   },
 }

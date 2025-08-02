@@ -64,6 +64,7 @@ declare module 'vue' {
     'SearchPageLayout.story': typeof import('./src/components/layout/SearchPageLayout.story.vue')['default']
     SelectedFacetsOverview: typeof import('./src/components/selected-facets-overview/SelectedFacetsOverview.vue')['default']
     'SelectedFacetsOverview.story': typeof import('./src/components/selected-facets-overview/SelectedFacetsOverview.story.vue')['default']
+    Snackbar: typeof import('./src/components/base/Snackbar.vue')['default']
     SortSplitButton: typeof import('./src/components/sort-split-button/SortSplitButton.vue')['default']
     'SortSplitButton.story': typeof import('./src/components/sort-split-button/SortSplitButton.story.vue')['default']
     SummaryBox: typeof import('./src/components/base/summary-box/SummaryBox.vue')['default']

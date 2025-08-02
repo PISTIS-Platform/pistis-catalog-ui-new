@@ -81,8 +81,8 @@ importers:
         specifier: ^3.7.1
         version: 3.7.1
       keycloak-js:
-        specifier: ^24.0.5
-        version: 24.0.5
+        specifier: ^25.0.6
+        version: 25.0.6
       lodash-es:
         specifier: ^4.17.21
         version: 4.17.21
@@ -2776,8 +2776,8 @@ packages:
     resolution: {integrity: sha512-+KJGIyHgkGuIq3IEBNftfhW/LfWhXUIY6OmyVWjliu5KH1y0fw7VQ8YndE2O4qZdMSd9SqbnC8GOcZEy0Om7sA==}
     engines: {node: '>=18'}
 
-  keycloak-js@24.0.5:
-    resolution: {integrity: sha512-VQOSn3j13DPB6OuavKAq+sRjDERhIKrXgBzekoHRstifPuyULILguugX6yxRUYFSpn3OMYUXmSX++tkdCupOjA==}
+  keycloak-js@25.0.6:
+    resolution: {integrity: sha512-Km+dc+XfNvY6a4az5jcxTK0zPk52ns9mAxLrHj7lF3V+riVYvQujfHmhayltJDjEpSOJ4C8a57LFNNKnNnRP2g==}
 
   keyv@4.5.4:
     resolution: {integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==}
@@ -7216,7 +7216,7 @@ snapshots:
 
   jwt-decode@4.0.0: {}
 
-  keycloak-js@24.0.5:
+  keycloak-js@25.0.6:
     dependencies:
       js-sha256: 0.11.0
       jwt-decode: 4.0.0
