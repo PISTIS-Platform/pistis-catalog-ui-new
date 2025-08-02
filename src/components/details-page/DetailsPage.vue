@@ -6,6 +6,9 @@ import { useRouter } from 'vue-router'
 import PhCaretLeft from '~icons/ph/caret-left'
 import SummaryBox from '../base/summary-box/SummaryBox.vue'
 
+import axios from 'axios';
+import {useStore} from 'vuex'
+import { useAuthStore } from '../../stores/authStore'
 import TabGroup from '../base/tab-group/TabGroup.vue'
 
 import Typography from '../base/typography/Typography.vue'
@@ -15,6 +18,10 @@ import LinkedDataSelector from '../base/links/LinkedDataSelector.vue'
 import config from '../../../config/appConfig'
 import LineageView from '@/data-lineage/LineageView.vue'
 import KButton from '../base/button/KButton.vue'
+
+
+
+// import keycloak from '@/services/keycloak'
 
 const props = withDefaults(
   defineProps<{
@@ -32,8 +39,9 @@ const props = withDefaults(
 
 const router = useRouter()
 const { appContext } = getCurrentInstance()
+const store = useStore()
+const authStore = useAuthStore()
 
-const $keycloak = appContext.config.globalProperties.$keycloak
 const searchUrl = ref(config.piveauHubSearchUrl)
 const userFactoryUrl = 'https://pistis-market.eu/srv/factories-registry/api/factories/user-factory'
 const pistisMode = config.pistisMode
@@ -41,8 +49,8 @@ const distributionID = ref(null)
 const accessID = ref(null)
 const metadata = ref(null)
 const catalog = ref(null)
-// const token = ref($keycloak.token);
-// const factoryPrefix = ref('')
+const token = ref(authStore.user.token)
+const factoryPrefix = ref('')
 
 const setDistributionID = async (data) => {
   distributionID.value = data['result']['distributions'][0].id
@@ -70,7 +78,7 @@ const setAccessID = async (data) => {
 
 const fetchMetadata = async () => {
   try {
-    const response = await fetch(`${searchUrl}datasets/${props.datasetId}`)
+    const response = await fetch(`${searchUrl.value}datasets/${props.datasetId}`)
     const data = await response.json()
     metadata.value = data
     catalog.value = data.result.catalog.id
@@ -82,75 +90,57 @@ const fetchMetadata = async () => {
   }
 }
 
-// const getUserFactory = async () => {
-//   try {
-//     const response = await fetch(`${userFactoryUrl}`, {
-//         headers: {
-//           Authorization: `Bearer ${token.value}`,
-//           'Content-Type': 'application/json',
-//         },
-//       }
-//     );
-//     const data = await response.json()
-//     factoryPrefix.value = data.factoryPrefix
-//   } catch (error) {
-//     console.error("Error getting data:", error);
-//   }
-// };
+const getUserFactory = async () => {
+  try {
+    const response = await fetch(`${userFactoryUrl}`, {
+        headers: {
+          Authorization: `Bearer ${token.value}`,
+          'Content-Type': 'application/json',
+        },
+      }
+    );
+    const data = await response.json()
+    factoryPrefix.value = data.factoryPrefix
+  } catch (error) {
+    console.error("Error getting data:", error);
+  }
+};
+
+const buyRequest = async (factoryPrefix) => {
+    try {
+      // TODO: link as ENV variable, and add the access token once keycloak is intigrated
+      const response = await axios.post(`https://${factoryPrefix}.pistis-market.eu/srv/smart-contract-execution-engine/api/scee/storePurchase`, {
+          // The request body object
+          assetId: props.datasetId,
+          assetFactory: metadata.value.result?.monetization[0]?.publisher?.organization_id,
+          sellerId: metadata.value.result?.monetization[0]?.seller_id,
+          price: metadata.value.result?.monetization[0]?.price,
+        },
+        {
+          headers: {
+            Authorization: `Bearer ${token.value}`,
+            'Content-Type': 'application/json',
+          },
+        }
+      );
+
+      // TODO: first use default language and only then the fallback
+      await store.dispatch('snackbar/showSnackbar', {
+        message: `Successfully purchased ${Object.values(metadata.value.result?.title)[0]}`,
+        variant: 'success',
+      })
+    } catch (error) {
+      const errorMessage = error?.response?.data?.response[0] || 'An error occurred while processing your request.';
+      await store.dispatch('snackbar/showError', errorMessage)
+      console.error(error)
+    }
+  };
 
 onMounted(() => {
   fetchMetadata()
-  // getUserFactory();
+  getUserFactory();
 })
 
-// const { useResource: getDataset } = useDcatApSearch()
-
-// const { isSuccess, query, resultEnhanced } = shallowReactive(
-//   getDataset(datasetId),
-// )
-
-// const getFormattedDistributions = computed(() => {
-//   if (!isSuccess.value)
-//     return []
-//   if (!resultEnhanced.value?.getDistributions)
-//     return []
-
-//   return resultEnhanced.value.getDistributions.map((dist) => {
-//     return {
-//       title: dist.title ?? dist.id ?? '',
-//       description: dist.description ?? '',
-//       descriptionMarkup: DOMPurify.sanitize(marked(dist.description ?? '', { async: false })),
-//       downloadUrls: dist.accessUrls || [],
-//       format: dist.format ?? '',
-//       id: dist.id,
-//       accessUrls: dist.accessUrls,
-//       modified: dist.modified ?? '',
-//       data: {
-//         type: 'node',
-//         id: 'root',
-//         label: 'root',
-//         data: dist.getPropertyTable,
-//       } satisfies PropertyTableEntryNode,
-//       linkedData: {
-//         'RDF/XML': dist.getLinkedData.rdf,
-//         'Turtle': dist.getLinkedData.ttl,
-//         'Notation3': dist.getLinkedData.n3,
-//         'N-Tripes': dist.getLinkedData.nt,
-//         'JSON-LD': dist.getLinkedData.jsonld,
-//       },
-//     }
-//   })
-// })
-
-// const { getTitle, getId, getDescription, getPropertyTable, getFormattedDistributions, getCategories } = toRefs(resultEnhanced)
-// const { isError: searchError, error } = query
-// // Parse AxiosError to get the error message
-// const errorView = computed(() => {
-//   if (searchError.value) {
-//     return error.value?.message || 'An error occurred'
-//   }
-//   return ''
-// })
 
 // Dataset desecription truncator "show more"
 const {
@@ -304,11 +294,11 @@ const truncatedEllipsedDescription = computed(() => {
       </section>
       <div v-if="pistisMode === 'cloud'">
         <section class="container custom_nav_container">
-          <div class="btn_holder">
-            <!-- <a :href="'#'" @click.prevent="buyRequest(factoryPrefix)" class="link">Buy</a> -->
+          <div class="btn_holder flex gap-5">
+            <a :href="'#'" @click.prevent="buyRequest(factoryPrefix)" class="text-white dark:text-surface-900 bg-primary dark:bg-primary-dark hover:bg-primary-hover dark:hover:bg-primary-dark-hover active:bg-primary dark:active:bg-primary-dark-pressed rounded-3xl border-transparent inline-flex min-w-fit items-center justify-center text-center font-medium align-bottom h-8 text-sm px-4 py-2">Buy</a>
             <a
               :href="`/usage-analytics/${datasetId}/questionnaire`"
-              class="link"
+              class="link text-white dark:text-surface-900 bg-primary dark:bg-primary-dark hover:bg-primary-hover dark:hover:bg-primary-dark-hover active:bg-primary dark:active:bg-primary-dark-pressed rounded-3xl border-transparent inline-flex min-w-fit items-center justify-center text-center font-medium align-bottom h-8 text-sm px-4 py-2"
               >Provide Feedback</a
             >
           </div>
