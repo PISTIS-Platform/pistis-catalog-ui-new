@@ -106,5 +106,5 @@ configureMarked()
 if (import.meta.hot) {
   import.meta.hot.accept()
 }
-renderApp()
+// renderApp()
 KeycloakService.initKeycloak(renderApp);
