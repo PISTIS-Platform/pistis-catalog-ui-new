@@ -5,16 +5,17 @@ export default {
   keycloakClientId: import.meta.env.VITE_AUTHENTICATION_KEYCLOAK_CLIENT_ID || 'fhg-ui-test',
   
   /* FACTORY */
-  // piveauHubSearchUrl: import.meta.env.VITE_API_HUB_SEARCH_URL || 'https://develop.pistis-market.eu/srv/search/',
-  // piveauHubRepoUrl: import.meta.env.VITE_API_HUB_REPO_URL || 'https://develop.pistis-market.eu/srv/repo/',
-  // piveauHubStoreUrl: import.meta.env.VITE_API_HUB_STORE_URL || 'https://develop.pistis-market.eu/srv/store/',
+  // piveauHubSearchUrl: 'https://develop.pistis-market.eu/srv/search/',
+  // piveauHubRepoUrl: 'https://develop.pistis-market.eu/srv/repo/',
+  // piveauHubStoreUrl: 'https://develop.pistis-market.eu/srv/store/',
 
   /* CLOUD */
-  piveauHubSearchUrl: import.meta.env.VITE_API_HUB_SEARCH_URL || 'https://pistis-market.eu/srv/search/',
-  piveauHubRepoUrl: import.meta.env.VITE_API_HUB_REPO_URL || 'https://pistis-market.eu/srv/repo/',
-  piveauHubStoreUrl: import.meta.env.VITE_API_HUB_STORE_URL || 'https://pistis-market.eu/srv/store/',
+  piveauHubSearchUrl: 'https://pistis-market.eu/srv/search/',
+  piveauHubRepoUrl: 'https://pistis-market.eu/srv/repo/',
+  piveauHubStoreUrl: 'https://pistis-market.eu/srv/store/',
+  pistisMode: 'cloud', // cloud(marketplace) | factory(my data)
+
   piveauSparqlUrl: 'https://data.europa.eu/sparql',
-  pistisMode: import.meta.env.VITE_API_PISTIS_MODE ||'cloud', // cloud(marketplace) | factory(my data)
   appHeader: {
     logoFileName: 'hof-logo.jpg',
     headerTitle: '|   Datenraum Landkreis Hof',
