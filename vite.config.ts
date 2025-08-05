@@ -26,6 +26,7 @@ export default defineConfig(({ mode }) => {
       },
     },
     publicDir: 'public',
+    base: '/srv/catalog/',
     plugins: [
       vue(),
       Icons({
