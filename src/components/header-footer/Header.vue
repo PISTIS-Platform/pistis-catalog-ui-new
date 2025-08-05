@@ -34,17 +34,18 @@
 </template>
 
 <script setup>
-import { ref, getCurrentInstance, onMounted } from 'vue'
+import { ref, getCurrentInstance, onMounted, watch } from 'vue'
+import { useAuthStore } from '../../stores/authStore'
 // import { useRuntimeEnv } from '@piveau/piveau-hub-ui-modules';
-const { appContext } = getCurrentInstance();
+// const { appContext } = getCurrentInstance();
 
-// const $keycloak = appContext.config.globalProperties.$keycloak;
+const authStore = useAuthStore()
+const token = ref(authStore.user.token)
 
 // const ENV = useRuntimeEnv()
 
 const factoryPrefix = ref('develop')
 
-// const token = $keycloak.token;
 // const pistisMode = ENV.api.pistisMode;
 
 
@@ -62,14 +63,14 @@ const getUserFactory = async () => {
 try {
   // TODO: link as ENV variable, and add the access token once keycloak is intigrated
   const response = await fetch('https://pistis-market.eu/srv/factories-registry/api/factories/user-factory', {
-      // headers: {
-      //   Authorization: `Bearer ${token}`,
-      //   'Content-Type': 'application/json',
-      // },
+      headers: {
+        Authorization: `Bearer ${token.value}`,
+        'Content-Type': 'application/json',
+      },
     }
   );
   const data = await response.json()    
-  // factoryPrefix.value = data.factoryPrefix
+  factoryPrefix.value = data.factoryPrefix
   
 
 } catch (error) {
@@ -79,6 +80,13 @@ try {
 
 onMounted(() => {
  getUserFactory()   
+})
+
+watch(authStore, (newToken) => {
+  if (newToken) {
+    token.value = authStore.user.token
+    getUserFactory()
+  }
 })
 </script>
 
