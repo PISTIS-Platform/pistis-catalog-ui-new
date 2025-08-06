@@ -130,9 +130,9 @@ const buyRequest = async (factoryPrefix) => {
         variant: 'success',
       })
     } catch (error) {
-      const errorMessage = error?.response?.data?.response[0] || 'An error occurred while processing your request.';
-      await store.dispatch('snackbar/showError', errorMessage)
       console.error(error)
+      const errorMessage = error?.response?.data?.reason || 'An error occurred while processing your request.';
+      await store.dispatch('snackbar/showError', errorMessage)
     }
   };
 
@@ -235,14 +235,6 @@ const truncatedEllipsedDescription = computed(() => {
           </div>
         </slot>
 
-        <!-- Data Lineage -->
-        <div v-if="pistisMode==='factory'">
-          <RouterLink
-            to="/data-lineage"
-            class="text-white dark:text-surface-900 bg-primary dark:bg-primary-dark hover:bg-primary-hover dark:hover:bg-primary-dark-hover active:bg-primary dark:active:bg-primary-dark-pressed rounded-3xl border-transparent inline-flex min-w-fit items-center justify-center text-center font-medium align-bottom h-8 text-sm px-4 py-2">
-            {{ $t('navigation.data-lineage') }}
-          </RouterLink>
-        </div>
         
       </section>
       <section class="my-12">
@@ -292,27 +284,33 @@ const truncatedEllipsedDescription = computed(() => {
           </template>
         </TabGroup>
       </section>
+      <!-- Cloud (Marketplace) -->
       <div v-if="pistisMode === 'cloud'">
         <section class="container custom_nav_container">
-          <div class="btn_holder flex gap-5">
-            <a :href="'#'" @click.prevent="buyRequest(factoryPrefix)" class="text-white dark:text-surface-900 bg-primary dark:bg-primary-dark hover:bg-primary-hover dark:hover:bg-primary-dark-hover active:bg-primary dark:active:bg-primary-dark-pressed rounded-3xl border-transparent inline-flex min-w-fit items-center justify-center text-center font-medium align-bottom h-8 text-sm px-4 py-2">Buy</a>
+          <div class="btn_holder flex gap-5 flex-wrap">
+            <a :href="'#'" @click.prevent="buyRequest(factoryPrefix)" class="">
+              <KButton>Buy</KButton>
+            </a>
             <a
               :href="`/usage-analytics/${datasetId}/questionnaire`"
-              class="link text-white dark:text-surface-900 bg-primary dark:bg-primary-dark hover:bg-primary-hover dark:hover:bg-primary-dark-hover active:bg-primary dark:active:bg-primary-dark-pressed rounded-3xl border-transparent inline-flex min-w-fit items-center justify-center text-center font-medium align-bottom h-8 text-sm px-4 py-2"
-              >Provide Feedback</a
-            >
+              class=""
+              >
+              <KButton>Provide Feedback</KButton>
+            </a>
           </div>
         </section>
       </div>
+      <!-- Factory (My Data) -->
       <div v-else-if="pistisMode === 'factory'">
         <section class="container custom_nav_container">
           <template v-if="catalog === 'my-data'">
-            <div class="btn_holder flex gap-5">
-              <a
-                :href="`/srv/lt-ui/${accessID}`"
-                class="link"
-                ><KButton>Data Lineage</KButton></a
-              >
+            <div class="btn_holder flex gap-5 flex-wrap">
+              <!-- Data Lineage -->
+              <RouterLink
+                to="/data-lineage"
+                class="">
+                <KButton>{{ $t('navigation.data-lineage') }}</KButton>
+              </RouterLink>
               <a
                 :href="`/srv/catalog/datasets/${datasetId}/quality`"
                 class="link"
