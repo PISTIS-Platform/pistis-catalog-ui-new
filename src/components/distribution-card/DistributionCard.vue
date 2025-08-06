@@ -9,6 +9,8 @@ import Dropdown from '../dropdown/Dropdown.vue'
 import DropdownItem from '../dropdown/DropdownItem.vue'
 import { PropertyTable } from '../property-table/PropertyTableRow'
 import LinkedDataSelector from '../base/links/LinkedDataSelector.vue'
+import config from '../../../config/appConfig'
+
 
 interface CardProps {
   title: string
@@ -33,6 +35,7 @@ const props = withDefaults(defineProps<CardProps>(), {
 })
 
 const dataOrder = ['modified', 'license', 'created', 'languages']
+const pistisMode = config.pistisMode
 const resolvedData = computed(() => {
   const sortedData = [...props.data.data || []].sort((a, b) => {
     // eslint-disable-next-line unicorn/prefer-includes
@@ -84,17 +87,20 @@ const resolvedData = computed(() => {
       </div> 
 
       <div class="flex items-center justify-between">
-        <div class="flex gap-6">
+        <div v-if="pistisMode == 'factory'" class="flex gap-6 flex-wrap">
           <a
             :href="downloadUrl"
             target="_blank"
             nofollow
             noreferrer
             download
-            class="text-white dark:text-surface-900 bg-primary dark:bg-primary-dark hover:bg-primary-hover dark:hover:bg-primary-dark-hover active:bg-primary dark:active:bg-primary-dark-pressed rounded-3xl border-transparent inline-flex min-w-fit items-center justify-center text-center font-medium align-bottom h-8 text-sm px-4 py-2"
+            class=""
           >
-            {{ downloadText }}
-            <i class="icon-[ph--arrow-square-out]" />
+            <KButton
+              size="small">
+              {{ downloadText }}
+                <i class="icon-[ph--arrow-square-out]" />
+            </KButton>
           </a>
 
           <a
@@ -127,7 +133,7 @@ const resolvedData = computed(() => {
           </KButton> -->
 
           <LinkedDataSelector :resource-id="distributionId" resource="distributions" class="text-white dark:text-surface-900 bg-primary dark:bg-primary-dark hover:bg-primary-hover dark:hover:bg-primary-dark-hover active:bg-primary dark:active:bg-primary-dark-pressed rounded-3xl border-transparent inline-flex min-w-fit items-center justify-center text-center font-medium align-bottom h-8 text-sm px-4 py-2"/>
-          
+
           <!-- Why is this not showing?? -->
           <Dropdown severity="secondary" label="Beschreibung speichern"> 
             <DropdownItem v-for="[key, uri] in Object.entries(linkedData || {})" :key="key" as="a" :href="uri" target="_blank">
