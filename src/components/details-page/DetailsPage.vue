@@ -51,6 +51,7 @@ const metadata = ref(null)
 const catalog = ref(null)
 const token = ref(authStore.user.token)
 const factoryPrefix = ref('')
+const price = ref('')
 
 const setDistributionID = async (data) => {
   distributionID.value = data['result']['distributions'][0].id
@@ -82,6 +83,10 @@ const fetchMetadata = async () => {
     const data = await response.json()
     metadata.value = data
     catalog.value = data.result.catalog.id
+    if(pistisMode == 'cloud') {
+      console.log(metadata.value.result.monetization[0].price)
+      price.value = metadata.value.result.monetization[0].price;
+    }
 
     setAccessID(data)
     setDistributionID(data)
@@ -289,7 +294,7 @@ const truncatedEllipsedDescription = computed(() => {
         <section class="container custom_nav_container">
           <div class="btn_holder flex gap-5 flex-wrap">
             <a :href="'#'" @click.prevent="buyRequest(factoryPrefix)" class="">
-              <KButton>Buy</KButton>
+              <KButton>Buy<span v-if="price">&nbsp;{{ price + '€' }}</span></KButton>
             </a>
             <a
               :href="`/usage-analytics/${datasetId}/questionnaire`"
