@@ -52,6 +52,7 @@ const catalog = ref(null)
 const token = ref(authStore.user.token)
 const factoryPrefix = ref('')
 const price = ref('')
+const isOwned = ref()  // True only in datasets that the logged-in user owns
 
 const setDistributionID = async (data) => {
   distributionID.value = data['result']['distributions'][0].id
@@ -106,6 +107,9 @@ const getUserFactory = async () => {
     );
     const data = await response.json()
     factoryPrefix.value = data.factoryPrefix
+    if(pistisMode == 'cloud') {
+      isOwned.value = data.organizationId == metadata.value.result.monetization[0]?.publisher.organization_id;
+    }
   } catch (error) {
     console.error("Error getting data:", error);
   }
@@ -300,7 +304,7 @@ const truncatedEllipsedDescription = computed(() => {
               :href="`/usage-analytics/${datasetId}/questionnaire`"
               class=""
               >
-              <KButton>Provide Feedback</KButton>
+              <KButton v-if="isOwned === false">Provide Feedback</KButton>
             </a>
           </div>
         </section>

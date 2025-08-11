@@ -8,7 +8,8 @@ export default {
   // piveauHubSearchUrl: 'https://develop.pistis-market.eu/srv/search/',
   // piveauHubRepoUrl: 'https://develop.pistis-market.eu/srv/repo/',
   // piveauHubStoreUrl: 'https://develop.pistis-market.eu/srv/store/',
-
+  // pistisMode: 'factory', // cloud(marketplace) | factory(my data)
+  
   /* CLOUD */
   piveauHubSearchUrl: 'https://pistis-market.eu/srv/search/',
   piveauHubRepoUrl: 'https://pistis-market.eu/srv/repo/',
