@@ -331,16 +331,16 @@ const truncatedEllipsedDescription = computed(() => {
             </div>
           </template>
           <template v-if="catalog === 'acquired-data'">
-            <div class="btn_holder">
+            <div class="btn_holder flex gap-5 flex-wrap">
               <a
                 :href="`/srv/catalog/datasets/${datasetId}/quality`"
                 class="link"
-                >Quality Assessment</a
+                ><KButton>Quality Assessment</KButton></a
               >
               <a
                 :href="`/usage-analytics/${datasetId}/questionnaire`"
                 class="link"
-                >Provide Feedback</a
+                ><KButton>Provide Feedback</KButton></a
               >
             </div>
           </template>
