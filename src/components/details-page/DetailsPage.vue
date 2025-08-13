@@ -42,7 +42,7 @@ const { appContext } = getCurrentInstance()
 const store = useStore()
 const authStore = useAuthStore()
 
-const searchUrl = ref(config.piveauHubSearchUrl)
+const searchUrl = ref(config.appUrl)
 const userFactoryUrl = 'https://pistis-market.eu/srv/factories-registry/api/factories/user-factory'
 const pistisMode = config.pistisMode
 const distributionID = ref(null)

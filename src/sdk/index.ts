@@ -14,7 +14,7 @@ import appConfig from '../../config/appConfig'
 export function useDcatApSearch() {
   return defineHubSearch(
     {
-      baseUrl: appConfig.piveauHubSearchUrl,
+      baseUrl: appConfig.appUrl,
       index: 'dataset',
       indexDetails: 'datasets',
       schema: SchemaDataset,
@@ -65,7 +65,7 @@ export function useDcatApSearch() {
 export function useDcatApCatalogSearch() {
   return defineHubSearch(
     {
-      baseUrl: appConfig.piveauHubSearchUrl,
+      baseUrl: appConfig.appUrl,
       index: 'catalogue',
       indexDetails: 'catalogues',
       schema: schemaCatalog,

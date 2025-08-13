@@ -9,13 +9,12 @@ const userConfig = {
     // baseUrl: 'https://data.europa.eu/api/hub/search/',
     // baseUrl: 'https://ppe.data.europa.eu/api/hub/search/',
     // baseUrl: 'https://piveau-hub-search-piveau.apps.osc.fokus.fraunhofer.de/',
-    // baseUrl: appConfig.piveauHubSearchUrl,
-    baseUrl: `${appConfig.piveauHubSearchUrl.endsWith('/') ? appConfig.piveauHubSearchUrl : `${appConfig.piveauHubSearchUrl}/`}`,
+    baseUrl: `${appConfig.appUrl.endsWith('/') ? appConfig.appUrl : `${appConfig.appUrl}/`}`,
 
     // hubUrl: 'https://data.europa.eu/api/hub/repo/',
     // hubUrl: 'https://ppe.data.europa.eu/api/hub/repo/',
     // hubUrl: appConfig.piveauHubRepoUrl,
-    hubUrl: `${appConfig.piveauHubRepoUrl.endsWith('/') ? appConfig.piveauHubRepoUrl : `${appConfig.piveauHubRepoUrl}/`}`,
+    hubUrl: `${appConfig.hubUrl.endsWith('/') ? appConfig.hubUrl : `${appConfig.hubUrl}/`}`,
 
     // qualityBaseUrl: 'https://data.europa.eu/api/mqa/cache/',
     // qualityBaseUrl: 'https://ppe.data.europa.eu/api/mqa/cache/',
