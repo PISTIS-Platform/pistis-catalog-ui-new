@@ -16,8 +16,7 @@ import Typography from '../base/typography/Typography.vue'
 import DetailsPageHeader from './DetailsPageHeader.vue'
 import LinkedDataSelector from '../base/links/LinkedDataSelector.vue'
 import config from '../../../config/appConfig'
-// Lineage View will be integrated later
-//import LineageView from '@/data-lineage/LineageView.vue'
+import LineageView from '@/data-lineage/LineageView.vue'
 import KButton from '../base/button/KButton.vue'
 // import keycloak from '@/services/keycloak'
 
