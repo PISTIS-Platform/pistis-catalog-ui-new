@@ -305,6 +305,14 @@ const truncatedEllipsedDescription = computed(() => {
               <KButton v-if="isOwned === false">Provide Feedback</KButton>
             </a>
           </div>
+          <!-- Data Lineage (Button placements should be discussed together)-->
+          <div class="pt-4">
+             <RouterLink
+                to="/data-lineage"
+                class="">
+                <KButton>{{ $t('navigation.data-lineage') }}</KButton>
+              </RouterLink>
+          </div>
         </section>
       </div>
       <!-- Factory (My Data) -->
@@ -332,6 +340,12 @@ const truncatedEllipsedDescription = computed(() => {
           </template>
           <template v-if="catalog === 'acquired-data'">
             <div class="btn_holder flex gap-5 flex-wrap">
+              <!-- Data Lineage -->
+              <RouterLink
+                to="/data-lineage"
+                class="">
+                <KButton>{{ $t('navigation.data-lineage') }}</KButton>
+              </RouterLink>
               <a
                 :href="`/srv/catalog/datasets/${datasetId}/quality`"
                 class="link"
