@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { PropertyTableEntryNode } from '@piveau/sdk-vue'
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import KButton from '../base/button/KButton.vue'
 import KTag from '../base/tag/KTag.vue'
 import Typography from '../base/typography/Typography.vue'
@@ -53,6 +53,23 @@ const resolvedData = computed(() => {
 
   return sortedData
 })
+
+const catalog = ref(null)
+const searchUrl = ref(config.appUrl)
+const fetchMetadata = async () => {
+  try {
+    const response = await fetch(`${searchUrl.value}datasets/${props.datasetId}`)
+    const data = await response.json()
+    catalog.value = data.result.catalog.id
+  }
+  catch (error) {
+    console.error('Error fetching the metadata. ERROR: ', error)
+  }
+}
+
+onMounted(() => {
+    fetchMetadata();
+  })
 
 // Determine filename based on title if possible:
 let downloadFileName = 'download'
@@ -175,7 +192,8 @@ async function downloadFile() {
             <i class="icon-[ph--arrow-square-out]" />
           </KButton>
 
-          <a
+          <div v-if="catalog === 'my-data'" class="flex gap-6">
+            <a
             :href="`/srv/enrichment-ui?datasetId=${props.datasetId}&distributionId=${props.distributionId}&file_type=${props.format}`"
             target="_blank"
             nofollow
@@ -196,6 +214,7 @@ async function downloadFile() {
               <!-- <i class="icon-[ph--arrow-square-out]" /> -->
             </KButton>
           </a>
+          </div>
           <!-- <KButton>
             Preview
           </KButton> -->
