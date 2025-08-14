@@ -48,6 +48,8 @@ declare module 'vue' {
     KTag: typeof import('./src/components/base/tag/KTag.vue')['default']
     'KTag.story': typeof import('./src/components/base/tag/KTag.story.vue')['default']
     LinkedDataSelector: typeof import('./src/components/base/links/LinkedDataSelector.vue')['default']
+    MatchingDatasetDetails: typeof import('./src/components/matchmaking-service/MatchingDatasetDetails.vue')['default']
+    MatchmakingServiceView: typeof import('./src/components/matchmaking-service/MatchmakingServiceView.vue')['default']
     Metadata: typeof import('./src/components/monetization/Metadata.vue')['default']
     MonetizationView: typeof import('./src/components/monetization/MonetizationView.vue')['default']
     NavigationBar: typeof import('./src/components/header-footer/NavigationBar.vue')['default']

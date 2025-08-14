@@ -1,4 +1,7 @@
 {
+  "matchmaking-service": {
+    "recommendations-header": "Recommended Datasets"
+  },
   "authentication": {
     "logged_out": "You have been logged out."
   },

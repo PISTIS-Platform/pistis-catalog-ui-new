@@ -1,0 +1,66 @@
+{
+  "status": "success",
+  "data": {
+    "dataset_id": "8c1e448b-18c9-48e4-aa6b-4888046cd1a1",
+    "closest_1": {
+      "dataset_id": "c06fe625-27a0-4794-aeb8-92678abc64f9",
+      "title": "Test dataset S5",
+      "description": "Test dataset S5",
+      "format": "http://publications.europa.eu/resource/authority/file-type/CSV",
+      "keywords": "Test",
+      "exclusive": false,
+      "price": 10,
+      "spatial": "",
+      "transferable": "transferable",
+      "offer_type": "one-off"
+    },
+    "closest_2": {
+      "dataset_id": "7b9c1af8-bb74-4ffb-bd67-48a1083a981d",
+      "title": "Test dataset S5 dev",
+      "description": "Test dataset S5 dev",
+      "format": "http://publications.europa.eu/resource/authority/file-type/CSV",
+      "keywords": "S5, Dev, Test",
+      "exclusive": false,
+      "price": 10,
+      "spatial": "",
+      "transferable": "transferable",
+      "offer_type": "one-off"
+    },
+    "closest_3": {
+      "dataset_id": "c2acd238-1b98-4bdf-bfff-a3d72f35122b",
+      "title": "Test dataset S5 10/07",
+      "description": "Test dataset S5 10/07",
+      "format": "http://publications.europa.eu/resource/authority/file-type/CSV",
+      "keywords": "Test",
+      "exclusive": false,
+      "price": 10,
+      "spatial": "",
+      "transferable": "transferable",
+      "offer_type": "one-off"
+    },
+    "closest_4": {
+      "dataset_id": "3eed891f-af21-4635-8988-99e63a46d966",
+      "title": "Test dataset S5 08/07",
+      "description": "Test dataset S5 08/07",
+      "format": "http://publications.europa.eu/resource/authority/file-type/CSV",
+      "keywords": "08/07, Test",
+      "exclusive": false,
+      "price": 10,
+      "spatial": "",
+      "transferable": "transferable",
+      "offer_type": "one-off"
+    },
+    "closest_5": {
+      "dataset_id": "216c9e8a-f506-4378-bfa2-424f67ae4f20",
+      "title": "Test Dataset Name",
+      "description": "Test Dataset Description",
+      "format": "http://publications.europa.eu/resource/authority/file-type/CSV",
+      "keywords": "keyword2, keyword1",
+      "exclusive": true,
+      "price": 20,
+      "spatial": "",
+      "transferable": "transferable",
+      "offer_type": "one-off"
+    }
+  }
+}
