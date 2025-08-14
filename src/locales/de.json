@@ -6,6 +6,9 @@
       "found": "Datensätze gefunden"
     }
   },
+  "matchmaking-service": {
+    "recommendations-header": "Empfohlene Datensätze"
+  },
   "links": {
     "linkedData": "Linked Data"
   },
