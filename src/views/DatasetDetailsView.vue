@@ -209,12 +209,6 @@ const {
             />
           </div>
         </div>
-        <div v-if="pistisMode==='cloud'" class="bg-surface p-6 rounded-xl">
-          <MonetizationView />
-        </div>
-        <div v-if="pistisMode==='cloud'" class="bg-surface p-6 rounded-xl">
-          <MatchmakingServiceView />
-        </div>
       </template>
     </DetailsPage>
   </div>

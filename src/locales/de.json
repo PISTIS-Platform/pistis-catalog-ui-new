@@ -6,6 +6,17 @@
       "found": "Datensätze gefunden"
     }
   },
+  "monetization": {
+    "header": "Monetarisierung",
+    "transferable": "Übertragbar",
+    "type": "Typ",
+    "exclusive": "Exklusiv",
+    "termination-date": "Ablaufdatum",
+    "price": "Preis",
+    "downloads": "Downloads",
+    "personal-data-terms": "Datenschutzhinweis",
+    "license": "Lizenz"
+  },
   "matchmaking-service": {
     "recommendations-header": "Empfohlene Datensätze"
   },

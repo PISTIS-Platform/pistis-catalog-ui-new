@@ -2,6 +2,17 @@
   "matchmaking-service": {
     "recommendations-header": "Recommended Datasets"
   },
+  "monetization": {
+    "header": "Monetization",
+    "transferable": "Transferable",
+    "type": "Type",
+    "exclusive": "Exclusive",
+    "termination-date": "Termination Date",
+    "price": "Price",
+    "downloads": "Downloads",
+    "personal-data-terms": "Personal Data Terms",
+    "license": "License"
+  },
   "authentication": {
     "logged_out": "You have been logged out."
   },
