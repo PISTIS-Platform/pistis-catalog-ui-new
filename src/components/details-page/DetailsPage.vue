@@ -17,6 +17,8 @@ import DetailsPageHeader from './DetailsPageHeader.vue'
 import LinkedDataSelector from '../base/links/LinkedDataSelector.vue'
 import config from '../../../config/appConfig'
 import KButton from '../base/button/KButton.vue'
+import MonetizationView from '../monetization/MonetizationView.vue'
+import MatchmakingServiceView from '../matchmaking-service/MatchmakingServiceView.vue'
 // import keycloak from '@/services/keycloak'
 
 const props = withDefaults(
@@ -49,6 +51,7 @@ const token = ref(authStore.user.token)
 const factoryPrefix = ref('')
 const price = ref('')
 const isOwned = ref()  // True only in datasets that the logged-in user owns
+const monetizationData = ref()
 
 const setDistributionID = async (data) => {
   distributionID.value = data['result']['distributions'][0].id
@@ -83,6 +86,7 @@ const fetchMetadata = async () => {
     if(pistisMode == 'cloud') {
       console.log(metadata.value.result.monetization[0].price)
       price.value = metadata.value.result.monetization[0].price;
+      monetizationData.value = metadata.value.result.monetization[0]
     }
 
     setAccessID(data)
@@ -446,6 +450,12 @@ const truncatedEllipsedDescription = computed(() => {
             </div>
           </div> -->
       </slot>
+      <div v-if="pistisMode==='cloud'" class="bg-surface p-6 rounded-xl">
+          <MonetizationView :data="monetizationData"/>
+        </div>
+        <div v-if="pistisMode==='cloud'" class="bg-surface p-6 rounded-xl">
+          <MatchmakingServiceView />
+        </div>
     </div>
   </div>
 </template>
