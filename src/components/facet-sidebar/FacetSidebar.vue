@@ -38,7 +38,7 @@ const model = useVModel(props, 'modelValue', emit, { passive: true })
         <KFacetGroup
           v-for="facet of facets.filter((facet) => facet.items.length > 0)"
           :id="`facet-group-${facet.id}`"
-          :key="`facet-group-${facet.id}`"
+          :key="JSON.stringify(facet)"
           v-model="model[facet.id]"
           :title="facet.label"
           :facets="facet.items"
