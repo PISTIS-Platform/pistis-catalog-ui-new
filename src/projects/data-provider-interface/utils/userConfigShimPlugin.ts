@@ -29,7 +29,7 @@ const userConfig = {
 
     // fileUploadUrl: 'https://data.europa.eu/api/hub/store/',
     // fileUploadUrl: 'https://ppe.data.europa.eu/api/hub/store/',
-    fileUploadUrl: `${appConfig.piveauHubStoreUrl.endsWith('/') ? appConfig.piveauHubStoreUrl : `${appConfig.piveauHubStoreUrl}/`}`,
+    // fileUploadUrl: `${appConfig.piveauHubStoreUrl.endsWith('/') ? appConfig.piveauHubStoreUrl : `${appConfig.piveauHubStoreUrl}/`}`,
 
     sparqlUrl: 'https://data.europa.eu/sparql',
     gazetteerBaseUrl: 'https://data.europa.eu/api/hub/search/gazetteer/',
