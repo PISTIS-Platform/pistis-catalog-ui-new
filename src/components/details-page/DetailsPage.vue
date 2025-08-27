@@ -46,12 +46,15 @@ const pistisMode = config.pistisMode
 const distributionID = ref(null)
 const accessID = ref(null)
 const metadata = ref(null)
+const organizationId = ref(null)
 const catalog = ref(null)
 const token = ref(authStore.user.token)
 const factoryPrefix = ref('')
 const price = ref('')
-const isOwned = ref()  // True only in datasets that the logged-in user owns
 const monetizationData = ref()
+const isOwned = computed(() => { // True only in datasets that the logged-in user owns
+  return organizationId.value === monetizationData.value?.publisher?.organization_id
+})
 
 const setDistributionID = async (data) => {
   distributionID.value = data['result']['distributions'][0].id
@@ -84,9 +87,8 @@ const fetchMetadata = async () => {
     metadata.value = data
     catalog.value = data.result.catalog.id
     if(pistisMode == 'cloud') {
-      console.log(metadata.value.result.monetization[0].price)
-      price.value = metadata.value.result.monetization[0].price;
       monetizationData.value = metadata.value.result.monetization[0]
+      price.value = monetizationData.value.price;
     }
 
     setAccessID(data)
@@ -106,10 +108,8 @@ const getUserFactory = async () => {
       }
     );
     const data = await response.json()
+    organizationId.value = data.organizationId
     factoryPrefix.value = data.factoryPrefix
-    if(pistisMode == 'cloud') {
-      isOwned.value = data.organizationId == metadata.value.result.monetization[0]?.publisher.organization_id;
-    }
   } catch (error) {
     console.error("Error getting data:", error);
   }
@@ -121,9 +121,9 @@ const buyRequest = async (factoryPrefix) => {
       const response = await axios.post(`https://${factoryPrefix}.pistis-market.eu/srv/smart-contract-execution-engine/api/scee/storePurchase`, {
           // The request body object
           assetId: props.datasetId,
-          assetFactory: metadata.value.result?.monetization[0]?.publisher?.organization_id,
-          sellerId: metadata.value.result?.monetization[0]?.seller_id,
-          price: metadata.value.result?.monetization[0]?.price,
+          assetFactory: metadata.value.result?.monetization[0]?.publisher?.organization_id, // adjust path
+          sellerId: metadata.value.result?.monetization[0]?.seller_id,   // adjust path
+          price: metadata.value.result?.monetization[0]?.price,  // adjust path
         },
         {
           headers: {
@@ -304,7 +304,7 @@ const truncatedEllipsedDescription = computed(() => {
               :href="`/usage-analytics/${datasetId}/questionnaire`"
               class=""
               >
-              <KButton v-if="isOwned === false">Provide Feedback</KButton>
+              <KButton v-if="!isOwned">Provide Feedback</KButton>
             </a>
           </div>
           <!-- Data Lineage (Button placements should be discussed together)-->
