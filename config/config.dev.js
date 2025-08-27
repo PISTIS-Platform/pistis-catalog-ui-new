@@ -17,5 +17,6 @@ export default {
   piveauHubStoreUrl: 'https://pistis-market.eu/srv/store/',
   pistisMode: 'cloud', // cloud(marketplace) | factory(my data)
 
+  
   piveauSparqlUrl: 'https://data.europa.eu/sparql',
 }
