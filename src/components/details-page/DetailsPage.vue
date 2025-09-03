@@ -87,7 +87,7 @@ const fetchMetadata = async () => {
     metadata.value = data
     catalog.value = data.result.catalog.id
     if(pistisMode == 'cloud') {
-      monetizationData.value = metadata.value.result.monetization[0]
+      monetizationData.value = metadata.value.result.monetization[0].purchase_offer[0];
       price.value = monetizationData.value.price;
     }
 
@@ -121,9 +121,9 @@ const buyRequest = async (factoryPrefix) => {
       const response = await axios.post(`https://${factoryPrefix}.pistis-market.eu/srv/smart-contract-execution-engine/api/scee/storePurchase`, {
           // The request body object
           assetId: props.datasetId,
-          assetFactory: metadata.value.result?.monetization[0]?.publisher?.organization_id, // adjust path
-          sellerId: metadata.value.result?.monetization[0]?.seller_id,   // adjust path
-          price: metadata.value.result?.monetization[0]?.price,  // adjust path
+          assetFactory: monetizationData.value?.publisher?.organization_id,
+          sellerId: metadata.value.result?.monetization[0]?.seller_id,
+          price: monetizationData.value?.price,
         },
         {
           headers: {
